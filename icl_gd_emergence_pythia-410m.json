@@ -1,0 +1,265 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "task": "in-context linear regression, logit-lens convergence probe",
+  "metric": "error_reduction = |err|_embed - |err|_final (>0 = GD-like)",
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "heldout_induction_acc_final": 0.9561,
+  "heldout_task": "induction-head next-token accuracy on repeated random sequences (Olsson 2022); independent ICL capability",
+  "checkpoints": [
+    {
+      "error_reduction": 0.0069,
+      "error_reduction_std": 0.0066,
+      "mean_err_embed": 2.1613,
+      "mean_err_embed_std": 0.1856,
+      "mean_err_final": 2.1544,
+      "mean_err_final_std": 0.1831,
+      "depth_rho": 0.0085,
+      "depth_rho_std": 0.0047,
+      "slope_alpha": 0.0037,
+      "slope_alpha_std": 0.0003,
+      "sign_agreement": 0.517,
+      "sign_agreement_std": 0.0033,
+      "per_seed_error_reduction": {
+        "42": 0.014,
+        "7": -0.0018,
+        "123": 0.0085
+      },
+      "step": 1
+    },
+    {
+      "error_reduction": 0.0068,
+      "error_reduction_std": 0.0066,
+      "mean_err_embed": 2.1613,
+      "mean_err_embed_std": 0.1856,
+      "mean_err_final": 2.1545,
+      "mean_err_final_std": 0.1831,
+      "depth_rho": 0.0084,
+      "depth_rho_std": 0.0047,
+      "slope_alpha": 0.0037,
+      "slope_alpha_std": 0.0003,
+      "sign_agreement": 0.5172,
+      "sign_agreement_std": 0.0034,
+      "per_seed_error_reduction": {
+        "42": 0.0139,
+        "7": -0.002,
+        "123": 0.0085
+      },
+      "step": 2
+    },
+    {
+      "error_reduction": 0.0054,
+      "error_reduction_std": 0.0074,
+      "mean_err_embed": 2.1613,
+      "mean_err_embed_std": 0.1856,
+      "mean_err_final": 2.1559,
+      "mean_err_final_std": 0.1832,
+      "depth_rho": 0.0076,
+      "depth_rho_std": 0.0057,
+      "slope_alpha": 0.0036,
+      "slope_alpha_std": 0.0002,
+      "sign_agreement": 0.5136,
+      "sign_agreement_std": 0.0018,
+      "per_seed_error_reduction": {
+        "42": 0.013,
+        "7": -0.0046,
+        "123": 0.0079
+      },
+      "step": 4
+    },
+    {
+      "error_reduction": -0.0103,
+      "error_reduction_std": 0.0144,
+      "mean_err_embed": 2.1613,
+      "mean_err_embed_std": 0.1856,
+      "mean_err_final": 2.1716,
+      "mean_err_final_std": 0.1921,
+      "depth_rho": 0.0029,
+      "depth_rho_std": 0.0096,
+      "slope_alpha": 0.0033,
+      "slope_alpha_std": 0.0002,
+      "sign_agreement": 0.5013,
+      "sign_agreement_std": 0.0069,
+      "per_seed_error_reduction": {
+        "42": -0.0098,
+        "7": -0.0281,
+        "123": 0.0071
+      },
+      "step": 8
+    },
+    {
+      "error_reduction": -0.2294,
+      "error_reduction_std": 0.0704,
+      "mean_err_embed": 2.1613,
+      "mean_err_embed_std": 0.1856,
+      "mean_err_final": 2.3908,
+      "mean_err_final_std": 0.2468,
+      "depth_rho": -0.038,
+      "depth_rho_std": 0.019,
+      "slope_alpha": 0.0029,
+      "slope_alpha_std": 0.0002,
+      "sign_agreement": 0.4629,
+      "sign_agreement_std": 0.0077,
+      "per_seed_error_reduction": {
+        "42": -0.2773,
+        "7": -0.2811,
+        "123": -0.13
+      },
+      "step": 16
+    },
+    {
+      "error_reduction": -0.1845,
+      "error_reduction_std": 0.0593,
+      "mean_err_embed": 2.1627,
+      "mean_err_embed_std": 0.1866,
+      "mean_err_final": 2.3472,
+      "mean_err_final_std": 0.2364,
+      "depth_rho": -0.0348,
+      "depth_rho_std": 0.0164,
+      "slope_alpha": 0.0031,
+      "slope_alpha_std": 0.0002,
+      "sign_agreement": 0.4617,
+      "sign_agreement_std": 0.0167,
+      "per_seed_error_reduction": {
+        "42": -0.2207,
+        "7": -0.2318,
+        "123": -0.1008
+      },
+      "step": 64
+    },
+    {
+      "error_reduction": -0.758,
+      "error_reduction_std": 0.1695,
+      "mean_err_embed": 2.1749,
+      "mean_err_embed_std": 0.1951,
+      "mean_err_final": 2.9329,
+      "mean_err_final_std": 0.3481,
+      "depth_rho": -0.1227,
+      "depth_rho_std": 0.0441,
+      "slope_alpha": 0.0072,
+      "slope_alpha_std": 0.0009,
+      "sign_agreement": 0.4211,
+      "sign_agreement_std": 0.0167,
+      "per_seed_error_reduction": {
+        "42": -0.8663,
+        "7": -0.8889,
+        "123": -0.5186
+      },
+      "step": 256
+    },
+    {
+      "error_reduction": -0.0652,
+      "error_reduction_std": 0.0795,
+      "mean_err_embed": 2.2352,
+      "mean_err_embed_std": 0.2144,
+      "mean_err_final": 2.3004,
+      "mean_err_final_std": 0.1554,
+      "depth_rho": 0.0092,
+      "depth_rho_std": 0.0278,
+      "slope_alpha": -0.0068,
+      "slope_alpha_std": 0.0009,
+      "sign_agreement": 0.5521,
+      "sign_agreement_std": 0.0132,
+      "per_seed_error_reduction": {
+        "42": -0.0194,
+        "7": 0.0009,
+        "123": -0.177
+      },
+      "step": 1000
+    },
+    {
+      "error_reduction": 0.5293,
+      "error_reduction_std": 0.0196,
+      "mean_err_embed": 2.0506,
+      "mean_err_embed_std": 0.1152,
+      "mean_err_final": 1.5213,
+      "mean_err_final_std": 0.1345,
+      "depth_rho": 0.3217,
+      "depth_rho_std": 0.0709,
+      "slope_alpha": 0.0706,
+      "slope_alpha_std": 0.0069,
+      "sign_agreement": 0.6422,
+      "sign_agreement_std": 0.0092,
+      "per_seed_error_reduction": {
+        "42": 0.5024,
+        "7": 0.5487,
+        "123": 0.5367
+      },
+      "step": 4000
+    },
+    {
+      "error_reduction": 1.0597,
+      "error_reduction_std": 0.1314,
+      "mean_err_embed": 2.0749,
+      "mean_err_embed_std": 0.1316,
+      "mean_err_final": 1.0152,
+      "mean_err_final_std": 0.0213,
+      "depth_rho": 0.4435,
+      "depth_rho_std": 0.0426,
+      "slope_alpha": 0.0661,
+      "slope_alpha_std": 0.0015,
+      "sign_agreement": 0.6085,
+      "sign_agreement_std": 0.0045,
+      "per_seed_error_reduction": {
+        "42": 1.236,
+        "7": 1.0225,
+        "123": 0.9206
+      },
+      "step": 16000
+    },
+    {
+      "error_reduction": 1.0086,
+      "error_reduction_std": 0.179,
+      "mean_err_embed": 2.1356,
+      "mean_err_embed_std": 0.1681,
+      "mean_err_final": 1.127,
+      "mean_err_final_std": 0.0592,
+      "depth_rho": 0.3506,
+      "depth_rho_std": 0.0477,
+      "slope_alpha": 0.0747,
+      "slope_alpha_std": 0.0041,
+      "sign_agreement": 0.5554,
+      "sign_agreement_std": 0.0076,
+      "per_seed_error_reduction": {
+        "42": 1.1968,
+        "7": 1.0609,
+        "123": 0.7679
+      },
+      "step": 64000
+    },
+    {
+      "error_reduction": 0.9731,
+      "error_reduction_std": 0.1517,
+      "mean_err_embed": 2.1215,
+      "mean_err_embed_std": 0.159,
+      "mean_err_final": 1.1484,
+      "mean_err_final_std": 0.0522,
+      "depth_rho": 0.3259,
+      "depth_rho_std": 0.0448,
+      "slope_alpha": 0.0864,
+      "slope_alpha_std": 0.0044,
+      "sign_agreement": 0.5532,
+      "sign_agreement_std": 0.0023,
+      "per_seed_error_reduction": {
+        "42": 1.1393,
+        "7": 1.0075,
+        "123": 0.7726
+      },
+      "heldout_induction_acc": 0.9561,
+      "step": 143000
+    }
+  ],
+  "max_error_reduction": 1.0597,
+  "emergence_step_half_max": 16000,
+  "interpretation": "GD-like convergence emerges around step 16000",
+  "heldout_assoc_recall_acc_final": 0.3281,
+  "heldout_assoc_recall_logp_final": -5.263,
+  "heldout_ar_config": {
+    "n_items": 128,
+    "n_pairs": 20
+  },
+  "heldout_task_ar": "associative recall: 20 (key,value) pairs, recall one queried value (Fu 2023 H3; Gu 2023 Mamba). Continuous target = mean log-prob of correct value (non-saturating)."
+}
