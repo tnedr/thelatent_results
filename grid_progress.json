@@ -23,8 +23,8 @@
     },
     {
       "name": "EleutherAI/pythia-410m",
-      "status": "pending",
-      "elapsed_s": null
+      "status": "done",
+      "elapsed_s": 380
     },
     {
       "name": "EleutherAI/pythia-1b",
@@ -52,10 +52,10 @@
       "elapsed_s": null
     }
   ],
-  "current_model": "EleutherAI/pythia-160m",
-  "completed": 4,
+  "current_model": "EleutherAI/pythia-410m",
+  "completed": 5,
   "total": 10,
   "running": true,
-  "eta_minutes": 11.3,
+  "eta_minutes": 13.9,
   "heldout_only": false
 }
