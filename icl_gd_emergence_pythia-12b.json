@@ -118,6 +118,26 @@
       "step": 16
     },
     {
+      "error_reduction": -0.7558,
+      "error_reduction_std": 0.2926,
+      "mean_err_embed": 2.0892,
+      "mean_err_embed_std": 0.1025,
+      "mean_err_final": 2.8451,
+      "mean_err_final_std": 0.3126,
+      "depth_rho": -0.0025,
+      "depth_rho_std": 0.0045,
+      "slope_alpha": 0.0427,
+      "slope_alpha_std": 0.0039,
+      "sign_agreement": 0.4881,
+      "sign_agreement_std": 0.0079,
+      "per_seed_error_reduction": {
+        "42": -0.9404,
+        "7": -0.9843,
+        "123": -0.3428
+      },
+      "step": 64
+    },
+    {
       "error_reduction": -0.5494,
       "error_reduction_std": 0.2498,
       "mean_err_embed": 2.0834,
@@ -158,6 +178,26 @@
       "step": 1000
     },
     {
+      "error_reduction": 0.4861,
+      "error_reduction_std": 0.1843,
+      "mean_err_embed": 2.2152,
+      "mean_err_embed_std": 0.147,
+      "mean_err_final": 1.7291,
+      "mean_err_final_std": 0.1534,
+      "depth_rho": 0.2083,
+      "depth_rho_std": 0.0526,
+      "slope_alpha": 0.0891,
+      "slope_alpha_std": 0.0025,
+      "sign_agreement": 0.5693,
+      "sign_agreement_std": 0.0125,
+      "per_seed_error_reduction": {
+        "42": 0.3149,
+        "7": 0.4015,
+        "123": 0.7418
+      },
+      "step": 4000
+    },
+    {
       "error_reduction": 1.0934,
       "error_reduction_std": 0.1041,
       "mean_err_embed": 2.2299,
@@ -176,6 +216,26 @@
         "123": 1.2314
       },
       "step": 16000
+    },
+    {
+      "error_reduction": 1.5589,
+      "error_reduction_std": 0.1443,
+      "mean_err_embed": 2.3219,
+      "mean_err_embed_std": 0.1753,
+      "mean_err_final": 0.7631,
+      "mean_err_final_std": 0.0771,
+      "depth_rho": 0.4268,
+      "depth_rho_std": 0.0223,
+      "slope_alpha": 0.1075,
+      "slope_alpha_std": 0.0122,
+      "sign_agreement": 0.6037,
+      "sign_agreement_std": 0.0071,
+      "per_seed_error_reduction": {
+        "42": 1.4767,
+        "7": 1.4383,
+        "123": 1.7617
+      },
+      "step": 64000
     },
     {
       "error_reduction": 1.6143,
