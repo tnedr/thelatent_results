@@ -9,13 +9,6 @@
   ],
   "heldout_induction_acc_final": 0.4,
   "heldout_task": "induction-head next-token accuracy on repeated random sequences (Olsson 2022); independent ICL capability",
-  "heldout_assoc_recall_acc_final": 0.1719,
-  "heldout_assoc_recall_logp_final": -6.8531,
-  "heldout_ar_config": {
-    "n_items": 128,
-    "n_pairs": 20
-  },
-  "heldout_task_ar": "associative recall: 20 (key,value) pairs, recall one queried value (Fu 2023 H3; Gu 2023 Mamba). Continuous target = mean log-prob of correct value (non-saturating).",
   "checkpoints": [
     {
       "error_reduction": -0.037,
@@ -218,14 +211,14 @@
       "step": 16000
     },
     {
-      "error_reduction": 0.2742,
+      "error_reduction": 0.2741,
       "error_reduction_std": 0.2903,
       "mean_err_embed": 2.8589,
       "mean_err_embed_std": 0.317,
       "mean_err_final": 2.5848,
       "mean_err_final_std": 0.1348,
       "depth_rho": -0.0421,
-      "depth_rho_std": 0.0239,
+      "depth_rho_std": 0.024,
       "slope_alpha": 0.0839,
       "slope_alpha_std": 0.0063,
       "sign_agreement": 0.6308,
@@ -256,12 +249,17 @@
         "123": 0.4549
       },
       "heldout_induction_acc": 0.4,
-      "heldout_ar_acc": 0.1719,
-      "heldout_ar_logp": -6.8531,
       "step": 143000
     }
   ],
   "max_error_reduction": 0.6916,
   "emergence_step_half_max": 143000,
-  "interpretation": "GD-like convergence emerges around step 143000"
+  "interpretation": "GD-like convergence emerges around step 143000",
+  "heldout_assoc_recall_acc_final": 0.1719,
+  "heldout_assoc_recall_logp_final": -6.8531,
+  "heldout_ar_config": {
+    "n_items": 128,
+    "n_pairs": 20
+  },
+  "heldout_task_ar": "associative recall: 20 (key,value) pairs, recall one queried value (Fu 2023 H3; Gu 2023 Mamba). Continuous target = mean log-prob of correct value (non-saturating)."
 }

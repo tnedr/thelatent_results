@@ -1,61 +1,62 @@
 {
-  "started_at": "2026-06-08T18:13:16.769162+00:00",
+  "started_at": "2026-06-09T08:53:24.473858+00:00",
   "models": [
     {
       "name": "EleutherAI/pythia-14m",
-      "status": "done",
-      "elapsed_s": 78
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-31m",
-      "status": "done",
-      "elapsed_s": 80
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-70m",
-      "status": "done",
-      "elapsed_s": 110
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-160m",
-      "status": "done",
-      "elapsed_s": 184
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-410m",
-      "status": "done",
-      "elapsed_s": 380
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-1b",
-      "status": "done",
-      "elapsed_s": 622
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-1.4b",
-      "status": "done",
-      "elapsed_s": 1817
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-2.8b",
       "status": "done",
-      "elapsed_s": 737
+      "elapsed_s": 983
     },
     {
       "name": "EleutherAI/pythia-6.9b",
-      "status": "done",
-      "elapsed_s": 5496
+      "status": "pending",
+      "elapsed_s": null
     },
     {
       "name": "EleutherAI/pythia-12b",
-      "status": "done",
-      "elapsed_s": 5865
+      "status": "incomplete",
+      "elapsed_s": 6028
     }
   ],
-  "current_model": "EleutherAI/pythia-12b",
-  "completed": 10,
+  "current_model": "EleutherAI/pythia-2.8b",
+  "completed": 1,
   "total": 10,
   "running": false,
-  "eta_minutes": 0.0,
-  "heldout_only": false
+  "eta_minutes": 131.1,
+  "heldout_only": false,
+  "finished_at": "2026-06-09T10:41:22.591625+00:00"
 }

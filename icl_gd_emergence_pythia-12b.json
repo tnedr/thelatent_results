@@ -7,10 +7,10 @@
     7,
     123
   ],
-  "heldout_induction_acc_final": null,
+  "heldout_induction_acc_final": 0.9776,
   "heldout_task": "induction-head next-token accuracy on repeated random sequences (Olsson 2022); independent ICL capability",
-  "heldout_assoc_recall_acc_final": null,
-  "heldout_assoc_recall_logp_final": null,
+  "heldout_assoc_recall_acc_final": 0.25,
+  "heldout_assoc_recall_logp_final": -5.3146,
   "heldout_ar_config": {
     "n_items": 128,
     "n_pairs": 20
@@ -118,26 +118,6 @@
       "step": 16
     },
     {
-      "error_reduction": -0.7558,
-      "error_reduction_std": 0.2926,
-      "mean_err_embed": 2.0892,
-      "mean_err_embed_std": 0.1025,
-      "mean_err_final": 2.8451,
-      "mean_err_final_std": 0.3126,
-      "depth_rho": -0.0025,
-      "depth_rho_std": 0.0045,
-      "slope_alpha": 0.0427,
-      "slope_alpha_std": 0.0039,
-      "sign_agreement": 0.4881,
-      "sign_agreement_std": 0.0079,
-      "per_seed_error_reduction": {
-        "42": -0.9404,
-        "7": -0.9843,
-        "123": -0.3428
-      },
-      "step": 64
-    },
-    {
       "error_reduction": -0.5494,
       "error_reduction_std": 0.2498,
       "mean_err_embed": 2.0834,
@@ -198,27 +178,30 @@
       "step": 16000
     },
     {
-      "error_reduction": 1.5589,
-      "error_reduction_std": 0.1443,
-      "mean_err_embed": 2.3219,
-      "mean_err_embed_std": 0.1753,
-      "mean_err_final": 0.7631,
-      "mean_err_final_std": 0.0771,
-      "depth_rho": 0.4268,
-      "depth_rho_std": 0.0223,
-      "slope_alpha": 0.1075,
-      "slope_alpha_std": 0.0122,
-      "sign_agreement": 0.6037,
-      "sign_agreement_std": 0.0071,
+      "error_reduction": 1.6143,
+      "error_reduction_std": 0.1358,
+      "mean_err_embed": 2.3643,
+      "mean_err_embed_std": 0.1879,
+      "mean_err_final": 0.75,
+      "mean_err_final_std": 0.0563,
+      "depth_rho": 0.4276,
+      "depth_rho_std": 0.0182,
+      "slope_alpha": 0.1441,
+      "slope_alpha_std": 0.0146,
+      "sign_agreement": 0.5958,
+      "sign_agreement_std": 0.0025,
       "per_seed_error_reduction": {
-        "42": 1.4767,
-        "7": 1.4383,
-        "123": 1.7617
+        "42": 1.5839,
+        "7": 1.4653,
+        "123": 1.7938
       },
-      "step": 64000
+      "heldout_induction_acc": 0.9776,
+      "heldout_ar_acc": 0.25,
+      "heldout_ar_logp": -5.3146,
+      "step": 143000
     }
   ],
-  "max_error_reduction": 1.5589,
+  "max_error_reduction": 1.6143,
   "emergence_step_half_max": 16000,
   "interpretation": "GD-like convergence emerges around step 16000"
 }
