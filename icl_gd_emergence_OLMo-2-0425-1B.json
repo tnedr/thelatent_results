@@ -36,7 +36,10 @@
         "123": 0.0081
       },
       "step": 0,
-      "tokens_B": 0.0
+      "tokens_B": 0.0,
+      "heldout_induction_acc": 0.0,
+      "heldout_ar_acc": 0.0,
+      "heldout_ar_logp": -11.9869
     },
     {
       "error_reduction": -0.5594,
@@ -57,7 +60,10 @@
         "123": -0.453
       },
       "step": 300,
-      "tokens_B": 1.0
+      "tokens_B": 1.0,
+      "heldout_induction_acc": 0.0,
+      "heldout_ar_acc": 0.0,
+      "heldout_ar_logp": -11.8815
     },
     {
       "error_reduction": 0.8543,
@@ -78,7 +84,10 @@
         "123": 0.5913
       },
       "step": 10000,
-      "tokens_B": 21.0
+      "tokens_B": 21.0,
+      "heldout_induction_acc": 0.924,
+      "heldout_ar_acc": 0.2578,
+      "heldout_ar_logp": -5.5591
     },
     {
       "error_reduction": 1.2145,
@@ -99,7 +108,10 @@
         "123": 0.967
       },
       "step": 20000,
-      "tokens_B": 42.0
+      "tokens_B": 42.0,
+      "heldout_induction_acc": 0.9393,
+      "heldout_ar_acc": 0.2734,
+      "heldout_ar_logp": -4.9839
     },
     {
       "error_reduction": 1.453,
@@ -120,7 +132,10 @@
         "123": 1.262
       },
       "step": 40000,
-      "tokens_B": 84.0
+      "tokens_B": 84.0,
+      "heldout_induction_acc": 0.9398,
+      "heldout_ar_acc": 0.3828,
+      "heldout_ar_logp": -4.8965
     },
     {
       "error_reduction": 1.472,
@@ -141,7 +156,10 @@
         "123": 1.1785
       },
       "step": 70000,
-      "tokens_B": 147.0
+      "tokens_B": 147.0,
+      "heldout_induction_acc": 0.9474,
+      "heldout_ar_acc": 0.3438,
+      "heldout_ar_logp": -4.8146
     },
     {
       "error_reduction": 0.9983,
@@ -162,7 +180,10 @@
         "123": 0.7376
       },
       "step": 250000,
-      "tokens_B": 525.0
+      "tokens_B": 525.0,
+      "heldout_induction_acc": 0.9383,
+      "heldout_ar_acc": 0.2656,
+      "heldout_ar_logp": -5.115
     },
     {
       "error_reduction": 0.8353,
@@ -183,7 +204,10 @@
         "123": 0.7034
       },
       "step": 420000,
-      "tokens_B": 881.0
+      "tokens_B": 881.0,
+      "heldout_induction_acc": 0.9571,
+      "heldout_ar_acc": 0.3125,
+      "heldout_ar_logp": -4.7879
     },
     {
       "error_reduction": 0.7227,
@@ -204,7 +228,10 @@
         "123": 0.7118
       },
       "step": 710000,
-      "tokens_B": 1489.0
+      "tokens_B": 1489.0,
+      "heldout_induction_acc": 0.9531,
+      "heldout_ar_acc": 0.3203,
+      "heldout_ar_logp": -4.8762
     },
     {
       "error_reduction": 1.0748,
@@ -225,7 +252,10 @@
         "123": 1.0273
       },
       "step": 1170000,
-      "tokens_B": 2454.0
+      "tokens_B": 2454.0,
+      "heldout_induction_acc": 0.9633,
+      "heldout_ar_acc": 0.4297,
+      "heldout_ar_logp": -4.2424
     },
     {
       "error_reduction": 0.7401,
@@ -254,5 +284,6 @@
   ],
   "max_error_reduction": 1.472,
   "emergence_step_half_max": 10000,
-  "interpretation": "GD-like convergence emerges around step 10000"
+  "interpretation": "GD-like convergence emerges around step 10000",
+  "heldout_trajectory": true
 }
