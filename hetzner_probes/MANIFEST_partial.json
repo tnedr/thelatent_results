@@ -1,0 +1,20 @@
+{
+  "box_ip": "178.104.77.197",
+  "phases": [
+    1,
+    2
+  ],
+  "note": "Pulled while batch running; phase 3+ may still be in progress on box",
+  "kind": "partial",
+  "ts": "2026-06-18T12:31:23Z",
+  "files": [
+    "icl_gd_emergence_pythia-2.8b.json",
+    "icl_gd_emergence_pythia-12b.json",
+    "grid_progress.json",
+    "hetzner_probes/icl_convergence_pythia-6_9b.json",
+    "hetzner_probes/icl_convergence_pythia-12b.json",
+    "hetzner_probes/icl_convergence_OLMo-2-7B.json",
+    "hetzner_probes/icl_convergence_panel_summary.json"
+  ],
+  "n_files": 7
+}

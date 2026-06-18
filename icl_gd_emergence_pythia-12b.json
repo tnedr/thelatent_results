@@ -158,26 +158,6 @@
       "step": 256
     },
     {
-      "error_reduction": -0.502,
-      "error_reduction_std": 0.1049,
-      "mean_err_embed": 2.1076,
-      "mean_err_embed_std": 0.1028,
-      "mean_err_final": 2.6096,
-      "mean_err_final_std": 0.1597,
-      "depth_rho": 0.0009,
-      "depth_rho_std": 0.0778,
-      "slope_alpha": 0.025,
-      "slope_alpha_std": 0.0012,
-      "sign_agreement": 0.5368,
-      "sign_agreement_std": 0.0203,
-      "per_seed_error_reduction": {
-        "42": -0.4367,
-        "7": -0.4194,
-        "123": -0.65
-      },
-      "step": 1000
-    },
-    {
       "error_reduction": 0.4861,
       "error_reduction_std": 0.1843,
       "mean_err_embed": 2.2152,
