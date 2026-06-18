@@ -1,0 +1,200 @@
+{
+  "model": "pythia-1.4b",
+  "hf_name": "EleutherAI/pythia-1.4b",
+  "device": "cuda",
+  "n_layers": 24,
+  "d_model": 2048,
+  "n_samples": 64,
+  "seed": 42,
+  "single_hop": {
+    "accuracy": 0.3594,
+    "rho2": 0.919539,
+    "fit_r2": 0.8616,
+    "per_layer_error": [
+      13.9248,
+      13.7217,
+      13.1713,
+      12.9619,
+      13.1898,
+      12.7544,
+      12.4396,
+      12.626,
+      12.3549,
+      12.5518,
+      12.4355,
+      10.4831,
+      9.6611,
+      9.6485,
+      8.8917,
+      8.2697,
+      7.1578,
+      6.8673,
+      6.7286,
+      7.0353,
+      7.3567,
+      7.5668,
+      7.3638,
+      6.219,
+      3.8576
+    ]
+  },
+  "two_hop": {
+    "accuracy": 0.0,
+    "rho2": 0.976749,
+    "fit_r2": 0.8492,
+    "per_layer_error": [
+      13.0987,
+      12.8845,
+      12.6218,
+      12.4423,
+      12.7566,
+      12.6802,
+      12.7016,
+      12.8603,
+      12.7903,
+      12.9107,
+      12.7994,
+      12.8021,
+      12.0178,
+      11.9188,
+      11.7417,
+      11.5178,
+      10.9901,
+      10.8823,
+      10.6663,
+      10.6322,
+      10.4916,
+      10.5063,
+      10.3166,
+      9.9076,
+      11.5056
+    ],
+    "fallback_to_1hop": 0.5156
+  },
+  "throttle": {
+    "early": {
+      "layer_idx": 8,
+      "sweep": [
+        {
+          "rank": 1,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 2,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 4,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 8,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 16,
+          "acc_1hop": 0.1875,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 32,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 64,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 128,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 256,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 2048,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        }
+      ],
+      "m_req_1hop": null,
+      "m_req_2hop": null,
+      "comp_ratio": null
+    },
+    "late": {
+      "layer_idx": 16,
+      "sweep": [
+        {
+          "rank": 1,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 2,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 4,
+          "acc_1hop": 0.0312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 8,
+          "acc_1hop": 0.0625,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 16,
+          "acc_1hop": 0.1875,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 32,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 64,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 128,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 256,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 2048,
+          "acc_1hop": 0.25,
+          "acc_2hop": 0.0
+        }
+      ],
+      "m_req_1hop": null,
+      "m_req_2hop": null,
+      "comp_ratio": null
+    }
+  },
+  "summary": {
+    "two_hop_viable": false,
+    "mean_comp_ratio": null,
+    "composition_harder": false,
+    "weakest_link": false,
+    "verdict": "DARK"
+  },
+  "timestamp": "2026-06-18T09:03:16"
+}

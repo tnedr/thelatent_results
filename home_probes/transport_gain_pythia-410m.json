@@ -1,0 +1,142 @@
+{
+  "model": "pythia-410m",
+  "hf_name": "EleutherAI/pythia-410m",
+  "device": "cuda",
+  "M": 1024,
+  "capacity_layer": 12,
+  "n_layers": 24,
+  "a_p": 0.9439,
+  "clean_acc": 0.9375,
+  "clean_surprisal": -0.9315,
+  "block_len": 16,
+  "n_samples_used": 32,
+  "seed": 42,
+  "sweep": [
+    {
+      "rank": 1,
+      "recovery": 0.0313,
+      "sigma": 0.2121,
+      "sigma_sq": 0.045,
+      "a_eff_proxy": 0.0424,
+      "acc": 0.0
+    },
+    {
+      "rank": 2,
+      "recovery": 0.0575,
+      "sigma": 0.6448,
+      "sigma_sq": 0.4158,
+      "a_eff_proxy": 0.3925,
+      "acc": 0.0
+    },
+    {
+      "rank": 3,
+      "recovery": 0.1171,
+      "sigma": 0.6114,
+      "sigma_sq": 0.3738,
+      "a_eff_proxy": 0.3528,
+      "acc": 0.0
+    },
+    {
+      "rank": 4,
+      "recovery": 0.2055,
+      "sigma": 0.754,
+      "sigma_sq": 0.5686,
+      "a_eff_proxy": 0.5367,
+      "acc": 0.0312
+    },
+    {
+      "rank": 8,
+      "recovery": 0.4596,
+      "sigma": 0.7029,
+      "sigma_sq": 0.4941,
+      "a_eff_proxy": 0.4664,
+      "acc": 0.125
+    },
+    {
+      "rank": 12,
+      "recovery": 0.5994,
+      "sigma": 0.8084,
+      "sigma_sq": 0.6535,
+      "a_eff_proxy": 0.6168,
+      "acc": 0.2812
+    },
+    {
+      "rank": 16,
+      "recovery": 0.7861,
+      "sigma": 0.7939,
+      "sigma_sq": 0.6303,
+      "a_eff_proxy": 0.5949,
+      "acc": 0.625
+    },
+    {
+      "rank": 20,
+      "recovery": 0.9477,
+      "sigma": 0.8186,
+      "sigma_sq": 0.6701,
+      "a_eff_proxy": 0.6326,
+      "acc": 0.9062
+    },
+    {
+      "rank": 24,
+      "recovery": 0.9798,
+      "sigma": 0.8477,
+      "sigma_sq": 0.7186,
+      "a_eff_proxy": 0.6783,
+      "acc": 0.9375
+    },
+    {
+      "rank": 28,
+      "recovery": 0.9929,
+      "sigma": 0.9418,
+      "sigma_sq": 0.887,
+      "a_eff_proxy": 0.8373,
+      "acc": 0.9375
+    },
+    {
+      "rank": 32,
+      "recovery": 1.0,
+      "sigma": 1.0,
+      "sigma_sq": 1.0,
+      "a_eff_proxy": 0.9439,
+      "acc": 0.9375
+    }
+  ],
+  "tests": {
+    "P_BG1_identity": {
+      "corr_recovery_sigma_sq": 0.858,
+      "corr_recovery_sigma": 0.799,
+      "recovery_over_sigma_sq_cv": 0.481,
+      "pass": true
+    },
+    "P_BG2_collapse": {
+      "min_rank": 1,
+      "sigma_at_min_rank": 0.2121,
+      "recovery_at_min_rank": 0.0313,
+      "acc_at_min_rank": 0.0,
+      "pass": true
+    },
+    "P_BG3_enable": {
+      "recovery_monotone_in_rank": true,
+      "recovery_min": 0.0313,
+      "recovery_max": 1.0,
+      "pass": true
+    },
+    "P_BG4_monotone": {
+      "spearman_recovery_sigma": 0.973,
+      "recovery_monotone_in_sigma_strict": false,
+      "corr_recovery_sigma": 0.799,
+      "pass": true
+    },
+    "P_thresh_capacity": {
+      "recovery_threshold": 0.5,
+      "M": 1024,
+      "m_req": 12,
+      "gain_crit": 0.01172,
+      "surplus_at_max_rank": 20,
+      "pass": true
+    },
+    "n_pass": 5,
+    "n_total": 5
+  },
+  "timestamp": "2026-06-18T10:27:18"
+}

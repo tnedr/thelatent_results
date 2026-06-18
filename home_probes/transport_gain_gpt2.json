@@ -1,0 +1,142 @@
+{
+  "model": "gpt2",
+  "hf_name": "gpt2",
+  "device": "cuda",
+  "M": 768,
+  "capacity_layer": 6,
+  "n_layers": 12,
+  "a_p": 0.9999,
+  "clean_acc": 0.1875,
+  "clean_surprisal": -6.9051,
+  "block_len": 16,
+  "n_samples_used": 32,
+  "seed": 42,
+  "sweep": [
+    {
+      "rank": 1,
+      "recovery": 0.127,
+      "sigma": 0.4019,
+      "sigma_sq": 0.1615,
+      "a_eff_proxy": 0.1615,
+      "acc": 0.0
+    },
+    {
+      "rank": 2,
+      "recovery": 0.126,
+      "sigma": 0.9399,
+      "sigma_sq": 0.8835,
+      "a_eff_proxy": 0.8834,
+      "acc": 0.0
+    },
+    {
+      "rank": 3,
+      "recovery": 0.257,
+      "sigma": 0.8829,
+      "sigma_sq": 0.7795,
+      "a_eff_proxy": 0.7794,
+      "acc": 0.0
+    },
+    {
+      "rank": 4,
+      "recovery": 0.2137,
+      "sigma": 0.877,
+      "sigma_sq": 0.7691,
+      "a_eff_proxy": 0.7691,
+      "acc": 0.0
+    },
+    {
+      "rank": 8,
+      "recovery": 0.2959,
+      "sigma": 0.8859,
+      "sigma_sq": 0.7848,
+      "a_eff_proxy": 0.7848,
+      "acc": 0.0
+    },
+    {
+      "rank": 12,
+      "recovery": 0.4466,
+      "sigma": 0.9365,
+      "sigma_sq": 0.877,
+      "a_eff_proxy": 0.8769,
+      "acc": 0.0
+    },
+    {
+      "rank": 16,
+      "recovery": 0.6237,
+      "sigma": 0.9551,
+      "sigma_sq": 0.9122,
+      "a_eff_proxy": 0.9121,
+      "acc": 0.0312
+    },
+    {
+      "rank": 20,
+      "recovery": 0.8686,
+      "sigma": 0.9514,
+      "sigma_sq": 0.9051,
+      "a_eff_proxy": 0.905,
+      "acc": 0.2188
+    },
+    {
+      "rank": 24,
+      "recovery": 0.9084,
+      "sigma": 0.9662,
+      "sigma_sq": 0.9335,
+      "a_eff_proxy": 0.9334,
+      "acc": 0.25
+    },
+    {
+      "rank": 28,
+      "recovery": 0.94,
+      "sigma": 0.9709,
+      "sigma_sq": 0.9427,
+      "a_eff_proxy": 0.9427,
+      "acc": 0.2188
+    },
+    {
+      "rank": 32,
+      "recovery": 1.0,
+      "sigma": 1.0,
+      "sigma_sq": 1.0,
+      "a_eff_proxy": 0.9999,
+      "acc": 0.1875
+    }
+  ],
+  "tests": {
+    "P_BG1_identity": {
+      "corr_recovery_sigma_sq": 0.609,
+      "corr_recovery_sigma": 0.553,
+      "recovery_over_sigma_sq_cv": 0.484,
+      "pass": true
+    },
+    "P_BG2_collapse": {
+      "min_rank": 1,
+      "sigma_at_min_rank": 0.4019,
+      "recovery_at_min_rank": 0.127,
+      "acc_at_min_rank": 0.0,
+      "pass": true
+    },
+    "P_BG3_enable": {
+      "recovery_monotone_in_rank": true,
+      "recovery_min": 0.126,
+      "recovery_max": 1.0,
+      "pass": true
+    },
+    "P_BG4_monotone": {
+      "spearman_recovery_sigma": 0.855,
+      "recovery_monotone_in_sigma_strict": false,
+      "corr_recovery_sigma": 0.553,
+      "pass": true
+    },
+    "P_thresh_capacity": {
+      "recovery_threshold": 0.5,
+      "M": 768,
+      "m_req": 16,
+      "gain_crit": 0.02083,
+      "surplus_at_max_rank": 16,
+      "pass": true
+    },
+    "n_pass": 5,
+    "n_total": 5
+  },
+  "timestamp": "2026-06-18T10:26:42"
+}

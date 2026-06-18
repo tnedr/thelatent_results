@@ -1,0 +1,64 @@
+{
+  "model": "pythia-1b",
+  "hf_name": "EleutherAI/pythia-1b",
+  "mode": "interference",
+  "n_layers": 16,
+  "capacity_layer_idx": 8,
+  "k": 4,
+  "n_samples": 48,
+  "n_basis": 48,
+  "block_len": 12,
+  "seed": 42,
+  "baselines": {
+    "copy_a": 0.9792,
+    "copy_b": 0.8958,
+    "constant": 0.7083
+  },
+  "doable_tasks": [
+    "copy_a",
+    "copy_b",
+    "constant"
+  ],
+  "overlap_matrix": {
+    "copy_a": {
+      "copy_a": 1.0,
+      "copy_b": 0.8114,
+      "constant": 0.507
+    },
+    "copy_b": {
+      "copy_a": 0.8114,
+      "copy_b": 1.0,
+      "constant": 0.5278
+    },
+    "constant": {
+      "copy_a": 0.507,
+      "copy_b": 0.5278,
+      "constant": 1.0
+    }
+  },
+  "damage_matrix": {
+    "copy_a": {
+      "copy_a": 0.5417,
+      "copy_b": 0.6666,
+      "constant": 0.1875
+    },
+    "copy_b": {
+      "copy_a": 0.5834,
+      "copy_b": 0.75,
+      "constant": 0.25
+    },
+    "constant": {
+      "copy_a": 0.25,
+      "copy_b": 0.1458,
+      "constant": 0.3125
+    }
+  },
+  "summary": {
+    "law_corr_overlap_vs_damage": 0.8286,
+    "mean_self_damage": 0.5347,
+    "mean_cross_damage": 0.3472,
+    "self_minus_cross": 0.1875,
+    "verdict": "PASS"
+  },
+  "timestamp": "2026-06-18T08:16:45"
+}

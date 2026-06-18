@@ -1,0 +1,74 @@
+{
+  "mode": "real_model",
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "date": "2026-06-18",
+  "n_layers": 36,
+  "capacity_layer": 21,
+  "d_model": 1280,
+  "n_samples": 64,
+  "formal_anchors": [
+    "SVD1",
+    "SVD2",
+    "SVD3",
+    "SVD4",
+    "SVD5",
+    "SVD6"
+  ],
+  "per_domain": {
+    "relation_composition": {
+      "raw_effective_rank": 44.067,
+      "readout_effective_rank": 17.676,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.94,
+      "rank_at_90pct_energy": 37,
+      "sigma_min_margin": 89.5491,
+      "sigma_top": 183.88828,
+      "decay_ratio_at_margin": 0.486976,
+      "spectral_decay_exponent": 0.018302,
+      "readout_rank_frac_of_d": 0.0138,
+      "n_instances": 64
+    },
+    "arithmetic_carry": {
+      "raw_effective_rank": 45.493,
+      "readout_effective_rank": 26.245,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.947,
+      "rank_at_90pct_energy": 40,
+      "sigma_min_margin": 75.24603,
+      "sigma_top": 162.22096,
+      "decay_ratio_at_margin": 0.463849,
+      "spectral_decay_exponent": 0.017665,
+      "readout_rank_frac_of_d": 0.0205,
+      "n_instances": 64
+    },
+    "induction": {
+      "raw_effective_rank": 40.716,
+      "readout_effective_rank": 9.782,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.952,
+      "rank_at_90pct_energy": 32,
+      "sigma_min_margin": 86.56333,
+      "sigma_top": 199.07091,
+      "decay_ratio_at_margin": 0.434837,
+      "spectral_decay_exponent": 0.021396,
+      "readout_rank_frac_of_d": 0.0076,
+      "n_instances": 64
+    }
+  },
+  "composition_SVD6": {
+    "available": true,
+    "stage1_layer": 21,
+    "stage1_eff_rank": 10.61,
+    "stage2_layer": 30,
+    "stage2_eff_rank": 9.23,
+    "bottleneck_holds": true
+  },
+  "verdict": {
+    "P_capacity_low_rank": true,
+    "P_order_SVD3": true,
+    "P_concentration_SVD4": true,
+    "P_bottleneck_SVD6": true,
+    "n_domains_measured": 3
+  }
+}

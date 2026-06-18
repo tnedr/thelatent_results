@@ -1,0 +1,56 @@
+{
+  "mode": "rank_ladder",
+  "model": "pythia-1.4b",
+  "hf_name": "EleutherAI/pythia-1.4b",
+  "date": "2026-06-18",
+  "n_layers": 24,
+  "capacity_layer": 13,
+  "d_model": 2048,
+  "n_samples": 96,
+  "formal_anchors": [
+    "COMP1",
+    "COMP2",
+    "COMP3",
+    "SVD1",
+    "SVD2"
+  ],
+  "per_hop": {
+    "1": {
+      "readout_effective_rank": 11.939,
+      "raw_effective_rank": 68.546,
+      "rank_at_90pct_energy": 55,
+      "accuracy": 0.5,
+      "n_instances": 96
+    },
+    "2": {
+      "readout_effective_rank": 30.175,
+      "raw_effective_rank": 66.765,
+      "rank_at_90pct_energy": 63,
+      "accuracy": 0.0,
+      "n_instances": 96
+    },
+    "3": {
+      "readout_effective_rank": 31.874,
+      "raw_effective_rank": 68.232,
+      "rank_at_90pct_energy": 62,
+      "accuracy": 0.0,
+      "n_instances": 96
+    }
+  },
+  "summary": {
+    "ranks_by_hop": {
+      "1": 11.939,
+      "2": 30.175,
+      "3": 31.874
+    },
+    "rank_ratio_to_1hop": {
+      "1": 1.0,
+      "2": 2.527,
+      "3": 2.67
+    },
+    "monotone_accumulation": true,
+    "linear_slope": 9.9675,
+    "linear_fit_r2": 0.8134,
+    "verdict": "PASS"
+  }
+}

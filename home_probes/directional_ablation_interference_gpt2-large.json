@@ -1,0 +1,64 @@
+{
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "mode": "interference",
+  "n_layers": 36,
+  "capacity_layer_idx": 18,
+  "k": 4,
+  "n_samples": 48,
+  "n_basis": 48,
+  "block_len": 12,
+  "seed": 42,
+  "baselines": {
+    "copy_a": 0.9583,
+    "copy_b": 0.9792,
+    "constant": 0.75
+  },
+  "doable_tasks": [
+    "copy_a",
+    "copy_b",
+    "constant"
+  ],
+  "overlap_matrix": {
+    "copy_a": {
+      "copy_a": 1.0,
+      "copy_b": 0.7743,
+      "constant": 0.4339
+    },
+    "copy_b": {
+      "copy_a": 0.7743,
+      "copy_b": 1.0,
+      "constant": 0.3767
+    },
+    "constant": {
+      "copy_a": 0.4339,
+      "copy_b": 0.3767,
+      "constant": 1.0
+    }
+  },
+  "damage_matrix": {
+    "copy_a": {
+      "copy_a": 0.3958,
+      "copy_b": 0.625,
+      "constant": 0.0417
+    },
+    "copy_b": {
+      "copy_a": 0.2916,
+      "copy_b": 0.625,
+      "constant": 0.125
+    },
+    "constant": {
+      "copy_a": 0.0833,
+      "copy_b": 0.1459,
+      "constant": 0.1458
+    }
+  },
+  "summary": {
+    "law_corr_overlap_vs_damage": 0.4857,
+    "mean_self_damage": 0.3889,
+    "mean_cross_damage": 0.2187,
+    "self_minus_cross": 0.1702,
+    "verdict": "WEAK"
+  },
+  "timestamp": "2026-06-18T08:22:35"
+}

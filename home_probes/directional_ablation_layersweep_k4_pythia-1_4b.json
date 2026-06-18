@@ -1,0 +1,143 @@
+{
+  "model": "pythia-1.4b",
+  "hf_name": "EleutherAI/pythia-1.4b",
+  "mode": "layer_sweep",
+  "n_layers": 24,
+  "ablation_budget_k": 4,
+  "n_samples": 48,
+  "block_len": 12,
+  "seed": 42,
+  "baseline_accuracy": 0.875,
+  "per_layer": [
+    {
+      "layer": 0,
+      "acc_top": 0.125,
+      "drop": 0.75
+    },
+    {
+      "layer": 1,
+      "acc_top": 0.0208,
+      "drop": 0.8542
+    },
+    {
+      "layer": 2,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 3,
+      "acc_top": 0.0208,
+      "drop": 0.8542
+    },
+    {
+      "layer": 4,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 5,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 6,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 7,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 8,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 9,
+      "acc_top": 0.0208,
+      "drop": 0.8542
+    },
+    {
+      "layer": 10,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 11,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 12,
+      "acc_top": 0.0208,
+      "drop": 0.8542
+    },
+    {
+      "layer": 13,
+      "acc_top": 0.0,
+      "drop": 0.875
+    },
+    {
+      "layer": 14,
+      "acc_top": 0.1875,
+      "drop": 0.6875
+    },
+    {
+      "layer": 15,
+      "acc_top": 0.0625,
+      "drop": 0.8125
+    },
+    {
+      "layer": 16,
+      "acc_top": 0.0417,
+      "drop": 0.8333
+    },
+    {
+      "layer": 17,
+      "acc_top": 0.125,
+      "drop": 0.75
+    },
+    {
+      "layer": 18,
+      "acc_top": 0.0833,
+      "drop": 0.7917
+    },
+    {
+      "layer": 19,
+      "acc_top": 0.0417,
+      "drop": 0.8333
+    },
+    {
+      "layer": 20,
+      "acc_top": 0.0208,
+      "drop": 0.8542
+    },
+    {
+      "layer": 21,
+      "acc_top": 0.0833,
+      "drop": 0.7917
+    },
+    {
+      "layer": 22,
+      "acc_top": 0.1042,
+      "drop": 0.7708
+    },
+    {
+      "layer": 23,
+      "acc_top": 0.8125,
+      "drop": 0.0625
+    }
+  ],
+  "summary": {
+    "peak_layer": 2,
+    "peak_rel_depth": 0.087,
+    "peak_drop": 0.875,
+    "mean_drop": 0.8012,
+    "localization_index": 0.0843,
+    "acc_bottom_at_peak": 0.875,
+    "verdict": "DIFFUSE"
+  },
+  "timestamp": "2026-06-18T08:04:54"
+}

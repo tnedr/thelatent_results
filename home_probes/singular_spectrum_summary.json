@@ -1,0 +1,21 @@
+{
+  "analysis": "singular-spectrum unifying-object test (aggregate)",
+  "date": "2026-06-18",
+  "models": {
+    "gpt2-large": {
+      "verdict": null,
+      "per_domain": null,
+      "composition_SVD6": null
+    },
+    "pythia-1.4b": {
+      "verdict": null,
+      "per_domain": null,
+      "composition_SVD6": null
+    },
+    "pythia-1b": {
+      "verdict": null,
+      "per_domain": null,
+      "composition_SVD6": null
+    }
+  }
+}

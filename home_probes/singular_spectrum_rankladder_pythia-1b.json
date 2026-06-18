@@ -1,0 +1,56 @@
+{
+  "mode": "rank_ladder",
+  "model": "pythia-1b",
+  "hf_name": "EleutherAI/pythia-1b",
+  "date": "2026-06-18",
+  "n_layers": 16,
+  "capacity_layer": 9,
+  "d_model": 2048,
+  "n_samples": 96,
+  "formal_anchors": [
+    "COMP1",
+    "COMP2",
+    "COMP3",
+    "SVD1",
+    "SVD2"
+  ],
+  "per_hop": {
+    "1": {
+      "readout_effective_rank": 21.507,
+      "raw_effective_rank": 67.919,
+      "rank_at_90pct_energy": 58,
+      "accuracy": 0.4375,
+      "n_instances": 96
+    },
+    "2": {
+      "readout_effective_rank": 22.64,
+      "raw_effective_rank": 66.852,
+      "rank_at_90pct_energy": 60,
+      "accuracy": 0.0,
+      "n_instances": 96
+    },
+    "3": {
+      "readout_effective_rank": 21.441,
+      "raw_effective_rank": 68.033,
+      "rank_at_90pct_energy": 57,
+      "accuracy": 0.0,
+      "n_instances": 96
+    }
+  },
+  "summary": {
+    "ranks_by_hop": {
+      "1": 21.507,
+      "2": 22.64,
+      "3": 21.441
+    },
+    "rank_ratio_to_1hop": {
+      "1": 1.0,
+      "2": 1.053,
+      "3": 0.997
+    },
+    "monotone_accumulation": false,
+    "linear_slope": -0.033,
+    "linear_fit_r2": 0.0024,
+    "verdict": "FAIL"
+  }
+}

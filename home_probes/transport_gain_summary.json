@@ -1,0 +1,62 @@
+{
+  "n_models": 4,
+  "models": [
+    "gpt2-large",
+    "gpt2",
+    "pythia-1b",
+    "pythia-410m"
+  ],
+  "timestamp": "2026-06-18T10:29:04",
+  "P_BG1_pass_rate": 0.75,
+  "P_BG2_pass_rate": 1.0,
+  "P_BG3_pass_rate": 1.0,
+  "P_BG4_pass_rate": 0.75,
+  "P_thresh_pass_rate": 1.0,
+  "per_model": [
+    {
+      "model": "gpt2-large",
+      "M": 1280,
+      "a_p": 0.9977,
+      "clean_acc": 0.8438,
+      "m_req": 16,
+      "gain_crit": 0.0125,
+      "corr_recovery_sigma_sq": 0.799,
+      "n_pass": 5,
+      "n_total": 5
+    },
+    {
+      "model": "gpt2",
+      "M": 768,
+      "a_p": 0.9999,
+      "clean_acc": 0.1875,
+      "m_req": 16,
+      "gain_crit": 0.02083,
+      "corr_recovery_sigma_sq": 0.609,
+      "n_pass": 5,
+      "n_total": 5
+    },
+    {
+      "model": "pythia-1b",
+      "M": 2048,
+      "a_p": 0.9538,
+      "clean_acc": 0.9375,
+      "m_req": 12,
+      "gain_crit": 0.00586,
+      "corr_recovery_sigma_sq": 0.26,
+      "n_pass": 3,
+      "n_total": 5
+    },
+    {
+      "model": "pythia-410m",
+      "M": 1024,
+      "a_p": 0.9439,
+      "clean_acc": 0.9375,
+      "m_req": 12,
+      "gain_crit": 0.01172,
+      "corr_recovery_sigma_sq": 0.858,
+      "n_pass": 5,
+      "n_total": 5
+    }
+  ],
+  "interpretation": "P_BG2: at minimal transport rank the readout mechanism is OFF (sigma~0, recovery~0) \u2014 the transport-collapsed image of CT1. P_BG3/BG4: recovery rises monotonically with retained rank and with the causal transport gain sigma \u2014 more capacity switches the GD mechanism on. P_BG1: recovery tracks sigma^2 (the a_eff=sigma^2*a_p identity, measured non-tautologically). P_thresh: a capacity knee at m_req with gain_crit=m_req/M separates the off and on regimes."
+}

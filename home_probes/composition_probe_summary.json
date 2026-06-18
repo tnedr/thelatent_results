@@ -1,0 +1,46 @@
+{
+  "n_models": 4,
+  "n_pass": 0,
+  "n_weak": 0,
+  "n_dark": 4,
+  "n_fail": 0,
+  "per_model": [
+    {
+      "model": "gpt2-large",
+      "acc_1hop": 0.5625,
+      "acc_2hop": 0.0,
+      "rho2_1hop": 0.891907,
+      "rho2_2hop": 0.977059,
+      "mean_comp_ratio": null,
+      "verdict": "DARK"
+    },
+    {
+      "model": "gpt2-medium",
+      "acc_1hop": 0.5625,
+      "acc_2hop": 0.0,
+      "rho2_1hop": 0.834974,
+      "rho2_2hop": 0.972741,
+      "mean_comp_ratio": null,
+      "verdict": "DARK"
+    },
+    {
+      "model": "pythia-1.4b",
+      "acc_1hop": 0.3594,
+      "acc_2hop": 0.0,
+      "rho2_1hop": 0.919539,
+      "rho2_2hop": 0.976749,
+      "mean_comp_ratio": null,
+      "verdict": "DARK"
+    },
+    {
+      "model": "pythia-1b",
+      "acc_1hop": 0.3594,
+      "acc_2hop": 0.0,
+      "rho2_1hop": 0.8575,
+      "rho2_2hop": null,
+      "mean_comp_ratio": null,
+      "verdict": "DARK"
+    }
+  ],
+  "timestamp": "2026-06-18T09:03:17"
+}

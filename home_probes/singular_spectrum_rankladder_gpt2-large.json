@@ -1,0 +1,56 @@
+{
+  "mode": "rank_ladder",
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "date": "2026-06-18",
+  "n_layers": 36,
+  "capacity_layer": 21,
+  "d_model": 1280,
+  "n_samples": 96,
+  "formal_anchors": [
+    "COMP1",
+    "COMP2",
+    "COMP3",
+    "SVD1",
+    "SVD2"
+  ],
+  "per_hop": {
+    "1": {
+      "readout_effective_rank": 24.469,
+      "raw_effective_rank": 60.724,
+      "rank_at_90pct_energy": 57,
+      "accuracy": 0.4583,
+      "n_instances": 96
+    },
+    "2": {
+      "readout_effective_rank": 18.921,
+      "raw_effective_rank": 60.573,
+      "rank_at_90pct_energy": 56,
+      "accuracy": 0.0,
+      "n_instances": 96
+    },
+    "3": {
+      "readout_effective_rank": 31.013,
+      "raw_effective_rank": 59.261,
+      "rank_at_90pct_energy": 57,
+      "accuracy": 0.0312,
+      "n_instances": 96
+    }
+  },
+  "summary": {
+    "ranks_by_hop": {
+      "1": 24.469,
+      "2": 18.921,
+      "3": 31.013
+    },
+    "rank_ratio_to_1hop": {
+      "1": 1.0,
+      "2": 0.773,
+      "3": 1.267
+    },
+    "monotone_accumulation": false,
+    "linear_slope": 3.272,
+    "linear_fit_r2": 0.2922,
+    "verdict": "WEAK"
+  }
+}

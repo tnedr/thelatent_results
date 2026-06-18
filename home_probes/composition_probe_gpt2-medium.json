@@ -1,0 +1,200 @@
+{
+  "model": "gpt2-medium",
+  "hf_name": "gpt2-medium",
+  "device": "cuda",
+  "n_layers": 24,
+  "d_model": 1024,
+  "n_samples": 64,
+  "seed": 42,
+  "single_hop": {
+    "accuracy": 0.5625,
+    "rho2": 0.834974,
+    "fit_r2": 0.6595,
+    "per_layer_error": [
+      119.1584,
+      14.5698,
+      14.3965,
+      13.9779,
+      14.1798,
+      14.4576,
+      14.2399,
+      13.8285,
+      13.7204,
+      13.9141,
+      13.4166,
+      13.3523,
+      12.4496,
+      11.7768,
+      10.722,
+      10.2903,
+      8.923,
+      7.952,
+      7.5162,
+      5.7422,
+      4.4246,
+      2.8126,
+      2.1087,
+      2.4563,
+      7.3303
+    ]
+  },
+  "two_hop": {
+    "accuracy": 0.0,
+    "rho2": 0.972741,
+    "fit_r2": 0.0545,
+    "per_layer_error": [
+      118.8584,
+      15.0045,
+      14.639,
+      14.3974,
+      14.6773,
+      14.853,
+      14.7734,
+      14.8491,
+      15.3018,
+      15.2699,
+      15.5656,
+      16.3859,
+      16.5572,
+      17.3118,
+      17.7528,
+      17.8595,
+      17.7586,
+      17.7748,
+      17.578,
+      17.8371,
+      17.5631,
+      17.3053,
+      16.2228,
+      12.9968,
+      13.1599
+    ],
+    "fallback_to_1hop": 0.6562
+  },
+  "throttle": {
+    "early": {
+      "layer_idx": 8,
+      "sweep": [
+        {
+          "rank": 1,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 2,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 4,
+          "acc_1hop": 0.0312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 8,
+          "acc_1hop": 0.0938,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 16,
+          "acc_1hop": 0.5,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 32,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 64,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 128,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 256,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 1024,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        }
+      ],
+      "m_req_1hop": 16,
+      "m_req_2hop": null,
+      "comp_ratio": null
+    },
+    "late": {
+      "layer_idx": 16,
+      "sweep": [
+        {
+          "rank": 1,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 2,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 4,
+          "acc_1hop": 0.0,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 8,
+          "acc_1hop": 0.0938,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 16,
+          "acc_1hop": 0.375,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 32,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 64,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 128,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 256,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        },
+        {
+          "rank": 1024,
+          "acc_1hop": 0.5312,
+          "acc_2hop": 0.0
+        }
+      ],
+      "m_req_1hop": 32,
+      "m_req_2hop": null,
+      "comp_ratio": null
+    }
+  },
+  "summary": {
+    "two_hop_viable": false,
+    "mean_comp_ratio": null,
+    "composition_harder": false,
+    "weakest_link": false,
+    "verdict": "DARK"
+  },
+  "timestamp": "2026-06-18T09:01:22"
+}

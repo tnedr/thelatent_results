@@ -1,0 +1,53 @@
+{
+  "model": "pythia-70m",
+  "hf_name": "EleutherAI/pythia-70m",
+  "mode": "layer_sweep",
+  "n_layers": 6,
+  "ablation_budget_k": 1,
+  "n_samples": 48,
+  "block_len": 12,
+  "seed": 42,
+  "baseline_accuracy": 0.2083,
+  "per_layer": [
+    {
+      "layer": 0,
+      "acc_top": 0.0,
+      "drop": 0.2083
+    },
+    {
+      "layer": 1,
+      "acc_top": 0.0,
+      "drop": 0.2083
+    },
+    {
+      "layer": 2,
+      "acc_top": 0.6042,
+      "drop": -0.3959
+    },
+    {
+      "layer": 3,
+      "acc_top": 0.3333,
+      "drop": -0.125
+    },
+    {
+      "layer": 4,
+      "acc_top": 0.1875,
+      "drop": 0.0208
+    },
+    {
+      "layer": 5,
+      "acc_top": 0.375,
+      "drop": -0.1667
+    }
+  ],
+  "summary": {
+    "peak_layer": 0,
+    "peak_rel_depth": 0.0,
+    "peak_drop": 0.2083,
+    "mean_drop": -0.0417,
+    "localization_index": 1.2002,
+    "acc_bottom_at_peak": 0.2083,
+    "verdict": "DARK"
+  },
+  "timestamp": "2026-06-18T07:54:08"
+}

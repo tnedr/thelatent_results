@@ -1,0 +1,74 @@
+{
+  "n_models": 3,
+  "models": [
+    "gpt2-large",
+    "pythia-1.4b",
+    "pythia-1b"
+  ],
+  "timestamp": "2026-06-18T09:38:21",
+  "knee_pass_rate": 0.5,
+  "pooled_corr_surplus_tolerance": -0.086,
+  "per_model": [
+    {
+      "model": "gpt2-large",
+      "M": 1280,
+      "domains": {
+        "relation_composition": {
+          "dark": true,
+          "m_req": 1,
+          "gain_crit": 0.00078,
+          "clean_acc": 0.0
+        },
+        "arithmetic_carry": {
+          "dark": false,
+          "m_req": 2,
+          "gain_crit": 0.00156,
+          "clean_acc": 0.2969
+        }
+      },
+      "n_knee_pass": 1,
+      "corr_surplus_tolerance": 0.035
+    },
+    {
+      "model": "pythia-1.4b",
+      "M": 2048,
+      "domains": {
+        "relation_composition": {
+          "dark": true,
+          "m_req": 1,
+          "gain_crit": 0.00049,
+          "clean_acc": 0.0156
+        },
+        "arithmetic_carry": {
+          "dark": false,
+          "m_req": 2,
+          "gain_crit": 0.00098,
+          "clean_acc": 0.25
+        }
+      },
+      "n_knee_pass": 1,
+      "corr_surplus_tolerance": -0.389
+    },
+    {
+      "model": "pythia-1b",
+      "M": 2048,
+      "domains": {
+        "relation_composition": {
+          "dark": true,
+          "m_req": 1,
+          "gain_crit": 0.00049,
+          "clean_acc": 0.0156
+        },
+        "arithmetic_carry": {
+          "dark": false,
+          "m_req": 2,
+          "gain_crit": 0.00098,
+          "clean_acc": 0.2656
+        }
+      },
+      "n_knee_pass": 1,
+      "corr_surplus_tolerance": 0.035
+    }
+  ],
+  "interpretation": "P_knee: on non-dark domains recovery is monotone in retained rank with a sharp knee \u2014 low below gain/gain_crit=0.75, high above 1.33 (CT7/DEV threshold). P_surplus: noise tolerance rises with the capacity surplus = gain*M - m_req (CF). Dark domains (no full-rank recovery) are reported, not forced."
+}

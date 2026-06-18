@@ -1,0 +1,454 @@
+{
+  "n_models": 11,
+  "models": [
+    "gpt-neo-125m",
+    "gpt2-large",
+    "gpt2-medium",
+    "gpt2",
+    "opt-125m",
+    "pythia-160m",
+    "pythia-1b",
+    "pythia-410m",
+    "pythia-70m-deduped",
+    "pythia-70m",
+    "tinyllama-1.1b"
+  ],
+  "timestamp": "2026-06-18T09:48:54",
+  "P_RT1_pass_rate": 0.909,
+  "P_RT2_pass_rate": 0.818,
+  "P_RT2_mean_corr_rho_ra_acc": -0.785,
+  "P_RT2_mean_corr_rho_acc": -0.774,
+  "P_SEL_match_rate": 1.0,
+  "per_model": [
+    {
+      "model": "gpt-neo-125m",
+      "n_params_M": 125.2,
+      "regime_acc": {
+        "induction": 0.0312,
+        "recall": 0.0,
+        "recall_distractor": 0.0,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.8769,
+        "recall": 0.8954,
+        "recall_distractor": 1.0,
+        "no_context": 1.0
+      },
+      "regime_rho_ra": {
+        "induction": 0.9738,
+        "recall": 1.0,
+        "recall_distractor": 1.0,
+        "no_context": 1.0
+      },
+      "regime_floor": {
+        "induction": 19.8687,
+        "recall": 28.3642,
+        "recall_distractor": 29.1348,
+        "no_context": 30.2728
+      },
+      "regime_J": {
+        "induction": 554.8092,
+        "recall": 612.747,
+        "recall_distractor": 673.3827,
+        "no_context": 677.4618
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -1.0,
+      "corr_rho_acc": -0.667,
+      "selection_match": true
+    },
+    {
+      "model": "gpt2-large",
+      "n_params_M": 774.0,
+      "regime_acc": {
+        "induction": 0.8438,
+        "recall": 0.3125,
+        "recall_distractor": 0.25,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.8608,
+        "recall": 0.8993,
+        "recall_distractor": 0.9128,
+        "no_context": 0.9807
+      },
+      "regime_rho_ra": {
+        "induction": 0.7887,
+        "recall": 0.8634,
+        "recall_distractor": 0.9319,
+        "no_context": 0.984
+      },
+      "regime_floor": {
+        "induction": 0.5094,
+        "recall": 3.1259,
+        "recall_distractor": 5.8,
+        "no_context": 12.087
+      },
+      "regime_J": {
+        "induction": 61.8804,
+        "recall": 69.4944,
+        "recall_distractor": 74.6212,
+        "no_context": 83.6669
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.955,
+      "corr_rho_acc": -0.92,
+      "selection_match": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n_params_M": 354.8,
+      "regime_acc": {
+        "induction": 0.6875,
+        "recall": 0.1875,
+        "recall_distractor": 0.0312,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.8029,
+        "recall": 0.8874,
+        "recall_distractor": 0.8838,
+        "no_context": 0.9838
+      },
+      "regime_rho_ra": {
+        "induction": 0.7797,
+        "recall": 0.8923,
+        "recall_distractor": 0.9225,
+        "no_context": 0.9946
+      },
+      "regime_floor": {
+        "induction": 0.2373,
+        "recall": 2.172,
+        "recall_distractor": 5.342,
+        "no_context": 11.4868
+      },
+      "regime_J": {
+        "induction": 97.4578,
+        "recall": 112.5668,
+        "recall_distractor": 111.2453,
+        "no_context": 135.3183
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.95,
+      "corr_rho_acc": -0.851,
+      "selection_match": true
+    },
+    {
+      "model": "gpt2",
+      "n_params_M": 124.4,
+      "regime_acc": {
+        "induction": 0.125,
+        "recall": 0.0,
+        "recall_distractor": 0.0,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.5997,
+        "recall": 0.7775,
+        "recall_distractor": 0.789,
+        "no_context": 0.8868
+      },
+      "regime_rho_ra": {
+        "induction": 0.4423,
+        "recall": 0.7496,
+        "recall_distractor": 0.8091,
+        "no_context": 0.9103
+      },
+      "regime_floor": {
+        "induction": 0.0217,
+        "recall": 1.0543,
+        "recall_distractor": 4.3945,
+        "no_context": 11.8256
+      },
+      "regime_J": {
+        "induction": 46.6197,
+        "recall": 63.2751,
+        "recall_distractor": 64.2288,
+        "no_context": 82.0768
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.944,
+      "corr_rho_acc": -0.912,
+      "selection_match": true
+    },
+    {
+      "model": "opt-125m",
+      "n_params_M": 125.2,
+      "regime_acc": {
+        "induction": 0.8438,
+        "recall": 0.4688,
+        "recall_distractor": 0.5625,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.9569,
+        "recall": 0.9718,
+        "recall_distractor": 0.9749,
+        "no_context": 1.0
+      },
+      "regime_rho_ra": {
+        "induction": 0.8887,
+        "recall": 0.8804,
+        "recall_distractor": 0.9101,
+        "no_context": 1.0
+      },
+      "regime_floor": {
+        "induction": 0.8264,
+        "recall": 4.6798,
+        "recall_distractor": 4.3285,
+        "no_context": 10.8597
+      },
+      "regime_J": {
+        "induction": 11.3099,
+        "recall": 15.3013,
+        "recall_distractor": 14.9414,
+        "no_context": 21.7539
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.868,
+      "corr_rho_acc": -0.984,
+      "selection_match": true
+    },
+    {
+      "model": "pythia-160m",
+      "n_params_M": 162.3,
+      "regime_acc": {
+        "induction": 0.4062,
+        "recall": 0.0938,
+        "recall_distractor": 0.0,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.8397,
+        "recall": 1.0,
+        "recall_distractor": 0.6949,
+        "no_context": 0.8484
+      },
+      "regime_rho_ra": {
+        "induction": 0.8487,
+        "recall": 0.8207,
+        "recall_distractor": 0.6866,
+        "no_context": 0.8623
+      },
+      "regime_floor": {
+        "induction": 6.6094,
+        "recall": 23.4913,
+        "recall_distractor": 20.2747,
+        "no_context": 30.6756
+      },
+      "regime_J": {
+        "induction": 39.1055,
+        "recall": 62.4047,
+        "recall_distractor": 44.6435,
+        "no_context": 61.95
+      },
+      "RT1_pass": true,
+      "RT2_pass": false,
+      "corr_rho_ra_acc": 0.418,
+      "corr_rho_acc": 0.167,
+      "selection_match": true
+    },
+    {
+      "model": "pythia-1b",
+      "n_params_M": 1011.8,
+      "regime_acc": {
+        "induction": 0.9062,
+        "recall": 0.4375,
+        "recall_distractor": 0.3125,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.8239,
+        "recall": 0.8558,
+        "recall_distractor": 0.8697,
+        "no_context": 1.0
+      },
+      "regime_rho_ra": {
+        "induction": 0.7504,
+        "recall": 0.8304,
+        "recall_distractor": 0.8625,
+        "no_context": 1.0
+      },
+      "regime_floor": {
+        "induction": 0.5694,
+        "recall": 4.3373,
+        "recall_distractor": 5.0786,
+        "no_context": 11.8384
+      },
+      "regime_J": {
+        "induction": 12.3601,
+        "recall": 16.8284,
+        "recall_distractor": 18.0123,
+        "no_context": 25.5538
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.961,
+      "corr_rho_acc": -0.878,
+      "selection_match": true
+    },
+    {
+      "model": "pythia-410m",
+      "n_params_M": 405.3,
+      "regime_acc": {
+        "induction": 0.8438,
+        "recall": 0.2812,
+        "recall_distractor": 0.3438,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.8644,
+        "recall": 0.9066,
+        "recall_distractor": 0.8967,
+        "no_context": 0.9106
+      },
+      "regime_rho_ra": {
+        "induction": 0.7802,
+        "recall": 0.9077,
+        "recall_distractor": 0.8856,
+        "no_context": 0.9037
+      },
+      "regime_floor": {
+        "induction": 0.6563,
+        "recall": 5.9782,
+        "recall_distractor": 4.7865,
+        "no_context": 12.379
+      },
+      "regime_J": {
+        "induction": 13.4404,
+        "recall": 19.7172,
+        "recall_distractor": 17.8713,
+        "no_context": 25.3102
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.927,
+      "corr_rho_acc": -0.967,
+      "selection_match": true
+    },
+    {
+      "model": "pythia-70m-deduped",
+      "n_params_M": 70.4,
+      "regime_acc": {
+        "induction": 0.0312,
+        "recall": 0.0,
+        "recall_distractor": 0.0,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.6202,
+        "recall": 0.8377,
+        "recall_distractor": 0.8338,
+        "no_context": 0.6967
+      },
+      "regime_rho_ra": {
+        "induction": 0.6664,
+        "recall": 0.8377,
+        "recall_distractor": 0.8542,
+        "no_context": 0.6946
+      },
+      "regime_floor": {
+        "induction": 8.3302,
+        "recall": 40.5166,
+        "recall_distractor": 10.6452,
+        "no_context": 47.1546
+      },
+      "regime_J": {
+        "induction": 31.9517,
+        "recall": 87.1708,
+        "recall_distractor": 42.6431,
+        "no_context": 85.3551
+      },
+      "RT1_pass": false,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.669,
+      "corr_rho_acc": -0.79,
+      "selection_match": true
+    },
+    {
+      "model": "pythia-70m",
+      "n_params_M": 70.4,
+      "regime_acc": {
+        "induction": 0.0,
+        "recall": 0.0,
+        "recall_distractor": 0.0,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.7651,
+        "recall": 0.6898,
+        "recall_distractor": 0.8553,
+        "no_context": 0.7906
+      },
+      "regime_rho_ra": {
+        "induction": 0.7865,
+        "recall": 0.5842,
+        "recall_distractor": 0.8703,
+        "no_context": 0.8595
+      },
+      "regime_floor": {
+        "induction": 10.0551,
+        "recall": 35.514,
+        "recall_distractor": 11.7243,
+        "no_context": 37.61
+      },
+      "regime_J": {
+        "induction": 38.1116,
+        "recall": 64.8746,
+        "recall_distractor": 43.9737,
+        "no_context": 74.6613
+      },
+      "RT1_pass": true,
+      "RT2_pass": false,
+      "corr_rho_ra_acc": null,
+      "corr_rho_acc": null,
+      "selection_match": true
+    },
+    {
+      "model": "tinyllama-1.1b",
+      "n_params_M": 1100.0,
+      "regime_acc": {
+        "induction": 0.9375,
+        "recall": 0.2188,
+        "recall_distractor": 0.25,
+        "no_context": 0.0
+      },
+      "regime_rho": {
+        "induction": 0.7785,
+        "recall": 0.9227,
+        "recall_distractor": 0.8556,
+        "no_context": 0.9452
+      },
+      "regime_rho_ra": {
+        "induction": 0.7057,
+        "recall": 0.9476,
+        "recall_distractor": 0.9089,
+        "no_context": 1.0
+      },
+      "regime_floor": {
+        "induction": 0.6063,
+        "recall": 5.4851,
+        "recall_distractor": 6.5338,
+        "no_context": 12.2367
+      },
+      "regime_J": {
+        "induction": 10.0051,
+        "recall": 17.2997,
+        "recall_distractor": 16.8166,
+        "no_context": 24.8028
+      },
+      "RT1_pass": true,
+      "RT2_pass": true,
+      "corr_rho_ra_acc": -0.996,
+      "corr_rho_acc": -0.936,
+      "selection_match": true
+    }
+  ],
+  "interpretation": "P_RT1: collapsed-mechanism regime (no_context) shows no contraction and the highest floor (not routed). P_RT2: corr(rho, acc)<0 means the faster-contracting regime is the one the model solves. P_SEL: selection_match=true means argmin J == argmax accuracy (the proof's argmin-J selection rule holds empirically)."
+}

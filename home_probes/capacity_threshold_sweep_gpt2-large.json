@@ -1,0 +1,232 @@
+{
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "device": "cuda",
+  "M": 1280,
+  "capacity_layer": 18,
+  "n_layers": 36,
+  "n_samples": 64,
+  "seed": 42,
+  "noise_levels": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "domains": {
+    "relation_composition": {
+      "dark": true,
+      "clean_surprisal": -18.141,
+      "clean_acc": 0.0,
+      "m_req": 1,
+      "gain_crit": 0.00078,
+      "rank_recovery": [
+        {
+          "rank": 1,
+          "recovery": 0.9974,
+          "acc": 0.0
+        },
+        {
+          "rank": 2,
+          "recovery": 0.6133,
+          "acc": 0.0
+        },
+        {
+          "rank": 4,
+          "recovery": 0.7077,
+          "acc": 0.0
+        },
+        {
+          "rank": 16,
+          "recovery": 0.6452,
+          "acc": 0.0
+        },
+        {
+          "rank": 28,
+          "recovery": 0.7089,
+          "acc": 0.0
+        },
+        {
+          "rank": 40,
+          "recovery": 0.7089,
+          "acc": 0.0
+        },
+        {
+          "rank": 52,
+          "recovery": 0.7089,
+          "acc": 0.0
+        },
+        {
+          "rank": 64,
+          "recovery": 0.7089,
+          "acc": 0.0
+        }
+      ]
+    },
+    "arithmetic_carry": {
+      "dark": false,
+      "clean_surprisal": -5.5715,
+      "clean_acc": 0.2969,
+      "m_req": 2,
+      "gain_crit": 0.00156,
+      "rank_recovery": [
+        {
+          "rank": 1,
+          "recovery": 0.0,
+          "acc": 0.0
+        },
+        {
+          "rank": 2,
+          "recovery": 0.5114,
+          "acc": 0.0781
+        },
+        {
+          "rank": 4,
+          "recovery": 0.641,
+          "acc": 0.2188
+        },
+        {
+          "rank": 16,
+          "recovery": 0.6914,
+          "acc": 0.2812
+        },
+        {
+          "rank": 28,
+          "recovery": 0.6878,
+          "acc": 0.2969
+        },
+        {
+          "rank": 40,
+          "recovery": 0.6878,
+          "acc": 0.2969
+        },
+        {
+          "rank": 52,
+          "recovery": 0.6878,
+          "acc": 0.2969
+        },
+        {
+          "rank": 64,
+          "recovery": 0.6878,
+          "acc": 0.2969
+        }
+      ]
+    }
+  },
+  "per_condition": [
+    {
+      "domain": "relation_composition",
+      "model": "gpt2-large",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 1,
+      "gain": 0.00078,
+      "M": 1280,
+      "m_req": 1,
+      "gain_crit": 0.00078,
+      "gain_over_crit": 1.0,
+      "surplus": 0,
+      "recovery_score": 0.9974,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 2.0,
+      "failure_level": 2.0
+    },
+    {
+      "domain": "relation_composition",
+      "model": "gpt2-large",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 28,
+      "gain": 0.02187,
+      "M": 1280,
+      "m_req": 1,
+      "gain_crit": 0.00078,
+      "gain_over_crit": 28.0,
+      "surplus": 27,
+      "recovery_score": 0.7089,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 2.0,
+      "failure_level": 2.0
+    },
+    {
+      "domain": "arithmetic_carry",
+      "model": "gpt2-large",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 1,
+      "gain": 0.00078,
+      "M": 1280,
+      "m_req": 2,
+      "gain_crit": 0.00156,
+      "gain_over_crit": 0.5,
+      "surplus": -1,
+      "recovery_score": 0.0,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 0.0,
+      "failure_level": 0.0
+    },
+    {
+      "domain": "arithmetic_carry",
+      "model": "gpt2-large",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 2,
+      "gain": 0.00156,
+      "M": 1280,
+      "m_req": 2,
+      "gain_crit": 0.00156,
+      "gain_over_crit": 1.0,
+      "surplus": 0,
+      "recovery_score": 0.5114,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 0.0,
+      "failure_level": 0.0
+    },
+    {
+      "domain": "arithmetic_carry",
+      "model": "gpt2-large",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 40,
+      "gain": 0.03125,
+      "M": 1280,
+      "m_req": 2,
+      "gain_crit": 0.00156,
+      "gain_over_crit": 20.0,
+      "surplus": 38,
+      "recovery_score": 0.6878,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 0.0,
+      "failure_level": 0.0
+    }
+  ],
+  "tests": {
+    "P_knee_by_domain": {
+      "relation_composition": {
+        "dark": true,
+        "m_req": 1,
+        "pass": false,
+        "reason": "dark_or_no_threshold"
+      },
+      "arithmetic_carry": {
+        "dark": false,
+        "m_req": 2,
+        "gain_crit": 0.00156,
+        "monotonicity_r": 0.738,
+        "recovery_below_0p75": 0.0,
+        "recovery_above_1p33": 0.6806,
+        "knee_sharpness": 0.6806,
+        "knee_location_gain_over_crit": 1.0,
+        "threshold_auc": 0.6736,
+        "pass": true
+      }
+    },
+    "n_knee_domains_pass": 1,
+    "n_domains": 2,
+    "P_surplus_corr_surplus_tolerance": 0.035,
+    "P_surplus_negative_surplus_low_tolerance": true,
+    "P_surplus_pass": false
+  },
+  "timestamp": "2026-06-18T09:37:00"
+}
