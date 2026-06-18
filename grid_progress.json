@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-06-09T08:53:24.473858+00:00",
+  "started_at": "2026-06-18T07:22:40.873908+00:00",
   "models": [
     {
       "name": "EleutherAI/pythia-14m",
@@ -39,7 +39,7 @@
     {
       "name": "EleutherAI/pythia-2.8b",
       "status": "done",
-      "elapsed_s": 983
+      "elapsed_s": 1080
     },
     {
       "name": "EleutherAI/pythia-6.9b",
@@ -48,15 +48,14 @@
     },
     {
       "name": "EleutherAI/pythia-12b",
-      "status": "done",
-      "elapsed_s": 5042
+      "status": "pending",
+      "elapsed_s": null
     }
   ],
-  "current_model": "EleutherAI/pythia-12b",
-  "completed": 2,
+  "current_model": "EleutherAI/pythia-2.8b",
+  "completed": 1,
   "total": 10,
-  "running": false,
-  "eta_minutes": 401.7,
-  "heldout_only": false,
-  "finished_at": "2026-06-09T10:41:22.591625+00:00"
+  "running": true,
+  "eta_minutes": 162.0,
+  "heldout_only": false
 }
