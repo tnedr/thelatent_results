@@ -1,0 +1,783 @@
+{
+  "mode": "real_model",
+  "model": "pythia-1b",
+  "hf_name": "EleutherAI/pythia-1b",
+  "date": "2026-06-18",
+  "n_layers": 16,
+  "d_model": 2048,
+  "k_subspace": 4,
+  "n_samples": 16,
+  "formal_anchors": [
+    "L3"
+  ],
+  "per_domain": {
+    "relation_composition": {
+      "n_instances": 16,
+      "layers_measured": 16,
+      "per_transition": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "n_prompts": 16,
+          "diag_energy": 0.9048,
+          "off_diag_rms": 0.182823,
+          "per_channel_contraction": [
+            1.6384,
+            0.0683,
+            1.0513,
+            0.1333
+          ],
+          "mean_contraction": 0.7228,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0667,
+          "n_prompts": 16,
+          "diag_energy": 0.9907,
+          "off_diag_rms": 0.043373,
+          "per_channel_contraction": [
+            0.9352,
+            0.9686,
+            0.7651,
+            0.0356
+          ],
+          "mean_contraction": 0.6761,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.1333,
+          "n_prompts": 16,
+          "diag_energy": 0.915,
+          "off_diag_rms": 0.134332,
+          "per_channel_contraction": [
+            0.9545,
+            0.079,
+            0.7813,
+            0.8955
+          ],
+          "mean_contraction": 0.6776,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.2,
+          "n_prompts": 16,
+          "diag_energy": 0.9666,
+          "off_diag_rms": 0.108528,
+          "per_channel_contraction": [
+            1.2481,
+            0.8708,
+            0.9881,
+            0.8941
+          ],
+          "mean_contraction": 1.0003,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.2667,
+          "n_prompts": 16,
+          "diag_energy": 0.9533,
+          "off_diag_rms": 0.116715,
+          "per_channel_contraction": [
+            1.0511,
+            1.169,
+            0.4395,
+            0.8197
+          ],
+          "mean_contraction": 0.8698,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.3333,
+          "n_prompts": 16,
+          "diag_energy": 0.8833,
+          "off_diag_rms": 0.1338,
+          "per_channel_contraction": [
+            0.8601,
+            0.8992,
+            0.1437,
+            0.2379
+          ],
+          "mean_contraction": 0.5352,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.4,
+          "n_prompts": 16,
+          "diag_energy": 0.9318,
+          "off_diag_rms": 0.134865,
+          "per_channel_contraction": [
+            1.0053,
+            0.6777,
+            1.2247,
+            0.1096
+          ],
+          "mean_contraction": 0.7544,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.4667,
+          "n_prompts": 16,
+          "diag_energy": 0.9585,
+          "off_diag_rms": 0.09225,
+          "per_channel_contraction": [
+            0.9214,
+            0.8323,
+            0.9025,
+            0.0698
+          ],
+          "mean_contraction": 0.6815,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.5333,
+          "n_prompts": 16,
+          "diag_energy": 0.9947,
+          "off_diag_rms": 0.043329,
+          "per_channel_contraction": [
+            0.9921,
+            1.061,
+            1.0538,
+            1.001
+          ],
+          "mean_contraction": 1.027,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.6,
+          "n_prompts": 16,
+          "diag_energy": 0.9663,
+          "off_diag_rms": 0.097306,
+          "per_channel_contraction": [
+            1.1027,
+            0.874,
+            1.1195,
+            0.1435
+          ],
+          "mean_contraction": 0.8099,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.6667,
+          "n_prompts": 16,
+          "diag_energy": 0.933,
+          "off_diag_rms": 0.14987,
+          "per_channel_contraction": [
+            1.2279,
+            1.0963,
+            0.912,
+            0.4629
+          ],
+          "mean_contraction": 0.9248,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.7333,
+          "n_prompts": 16,
+          "diag_energy": 0.9773,
+          "off_diag_rms": 0.096351,
+          "per_channel_contraction": [
+            1.021,
+            0.9962,
+            1.2558,
+            1.09
+          ],
+          "mean_contraction": 1.0908,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.8,
+          "n_prompts": 16,
+          "diag_energy": 0.9217,
+          "off_diag_rms": 0.165351,
+          "per_channel_contraction": [
+            1.2491,
+            1.0924,
+            1.0443,
+            -0.1304
+          ],
+          "mean_contraction": 0.8138,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.8667,
+          "n_prompts": 16,
+          "diag_energy": 0.9598,
+          "off_diag_rms": 0.132905,
+          "per_channel_contraction": [
+            1.3939,
+            1.3185,
+            1.0633,
+            0.5029
+          ],
+          "mean_contraction": 1.0697,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.9333,
+          "n_prompts": 16,
+          "diag_energy": 0.7415,
+          "off_diag_rms": 0.668235,
+          "per_channel_contraction": [
+            2.5766,
+            1.0181,
+            2.745,
+            0.4032
+          ],
+          "mean_contraction": 1.6857,
+          "verdict": "WEAKLY_DIAGONAL"
+        }
+      ],
+      "summary": {
+        "mean_diag_energy": 0.9332,
+        "frac_diagonal_layers": 0.9333,
+        "mean_per_channel_contraction": 0.8893,
+        "mean_off_diag_rms": 0.153336,
+        "verdict": "L3_MOVING_FRAME"
+      }
+    },
+    "arithmetic_carry": {
+      "n_instances": 16,
+      "layers_measured": 16,
+      "per_transition": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "n_prompts": 16,
+          "diag_energy": 0.7363,
+          "off_diag_rms": 0.23662,
+          "per_channel_contraction": [
+            0.9985,
+            0.3008,
+            0.8851,
+            0.0733
+          ],
+          "mean_contraction": 0.5644,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0667,
+          "n_prompts": 16,
+          "diag_energy": 0.9869,
+          "off_diag_rms": 0.062743,
+          "per_channel_contraction": [
+            1.2243,
+            0.4467,
+            0.9781,
+            0.956
+          ],
+          "mean_contraction": 0.9013,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.1333,
+          "n_prompts": 16,
+          "diag_energy": 0.74,
+          "off_diag_rms": 0.175013,
+          "per_channel_contraction": [
+            0.4528,
+            0.5767,
+            0.6608,
+            0.2683
+          ],
+          "mean_contraction": 0.4896,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.2,
+          "n_prompts": 16,
+          "diag_energy": 0.6296,
+          "off_diag_rms": 0.2731,
+          "per_channel_contraction": [
+            0.5224,
+            0.967,
+            -0.0197,
+            0.5593
+          ],
+          "mean_contraction": 0.5073,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.2667,
+          "n_prompts": 16,
+          "diag_energy": 0.8467,
+          "off_diag_rms": 0.183752,
+          "per_channel_contraction": [
+            1.1469,
+            0.8989,
+            0.2371,
+            0.2397
+          ],
+          "mean_contraction": 0.6307,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.3333,
+          "n_prompts": 16,
+          "diag_energy": 0.7202,
+          "off_diag_rms": 0.183414,
+          "per_channel_contraction": [
+            0.5091,
+            0.7108,
+            0.0374,
+            0.5229
+          ],
+          "mean_contraction": 0.4451,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.4,
+          "n_prompts": 16,
+          "diag_energy": 0.3416,
+          "off_diag_rms": 0.420501,
+          "per_channel_contraction": [
+            0.2626,
+            0.4903,
+            -0.3161,
+            0.8315
+          ],
+          "mean_contraction": 0.3171,
+          "verdict": "COUPLED"
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.4667,
+          "n_prompts": 16,
+          "diag_energy": 0.9606,
+          "off_diag_rms": 0.06881,
+          "per_channel_contraction": [
+            0.9588,
+            0.0299,
+            0.1764,
+            0.6594
+          ],
+          "mean_contraction": 0.4561,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.5333,
+          "n_prompts": 16,
+          "diag_energy": 0.9853,
+          "off_diag_rms": 0.070317,
+          "per_channel_contraction": [
+            1.0228,
+            1.0497,
+            1.0814,
+            0.8167
+          ],
+          "mean_contraction": 0.9926,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.6,
+          "n_prompts": 16,
+          "diag_energy": 0.9465,
+          "off_diag_rms": 0.097128,
+          "per_channel_contraction": [
+            1.0375,
+            0.259,
+            0.8185,
+            0.4359
+          ],
+          "mean_contraction": 0.6377,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.6667,
+          "n_prompts": 16,
+          "diag_energy": 0.9042,
+          "off_diag_rms": 0.154224,
+          "per_channel_contraction": [
+            1.1315,
+            0.8894,
+            0.007,
+            0.7884
+          ],
+          "mean_contraction": 0.7041,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.7333,
+          "n_prompts": 16,
+          "diag_energy": 0.913,
+          "off_diag_rms": 0.144808,
+          "per_channel_contraction": [
+            1.0904,
+            1.0359,
+            0.122,
+            0.6036
+          ],
+          "mean_contraction": 0.713,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.8,
+          "n_prompts": 16,
+          "diag_energy": 0.858,
+          "off_diag_rms": 0.172667,
+          "per_channel_contraction": [
+            1.295,
+            0.6428,
+            0.0598,
+            0.2599
+          ],
+          "mean_contraction": 0.5644,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.8667,
+          "n_prompts": 16,
+          "diag_energy": 0.8436,
+          "off_diag_rms": 0.263865,
+          "per_channel_contraction": [
+            0.8891,
+            1.0333,
+            1.1928,
+            1.1073
+          ],
+          "mean_contraction": 1.0556,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.9333,
+          "n_prompts": 16,
+          "diag_energy": 0.8129,
+          "off_diag_rms": 0.374115,
+          "per_channel_contraction": [
+            2.1309,
+            1.2169,
+            0.3107,
+            1.0863
+          ],
+          "mean_contraction": 1.1862,
+          "verdict": "DIAGONAL"
+        }
+      ],
+      "summary": {
+        "mean_diag_energy": 0.815,
+        "frac_diagonal_layers": 0.6667,
+        "mean_per_channel_contraction": 0.6777,
+        "mean_off_diag_rms": 0.192072,
+        "verdict": "PARTIAL_DECOUPLE"
+      }
+    },
+    "induction": {
+      "n_instances": 16,
+      "layers_measured": 16,
+      "per_transition": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "n_prompts": 16,
+          "diag_energy": 0.7349,
+          "off_diag_rms": 0.246163,
+          "per_channel_contraction": [
+            0.5907,
+            -0.0047,
+            1.2904,
+            0.0439
+          ],
+          "mean_contraction": 0.4801,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0667,
+          "n_prompts": 16,
+          "diag_energy": 0.7357,
+          "off_diag_rms": 0.182143,
+          "per_channel_contraction": [
+            0.2155,
+            0.4855,
+            0.8239,
+            0.3832
+          ],
+          "mean_contraction": 0.477,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.1333,
+          "n_prompts": 16,
+          "diag_energy": 0.8317,
+          "off_diag_rms": 0.170519,
+          "per_channel_contraction": [
+            1.0629,
+            0.516,
+            0.528,
+            0.2235
+          ],
+          "mean_contraction": 0.5826,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.2,
+          "n_prompts": 16,
+          "diag_energy": 0.8703,
+          "off_diag_rms": 0.148579,
+          "per_channel_contraction": [
+            0.8619,
+            0.1601,
+            0.667,
+            0.751
+          ],
+          "mean_contraction": 0.61,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.2667,
+          "n_prompts": 16,
+          "diag_energy": 0.7237,
+          "off_diag_rms": 0.172267,
+          "per_channel_contraction": [
+            0.5277,
+            0.6624,
+            0.4339,
+            0.1647
+          ],
+          "mean_contraction": 0.4472,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.3333,
+          "n_prompts": 16,
+          "diag_energy": 0.8658,
+          "off_diag_rms": 0.16022,
+          "per_channel_contraction": [
+            0.8924,
+            1.009,
+            0.0666,
+            0.4097
+          ],
+          "mean_contraction": 0.5944,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.4,
+          "n_prompts": 16,
+          "diag_energy": 0.8197,
+          "off_diag_rms": 0.185895,
+          "per_channel_contraction": [
+            1.1314,
+            0.3545,
+            0.2888,
+            0.6294
+          ],
+          "mean_contraction": 0.601,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.4667,
+          "n_prompts": 16,
+          "diag_energy": 0.871,
+          "off_diag_rms": 0.143667,
+          "per_channel_contraction": [
+            0.886,
+            0.8938,
+            0.2123,
+            0.2077
+          ],
+          "mean_contraction": 0.55,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.5333,
+          "n_prompts": 16,
+          "diag_energy": 0.9477,
+          "off_diag_rms": 0.09887,
+          "per_channel_contraction": [
+            1.0171,
+            0.6868,
+            0.7834,
+            0.0701
+          ],
+          "mean_contraction": 0.6394,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.6,
+          "n_prompts": 16,
+          "diag_energy": 0.917,
+          "off_diag_rms": 0.137811,
+          "per_channel_contraction": [
+            0.9098,
+            0.9134,
+            0.9186,
+            0.1067
+          ],
+          "mean_contraction": 0.7121,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.6667,
+          "n_prompts": 16,
+          "diag_energy": 0.7746,
+          "off_diag_rms": 0.279475,
+          "per_channel_contraction": [
+            0.9658,
+            1.1297,
+            0.8879,
+            0.4738
+          ],
+          "mean_contraction": 0.8643,
+          "verdict": "WEAKLY_DIAGONAL"
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.7333,
+          "n_prompts": 16,
+          "diag_energy": 0.8422,
+          "off_diag_rms": 0.192695,
+          "per_channel_contraction": [
+            1.1765,
+            0.9899,
+            -0.0311,
+            0.1113
+          ],
+          "mean_contraction": 0.5617,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.8,
+          "n_prompts": 16,
+          "diag_energy": 0.9747,
+          "off_diag_rms": 0.091461,
+          "per_channel_contraction": [
+            1.1395,
+            1.2739,
+            0.9746,
+            0.0471
+          ],
+          "mean_contraction": 0.8588,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.8667,
+          "n_prompts": 16,
+          "diag_energy": 0.9053,
+          "off_diag_rms": 0.213745,
+          "per_channel_contraction": [
+            1.5476,
+            1.3626,
+            0.6878,
+            0.7195
+          ],
+          "mean_contraction": 1.0794,
+          "verdict": "DIAGONAL"
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.9333,
+          "n_prompts": 16,
+          "diag_energy": 0.9365,
+          "off_diag_rms": 0.234638,
+          "per_channel_contraction": [
+            2.1433,
+            1.6909,
+            1.1428,
+            0.9906
+          ],
+          "mean_contraction": 1.4919,
+          "verdict": "DIAGONAL"
+        }
+      ],
+      "summary": {
+        "mean_diag_energy": 0.8501,
+        "frac_diagonal_layers": 0.7333,
+        "mean_per_channel_contraction": 0.7033,
+        "mean_off_diag_rms": 0.17721,
+        "verdict": "L3_MOVING_FRAME"
+      }
+    }
+  },
+  "verdict": {
+    "per_domain_verdict": {
+      "relation_composition": "L3_MOVING_FRAME",
+      "arithmetic_carry": "PARTIAL_DECOUPLE",
+      "induction": "L3_MOVING_FRAME"
+    },
+    "L3_moving_frame_supported": true,
+    "n_domains_measured": 3
+  }
+}

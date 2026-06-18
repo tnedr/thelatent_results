@@ -1,0 +1,21 @@
+{
+  "analysis": "module attribution (attn vs MLP in transport subspace)",
+  "date": "2026-06-18",
+  "models": {
+    "gpt2-large": {
+      "relation_composition": "DEPTH_HANDOFF",
+      "arithmetic_carry": "DEPTH_HANDOFF",
+      "induction": "DEPTH_HANDOFF"
+    },
+    "pythia-1.4b": {
+      "relation_composition": "BALANCED",
+      "arithmetic_carry": "BALANCED",
+      "induction": "BALANCED"
+    },
+    "pythia-1b": {
+      "relation_composition": "BALANCED",
+      "arithmetic_carry": "BALANCED",
+      "induction": "MLP_DOMINANT"
+    }
+  }
+}

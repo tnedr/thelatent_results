@@ -1,0 +1,108 @@
+{
+  "analysis": "channel-dynamics / L3-moving-frame decoupling test",
+  "date": "2026-06-18",
+  "models": {
+    "gpt2-large": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "L3_MOVING_FRAME",
+          "arithmetic_carry": "L3_MOVING_FRAME",
+          "induction": "L3_MOVING_FRAME"
+        },
+        "L3_moving_frame_supported": true,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_diag_energy": 0.9764,
+          "frac_diagonal_layers": 1.0,
+          "mean_per_channel_contraction": 0.8742,
+          "mean_off_diag_rms": 0.062772,
+          "verdict": "L3_MOVING_FRAME"
+        },
+        "arithmetic_carry": {
+          "mean_diag_energy": 0.9637,
+          "frac_diagonal_layers": 0.9714,
+          "mean_per_channel_contraction": 0.7928,
+          "mean_off_diag_rms": 0.07863,
+          "verdict": "L3_MOVING_FRAME"
+        },
+        "induction": {
+          "mean_diag_energy": 0.9696,
+          "frac_diagonal_layers": 0.9714,
+          "mean_per_channel_contraction": 0.8333,
+          "mean_off_diag_rms": 0.063832,
+          "verdict": "L3_MOVING_FRAME"
+        }
+      }
+    },
+    "pythia-1.4b": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "L3_MOVING_FRAME",
+          "arithmetic_carry": "L3_MOVING_FRAME",
+          "induction": "L3_MOVING_FRAME"
+        },
+        "L3_moving_frame_supported": true,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_diag_energy": 0.919,
+          "frac_diagonal_layers": 0.913,
+          "mean_per_channel_contraction": 0.8426,
+          "mean_off_diag_rms": 0.130237,
+          "verdict": "L3_MOVING_FRAME"
+        },
+        "arithmetic_carry": {
+          "mean_diag_energy": 0.9259,
+          "frac_diagonal_layers": 0.9565,
+          "mean_per_channel_contraction": 0.7538,
+          "mean_off_diag_rms": 0.114906,
+          "verdict": "L3_MOVING_FRAME"
+        },
+        "induction": {
+          "mean_diag_energy": 0.9024,
+          "frac_diagonal_layers": 0.9565,
+          "mean_per_channel_contraction": 0.6934,
+          "mean_off_diag_rms": 0.138887,
+          "verdict": "L3_MOVING_FRAME"
+        }
+      }
+    },
+    "pythia-1b": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "L3_MOVING_FRAME",
+          "arithmetic_carry": "PARTIAL_DECOUPLE",
+          "induction": "L3_MOVING_FRAME"
+        },
+        "L3_moving_frame_supported": true,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_diag_energy": 0.9332,
+          "frac_diagonal_layers": 0.9333,
+          "mean_per_channel_contraction": 0.8893,
+          "mean_off_diag_rms": 0.153336,
+          "verdict": "L3_MOVING_FRAME"
+        },
+        "arithmetic_carry": {
+          "mean_diag_energy": 0.815,
+          "frac_diagonal_layers": 0.6667,
+          "mean_per_channel_contraction": 0.6777,
+          "mean_off_diag_rms": 0.192072,
+          "verdict": "PARTIAL_DECOUPLE"
+        },
+        "induction": {
+          "mean_diag_energy": 0.8501,
+          "frac_diagonal_layers": 0.7333,
+          "mean_per_channel_contraction": 0.7033,
+          "mean_off_diag_rms": 0.17721,
+          "verdict": "L3_MOVING_FRAME"
+        }
+      }
+    }
+  }
+}

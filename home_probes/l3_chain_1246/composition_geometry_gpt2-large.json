@@ -1,0 +1,47 @@
+{
+  "mode": "real_model",
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "date": "2026-06-18",
+  "n_layers": 36,
+  "d_model": 1280,
+  "k_subspace": 8,
+  "n_samples": 32,
+  "capacity_layer": 18,
+  "formal_anchors": [
+    "COMP1",
+    "COMP2",
+    "COMP3",
+    "SVD6"
+  ],
+  "accuracies": {
+    "copy_a": 0.3125,
+    "copy_b": 0.3438,
+    "2hop": 0.0,
+    "constant": 0.75
+  },
+  "pairwise_overlap": {
+    "2hop_vs_copy_a": 0.1316,
+    "2hop_vs_copy_b": 0.0795,
+    "2hop_vs_constant": 0.0959,
+    "copy_a_vs_copy_b": 0.1037,
+    "copy_a_vs_constant": 0.1151,
+    "copy_b_vs_constant": 0.0918
+  },
+  "union_analysis": {
+    "inclusion_2hop_in_union_1hop": 0.1693,
+    "union_rank": 16,
+    "union_subspace_dim_of_d": 0.0125
+  },
+  "intersection_analysis": {
+    "2hop_in_intersection_1hop": 0.0,
+    "shared_dimensions": 0
+  },
+  "summary": {
+    "mean_overlap_2hop_vs_1hop": 0.1056,
+    "overlap_2hop_vs_constant": 0.0959,
+    "reuse_ratio": 1.1,
+    "inclusion": 0.1693,
+    "verdict": "INDEPENDENT"
+  }
+}

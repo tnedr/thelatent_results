@@ -1,0 +1,389 @@
+{
+  "mode": "real_model",
+  "model": "pythia-1b",
+  "hf_name": "EleutherAI/pythia-1b",
+  "date": "2026-06-18",
+  "n_layers": 16,
+  "d_model": 2048,
+  "k_subspace": 4,
+  "n_samples": 24,
+  "per_domain": {
+    "relation_composition": {
+      "n_instances": 24,
+      "per_layer": [
+        {
+          "layer": 0,
+          "rel_depth": 0.0,
+          "attn_frac": 0.1431,
+          "mlp_frac": 0.8569,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 1,
+          "rel_depth": 0.0667,
+          "attn_frac": 0.1719,
+          "mlp_frac": 0.8281,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 2,
+          "rel_depth": 0.1333,
+          "attn_frac": 0.5153,
+          "mlp_frac": 0.4847,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 3,
+          "rel_depth": 0.2,
+          "attn_frac": 0.2464,
+          "mlp_frac": 0.7536,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 4,
+          "rel_depth": 0.2667,
+          "attn_frac": 0.6606,
+          "mlp_frac": 0.3394,
+          "dominant": "attn"
+        },
+        {
+          "layer": 5,
+          "rel_depth": 0.3333,
+          "attn_frac": 0.7251,
+          "mlp_frac": 0.2749,
+          "dominant": "attn"
+        },
+        {
+          "layer": 6,
+          "rel_depth": 0.4,
+          "attn_frac": 0.5052,
+          "mlp_frac": 0.4948,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 7,
+          "rel_depth": 0.4667,
+          "attn_frac": 0.7956,
+          "mlp_frac": 0.2044,
+          "dominant": "attn"
+        },
+        {
+          "layer": 8,
+          "rel_depth": 0.5333,
+          "attn_frac": 0.673,
+          "mlp_frac": 0.327,
+          "dominant": "attn"
+        },
+        {
+          "layer": 9,
+          "rel_depth": 0.6,
+          "attn_frac": 0.3495,
+          "mlp_frac": 0.6505,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 10,
+          "rel_depth": 0.6667,
+          "attn_frac": 0.5063,
+          "mlp_frac": 0.4937,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 11,
+          "rel_depth": 0.7333,
+          "attn_frac": 0.4149,
+          "mlp_frac": 0.5851,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 12,
+          "rel_depth": 0.8,
+          "attn_frac": 0.3048,
+          "mlp_frac": 0.6952,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 13,
+          "rel_depth": 0.8667,
+          "attn_frac": 0.5167,
+          "mlp_frac": 0.4833,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 14,
+          "rel_depth": 0.9333,
+          "attn_frac": 0.4495,
+          "mlp_frac": 0.5505,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 15,
+          "rel_depth": 1.0,
+          "attn_frac": 0.1793,
+          "mlp_frac": 0.8207,
+          "dominant": "mlp"
+        }
+      ],
+      "summary": {
+        "mean_attn_frac": 0.4473,
+        "mean_mlp_frac": 0.5527,
+        "attn_early_half": 0.4704,
+        "attn_late_half": 0.4243,
+        "verdict": "BALANCED"
+      }
+    },
+    "arithmetic_carry": {
+      "n_instances": 24,
+      "per_layer": [
+        {
+          "layer": 0,
+          "rel_depth": 0.0,
+          "attn_frac": 0.0535,
+          "mlp_frac": 0.9465,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 1,
+          "rel_depth": 0.0667,
+          "attn_frac": 0.0828,
+          "mlp_frac": 0.9172,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 2,
+          "rel_depth": 0.1333,
+          "attn_frac": 0.3541,
+          "mlp_frac": 0.6459,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 3,
+          "rel_depth": 0.2,
+          "attn_frac": 0.2781,
+          "mlp_frac": 0.7219,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 4,
+          "rel_depth": 0.2667,
+          "attn_frac": 0.7369,
+          "mlp_frac": 0.2631,
+          "dominant": "attn"
+        },
+        {
+          "layer": 5,
+          "rel_depth": 0.3333,
+          "attn_frac": 0.6832,
+          "mlp_frac": 0.3168,
+          "dominant": "attn"
+        },
+        {
+          "layer": 6,
+          "rel_depth": 0.4,
+          "attn_frac": 0.4679,
+          "mlp_frac": 0.5321,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 7,
+          "rel_depth": 0.4667,
+          "attn_frac": 0.8224,
+          "mlp_frac": 0.1776,
+          "dominant": "attn"
+        },
+        {
+          "layer": 8,
+          "rel_depth": 0.5333,
+          "attn_frac": 0.7538,
+          "mlp_frac": 0.2462,
+          "dominant": "attn"
+        },
+        {
+          "layer": 9,
+          "rel_depth": 0.6,
+          "attn_frac": 0.4163,
+          "mlp_frac": 0.5837,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 10,
+          "rel_depth": 0.6667,
+          "attn_frac": 0.4767,
+          "mlp_frac": 0.5233,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 11,
+          "rel_depth": 0.7333,
+          "attn_frac": 0.4485,
+          "mlp_frac": 0.5515,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 12,
+          "rel_depth": 0.8,
+          "attn_frac": 0.2643,
+          "mlp_frac": 0.7357,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 13,
+          "rel_depth": 0.8667,
+          "attn_frac": 0.4353,
+          "mlp_frac": 0.5647,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 14,
+          "rel_depth": 0.9333,
+          "attn_frac": 0.5471,
+          "mlp_frac": 0.4529,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 15,
+          "rel_depth": 1.0,
+          "attn_frac": 0.0546,
+          "mlp_frac": 0.9454,
+          "dominant": "mlp"
+        }
+      ],
+      "summary": {
+        "mean_attn_frac": 0.4297,
+        "mean_mlp_frac": 0.5703,
+        "attn_early_half": 0.4349,
+        "attn_late_half": 0.4246,
+        "verdict": "BALANCED"
+      }
+    },
+    "induction": {
+      "n_instances": 24,
+      "per_layer": [
+        {
+          "layer": 0,
+          "rel_depth": 0.0,
+          "attn_frac": 0.1108,
+          "mlp_frac": 0.8892,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 1,
+          "rel_depth": 0.0667,
+          "attn_frac": 0.2067,
+          "mlp_frac": 0.7933,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 2,
+          "rel_depth": 0.1333,
+          "attn_frac": 0.3996,
+          "mlp_frac": 0.6004,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 3,
+          "rel_depth": 0.2,
+          "attn_frac": 0.2787,
+          "mlp_frac": 0.7213,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 4,
+          "rel_depth": 0.2667,
+          "attn_frac": 0.8005,
+          "mlp_frac": 0.1995,
+          "dominant": "attn"
+        },
+        {
+          "layer": 5,
+          "rel_depth": 0.3333,
+          "attn_frac": 0.7792,
+          "mlp_frac": 0.2208,
+          "dominant": "attn"
+        },
+        {
+          "layer": 6,
+          "rel_depth": 0.4,
+          "attn_frac": 0.3236,
+          "mlp_frac": 0.6764,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 7,
+          "rel_depth": 0.4667,
+          "attn_frac": 0.9272,
+          "mlp_frac": 0.0728,
+          "dominant": "attn"
+        },
+        {
+          "layer": 8,
+          "rel_depth": 0.5333,
+          "attn_frac": 0.562,
+          "mlp_frac": 0.438,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 9,
+          "rel_depth": 0.6,
+          "attn_frac": 0.1621,
+          "mlp_frac": 0.8379,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 10,
+          "rel_depth": 0.6667,
+          "attn_frac": 0.4052,
+          "mlp_frac": 0.5948,
+          "dominant": "balanced"
+        },
+        {
+          "layer": 11,
+          "rel_depth": 0.7333,
+          "attn_frac": 0.2282,
+          "mlp_frac": 0.7718,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 12,
+          "rel_depth": 0.8,
+          "attn_frac": 0.1464,
+          "mlp_frac": 0.8536,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 13,
+          "rel_depth": 0.8667,
+          "attn_frac": 0.2993,
+          "mlp_frac": 0.7007,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 14,
+          "rel_depth": 0.9333,
+          "attn_frac": 0.3216,
+          "mlp_frac": 0.6784,
+          "dominant": "mlp"
+        },
+        {
+          "layer": 15,
+          "rel_depth": 1.0,
+          "attn_frac": 0.0423,
+          "mlp_frac": 0.9577,
+          "dominant": "mlp"
+        }
+      ],
+      "summary": {
+        "mean_attn_frac": 0.3746,
+        "mean_mlp_frac": 0.6254,
+        "attn_early_half": 0.4783,
+        "attn_late_half": 0.2709,
+        "verdict": "MLP_DOMINANT"
+      }
+    }
+  },
+  "model_verdict": {
+    "relation_composition": "BALANCED",
+    "arithmetic_carry": "BALANCED",
+    "induction": "MLP_DOMINANT"
+  }
+}

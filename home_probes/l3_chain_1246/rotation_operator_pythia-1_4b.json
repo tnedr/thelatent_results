@@ -1,0 +1,1681 @@
+{
+  "mode": "real_model",
+  "model": "pythia-1.4b",
+  "hf_name": "EleutherAI/pythia-1.4b",
+  "date": "2026-06-18",
+  "n_layers": 24,
+  "d_model": 2048,
+  "k_subspace": 4,
+  "n_samples": 16,
+  "formal_anchors": [
+    "L3",
+    "SVD3"
+  ],
+  "per_domain": {
+    "relation_composition": {
+      "layers_measured": 24,
+      "local_rotations": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "singular_values": [
+            0.826266,
+            0.362406,
+            0.245,
+            0.018029
+          ],
+          "principal_angles_deg": [
+            34.283,
+            68.752,
+            75.818,
+            88.967
+          ],
+          "mean_angle_deg": 66.955,
+          "max_angle_deg": 88.967,
+          "geodesic_norm": 2.441319,
+          "effective_rotation_dim": 3.206,
+          "procrustes_residual": 1.128782
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "singular_values": [
+            0.95232,
+            0.866317,
+            0.428362,
+            0.171141
+          ],
+          "principal_angles_deg": [
+            17.764,
+            29.967,
+            64.636,
+            80.146
+          ],
+          "mean_angle_deg": 48.128,
+          "max_angle_deg": 80.146,
+          "geodesic_norm": 1.897099,
+          "effective_rotation_dim": 2.341,
+          "procrustes_residual": 0.889342
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "singular_values": [
+            0.921564,
+            0.843904,
+            0.151619,
+            0.070191
+          ],
+          "principal_angles_deg": [
+            22.844,
+            32.445,
+            81.279,
+            85.975
+          ],
+          "mean_angle_deg": 55.636,
+          "max_angle_deg": 85.975,
+          "geodesic_norm": 2.177998,
+          "effective_rotation_dim": 2.433,
+          "procrustes_residual": 1.003175
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "singular_values": [
+            0.872579,
+            0.859781,
+            0.128503,
+            0.032428
+          ],
+          "principal_angles_deg": [
+            29.24,
+            30.708,
+            82.617,
+            88.142
+          ],
+          "mean_angle_deg": 57.677,
+          "max_angle_deg": 88.142,
+          "geodesic_norm": 2.234601,
+          "effective_rotation_dim": 2.475,
+          "procrustes_residual": 1.026331
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "singular_values": [
+            0.896849,
+            0.84184,
+            0.354765,
+            0.009311
+          ],
+          "principal_angles_deg": [
+            26.253,
+            32.665,
+            69.221,
+            89.467
+          ],
+          "mean_angle_deg": 54.401,
+          "max_angle_deg": 89.467,
+          "geodesic_norm": 2.105422,
+          "effective_rotation_dim": 2.389,
+          "procrustes_residual": 0.97397
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "singular_values": [
+            0.917955,
+            0.805785,
+            0.718996,
+            0.04152
+          ],
+          "principal_angles_deg": [
+            23.371,
+            36.314,
+            44.028,
+            87.62
+          ],
+          "mean_angle_deg": 47.833,
+          "max_angle_deg": 87.62,
+          "geodesic_norm": 1.870088,
+          "effective_rotation_dim": 2.036,
+          "procrustes_residual": 0.870558
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "singular_values": [
+            0.907415,
+            0.840626,
+            0.245309,
+            0.072526
+          ],
+          "principal_angles_deg": [
+            24.849,
+            32.794,
+            75.8,
+            85.841
+          ],
+          "mean_angle_deg": 54.821,
+          "max_angle_deg": 85.841,
+          "geodesic_norm": 2.123801,
+          "effective_rotation_dim": 2.468,
+          "procrustes_residual": 0.983393
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "singular_values": [
+            0.914442,
+            0.893667,
+            0.132107,
+            0.015425
+          ],
+          "principal_angles_deg": [
+            23.873,
+            26.662,
+            82.409,
+            89.116
+          ],
+          "mean_angle_deg": 55.515,
+          "max_angle_deg": 89.116,
+          "geodesic_norm": 2.208631,
+          "effective_rotation_dim": 2.331,
+          "procrustes_residual": 1.011029
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "singular_values": [
+            0.924285,
+            0.898727,
+            0.616436,
+            0.055169
+          ],
+          "principal_angles_deg": [
+            22.439,
+            26.009,
+            51.944,
+            86.837
+          ],
+          "mean_angle_deg": 46.807,
+          "max_angle_deg": 86.837,
+          "geodesic_norm": 1.865042,
+          "effective_rotation_dim": 2.011,
+          "procrustes_residual": 0.867578
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "singular_values": [
+            0.865742,
+            0.858243,
+            0.837698,
+            0.709573
+          ],
+          "principal_angles_deg": [
+            30.032,
+            30.88,
+            33.102,
+            44.8
+          ],
+          "mean_angle_deg": 34.704,
+          "max_angle_deg": 44.8,
+          "geodesic_norm": 1.228979,
+          "effective_rotation_dim": 3.537,
+          "procrustes_residual": 0.603633
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "singular_values": [
+            0.925493,
+            0.901399,
+            0.717614,
+            0.018812
+          ],
+          "principal_angles_deg": [
+            22.257,
+            25.657,
+            44.142,
+            88.922
+          ],
+          "mean_angle_deg": 45.245,
+          "max_angle_deg": 88.922,
+          "geodesic_norm": 1.831295,
+          "effective_rotation_dim": 1.809,
+          "procrustes_residual": 0.84755
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "singular_values": [
+            0.939761,
+            0.923027,
+            0.910745,
+            0.429602
+          ],
+          "principal_angles_deg": [
+            19.989,
+            22.627,
+            24.391,
+            64.558
+          ],
+          "mean_angle_deg": 32.891,
+          "max_angle_deg": 64.558,
+          "geodesic_norm": 1.314707,
+          "effective_rotation_dim": 1.774,
+          "procrustes_residual": 0.631215
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "singular_values": [
+            0.946495,
+            0.930073,
+            0.906618,
+            0.037597
+          ],
+          "principal_angles_deg": [
+            18.827,
+            21.554,
+            24.958,
+            87.845
+          ],
+          "mean_angle_deg": 38.296,
+          "max_angle_deg": 87.845,
+          "geodesic_norm": 1.670303,
+          "effective_rotation_dim": 1.392,
+          "procrustes_residual": 0.76786
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "singular_values": [
+            0.958412,
+            0.941338,
+            0.93147,
+            0.921899
+          ],
+          "principal_angles_deg": [
+            16.582,
+            19.722,
+            21.335,
+            22.795
+          ],
+          "mean_angle_deg": 20.108,
+          "max_angle_deg": 22.795,
+          "geodesic_norm": 0.706527,
+          "effective_rotation_dim": 3.814,
+          "procrustes_residual": 0.35134
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "singular_values": [
+            0.951905,
+            0.937178,
+            0.88696,
+            0.758522
+          ],
+          "principal_angles_deg": [
+            17.842,
+            20.417,
+            27.506,
+            40.666
+          ],
+          "mean_angle_deg": 26.608,
+          "max_angle_deg": 40.666,
+          "geodesic_norm": 0.978864,
+          "effective_rotation_dim": 2.762,
+          "procrustes_residual": 0.482408
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "singular_values": [
+            0.959189,
+            0.949849,
+            0.920147,
+            0.886167
+          ],
+          "principal_angles_deg": [
+            16.425,
+            18.223,
+            23.052,
+            27.604
+          ],
+          "mean_angle_deg": 21.326,
+          "max_angle_deg": 27.604,
+          "geodesic_norm": 0.759826,
+          "effective_rotation_dim": 3.434,
+          "procrustes_residual": 0.377259
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "singular_values": [
+            0.971073,
+            0.968911,
+            0.952639,
+            0.88309
+          ],
+          "principal_angles_deg": [
+            13.815,
+            14.324,
+            17.704,
+            27.983
+          ],
+          "mean_angle_deg": 18.456,
+          "max_angle_deg": 27.983,
+          "geodesic_norm": 0.674271,
+          "effective_rotation_dim": 2.82,
+          "procrustes_residual": 0.334878
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "singular_values": [
+            0.975904,
+            0.971669,
+            0.963063,
+            0.88458
+          ],
+          "principal_angles_deg": [
+            12.603,
+            13.671,
+            15.621,
+            27.8
+          ],
+          "mean_angle_deg": 17.424,
+          "max_angle_deg": 27.8,
+          "geodesic_norm": 0.644262,
+          "effective_rotation_dim": 2.59,
+          "procrustes_residual": 0.319987
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "singular_values": [
+            0.977971,
+            0.975888,
+            0.973152,
+            0.81285
+          ],
+          "principal_angles_deg": [
+            12.049,
+            12.608,
+            13.307,
+            35.625
+          ],
+          "mean_angle_deg": 18.397,
+          "max_angle_deg": 35.625,
+          "geodesic_norm": 0.730187,
+          "effective_rotation_dim": 1.815,
+          "procrustes_residual": 0.360652
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "singular_values": [
+            0.980324,
+            0.976173,
+            0.973517,
+            0.679156
+          ],
+          "principal_angles_deg": [
+            11.385,
+            12.533,
+            13.216,
+            47.222
+          ],
+          "mean_angle_deg": 21.089,
+          "max_angle_deg": 47.222,
+          "geodesic_norm": 0.905432,
+          "effective_rotation_dim": 1.436,
+          "procrustes_residual": 0.442058
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "singular_values": [
+            0.982387,
+            0.979273,
+            0.975342,
+            0.946926
+          ],
+          "principal_angles_deg": [
+            10.769,
+            11.686,
+            12.75,
+            18.751
+          ],
+          "mean_angle_deg": 13.489,
+          "max_angle_deg": 18.751,
+          "geodesic_norm": 0.483268,
+          "effective_rotation_dim": 3.227,
+          "procrustes_residual": 0.240906
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "singular_values": [
+            0.964827,
+            0.949736,
+            0.946477,
+            0.880483
+          ],
+          "principal_angles_deg": [
+            15.241,
+            18.243,
+            18.831,
+            28.299
+          ],
+          "mean_angle_deg": 20.154,
+          "max_angle_deg": 28.299,
+          "geodesic_norm": 0.723956,
+          "effective_rotation_dim": 3.177,
+          "procrustes_residual": 0.359497
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "singular_values": [
+            0.824958,
+            0.776277,
+            0.668019,
+            0.617279
+          ],
+          "principal_angles_deg": [
+            34.416,
+            39.079,
+            48.086,
+            51.882
+          ],
+          "mean_angle_deg": 43.366,
+          "max_angle_deg": 51.882,
+          "geodesic_norm": 1.533073,
+          "effective_rotation_dim": 3.646,
+          "procrustes_residual": 0.746146
+        }
+      ],
+      "global_first_to_last": {
+        "singular_values": [
+          0.091291,
+          0.073568,
+          0.031211,
+          0.005666
+        ],
+        "principal_angles_deg": [
+          84.762,
+          85.781,
+          88.211,
+          89.675
+        ],
+        "mean_angle_deg": 87.107,
+        "max_angle_deg": 89.675,
+        "geodesic_norm": 3.04138,
+        "effective_rotation_dim": 3.992,
+        "procrustes_residual": 1.37809
+      },
+      "composition": {
+        "local_geodesic_sum": 33.108951,
+        "direct_global_geodesic": 3.04138,
+        "path_efficiency": 0.09186,
+        "composed_Q_residual_to_last": 1.418839
+      },
+      "summary": {
+        "mean_local_angle_deg": 37.362,
+        "mean_effective_rotation_dim": 2.562,
+        "mean_procrustes_residual": 0.679111,
+        "max_local_angle_deg": 89.467,
+        "global_mean_angle_deg": 87.107,
+        "path_efficiency": 0.09186,
+        "verdict": "SMOOTH_FRAME_FLOW"
+      }
+    },
+    "arithmetic_carry": {
+      "layers_measured": 24,
+      "local_rotations": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "singular_values": [
+            0.870265,
+            0.482391,
+            0.26578,
+            0.01296
+          ],
+          "principal_angles_deg": [
+            29.511,
+            61.158,
+            74.587,
+            89.257
+          ],
+          "mean_angle_deg": 63.628,
+          "max_angle_deg": 89.257,
+          "geodesic_norm": 2.350776,
+          "effective_rotation_dim": 3.015,
+          "procrustes_residual": 1.088257
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "singular_values": [
+            0.837729,
+            0.36483,
+            0.179338,
+            0.111849
+          ],
+          "principal_angles_deg": [
+            33.099,
+            68.603,
+            79.669,
+            83.578
+          ],
+          "mean_angle_deg": 66.237,
+          "max_angle_deg": 83.578,
+          "geodesic_norm": 2.414258,
+          "effective_rotation_dim": 3.256,
+          "procrustes_residual": 1.119431
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "singular_values": [
+            0.918203,
+            0.749735,
+            0.486326,
+            0.117125
+          ],
+          "principal_angles_deg": [
+            23.335,
+            41.433,
+            60.901,
+            83.274
+          ],
+          "mean_angle_deg": 52.236,
+          "max_angle_deg": 83.274,
+          "geodesic_norm": 1.982667,
+          "effective_rotation_dim": 2.559,
+          "procrustes_residual": 0.92968
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "singular_values": [
+            0.823733,
+            0.533645,
+            0.084793,
+            0.008735
+          ],
+          "principal_angles_deg": [
+            34.54,
+            57.748,
+            85.136,
+            89.499
+          ],
+          "mean_angle_deg": 66.731,
+          "max_angle_deg": 89.499,
+          "geodesic_norm": 2.455033,
+          "effective_rotation_dim": 3.029,
+          "procrustes_residual": 1.128958
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "singular_values": [
+            0.916241,
+            0.813738,
+            0.533628,
+            0.077585
+          ],
+          "principal_angles_deg": [
+            23.617,
+            35.537,
+            57.749,
+            85.55
+          ],
+          "mean_angle_deg": 50.613,
+          "max_angle_deg": 85.55,
+          "geodesic_norm": 1.949344,
+          "effective_rotation_dim": 2.337,
+          "procrustes_residual": 0.910716
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "singular_values": [
+            0.870335,
+            0.803544,
+            0.682386,
+            0.002123
+          ],
+          "principal_angles_deg": [
+            29.502,
+            36.53,
+            46.97,
+            89.878
+          ],
+          "mean_angle_deg": 50.72,
+          "max_angle_deg": 89.878,
+          "geodesic_norm": 1.950487,
+          "effective_rotation_dim": 2.147,
+          "procrustes_residual": 0.905983
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "singular_values": [
+            0.912063,
+            0.820414,
+            0.744713,
+            0.165574
+          ],
+          "principal_angles_deg": [
+            24.208,
+            34.874,
+            41.866,
+            80.469
+          ],
+          "mean_angle_deg": 45.354,
+          "max_angle_deg": 80.469,
+          "geodesic_norm": 1.747967,
+          "effective_rotation_dim": 2.149,
+          "procrustes_residual": 0.823783
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "singular_values": [
+            0.894668,
+            0.881067,
+            0.842164,
+            0.773239
+          ],
+          "principal_angles_deg": [
+            26.534,
+            28.229,
+            32.631,
+            39.354
+          ],
+          "mean_angle_deg": 31.687,
+          "max_angle_deg": 39.354,
+          "geodesic_norm": 1.119523,
+          "effective_rotation_dim": 3.63,
+          "procrustes_residual": 0.551752
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "singular_values": [
+            0.914993,
+            0.908656,
+            0.883493,
+            0.075994
+          ],
+          "principal_angles_deg": [
+            23.795,
+            24.68,
+            27.933,
+            85.642
+          ],
+          "mean_angle_deg": 40.512,
+          "max_angle_deg": 85.642,
+          "geodesic_norm": 1.682235,
+          "effective_rotation_dim": 1.566,
+          "procrustes_residual": 0.78002
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "singular_values": [
+            0.879935,
+            0.857614,
+            0.844293,
+            0.140183
+          ],
+          "principal_angles_deg": [
+            28.366,
+            30.95,
+            32.404,
+            81.942
+          ],
+          "mean_angle_deg": 43.415,
+          "max_angle_deg": 81.942,
+          "geodesic_norm": 1.703548,
+          "effective_rotation_dim": 1.901,
+          "procrustes_residual": 0.799367
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "singular_values": [
+            0.902654,
+            0.887818,
+            0.805336,
+            0.044794
+          ],
+          "principal_angles_deg": [
+            25.491,
+            27.4,
+            36.357,
+            87.433
+          ],
+          "mean_angle_deg": 44.17,
+          "max_angle_deg": 87.433,
+          "geodesic_norm": 1.777054,
+          "effective_rotation_dim": 1.757,
+          "procrustes_residual": 0.824438
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "singular_values": [
+            0.934471,
+            0.865902,
+            0.098362,
+            0.004966
+          ],
+          "principal_angles_deg": [
+            20.857,
+            30.014,
+            84.355,
+            89.715
+          ],
+          "mean_angle_deg": 56.235,
+          "max_angle_deg": 89.715,
+          "geodesic_norm": 2.241952,
+          "effective_rotation_dim": 2.339,
+          "procrustes_residual": 1.023792
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "singular_values": [
+            0.939127,
+            0.924929,
+            0.04181,
+            0.018212
+          ],
+          "principal_angles_deg": [
+            20.095,
+            22.342,
+            87.604,
+            88.956
+          ],
+          "mean_angle_deg": 54.749,
+          "max_angle_deg": 88.956,
+          "geodesic_norm": 2.241281,
+          "effective_rotation_dim": 2.23,
+          "procrustes_residual": 1.018804
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "singular_values": [
+            0.942987,
+            0.937906,
+            0.483703,
+            0.047162
+          ],
+          "principal_angles_deg": [
+            19.441,
+            20.297,
+            61.072,
+            87.297
+          ],
+          "mean_angle_deg": 47.027,
+          "max_angle_deg": 87.297,
+          "geodesic_norm": 1.923073,
+          "effective_rotation_dim": 2.039,
+          "procrustes_residual": 0.891135
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "singular_values": [
+            0.916317,
+            0.883891,
+            0.794554,
+            0.58367
+          ],
+          "principal_angles_deg": [
+            23.607,
+            27.885,
+            37.387,
+            54.291
+          ],
+          "mean_angle_deg": 35.792,
+          "max_angle_deg": 54.291,
+          "geodesic_norm": 1.315393,
+          "effective_rotation_dim": 2.792,
+          "procrustes_residual": 0.640924
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "singular_values": [
+            0.939233,
+            0.925699,
+            0.891424,
+            0.029798
+          ],
+          "principal_angles_deg": [
+            20.077,
+            22.226,
+            26.947,
+            88.292
+          ],
+          "mean_angle_deg": 39.386,
+          "max_angle_deg": 88.292,
+          "geodesic_norm": 1.69385,
+          "effective_rotation_dim": 1.438,
+          "procrustes_residual": 0.779053
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "singular_values": [
+            0.937943,
+            0.917669,
+            0.358065,
+            0.263912
+          ],
+          "principal_angles_deg": [
+            20.291,
+            23.412,
+            69.019,
+            74.698
+          ],
+          "mean_angle_deg": 46.855,
+          "max_angle_deg": 74.698,
+          "geodesic_norm": 1.855571,
+          "effective_rotation_dim": 2.353,
+          "procrustes_residual": 0.872471
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "singular_values": [
+            0.964165,
+            0.903724,
+            0.759042,
+            0.10934
+          ],
+          "principal_angles_deg": [
+            15.385,
+            25.348,
+            40.62,
+            83.723
+          ],
+          "mean_angle_deg": 41.269,
+          "max_angle_deg": 83.723,
+          "geodesic_norm": 1.704599,
+          "effective_rotation_dim": 1.739,
+          "procrustes_residual": 0.794899
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "singular_values": [
+            0.977602,
+            0.931424,
+            0.92895,
+            0.291491
+          ],
+          "principal_angles_deg": [
+            12.15,
+            21.342,
+            21.728,
+            73.053
+          ],
+          "mean_angle_deg": 32.068,
+          "max_angle_deg": 73.053,
+          "geodesic_norm": 1.397563,
+          "effective_rotation_dim": 1.421,
+          "procrustes_residual": 0.659748
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "singular_values": [
+            0.979428,
+            0.951505,
+            0.069581,
+            0.016251
+          ],
+          "principal_angles_deg": [
+            11.642,
+            17.917,
+            86.01,
+            89.069
+          ],
+          "mean_angle_deg": 51.159,
+          "max_angle_deg": 89.069,
+          "geodesic_norm": 2.192979,
+          "effective_rotation_dim": 2.116,
+          "procrustes_residual": 0.9958
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "singular_values": [
+            0.983776,
+            0.975767,
+            0.959426,
+            0.939978
+          ],
+          "principal_angles_deg": [
+            10.335,
+            12.639,
+            16.377,
+            19.952
+          ],
+          "mean_angle_deg": 14.826,
+          "max_angle_deg": 19.952,
+          "geodesic_norm": 0.533072,
+          "effective_rotation_dim": 3.255,
+          "procrustes_residual": 0.265568
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "singular_values": [
+            0.971527,
+            0.939403,
+            0.902564,
+            0.757477
+          ],
+          "principal_angles_deg": [
+            13.705,
+            20.048,
+            25.503,
+            40.758
+          ],
+          "mean_angle_deg": 25.004,
+          "max_angle_deg": 40.758,
+          "geodesic_norm": 0.940109,
+          "effective_rotation_dim": 2.491,
+          "procrustes_residual": 0.463157
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "singular_values": [
+            0.846214,
+            0.806503,
+            0.779839,
+            0.32218
+          ],
+          "principal_angles_deg": [
+            32.198,
+            36.244,
+            38.754,
+            71.205
+          ],
+          "mean_angle_deg": 44.6,
+          "max_angle_deg": 71.205,
+          "geodesic_norm": 1.648613,
+          "effective_rotation_dim": 2.588,
+          "procrustes_residual": 0.789071
+        }
+      ],
+      "global_first_to_last": {
+        "singular_values": [
+          0.094806,
+          0.073379,
+          0.036753,
+          0.018818
+        ],
+        "principal_angles_deg": [
+          84.56,
+          85.792,
+          87.894,
+          88.922
+        ],
+        "mean_angle_deg": 86.792,
+        "max_angle_deg": 88.922,
+        "geodesic_norm": 3.030196,
+        "effective_rotation_dim": 3.994,
+        "procrustes_residual": 1.37409
+      },
+      "composition": {
+        "local_geodesic_sum": 40.820947,
+        "direct_global_geodesic": 3.030196,
+        "path_efficiency": 0.074231,
+        "composed_Q_residual_to_last": 1.427668
+      },
+      "summary": {
+        "mean_local_angle_deg": 45.403,
+        "mean_effective_rotation_dim": 2.354,
+        "mean_procrustes_residual": 0.828557,
+        "max_local_angle_deg": 89.878,
+        "global_mean_angle_deg": 86.792,
+        "path_efficiency": 0.074231,
+        "verdict": "SMOOTH_FRAME_FLOW"
+      }
+    },
+    "induction": {
+      "layers_measured": 24,
+      "local_rotations": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "singular_values": [
+            0.907934,
+            0.823486,
+            0.040593,
+            0.033809
+          ],
+          "principal_angles_deg": [
+            24.779,
+            34.565,
+            87.674,
+            88.063
+          ],
+          "mean_angle_deg": 58.77,
+          "max_angle_deg": 88.063,
+          "geodesic_norm": 2.292326,
+          "effective_rotation_dim": 2.459,
+          "procrustes_residual": 1.04742
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "singular_values": [
+            0.933586,
+            0.733988,
+            0.326321,
+            0.009854
+          ],
+          "principal_angles_deg": [
+            20.999,
+            42.778,
+            70.954,
+            89.435
+          ],
+          "mean_angle_deg": 56.042,
+          "max_angle_deg": 89.435,
+          "geodesic_norm": 2.159147,
+          "effective_rotation_dim": 2.522,
+          "procrustes_residual": 0.999063
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "singular_values": [
+            0.901314,
+            0.510942,
+            0.103323,
+            0.027652
+          ],
+          "principal_angles_deg": [
+            25.669,
+            59.273,
+            84.069,
+            88.415
+          ],
+          "mean_angle_deg": 64.357,
+          "max_angle_deg": 88.415,
+          "geodesic_norm": 2.409388,
+          "effective_rotation_dim": 2.933,
+          "procrustes_residual": 1.108325
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "singular_values": [
+            0.85512,
+            0.764333,
+            0.749499,
+            0.042177
+          ],
+          "principal_angles_deg": [
+            31.227,
+            40.152,
+            41.453,
+            87.583
+          ],
+          "mean_angle_deg": 50.104,
+          "max_angle_deg": 87.583,
+          "geodesic_norm": 1.910032,
+          "effective_rotation_dim": 2.195,
+          "procrustes_residual": 0.891311
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "singular_values": [
+            0.800095,
+            0.764535,
+            0.558422,
+            0.028305
+          ],
+          "principal_angles_deg": [
+            36.861,
+            40.134,
+            56.053,
+            88.378
+          ],
+          "mean_angle_deg": 55.357,
+          "max_angle_deg": 88.378,
+          "geodesic_norm": 2.059351,
+          "effective_rotation_dim": 2.573,
+          "procrustes_residual": 0.961417
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "singular_values": [
+            0.872479,
+            0.775889,
+            0.572075,
+            0.051396
+          ],
+          "principal_angles_deg": [
+            29.252,
+            39.114,
+            55.105,
+            87.054
+          ],
+          "mean_angle_deg": 52.631,
+          "max_angle_deg": 87.054,
+          "geodesic_norm": 1.990024,
+          "effective_rotation_dim": 2.424,
+          "procrustes_residual": 0.929559
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "singular_values": [
+            0.8368,
+            0.470898,
+            0.137199,
+            0.053552
+          ],
+          "principal_angles_deg": [
+            33.196,
+            61.907,
+            82.114,
+            86.93
+          ],
+          "mean_angle_deg": 66.037,
+          "max_angle_deg": 86.93,
+          "geodesic_norm": 2.420548,
+          "effective_rotation_dim": 3.123,
+          "procrustes_residual": 1.118381
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "singular_values": [
+            0.854886,
+            0.840419,
+            0.524847,
+            0.02958
+          ],
+          "principal_angles_deg": [
+            31.253,
+            32.816,
+            58.342,
+            88.305
+          ],
+          "mean_angle_deg": 52.679,
+          "max_angle_deg": 88.305,
+          "geodesic_norm": 2.009416,
+          "effective_rotation_dim": 2.358,
+          "procrustes_residual": 0.935486
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "singular_values": [
+            0.908429,
+            0.885714,
+            0.700503,
+            0.040722
+          ],
+          "principal_angles_deg": [
+            24.711,
+            27.661,
+            45.533,
+            87.666
+          ],
+          "mean_angle_deg": 46.393,
+          "max_angle_deg": 87.666,
+          "geodesic_norm": 1.841657,
+          "effective_rotation_dim": 1.927,
+          "procrustes_residual": 0.855754
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "singular_values": [
+            0.811665,
+            0.749339,
+            0.544996,
+            0.183177
+          ],
+          "principal_angles_deg": [
+            35.741,
+            41.467,
+            56.976,
+            79.445
+          ],
+          "mean_angle_deg": 53.407,
+          "max_angle_deg": 79.445,
+          "geodesic_norm": 1.9556,
+          "effective_rotation_dim": 2.868,
+          "procrustes_residual": 0.924885
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "singular_values": [
+            0.906015,
+            0.877884,
+            0.286048,
+            0.021304
+          ],
+          "principal_angles_deg": [
+            25.04,
+            28.612,
+            73.379,
+            88.779
+          ],
+          "mean_angle_deg": 53.952,
+          "max_angle_deg": 88.779,
+          "geodesic_norm": 2.116948,
+          "effective_rotation_dim": 2.348,
+          "procrustes_residual": 0.976921
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "singular_values": [
+            0.928109,
+            0.911828,
+            0.040193,
+            0.008935
+          ],
+          "principal_angles_deg": [
+            21.858,
+            24.241,
+            87.697,
+            89.488
+          ],
+          "mean_angle_deg": 55.821,
+          "max_angle_deg": 89.488,
+          "geodesic_norm": 2.259793,
+          "effective_rotation_dim": 2.269,
+          "procrustes_residual": 1.02736
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "singular_values": [
+            0.934671,
+            0.92472,
+            0.438531,
+            0.004232
+          ],
+          "principal_angles_deg": [
+            20.825,
+            22.374,
+            63.99,
+            89.758
+          ],
+          "mean_angle_deg": 49.237,
+          "max_angle_deg": 89.758,
+          "geodesic_norm": 1.996505,
+          "effective_rotation_dim": 2.085,
+          "procrustes_residual": 0.92137
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "singular_values": [
+            0.9513,
+            0.93083,
+            0.859519,
+            0.037382
+          ],
+          "principal_angles_deg": [
+            17.955,
+            21.435,
+            30.737,
+            87.858
+          ],
+          "mean_angle_deg": 39.496,
+          "max_angle_deg": 87.858,
+          "geodesic_norm": 1.69626,
+          "effective_rotation_dim": 1.468,
+          "procrustes_residual": 0.781335
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "singular_values": [
+            0.942617,
+            0.92313,
+            0.912071,
+            0.007392
+          ],
+          "principal_angles_deg": [
+            19.504,
+            22.612,
+            24.207,
+            89.576
+          ],
+          "mean_angle_deg": 38.975,
+          "max_angle_deg": 89.576,
+          "geodesic_norm": 1.701282,
+          "effective_rotation_dim": 1.386,
+          "procrustes_residual": 0.779355
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "singular_values": [
+            0.963401,
+            0.935333,
+            0.682041,
+            0.055165
+          ],
+          "principal_angles_deg": [
+            15.549,
+            20.718,
+            46.997,
+            86.838
+          ],
+          "mean_angle_deg": 42.525,
+          "max_angle_deg": 86.838,
+          "geodesic_norm": 1.781644,
+          "effective_rotation_dim": 1.752,
+          "procrustes_residual": 0.825851
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "singular_values": [
+            0.973974,
+            0.957223,
+            0.363946,
+            0.046916
+          ],
+          "principal_angles_deg": [
+            13.1,
+            16.819,
+            68.657,
+            87.311
+          ],
+          "mean_angle_deg": 46.472,
+          "max_angle_deg": 87.311,
+          "geodesic_norm": 1.973961,
+          "effective_rotation_dim": 2.034,
+          "procrustes_residual": 0.910478
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "singular_values": [
+            0.98032,
+            0.968124,
+            0.943178,
+            0.02383
+          ],
+          "principal_angles_deg": [
+            11.386,
+            14.505,
+            19.408,
+            88.635
+          ],
+          "mean_angle_deg": 33.483,
+          "max_angle_deg": 88.635,
+          "geodesic_norm": 1.615988,
+          "effective_rotation_dim": 1.187,
+          "procrustes_residual": 0.736393
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "singular_values": [
+            0.982294,
+            0.981163,
+            0.976374,
+            0.956452
+          ],
+          "principal_angles_deg": [
+            10.798,
+            11.139,
+            12.479,
+            16.971
+          ],
+          "mean_angle_deg": 12.847,
+          "max_angle_deg": 16.971,
+          "geodesic_norm": 0.456602,
+          "effective_rotation_dim": 3.439,
+          "procrustes_residual": 0.227725
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "singular_values": [
+            0.980793,
+            0.966098,
+            0.035431,
+            0.005078
+          ],
+          "principal_angles_deg": [
+            11.248,
+            14.962,
+            87.97,
+            89.709
+          ],
+          "mean_angle_deg": 50.972,
+          "max_angle_deg": 89.709,
+          "geodesic_norm": 2.217099,
+          "effective_rotation_dim": 2.088,
+          "procrustes_residual": 1.003145
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "singular_values": [
+            0.982244,
+            0.974473,
+            0.046249,
+            0.006936
+          ],
+          "principal_angles_deg": [
+            10.813,
+            12.974,
+            87.349,
+            89.603
+          ],
+          "mean_angle_deg": 50.185,
+          "max_angle_deg": 89.603,
+          "geodesic_norm": 2.203802,
+          "effective_rotation_dim": 2.071,
+          "procrustes_residual": 0.997521
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "singular_values": [
+            0.960647,
+            0.957472,
+            0.947015,
+            0.04338
+          ],
+          "principal_angles_deg": [
+            16.127,
+            16.77,
+            18.735,
+            87.514
+          ],
+          "mean_angle_deg": 34.786,
+          "max_angle_deg": 87.514,
+          "geodesic_norm": 1.61393,
+          "effective_rotation_dim": 1.241,
+          "procrustes_residual": 0.738744
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "singular_values": [
+            0.788361,
+            0.707732,
+            0.591201,
+            0.251155
+          ],
+          "principal_angles_deg": [
+            37.967,
+            44.949,
+            53.758,
+            75.454
+          ],
+          "mean_angle_deg": 53.032,
+          "max_angle_deg": 75.454,
+          "geodesic_norm": 1.915509,
+          "effective_rotation_dim": 3.092,
+          "procrustes_residual": 0.911469
+        }
+      ],
+      "global_first_to_last": {
+        "singular_values": [
+          0.09194,
+          0.06504,
+          0.045131,
+          0.023905
+        ],
+        "principal_angles_deg": [
+          84.725,
+          86.271,
+          87.413,
+          88.63
+        ],
+        "mean_angle_deg": 86.76,
+        "max_angle_deg": 88.63,
+        "geodesic_norm": 3.028905,
+        "effective_rotation_dim": 3.996,
+        "procrustes_residual": 1.373678
+      },
+      "composition": {
+        "local_geodesic_sum": 44.596812,
+        "direct_global_geodesic": 3.028905,
+        "path_efficiency": 0.067918,
+        "composed_Q_residual_to_last": 1.437324
+      },
+      "summary": {
+        "mean_local_angle_deg": 48.59,
+        "mean_effective_rotation_dim": 2.254,
+        "mean_procrustes_residual": 0.896055,
+        "max_local_angle_deg": 89.758,
+        "global_mean_angle_deg": 86.76,
+        "path_efficiency": 0.067918,
+        "verdict": "ROTATING"
+      }
+    }
+  },
+  "cross_domain_coherence": {
+    "pairs": [
+      {
+        "a": "arithmetic_carry",
+        "b": "induction",
+        "spearman_local_geodesic_profile": 0.4654
+      },
+      {
+        "a": "arithmetic_carry",
+        "b": "relation_composition",
+        "spearman_local_geodesic_profile": 0.4773
+      },
+      {
+        "a": "induction",
+        "b": "relation_composition",
+        "spearman_local_geodesic_profile": 0.5168
+      }
+    ],
+    "mean_pairwise_spearman": 0.4865
+  },
+  "verdict": {
+    "per_domain_verdict": {
+      "relation_composition": "SMOOTH_FRAME_FLOW",
+      "arithmetic_carry": "SMOOTH_FRAME_FLOW",
+      "induction": "ROTATING"
+    },
+    "all_domains_smooth_frame_flow": false,
+    "mean_cross_domain_rotation_profile_spearman": 0.4865,
+    "n_domains_measured": 3
+  }
+}

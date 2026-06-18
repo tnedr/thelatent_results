@@ -1,0 +1,129 @@
+{
+  "analysis": "rotation-operator / cross-layer frame-flow probe",
+  "date": "2026-06-18",
+  "models": {
+    "gpt2-large": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "SMOOTH_FRAME_FLOW",
+          "arithmetic_carry": "SMOOTH_FRAME_FLOW",
+          "induction": "SMOOTH_FRAME_FLOW"
+        },
+        "all_domains_smooth_frame_flow": true,
+        "mean_cross_domain_rotation_profile_spearman": 0.0106,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_local_angle_deg": 29.082,
+          "mean_effective_rotation_dim": 2.115,
+          "mean_procrustes_residual": 0.590773,
+          "max_local_angle_deg": 89.721,
+          "global_mean_angle_deg": 83.177,
+          "path_efficiency": 0.065769,
+          "verdict": "SMOOTH_FRAME_FLOW"
+        },
+        "arithmetic_carry": {
+          "mean_local_angle_deg": 35.674,
+          "mean_effective_rotation_dim": 1.791,
+          "mean_procrustes_residual": 0.722122,
+          "max_local_angle_deg": 90.0,
+          "global_mean_angle_deg": 81.669,
+          "path_efficiency": 0.05224,
+          "verdict": "SMOOTH_FRAME_FLOW"
+        },
+        "induction": {
+          "mean_local_angle_deg": 31.976,
+          "mean_effective_rotation_dim": 2.069,
+          "mean_procrustes_residual": 0.644901,
+          "max_local_angle_deg": 89.764,
+          "global_mean_angle_deg": 84.729,
+          "path_efficiency": 0.060756,
+          "verdict": "SMOOTH_FRAME_FLOW"
+        }
+      }
+    },
+    "pythia-1.4b": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "SMOOTH_FRAME_FLOW",
+          "arithmetic_carry": "SMOOTH_FRAME_FLOW",
+          "induction": "ROTATING"
+        },
+        "all_domains_smooth_frame_flow": false,
+        "mean_cross_domain_rotation_profile_spearman": 0.4865,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_local_angle_deg": 37.362,
+          "mean_effective_rotation_dim": 2.562,
+          "mean_procrustes_residual": 0.679111,
+          "max_local_angle_deg": 89.467,
+          "global_mean_angle_deg": 87.107,
+          "path_efficiency": 0.09186,
+          "verdict": "SMOOTH_FRAME_FLOW"
+        },
+        "arithmetic_carry": {
+          "mean_local_angle_deg": 45.403,
+          "mean_effective_rotation_dim": 2.354,
+          "mean_procrustes_residual": 0.828557,
+          "max_local_angle_deg": 89.878,
+          "global_mean_angle_deg": 86.792,
+          "path_efficiency": 0.074231,
+          "verdict": "SMOOTH_FRAME_FLOW"
+        },
+        "induction": {
+          "mean_local_angle_deg": 48.59,
+          "mean_effective_rotation_dim": 2.254,
+          "mean_procrustes_residual": 0.896055,
+          "max_local_angle_deg": 89.758,
+          "global_mean_angle_deg": 86.76,
+          "path_efficiency": 0.067918,
+          "verdict": "ROTATING"
+        }
+      }
+    },
+    "pythia-1b": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "SMOOTH_FRAME_FLOW",
+          "arithmetic_carry": "ROTATING",
+          "induction": "ROTATING"
+        },
+        "all_domains_smooth_frame_flow": false,
+        "mean_cross_domain_rotation_profile_spearman": 0.2131,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_local_angle_deg": 43.064,
+          "mean_effective_rotation_dim": 2.337,
+          "mean_procrustes_residual": 0.785819,
+          "max_local_angle_deg": 89.531,
+          "global_mean_angle_deg": 86.035,
+          "path_efficiency": 0.119652,
+          "verdict": "SMOOTH_FRAME_FLOW"
+        },
+        "arithmetic_carry": {
+          "mean_local_angle_deg": 53.326,
+          "mean_effective_rotation_dim": 2.646,
+          "mean_procrustes_residual": 0.939618,
+          "max_local_angle_deg": 89.848,
+          "global_mean_angle_deg": 87.135,
+          "path_efficiency": 0.100779,
+          "verdict": "ROTATING"
+        },
+        "induction": {
+          "mean_local_angle_deg": 52.93,
+          "mean_effective_rotation_dim": 2.5,
+          "mean_procrustes_residual": 0.937952,
+          "max_local_angle_deg": 88.922,
+          "global_mean_angle_deg": 86.602,
+          "path_efficiency": 0.100235,
+          "verdict": "ROTATING"
+        }
+      }
+    }
+  }
+}

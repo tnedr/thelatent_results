@@ -1,0 +1,138 @@
+{
+  "analysis": "cross-layer transport / L3 decoupling test (aggregate)",
+  "date": "2026-06-18",
+  "models": {
+    "gpt2-large": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "SLOWLY_ROTATING",
+          "arithmetic_carry": "SLOWLY_ROTATING",
+          "induction": "SLOWLY_ROTATING"
+        },
+        "L3_locally_supported": true,
+        "L3_strict_frozen_basis": false,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_consec_overlap": 0.7423,
+          "mean_consec_overlap_late": 0.6928,
+          "global_drift_first_to_last": 0.0257,
+          "random_subspace_baseline": 0.00313,
+          "consec_over_baseline": 221.34,
+          "peak_rank_layer": 5,
+          "max_svd3_rho": 0.944,
+          "verdict": "SLOWLY_ROTATING"
+        },
+        "arithmetic_carry": {
+          "mean_consec_overlap": 0.6586,
+          "mean_consec_overlap_late": 0.7308,
+          "global_drift_first_to_last": 0.028,
+          "random_subspace_baseline": 0.00313,
+          "consec_over_baseline": 233.48,
+          "peak_rank_layer": 15,
+          "max_svd3_rho": 0.953,
+          "verdict": "SLOWLY_ROTATING"
+        },
+        "induction": {
+          "mean_consec_overlap": 0.7035,
+          "mean_consec_overlap_late": 0.7136,
+          "global_drift_first_to_last": 0.0111,
+          "random_subspace_baseline": 0.00313,
+          "consec_over_baseline": 227.99,
+          "peak_rank_layer": 20,
+          "max_svd3_rho": 0.888,
+          "verdict": "SLOWLY_ROTATING"
+        }
+      }
+    },
+    "pythia-1.4b": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "SLOWLY_ROTATING",
+          "arithmetic_carry": "SLOWLY_ROTATING",
+          "induction": "SLOWLY_ROTATING"
+        },
+        "L3_locally_supported": true,
+        "L3_strict_frozen_basis": false,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_consec_overlap": 0.6362,
+          "mean_consec_overlap_late": 0.8207,
+          "global_drift_first_to_last": 0.0037,
+          "random_subspace_baseline": 0.00195,
+          "consec_over_baseline": 420.87,
+          "peak_rank_layer": 3,
+          "max_svd3_rho": 0.947,
+          "verdict": "SLOWLY_ROTATING"
+        },
+        "arithmetic_carry": {
+          "mean_consec_overlap": 0.5278,
+          "mean_consec_overlap_late": 0.6087,
+          "global_drift_first_to_last": 0.004,
+          "random_subspace_baseline": 0.00195,
+          "consec_over_baseline": 312.15,
+          "peak_rank_layer": 23,
+          "max_svd3_rho": 0.935,
+          "verdict": "SLOWLY_ROTATING"
+        },
+        "induction": {
+          "mean_consec_overlap": 0.4874,
+          "mean_consec_overlap_late": 0.5897,
+          "global_drift_first_to_last": 0.0038,
+          "random_subspace_baseline": 0.00195,
+          "consec_over_baseline": 302.41,
+          "peak_rank_layer": 9,
+          "max_svd3_rho": 0.797,
+          "verdict": "SLOWLY_ROTATING"
+        }
+      }
+    },
+    "pythia-1b": {
+      "verdict": {
+        "per_domain_verdict": {
+          "relation_composition": "SLOWLY_ROTATING",
+          "arithmetic_carry": "SLOWLY_ROTATING",
+          "induction": "SLOWLY_ROTATING"
+        },
+        "L3_locally_supported": true,
+        "L3_strict_frozen_basis": false,
+        "n_domains_measured": 3
+      },
+      "per_domain_summary": {
+        "relation_composition": {
+          "mean_consec_overlap": 0.5644,
+          "mean_consec_overlap_late": 0.6216,
+          "global_drift_first_to_last": 0.0071,
+          "random_subspace_baseline": 0.00195,
+          "consec_over_baseline": 318.77,
+          "peak_rank_layer": 1,
+          "max_svd3_rho": 0.921,
+          "verdict": "SLOWLY_ROTATING"
+        },
+        "arithmetic_carry": {
+          "mean_consec_overlap": 0.4121,
+          "mean_consec_overlap_late": 0.4509,
+          "global_drift_first_to_last": 0.0043,
+          "random_subspace_baseline": 0.00195,
+          "consec_over_baseline": 231.23,
+          "peak_rank_layer": 15,
+          "max_svd3_rho": 0.929,
+          "verdict": "SLOWLY_ROTATING"
+        },
+        "induction": {
+          "mean_consec_overlap": 0.4173,
+          "mean_consec_overlap_late": 0.5233,
+          "global_drift_first_to_last": 0.0059,
+          "random_subspace_baseline": 0.00195,
+          "consec_over_baseline": 268.36,
+          "peak_rank_layer": 4,
+          "max_svd3_rho": 0.924,
+          "verdict": "SLOWLY_ROTATING"
+        }
+      }
+    }
+  }
+}

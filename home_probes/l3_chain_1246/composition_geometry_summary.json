@@ -1,0 +1,27 @@
+{
+  "analysis": "composition-geometry subspace algebra",
+  "date": "2026-06-18",
+  "models": {
+    "gpt2-large": {
+      "mean_overlap_2hop_vs_1hop": 0.1056,
+      "overlap_2hop_vs_constant": 0.0959,
+      "reuse_ratio": 1.1,
+      "inclusion": 0.1693,
+      "verdict": "INDEPENDENT"
+    },
+    "pythia-1.4b": {
+      "mean_overlap_2hop_vs_1hop": 0.0655,
+      "overlap_2hop_vs_constant": 0.0786,
+      "reuse_ratio": 0.83,
+      "inclusion": 0.1101,
+      "verdict": "INDEPENDENT"
+    },
+    "pythia-1b": {
+      "mean_overlap_2hop_vs_1hop": 0.0885,
+      "overlap_2hop_vs_constant": 0.0818,
+      "reuse_ratio": 1.08,
+      "inclusion": 0.1432,
+      "verdict": "INDEPENDENT"
+    }
+  }
+}

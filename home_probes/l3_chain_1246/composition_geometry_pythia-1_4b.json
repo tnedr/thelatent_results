@@ -1,0 +1,47 @@
+{
+  "mode": "real_model",
+  "model": "pythia-1.4b",
+  "hf_name": "EleutherAI/pythia-1.4b",
+  "date": "2026-06-18",
+  "n_layers": 24,
+  "d_model": 2048,
+  "k_subspace": 8,
+  "n_samples": 32,
+  "capacity_layer": 12,
+  "formal_anchors": [
+    "COMP1",
+    "COMP2",
+    "COMP3",
+    "SVD6"
+  ],
+  "accuracies": {
+    "copy_a": 0.4688,
+    "copy_b": 0.3438,
+    "2hop": 0.0,
+    "constant": 0.8438
+  },
+  "pairwise_overlap": {
+    "2hop_vs_copy_a": 0.0655,
+    "2hop_vs_copy_b": 0.0655,
+    "2hop_vs_constant": 0.0786,
+    "copy_a_vs_copy_b": 0.0799,
+    "copy_a_vs_constant": 0.0569,
+    "copy_b_vs_constant": 0.0631
+  },
+  "union_analysis": {
+    "inclusion_2hop_in_union_1hop": 0.1101,
+    "union_rank": 16,
+    "union_subspace_dim_of_d": 0.0078
+  },
+  "intersection_analysis": {
+    "2hop_in_intersection_1hop": 0.0,
+    "shared_dimensions": 0
+  },
+  "summary": {
+    "mean_overlap_2hop_vs_1hop": 0.0655,
+    "overlap_2hop_vs_constant": 0.0786,
+    "reuse_ratio": 0.83,
+    "inclusion": 0.1101,
+    "verdict": "INDEPENDENT"
+  }
+}
