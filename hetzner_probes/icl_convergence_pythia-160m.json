@@ -1,0 +1,60 @@
+{
+  "model": "pythia-160m",
+  "hf_name": "EleutherAI/pythia-160m",
+  "device": "mps",
+  "d": 768,
+  "n_params": 162322944,
+  "n_layers": 12,
+  "n_samples_used": 48,
+  "rank": {
+    "d": 768,
+    "stable_rank": 106.951,
+    "rank_99pct": 750,
+    "rank_tau_01": 767
+  },
+  "spectral": {
+    "rho": 1.0015,
+    "log_rho": 0.0015,
+    "alpha_pred": 0.0004,
+    "decay_fit_r2": 0.778,
+    "d_eff": 3026.38,
+    "n_eigenvalues_used": 767,
+    "beta_assumed": 2.0
+  },
+  "multihead": {
+    "n_heads": 12,
+    "n_layers": 12,
+    "d_model": 768,
+    "d_head": 64,
+    "rank_tau": 767,
+    "head_coverage": 0.0156,
+    "bands_per_head": 63.92,
+    "eigenvalue_spread": 47.22,
+    "condition_number": 6.87,
+    "predicted_residual": 0.556323
+  },
+  "feature_density": 0.9987,
+  "final_accuracy": 0.4792,
+  "per_layer_error": [
+    43.5062,
+    43.891,
+    42.2571,
+    42.4928,
+    43.2105,
+    37.5766,
+    27.2921,
+    29.5266,
+    28.2153,
+    23.8168,
+    20.8912,
+    20.597,
+    42.5748
+  ],
+  "error_start": 43.5062,
+  "error_min": 20.597,
+  "total_contraction": 0.4734,
+  "rho2_per_layer": 0.8424,
+  "geometric_fit_r2": 0.9176,
+  "monotone_improve_frac": 0.5833,
+  "timestamp": "2026-06-01T08:09:01"
+}

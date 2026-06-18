@@ -1,0 +1,54 @@
+{
+  "model": "distilgpt2",
+  "hf_name": "distilgpt2",
+  "device": "mps",
+  "d": 768,
+  "n_params": 81912576,
+  "n_layers": 6,
+  "n_samples_used": 48,
+  "rank": {
+    "d": 768,
+    "stable_rank": 49.993,
+    "rank_99pct": 706,
+    "rank_tau_01": 732
+  },
+  "spectral": {
+    "rho": 1.0031,
+    "log_rho": 0.0031,
+    "alpha_pred": 0.0008,
+    "decay_fit_r2": 0.9294,
+    "d_eff": 1479.78,
+    "n_eigenvalues_used": 732,
+    "beta_assumed": 2.0
+  },
+  "multihead": {
+    "n_heads": 12,
+    "n_layers": 6,
+    "d_model": 768,
+    "d_head": 64,
+    "rank_tau": 732,
+    "head_coverage": 0.0164,
+    "bands_per_head": 61.0,
+    "eigenvalue_spread": 97.63,
+    "condition_number": 9.88,
+    "predicted_residual": 0.666144
+  },
+  "feature_density": 0.9531,
+  "final_accuracy": 0.0417,
+  "per_layer_error": [
+    69.6717,
+    22.0812,
+    20.5006,
+    21.4496,
+    2.658,
+    0.8171,
+    5.9715
+  ],
+  "error_start": 69.6717,
+  "error_min": 0.8171,
+  "total_contraction": 0.0117,
+  "rho2_per_layer": 0.1958,
+  "geometric_fit_r2": 0.8618,
+  "monotone_improve_frac": 0.6667,
+  "timestamp": "2026-06-01T08:07:09"
+}

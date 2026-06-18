@@ -1,0 +1,61 @@
+{
+  "started_at": "2026-06-18T07:22:40.873908+00:00",
+  "models": [
+    {
+      "name": "EleutherAI/pythia-14m",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-31m",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-70m",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-160m",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-410m",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-1b",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-1.4b",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-2.8b",
+      "status": "done",
+      "elapsed_s": 1080
+    },
+    {
+      "name": "EleutherAI/pythia-6.9b",
+      "status": "pending",
+      "elapsed_s": null
+    },
+    {
+      "name": "EleutherAI/pythia-12b",
+      "status": "done",
+      "elapsed_s": 6925
+    }
+  ],
+  "current_model": "EleutherAI/pythia-12b",
+  "completed": 2,
+  "total": 10,
+  "running": true,
+  "eta_minutes": 533.7,
+  "heldout_only": false
+}

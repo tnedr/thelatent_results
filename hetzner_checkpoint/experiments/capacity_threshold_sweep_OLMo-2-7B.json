@@ -1,0 +1,232 @@
+{
+  "model": "OLMo-2-7B",
+  "hf_name": "allenai/OLMo-2-1124-7B",
+  "device": "cpu",
+  "M": 4096,
+  "capacity_layer": 16,
+  "n_layers": 32,
+  "n_samples": 64,
+  "seed": 42,
+  "noise_levels": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "domains": {
+    "relation_composition": {
+      "dark": true,
+      "clean_surprisal": -11.6064,
+      "clean_acc": 0.0,
+      "m_req": 1,
+      "gain_crit": 0.00024,
+      "rank_recovery": [
+        {
+          "rank": 1,
+          "recovery": 0.7715,
+          "acc": 0.0
+        },
+        {
+          "rank": 2,
+          "recovery": 0.8125,
+          "acc": 0.0
+        },
+        {
+          "rank": 4,
+          "recovery": 0.7656,
+          "acc": 0.0
+        },
+        {
+          "rank": 16,
+          "recovery": 0.4844,
+          "acc": 0.0
+        },
+        {
+          "rank": 28,
+          "recovery": 0.524,
+          "acc": 0.0
+        },
+        {
+          "rank": 40,
+          "recovery": 0.524,
+          "acc": 0.0
+        },
+        {
+          "rank": 52,
+          "recovery": 0.524,
+          "acc": 0.0
+        },
+        {
+          "rank": 64,
+          "recovery": 0.524,
+          "acc": 0.0
+        }
+      ]
+    },
+    "arithmetic_carry": {
+      "dark": false,
+      "clean_surprisal": -5.652,
+      "clean_acc": 0.1094,
+      "m_req": 4,
+      "gain_crit": 0.00098,
+      "rank_recovery": [
+        {
+          "rank": 1,
+          "recovery": 0.1387,
+          "acc": 0.0
+        },
+        {
+          "rank": 2,
+          "recovery": 0.3198,
+          "acc": 0.0
+        },
+        {
+          "rank": 4,
+          "recovery": 0.5065,
+          "acc": 0.0
+        },
+        {
+          "rank": 16,
+          "recovery": 0.6101,
+          "acc": 0.0312
+        },
+        {
+          "rank": 28,
+          "recovery": 0.8162,
+          "acc": 0.1094
+        },
+        {
+          "rank": 40,
+          "recovery": 0.8162,
+          "acc": 0.1094
+        },
+        {
+          "rank": 52,
+          "recovery": 0.8162,
+          "acc": 0.1094
+        },
+        {
+          "rank": 64,
+          "recovery": 0.8162,
+          "acc": 0.1094
+        }
+      ]
+    }
+  },
+  "per_condition": [
+    {
+      "domain": "relation_composition",
+      "model": "OLMo-2-7B",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 1,
+      "gain": 0.00024,
+      "M": 4096,
+      "m_req": 1,
+      "gain_crit": 0.00024,
+      "gain_over_crit": 1.0,
+      "surplus": 0,
+      "recovery_score": 0.7715,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 2.0,
+      "failure_level": 2.0
+    },
+    {
+      "domain": "relation_composition",
+      "model": "OLMo-2-7B",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 28,
+      "gain": 0.00684,
+      "M": 4096,
+      "m_req": 1,
+      "gain_crit": 0.00024,
+      "gain_over_crit": 28.0,
+      "surplus": 27,
+      "recovery_score": 0.524,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 2.0,
+      "failure_level": 2.0
+    },
+    {
+      "domain": "arithmetic_carry",
+      "model": "OLMo-2-7B",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 2,
+      "gain": 0.00049,
+      "M": 4096,
+      "m_req": 4,
+      "gain_crit": 0.00098,
+      "gain_over_crit": 0.5,
+      "surplus": -2,
+      "recovery_score": 0.3198,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 0.0,
+      "failure_level": 0.0
+    },
+    {
+      "domain": "arithmetic_carry",
+      "model": "OLMo-2-7B",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 4,
+      "gain": 0.00098,
+      "M": 4096,
+      "m_req": 4,
+      "gain_crit": 0.00098,
+      "gain_over_crit": 1.0,
+      "surplus": 0,
+      "recovery_score": 0.5065,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 0.0,
+      "failure_level": 0.0
+    },
+    {
+      "domain": "arithmetic_carry",
+      "model": "OLMo-2-7B",
+      "intervention": "rank_throttle+noise",
+      "effective_rank": 40,
+      "gain": 0.00977,
+      "M": 4096,
+      "m_req": 4,
+      "gain_crit": 0.00098,
+      "gain_over_crit": 10.0,
+      "surplus": 36,
+      "recovery_score": 0.8162,
+      "perturbation_type": "gaussian_residual",
+      "perturbation_level": 2.0,
+      "tolerance": 1.0,
+      "failure_level": 1.0
+    }
+  ],
+  "tests": {
+    "P_knee_by_domain": {
+      "relation_composition": {
+        "dark": true,
+        "m_req": 1,
+        "pass": false,
+        "reason": "dark_or_no_threshold"
+      },
+      "arithmetic_carry": {
+        "dark": false,
+        "m_req": 4,
+        "gain_crit": 0.00098,
+        "monotonicity_r": 1.0,
+        "recovery_below_0p75": 0.2292,
+        "recovery_above_1p33": 0.775,
+        "knee_sharpness": 0.5457,
+        "knee_location_gain_over_crit": 1.0,
+        "threshold_auc": 0.7253,
+        "pass": true
+      }
+    },
+    "n_knee_domains_pass": 1,
+    "n_domains": 2,
+    "P_surplus_corr_surplus_tolerance": 0.405,
+    "P_surplus_negative_surplus_low_tolerance": true,
+    "P_surplus_pass": false
+  },
+  "timestamp": "2026-06-18T12:41:06"
+}

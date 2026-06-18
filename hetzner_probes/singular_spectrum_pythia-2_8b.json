@@ -1,0 +1,74 @@
+{
+  "mode": "real_model",
+  "model": "pythia-2.8b",
+  "hf_name": "EleutherAI/pythia-2.8b",
+  "date": "2026-06-18",
+  "n_layers": 32,
+  "capacity_layer": 18,
+  "d_model": 2560,
+  "n_samples": 64,
+  "formal_anchors": [
+    "SVD1",
+    "SVD2",
+    "SVD3",
+    "SVD4",
+    "SVD5",
+    "SVD6"
+  ],
+  "per_domain": {
+    "relation_composition": {
+      "raw_effective_rank": 50.985,
+      "readout_effective_rank": 26.634,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.948,
+      "rank_at_90pct_energy": 43,
+      "sigma_min_margin": 57.09726,
+      "sigma_top": 115.34088,
+      "decay_ratio_at_margin": 0.495031,
+      "spectral_decay_exponent": 0.013369,
+      "readout_rank_frac_of_d": 0.0104,
+      "n_instances": 64
+    },
+    "arithmetic_carry": {
+      "raw_effective_rank": 53.732,
+      "readout_effective_rank": 26.868,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.898,
+      "rank_at_90pct_energy": 47,
+      "sigma_min_margin": 63.37288,
+      "sigma_top": 111.17157,
+      "decay_ratio_at_margin": 0.570046,
+      "spectral_decay_exponent": 0.010747,
+      "readout_rank_frac_of_d": 0.0105,
+      "n_instances": 64
+    },
+    "induction": {
+      "raw_effective_rank": 46.589,
+      "readout_effective_rank": 4.715,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.904,
+      "rank_at_90pct_energy": 31,
+      "sigma_min_margin": 75.58956,
+      "sigma_top": 134.66347,
+      "decay_ratio_at_margin": 0.561322,
+      "spectral_decay_exponent": 0.018398,
+      "readout_rank_frac_of_d": 0.0018,
+      "n_instances": 64
+    }
+  },
+  "composition_SVD6": {
+    "available": true,
+    "stage1_layer": 18,
+    "stage1_eff_rank": 8.86,
+    "stage2_layer": 26,
+    "stage2_eff_rank": 10.335,
+    "bottleneck_holds": false
+  },
+  "verdict": {
+    "P_capacity_low_rank": true,
+    "P_order_SVD3": true,
+    "P_concentration_SVD4": true,
+    "P_bottleneck_SVD6": false,
+    "n_domains_measured": 3
+  }
+}

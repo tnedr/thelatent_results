@@ -1,0 +1,685 @@
+{
+  "models": [
+    {
+      "model": "OLMo-2-7B",
+      "d": 4096,
+      "n_layers": 32,
+      "feature_density": 0.9983,
+      "final_accuracy": 0.7812,
+      "rho2_per_layer": 0.8713,
+      "total_contraction": 0.0765,
+      "geometric_fit_r2": 0.7098,
+      "monotone_improve_frac": 0.7812
+    },
+    {
+      "model": "Qwen2.5-0.5B",
+      "d": 896,
+      "n_layers": 24,
+      "feature_density": 0.981,
+      "final_accuracy": 0.4583,
+      "rho2_per_layer": 0.8399,
+      "total_contraction": 0.0135,
+      "geometric_fit_r2": 0.5991,
+      "monotone_improve_frac": 0.5417
+    },
+    {
+      "model": "distilgpt2",
+      "d": 768,
+      "n_layers": 6,
+      "feature_density": 0.9531,
+      "final_accuracy": 0.0417,
+      "rho2_per_layer": 0.1958,
+      "total_contraction": 0.0117,
+      "geometric_fit_r2": 0.8618,
+      "monotone_improve_frac": 0.6667
+    },
+    {
+      "model": "gpt-neo-125m",
+      "d": 768,
+      "n_layers": 12,
+      "feature_density": 0.0521,
+      "final_accuracy": 0.0,
+      "rho2_per_layer": 0.79,
+      "total_contraction": 0.0289,
+      "geometric_fit_r2": 0.3022,
+      "monotone_improve_frac": 0.6667
+    },
+    {
+      "model": "gpt2-large",
+      "d": 1280,
+      "n_layers": 36,
+      "feature_density": 0.9164,
+      "final_accuracy": 0.875,
+      "rho2_per_layer": 0.7538,
+      "total_contraction": 0.0022,
+      "geometric_fit_r2": 0.7679,
+      "monotone_improve_frac": 0.75
+    },
+    {
+      "model": "gpt2-medium",
+      "d": 1024,
+      "n_layers": 24,
+      "feature_density": 0.9775,
+      "final_accuracy": 0.8542,
+      "rho2_per_layer": 0.6322,
+      "total_contraction": 0.0005,
+      "geometric_fit_r2": 0.7531,
+      "monotone_improve_frac": 0.7917
+    },
+    {
+      "model": "gpt2",
+      "d": 768,
+      "n_layers": 12,
+      "feature_density": 0.9661,
+      "final_accuracy": 0.125,
+      "rho2_per_layer": 0.3663,
+      "total_contraction": 0.0012,
+      "geometric_fit_r2": 0.8017,
+      "monotone_improve_frac": 0.75
+    },
+    {
+      "model": "pythia-12b",
+      "d": 5120,
+      "n_layers": 36,
+      "feature_density": 0.8088,
+      "final_accuracy": 0.9219,
+      "rho2_per_layer": 0.9215,
+      "total_contraction": 0.05,
+      "geometric_fit_r2": 0.6295,
+      "monotone_improve_frac": 0.7222
+    },
+    {
+      "model": "pythia-160m",
+      "d": 768,
+      "n_layers": 12,
+      "feature_density": 0.9987,
+      "final_accuracy": 0.4792,
+      "rho2_per_layer": 0.8424,
+      "total_contraction": 0.4734,
+      "geometric_fit_r2": 0.9176,
+      "monotone_improve_frac": 0.5833
+    },
+    {
+      "model": "pythia-1b",
+      "d": 2048,
+      "n_layers": 16,
+      "feature_density": 0.999,
+      "final_accuracy": 0.9167,
+      "rho2_per_layer": 0.7214,
+      "total_contraction": 0.0651,
+      "geometric_fit_r2": 0.8532,
+      "monotone_improve_frac": 0.625
+    },
+    {
+      "model": "pythia-410m",
+      "d": 1024,
+      "n_layers": 24,
+      "feature_density": 0.999,
+      "final_accuracy": 0.9167,
+      "rho2_per_layer": 0.7674,
+      "total_contraction": 0.0793,
+      "geometric_fit_r2": 0.9518,
+      "monotone_improve_frac": 0.75
+    },
+    {
+      "model": "pythia-6.9b",
+      "d": 4096,
+      "n_layers": 32,
+      "feature_density": 0.979,
+      "final_accuracy": 0.9375,
+      "rho2_per_layer": 0.9195,
+      "total_contraction": 0.0556,
+      "geometric_fit_r2": 0.6111,
+      "monotone_improve_frac": 0.8438
+    },
+    {
+      "model": "pythia-70m",
+      "d": 512,
+      "n_layers": 6,
+      "feature_density": 0.998,
+      "final_accuracy": 0.0417,
+      "rho2_per_layer": 0.8303,
+      "total_contraction": 0.6634,
+      "geometric_fit_r2": 0.8196,
+      "monotone_improve_frac": 0.6667
+    },
+    {
+      "model": "tinyllama-1.1b",
+      "d": 2048,
+      "n_layers": 22,
+      "feature_density": 1.0,
+      "final_accuracy": 0.9167,
+      "rho2_per_layer": 0.8043,
+      "total_contraction": 0.0583,
+      "geometric_fit_r2": 0.6148,
+      "monotone_improve_frac": 0.6364
+    }
+  ],
+  "n_models": 14,
+  "timestamp": "2026-06-18T10:00:07",
+  "bridge_test_I1": {
+    "corr_density_rho2_full_panel": -0.087,
+    "corr_density_rho2_fit_filtered": -0.047,
+    "fit_filter_threshold": 0.5,
+    "n_fit_reliable": 13,
+    "excluded_poor_fit": [
+      "gpt-neo-125m"
+    ],
+    "interpretation": "P_I1 predicts POSITIVE corr (denser packing -> rho2 closer to 1 -> slower per-layer ICL contraction). The fit-filtered correlation is primary: rho2 is only defined where the per-layer error contracts geometrically (good log-linear fit)."
+  },
+  "depth_test_C": {
+    "mean_geometric_fit_r2": 0.728,
+    "mean_monotone_improve_frac": 0.698,
+    "interpretation": "P_C predicts monotone per-layer ICL improvement; high log-linear fit R^2 indicates geometric (C1-C4) contraction."
+  },
+  "spectral_unification_S": {
+    "n_models": 14,
+    "rho_range": [
+      1.0,
+      1.073
+    ],
+    "alpha_pred_range": [
+      0.0001,
+      0.0176
+    ],
+    "d_eff_range": [
+      65.4,
+      11730.0
+    ],
+    "corr_log_rho_vs_rho2": 0.04,
+    "corr_log_rho_vs_density": -0.976,
+    "interpretation": "S1-S5 predict that spectral rho governs BOTH the scaling exponent (monotone, S2) and effective dimension (inverse, S3). corr(log_rho, rho2) tests whether the same spectral decay that drives scaling also shapes per-layer ICL contraction.",
+    "per_model": [
+      {
+        "model": "OLMo-2-7B",
+        "rho": 1.0004,
+        "log_rho": 0.0004,
+        "alpha_pred": 0.0001,
+        "d_eff": 11729.99,
+        "rho2_per_layer": 0.8713,
+        "feature_density": 0.9983
+      },
+      {
+        "model": "Qwen2.5-0.5B",
+        "rho": 1.0011,
+        "log_rho": 0.0011,
+        "alpha_pred": 0.0003,
+        "d_eff": 4047.05,
+        "rho2_per_layer": 0.8399,
+        "feature_density": 0.981
+      },
+      {
+        "model": "distilgpt2",
+        "rho": 1.0031,
+        "log_rho": 0.0031,
+        "alpha_pred": 0.0008,
+        "d_eff": 1479.78,
+        "rho2_per_layer": 0.1958,
+        "feature_density": 0.9531
+      },
+      {
+        "model": "gpt-neo-125m",
+        "rho": 1.0729,
+        "log_rho": 0.0704,
+        "alpha_pred": 0.0176,
+        "d_eff": 65.43,
+        "rho2_per_layer": 0.79,
+        "feature_density": 0.0521
+      },
+      {
+        "model": "gpt2-large",
+        "rho": 1.0018,
+        "log_rho": 0.0018,
+        "alpha_pred": 0.0005,
+        "d_eff": 2532.53,
+        "rho2_per_layer": 0.7538,
+        "feature_density": 0.9164
+      },
+      {
+        "model": "gpt2-medium",
+        "rho": 1.0019,
+        "log_rho": 0.0019,
+        "alpha_pred": 0.0005,
+        "d_eff": 2440.12,
+        "rho2_per_layer": 0.6322,
+        "feature_density": 0.9775
+      },
+      {
+        "model": "gpt2",
+        "rho": 1.0029,
+        "log_rho": 0.0029,
+        "alpha_pred": 0.0007,
+        "d_eff": 1612.04,
+        "rho2_per_layer": 0.3663,
+        "feature_density": 0.9661
+      },
+      {
+        "model": "pythia-12b",
+        "rho": 1.0004,
+        "log_rho": 0.0004,
+        "alpha_pred": 0.0001,
+        "d_eff": 10293.85,
+        "rho2_per_layer": 0.9215,
+        "feature_density": 0.8088
+      },
+      {
+        "model": "pythia-160m",
+        "rho": 1.0015,
+        "log_rho": 0.0015,
+        "alpha_pred": 0.0004,
+        "d_eff": 3026.38,
+        "rho2_per_layer": 0.8424,
+        "feature_density": 0.9987
+      },
+      {
+        "model": "pythia-1b",
+        "rho": 1.001,
+        "log_rho": 0.001,
+        "alpha_pred": 0.0002,
+        "d_eff": 4846.13,
+        "rho2_per_layer": 0.7214,
+        "feature_density": 0.999
+      },
+      {
+        "model": "pythia-410m",
+        "rho": 1.0014,
+        "log_rho": 0.0014,
+        "alpha_pred": 0.0004,
+        "d_eff": 3178.42,
+        "rho2_per_layer": 0.7674,
+        "feature_density": 0.999
+      },
+      {
+        "model": "pythia-6.9b",
+        "rho": 1.0005,
+        "log_rho": 0.0005,
+        "alpha_pred": 0.0001,
+        "d_eff": 9109.54,
+        "rho2_per_layer": 0.9195,
+        "feature_density": 0.979
+      },
+      {
+        "model": "pythia-70m",
+        "rho": 1.0027,
+        "log_rho": 0.0027,
+        "alpha_pred": 0.0007,
+        "d_eff": 1734.81,
+        "rho2_per_layer": 0.8303,
+        "feature_density": 0.998
+      },
+      {
+        "model": "tinyllama-1.1b",
+        "rho": 1.0007,
+        "log_rho": 0.0007,
+        "alpha_pred": 0.0002,
+        "d_eff": 6373.8,
+        "rho2_per_layer": 0.8043,
+        "feature_density": 1.0
+      }
+    ]
+  },
+  "multihead_specialization_MH": {
+    "n_models": 14,
+    "head_range": [
+      8,
+      40
+    ],
+    "coverage_range": [
+      0.004,
+      0.3
+    ],
+    "corr_coverage_vs_rho2": 0.059,
+    "corr_heads_vs_accuracy": 0.605,
+    "corr_coverage_vs_accuracy": -0.463,
+    "interpretation": "MH1-MH5 predict that head_coverage = H/rank_tau controls how close to Newton convergence the model gets. Higher coverage -> lower rho2 (faster ICL). corr(coverage, rho2) should be NEGATIVE.",
+    "per_model": [
+      {
+        "model": "OLMo-2-7B",
+        "n_heads": 32,
+        "d_head": 128,
+        "rank_tau": 4089,
+        "head_coverage": 0.0078,
+        "condition_number": 9.92,
+        "predicted_residual": 0.667244,
+        "rho2_per_layer": 0.8713,
+        "final_accuracy": 0.7812
+      },
+      {
+        "model": "Qwen2.5-0.5B",
+        "n_heads": 14,
+        "d_head": 64,
+        "rank_tau": 879,
+        "head_coverage": 0.0159,
+        "condition_number": 9.81,
+        "predicted_residual": 0.664202,
+        "rho2_per_layer": 0.8399,
+        "final_accuracy": 0.4583
+      },
+      {
+        "model": "distilgpt2",
+        "n_heads": 12,
+        "d_head": 64,
+        "rank_tau": 732,
+        "head_coverage": 0.0164,
+        "condition_number": 9.88,
+        "predicted_residual": 0.666144,
+        "rho2_per_layer": 0.1958,
+        "final_accuracy": 0.0417
+      },
+      {
+        "model": "gpt-neo-125m",
+        "n_heads": 12,
+        "d_head": 64,
+        "rank_tau": 40,
+        "head_coverage": 0.3,
+        "condition_number": 9.95,
+        "predicted_residual": 0.668064,
+        "rho2_per_layer": 0.79,
+        "final_accuracy": 0.0
+      },
+      {
+        "model": "gpt2-large",
+        "n_heads": 20,
+        "d_head": 64,
+        "rank_tau": 1173,
+        "head_coverage": 0.0171,
+        "condition_number": 10.0,
+        "predicted_residual": 0.669421,
+        "rho2_per_layer": 0.7538,
+        "final_accuracy": 0.875
+      },
+      {
+        "model": "gpt2-medium",
+        "n_heads": 16,
+        "d_head": 64,
+        "rank_tau": 1001,
+        "head_coverage": 0.016,
+        "condition_number": 9.9,
+        "predicted_residual": 0.666695,
+        "rho2_per_layer": 0.6322,
+        "final_accuracy": 0.8542
+      },
+      {
+        "model": "gpt2",
+        "n_heads": 12,
+        "d_head": 64,
+        "rank_tau": 742,
+        "head_coverage": 0.0162,
+        "condition_number": 9.75,
+        "predicted_residual": 0.66252,
+        "rho2_per_layer": 0.3663,
+        "final_accuracy": 0.125
+      },
+      {
+        "model": "pythia-12b",
+        "n_heads": 40,
+        "d_head": 128,
+        "rank_tau": 4141,
+        "head_coverage": 0.0097,
+        "condition_number": 10.0,
+        "predicted_residual": 0.669421,
+        "rho2_per_layer": 0.9215,
+        "final_accuracy": 0.9219
+      },
+      {
+        "model": "pythia-160m",
+        "n_heads": 12,
+        "d_head": 64,
+        "rank_tau": 767,
+        "head_coverage": 0.0156,
+        "condition_number": 6.87,
+        "predicted_residual": 0.556323,
+        "rho2_per_layer": 0.8424,
+        "final_accuracy": 0.4792
+      },
+      {
+        "model": "pythia-1b",
+        "n_heads": 8,
+        "d_head": 256,
+        "rank_tau": 2046,
+        "head_coverage": 0.0039,
+        "condition_number": 8.37,
+        "predicted_residual": 0.618665,
+        "rho2_per_layer": 0.7214,
+        "final_accuracy": 0.9167
+      },
+      {
+        "model": "pythia-410m",
+        "n_heads": 16,
+        "d_head": 64,
+        "rank_tau": 1023,
+        "head_coverage": 0.0156,
+        "condition_number": 8.68,
+        "predicted_residual": 0.629465,
+        "rho2_per_layer": 0.7674,
+        "final_accuracy": 0.9167
+      },
+      {
+        "model": "pythia-6.9b",
+        "n_heads": 32,
+        "d_head": 128,
+        "rank_tau": 4010,
+        "head_coverage": 0.008,
+        "condition_number": 10.0,
+        "predicted_residual": 0.669421,
+        "rho2_per_layer": 0.9195,
+        "final_accuracy": 0.9375
+      },
+      {
+        "model": "pythia-70m",
+        "n_heads": 8,
+        "d_head": 64,
+        "rank_tau": 511,
+        "head_coverage": 0.0157,
+        "condition_number": 5.12,
+        "predicted_residual": 0.453202,
+        "rho2_per_layer": 0.8303,
+        "final_accuracy": 0.0417
+      },
+      {
+        "model": "tinyllama-1.1b",
+        "n_heads": 32,
+        "d_head": 64,
+        "rank_tau": 2048,
+        "head_coverage": 0.0156,
+        "condition_number": 8.6,
+        "predicted_residual": 0.626736,
+        "rho2_per_layer": 0.8043,
+        "final_accuracy": 0.9167
+      }
+    ]
+  },
+  "confound_control": {
+    "n_models": 14,
+    "corr_log_params_vs_acc": 0.774,
+    "corr_heads_vs_acc": 0.605,
+    "partial_corr_heads_vs_acc_given_params": -0.069,
+    "partial_corr_heads_vs_rho2_given_params": -0.1323,
+    "partial_corr_log_params_vs_acc_given_heads": 0.5958,
+    "interpretation": "Raw corr(heads, acc) is confounded by model size (bigger models have more heads AND better acc). The PARTIAL correlation controls for log(params): it isolates the head-count effect after removing the size effect. If partial_corr > 0, heads help BEYOND their size proxy role.",
+    "within_family": {
+      "other": {
+        "n_models": 3,
+        "models": [
+          "OLMo-2-7B",
+          "gpt-neo-125m",
+          "tinyllama-1.1b"
+        ],
+        "param_range_M": [
+          125,
+          7299
+        ],
+        "head_range": [
+          12,
+          32
+        ],
+        "acc_range": [
+          0.0,
+          0.917
+        ],
+        "heads_vary": true
+      },
+      "gpt2": {
+        "n_models": 4,
+        "models": [
+          "distilgpt2",
+          "gpt2-large",
+          "gpt2-medium",
+          "gpt2"
+        ],
+        "param_range_M": [
+          82,
+          774
+        ],
+        "head_range": [
+          12,
+          20
+        ],
+        "acc_range": [
+          0.042,
+          0.875
+        ],
+        "heads_vary": true
+      },
+      "pythia": {
+        "n_models": 6,
+        "models": [
+          "pythia-12b",
+          "pythia-160m",
+          "pythia-1b",
+          "pythia-410m",
+          "pythia-6.9b",
+          "pythia-70m"
+        ],
+        "param_range_M": [
+          70,
+          11846
+        ],
+        "head_range": [
+          8,
+          40
+        ],
+        "acc_range": [
+          0.042,
+          0.938
+        ],
+        "heads_vary": true
+      }
+    },
+    "dedup_control": {},
+    "per_model": [
+      {
+        "model": "pythia-70m",
+        "n_params_M": 70.4,
+        "n_heads": 8,
+        "d_head": 64,
+        "final_accuracy": 0.0417,
+        "rho2_per_layer": 0.8303
+      },
+      {
+        "model": "distilgpt2",
+        "n_params_M": 81.9,
+        "n_heads": 12,
+        "d_head": 64,
+        "final_accuracy": 0.0417,
+        "rho2_per_layer": 0.1958
+      },
+      {
+        "model": "gpt2",
+        "n_params_M": 124.4,
+        "n_heads": 12,
+        "d_head": 64,
+        "final_accuracy": 0.125,
+        "rho2_per_layer": 0.3663
+      },
+      {
+        "model": "gpt-neo-125m",
+        "n_params_M": 125.2,
+        "n_heads": 12,
+        "d_head": 64,
+        "final_accuracy": 0.0,
+        "rho2_per_layer": 0.79
+      },
+      {
+        "model": "pythia-160m",
+        "n_params_M": 162.3,
+        "n_heads": 12,
+        "d_head": 64,
+        "final_accuracy": 0.4792,
+        "rho2_per_layer": 0.8424
+      },
+      {
+        "model": "gpt2-medium",
+        "n_params_M": 354.8,
+        "n_heads": 16,
+        "d_head": 64,
+        "final_accuracy": 0.8542,
+        "rho2_per_layer": 0.6322
+      },
+      {
+        "model": "pythia-410m",
+        "n_params_M": 405.3,
+        "n_heads": 16,
+        "d_head": 64,
+        "final_accuracy": 0.9167,
+        "rho2_per_layer": 0.7674
+      },
+      {
+        "model": "Qwen2.5-0.5B",
+        "n_params_M": 494.0,
+        "n_heads": 14,
+        "d_head": 64,
+        "final_accuracy": 0.4583,
+        "rho2_per_layer": 0.8399
+      },
+      {
+        "model": "gpt2-large",
+        "n_params_M": 774.0,
+        "n_heads": 20,
+        "d_head": 64,
+        "final_accuracy": 0.875,
+        "rho2_per_layer": 0.7538
+      },
+      {
+        "model": "pythia-1b",
+        "n_params_M": 1011.8,
+        "n_heads": 8,
+        "d_head": 256,
+        "final_accuracy": 0.9167,
+        "rho2_per_layer": 0.7214
+      },
+      {
+        "model": "tinyllama-1.1b",
+        "n_params_M": 1100.0,
+        "n_heads": 32,
+        "d_head": 64,
+        "final_accuracy": 0.9167,
+        "rho2_per_layer": 0.8043
+      },
+      {
+        "model": "pythia-6.9b",
+        "n_params_M": 6857.3,
+        "n_heads": 32,
+        "d_head": 128,
+        "final_accuracy": 0.9375,
+        "rho2_per_layer": 0.9195
+      },
+      {
+        "model": "OLMo-2-7B",
+        "n_params_M": 7298.6,
+        "n_heads": 32,
+        "d_head": 128,
+        "final_accuracy": 0.7812,
+        "rho2_per_layer": 0.8713
+      },
+      {
+        "model": "pythia-12b",
+        "n_params_M": 11846.1,
+        "n_heads": 40,
+        "d_head": 128,
+        "final_accuracy": 0.9219,
+        "rho2_per_layer": 0.9215
+      }
+    ]
+  }
+}

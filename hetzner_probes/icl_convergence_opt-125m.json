@@ -1,0 +1,60 @@
+{
+  "model": "opt-125m",
+  "hf_name": "facebook/opt-125m",
+  "device": "mps",
+  "d": 768,
+  "n_params": 125239296,
+  "n_layers": 12,
+  "n_samples_used": 48,
+  "rank": {
+    "d": 768,
+    "stable_rank": 20.501,
+    "rank_99pct": 729,
+    "rank_tau_01": 718
+  },
+  "spectral": {
+    "rho": 1.0022,
+    "log_rho": 0.0022,
+    "alpha_pred": 0.0005,
+    "decay_fit_r2": 0.8956,
+    "d_eff": 2095.84,
+    "n_eigenvalues_used": 718,
+    "beta_assumed": 2.0
+  },
+  "multihead": {
+    "n_heads": 12,
+    "n_layers": 12,
+    "d_model": 768,
+    "d_head": 64,
+    "rank_tau": 718,
+    "head_coverage": 0.0167,
+    "bands_per_head": 59.83,
+    "eigenvalue_spread": 99.51,
+    "condition_number": 9.98,
+    "predicted_residual": 0.66888
+  },
+  "feature_density": 0.9349,
+  "final_accuracy": 0.0,
+  "per_layer_error": [
+    10.8864,
+    10.8794,
+    10.8768,
+    10.8763,
+    10.876,
+    10.8724,
+    10.8668,
+    10.8555,
+    10.871,
+    10.8452,
+    10.749,
+    10.6847,
+    11.0957
+  ],
+  "error_start": 10.8864,
+  "error_min": 10.6847,
+  "total_contraction": 0.9815,
+  "rho2_per_layer": null,
+  "geometric_fit_r2": null,
+  "monotone_improve_frac": 0.8333,
+  "timestamp": "2026-06-01T08:24:47"
+}

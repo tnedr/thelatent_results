@@ -1,0 +1,60 @@
+{
+  "model": "gpt2",
+  "hf_name": "gpt2",
+  "device": "mps",
+  "d": 768,
+  "n_params": 124439808,
+  "n_layers": 12,
+  "n_samples_used": 48,
+  "rank": {
+    "d": 768,
+    "stable_rank": 55.22,
+    "rank_99pct": 712,
+    "rank_tau_01": 742
+  },
+  "spectral": {
+    "rho": 1.0029,
+    "log_rho": 0.0029,
+    "alpha_pred": 0.0007,
+    "decay_fit_r2": 0.9236,
+    "d_eff": 1612.04,
+    "n_eigenvalues_used": 742,
+    "beta_assumed": 2.0
+  },
+  "multihead": {
+    "n_heads": 12,
+    "n_layers": 12,
+    "d_model": 768,
+    "d_head": 64,
+    "rank_tau": 742,
+    "head_coverage": 0.0162,
+    "bands_per_head": 61.83,
+    "eigenvalue_spread": 95.14,
+    "condition_number": 9.75,
+    "predicted_residual": 0.66252
+  },
+  "feature_density": 0.9661,
+  "final_accuracy": 0.125,
+  "per_layer_error": [
+    75.8008,
+    24.0826,
+    20.6916,
+    19.4857,
+    19.9154,
+    20.1514,
+    14.1373,
+    10.7757,
+    2.9133,
+    2.0372,
+    0.2445,
+    0.0878,
+    6.6198
+  ],
+  "error_start": 75.8008,
+  "error_min": 0.0878,
+  "total_contraction": 0.0012,
+  "rho2_per_layer": 0.3663,
+  "geometric_fit_r2": 0.8017,
+  "monotone_improve_frac": 0.75,
+  "timestamp": "2026-06-01T08:07:22"
+}
