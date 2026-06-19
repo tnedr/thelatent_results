@@ -1,0 +1,1380 @@
+{
+  "mode": "real_model",
+  "model": "pythia-1.4b",
+  "hf_name": "EleutherAI/pythia-1.4b",
+  "date": "2026-06-19",
+  "n_layers": 24,
+  "d_model": 2048,
+  "k_subspace": 4,
+  "n_samples": 24,
+  "task_family": "factual",
+  "definition": {
+    "frame": "V_l = top-k readout-relevant task subspace",
+    "connection": "Q_l = Procrustes transport V_l -> V_{l+1}",
+    "curvature": "H_l(A,B)=S_l^T Q_B^T S_{l+1} Q_A; flat if H~=I"
+  },
+  "per_domain_connection": {
+    "antonym": {
+      "layers_measured": 24,
+      "connection_length": 30.742036,
+      "mean_local_angle_deg": 33.24,
+      "mean_effective_rotation_dim": 2.449,
+      "mean_procrustes_residual": 0.628336
+    },
+    "capital": {
+      "layers_measured": 24,
+      "connection_length": 33.007575,
+      "mean_local_angle_deg": 36.336,
+      "mean_effective_rotation_dim": 2.5,
+      "mean_procrustes_residual": 0.677066
+    },
+    "past_tense": {
+      "layers_measured": 24,
+      "connection_length": 27.513189,
+      "mean_local_angle_deg": 29.731,
+      "mean_effective_rotation_dim": 2.692,
+      "mean_procrustes_residual": 0.56559
+    },
+    "plural": {
+      "layers_measured": 24,
+      "connection_length": 38.071192,
+      "mean_local_angle_deg": 39.641,
+      "mean_effective_rotation_dim": 1.897,
+      "mean_procrustes_residual": 0.766366
+    }
+  },
+  "cross_task_holonomy": {
+    "antonym__capital": {
+      "n_squares": 23,
+      "mean_holonomy_fro": 0.94013,
+      "mean_commutator_norm": 0.94013,
+      "max_holonomy_fro": 1.463008,
+      "verdict": "CURVED_TASK_BUNDLE",
+      "per_layer_square": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "holonomy_fro": 0.433814,
+          "commutator_norm": 0.433814,
+          "skew_norm": 0.82683,
+          "trace_angle_deg": 35.727
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "holonomy_fro": 1.199492,
+          "commutator_norm": 1.199492,
+          "skew_norm": 1.170497,
+          "trace_angle_deg": 116.026
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "holonomy_fro": 1.194934,
+          "commutator_norm": 1.194934,
+          "skew_norm": 1.159882,
+          "trace_angle_deg": 115.332
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "holonomy_fro": 1.272016,
+          "commutator_norm": 1.272016,
+          "skew_norm": 1.143269,
+          "trace_angle_deg": 128.172
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "holonomy_fro": 0.822059,
+          "commutator_norm": 0.822059,
+          "skew_norm": 1.383792,
+          "trace_angle_deg": 71.082
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "holonomy_fro": 1.01897,
+          "commutator_norm": 1.01897,
+          "skew_norm": 0.387644,
+          "trace_angle_deg": 92.195
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "holonomy_fro": 0.244453,
+          "commutator_norm": 0.244453,
+          "skew_norm": 0.481551,
+          "trace_angle_deg": 19.908
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "holonomy_fro": 0.327442,
+          "commutator_norm": 0.327442,
+          "skew_norm": 0.642517,
+          "trace_angle_deg": 26.775
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "holonomy_fro": 0.4802,
+          "commutator_norm": 0.4802,
+          "skew_norm": 0.913838,
+          "trace_angle_deg": 39.699
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "holonomy_fro": 1.398623,
+          "commutator_norm": 1.398623,
+          "skew_norm": 0.419613,
+          "trace_angle_deg": 162.969
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "holonomy_fro": 1.075443,
+          "commutator_norm": 1.075443,
+          "skew_norm": 0.759789,
+          "trace_angle_deg": 99.008
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "holonomy_fro": 1.046647,
+          "commutator_norm": 1.046647,
+          "skew_norm": 1.410599,
+          "trace_angle_deg": 95.478
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "holonomy_fro": 1.027883,
+          "commutator_norm": 1.027883,
+          "skew_norm": 0.468805,
+          "trace_angle_deg": 93.241
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "holonomy_fro": 1.029596,
+          "commutator_norm": 1.029596,
+          "skew_norm": 0.482756,
+          "trace_angle_deg": 93.444
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "holonomy_fro": 1.067743,
+          "commutator_norm": 1.067743,
+          "skew_norm": 0.721846,
+          "trace_angle_deg": 98.052
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "holonomy_fro": 1.019781,
+          "commutator_norm": 1.019781,
+          "skew_norm": 0.395754,
+          "trace_angle_deg": 92.29
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "holonomy_fro": 1.003362,
+          "commutator_norm": 1.003362,
+          "skew_norm": 0.163873,
+          "trace_angle_deg": 90.386
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "holonomy_fro": 0.346144,
+          "commutator_norm": 0.346144,
+          "skew_norm": 0.674272,
+          "trace_angle_deg": 28.335
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "holonomy_fro": 1.376733,
+          "commutator_norm": 1.376733,
+          "skew_norm": 0.641819,
+          "trace_angle_deg": 153.559
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "holonomy_fro": 1.361398,
+          "commutator_norm": 1.361398,
+          "skew_norm": 0.737476,
+          "trace_angle_deg": 148.584
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "holonomy_fro": 0.647224,
+          "commutator_norm": 0.647224,
+          "skew_norm": 1.150933,
+          "trace_angle_deg": 54.472
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "holonomy_fro": 1.463008,
+          "commutator_norm": 1.463008,
+          "skew_norm": 1.400207,
+          "trace_angle_deg": 180.0
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "holonomy_fro": 0.766023,
+          "commutator_norm": 0.766023,
+          "skew_norm": 1.289699,
+          "trace_angle_deg": 65.593
+        }
+      ]
+    },
+    "antonym__past_tense": {
+      "n_squares": 23,
+      "mean_holonomy_fro": 0.807743,
+      "mean_commutator_norm": 0.807743,
+      "max_holonomy_fro": 1.419061,
+      "verdict": "CURVED_TASK_BUNDLE",
+      "per_layer_square": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "holonomy_fro": 1.419061,
+          "commutator_norm": 1.419061,
+          "skew_norm": 0.309781,
+          "trace_angle_deg": 180.0
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "holonomy_fro": 0.562363,
+          "commutator_norm": 0.562363,
+          "skew_norm": 1.032342,
+          "trace_angle_deg": 46.863
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "holonomy_fro": 0.788376,
+          "commutator_norm": 0.788376,
+          "skew_norm": 1.31068,
+          "trace_angle_deg": 67.761
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "holonomy_fro": 1.410028,
+          "commutator_norm": 1.410028,
+          "skew_norm": 0.419442,
+          "trace_angle_deg": 171.181
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "holonomy_fro": 1.027486,
+          "commutator_norm": 1.027486,
+          "skew_norm": 0.465506,
+          "trace_angle_deg": 93.195
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "holonomy_fro": 0.898445,
+          "commutator_norm": 0.898445,
+          "skew_norm": 1.387759,
+          "trace_angle_deg": 78.884
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "holonomy_fro": 1.034281,
+          "commutator_norm": 1.034281,
+          "skew_norm": 0.518863,
+          "trace_angle_deg": 93.999
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "holonomy_fro": 0.220872,
+          "commutator_norm": 0.220872,
+          "skew_norm": 0.436537,
+          "trace_angle_deg": 17.97
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "holonomy_fro": 0.563298,
+          "commutator_norm": 0.563298,
+          "skew_norm": 1.037484,
+          "trace_angle_deg": 46.945
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "holonomy_fro": 0.556342,
+          "commutator_norm": 0.556342,
+          "skew_norm": 1.026787,
+          "trace_angle_deg": 46.332
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "holonomy_fro": 1.088068,
+          "commutator_norm": 1.088068,
+          "skew_norm": 0.817274,
+          "trace_angle_deg": 100.597
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "holonomy_fro": 1.059607,
+          "commutator_norm": 1.059607,
+          "skew_norm": 0.678915,
+          "trace_angle_deg": 97.052
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "holonomy_fro": 1.209295,
+          "commutator_norm": 1.209295,
+          "skew_norm": 1.337278,
+          "trace_angle_deg": 117.542
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "holonomy_fro": 0.492088,
+          "commutator_norm": 0.492088,
+          "skew_norm": 0.92299,
+          "trace_angle_deg": 40.725
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "holonomy_fro": 0.229294,
+          "commutator_norm": 0.229294,
+          "skew_norm": 0.452549,
+          "trace_angle_deg": 18.662
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "holonomy_fro": 1.306907,
+          "commutator_norm": 1.306907,
+          "skew_norm": 1.006476,
+          "trace_angle_deg": 135.073
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "holonomy_fro": 0.625903,
+          "commutator_norm": 0.625903,
+          "skew_norm": 1.125333,
+          "trace_angle_deg": 52.537
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "holonomy_fro": 0.172543,
+          "commutator_norm": 0.172543,
+          "skew_norm": 0.343154,
+          "trace_angle_deg": 14.016
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "holonomy_fro": 1.277959,
+          "commutator_norm": 1.277959,
+          "skew_norm": 1.123594,
+          "trace_angle_deg": 129.285
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "holonomy_fro": 0.507382,
+          "commutator_norm": 0.507382,
+          "skew_norm": 0.947367,
+          "trace_angle_deg": 42.05
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "holonomy_fro": 0.183915,
+          "commutator_norm": 0.183915,
+          "skew_norm": 0.36472,
+          "trace_angle_deg": 14.945
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "holonomy_fro": 0.924944,
+          "commutator_norm": 0.924944,
+          "skew_norm": 1.399864,
+          "trace_angle_deg": 81.693
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "holonomy_fro": 1.019621,
+          "commutator_norm": 1.019621,
+          "skew_norm": 0.394162,
+          "trace_angle_deg": 92.271
+        }
+      ]
+    },
+    "antonym__plural": {
+      "n_squares": 23,
+      "mean_holonomy_fro": 1.031189,
+      "mean_commutator_norm": 1.031189,
+      "max_holonomy_fro": 1.403146,
+      "verdict": "CURVED_TASK_BUNDLE",
+      "per_layer_square": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "holonomy_fro": 1.403146,
+          "commutator_norm": 1.403146,
+          "skew_norm": 0.859898,
+          "trace_angle_deg": 165.655
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "holonomy_fro": 0.868115,
+          "commutator_norm": 0.868115,
+          "skew_norm": 1.372377,
+          "trace_angle_deg": 75.737
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "holonomy_fro": 1.260364,
+          "commutator_norm": 1.260364,
+          "skew_norm": 1.288939,
+          "trace_angle_deg": 126.052
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "holonomy_fro": 1.268306,
+          "commutator_norm": 1.268306,
+          "skew_norm": 1.122605,
+          "trace_angle_deg": 127.488
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "holonomy_fro": 1.038651,
+          "commutator_norm": 1.038651,
+          "skew_norm": 0.550239,
+          "trace_angle_deg": 94.519
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "holonomy_fro": 1.074979,
+          "commutator_norm": 1.074979,
+          "skew_norm": 1.400946,
+          "trace_angle_deg": 98.95
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "holonomy_fro": 1.039863,
+          "commutator_norm": 1.039863,
+          "skew_norm": 0.558603,
+          "trace_angle_deg": 94.664
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "holonomy_fro": 1.243994,
+          "commutator_norm": 1.243994,
+          "skew_norm": 1.183702,
+          "trace_angle_deg": 123.197
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "holonomy_fro": 0.419549,
+          "commutator_norm": 0.419549,
+          "skew_norm": 0.801606,
+          "trace_angle_deg": 34.515
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "holonomy_fro": 1.026015,
+          "commutator_norm": 1.026015,
+          "skew_norm": 0.453068,
+          "trace_angle_deg": 93.021
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "holonomy_fro": 1.182995,
+          "commutator_norm": 1.182995,
+          "skew_norm": 1.130815,
+          "trace_angle_deg": 113.545
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "holonomy_fro": 0.834893,
+          "commutator_norm": 0.834893,
+          "skew_norm": 1.352369,
+          "trace_angle_deg": 72.365
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "holonomy_fro": 0.579654,
+          "commutator_norm": 0.579654,
+          "skew_norm": 1.057454,
+          "trace_angle_deg": 48.394
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "holonomy_fro": 1.061868,
+          "commutator_norm": 1.061868,
+          "skew_norm": 1.404053,
+          "trace_angle_deg": 97.329
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "holonomy_fro": 1.282406,
+          "commutator_norm": 1.282406,
+          "skew_norm": 1.14773,
+          "trace_angle_deg": 130.133
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "holonomy_fro": 0.634286,
+          "commutator_norm": 0.634286,
+          "skew_norm": 1.139946,
+          "trace_angle_deg": 53.296
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "holonomy_fro": 0.936609,
+          "commutator_norm": 0.936609,
+          "skew_norm": 1.403942,
+          "trace_angle_deg": 82.948
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "holonomy_fro": 0.47215,
+          "commutator_norm": 0.47215,
+          "skew_norm": 0.890341,
+          "trace_angle_deg": 39.007
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "holonomy_fro": 1.357484,
+          "commutator_norm": 1.357484,
+          "skew_norm": 1.396622,
+          "trace_angle_deg": 147.433
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "holonomy_fro": 1.008387,
+          "commutator_norm": 1.008387,
+          "skew_norm": 0.25847,
+          "trace_angle_deg": 90.965
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "holonomy_fro": 1.128597,
+          "commutator_norm": 1.128597,
+          "skew_norm": 1.36343,
+          "trace_angle_deg": 105.886
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "holonomy_fro": 1.333779,
+          "commutator_norm": 1.333779,
+          "skew_norm": 1.379234,
+          "trace_angle_deg": 141.166
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "holonomy_fro": 1.261256,
+          "commutator_norm": 1.261256,
+          "skew_norm": 1.278563,
+          "trace_angle_deg": 126.211
+        }
+      ]
+    },
+    "capital__past_tense": {
+      "n_squares": 23,
+      "mean_holonomy_fro": 0.795497,
+      "mean_commutator_norm": 0.795497,
+      "max_holonomy_fro": 1.232621,
+      "verdict": "CURVED_TASK_BUNDLE",
+      "per_layer_square": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "holonomy_fro": 1.072974,
+          "commutator_norm": 1.072974,
+          "skew_norm": 1.398512,
+          "trace_angle_deg": 98.701
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "holonomy_fro": 0.900793,
+          "commutator_norm": 0.900793,
+          "skew_norm": 1.391889,
+          "trace_angle_deg": 79.131
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "holonomy_fro": 0.712587,
+          "commutator_norm": 0.712587,
+          "skew_norm": 1.236176,
+          "trace_angle_deg": 60.513
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "holonomy_fro": 0.621082,
+          "commutator_norm": 0.621082,
+          "skew_norm": 1.125715,
+          "trace_angle_deg": 52.102
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "holonomy_fro": 0.85341,
+          "commutator_norm": 0.85341,
+          "skew_norm": 1.476263,
+          "trace_angle_deg": 74.235
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "holonomy_fro": 1.015312,
+          "commutator_norm": 1.015312,
+          "skew_norm": 0.348609,
+          "trace_angle_deg": 91.768
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "holonomy_fro": 0.73451,
+          "commutator_norm": 0.73451,
+          "skew_norm": 1.267511,
+          "trace_angle_deg": 62.581
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "holonomy_fro": 1.009879,
+          "commutator_norm": 1.009879,
+          "skew_norm": 0.280415,
+          "trace_angle_deg": 91.138
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "holonomy_fro": 0.897006,
+          "commutator_norm": 0.897006,
+          "skew_norm": 1.391255,
+          "trace_angle_deg": 78.733
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "holonomy_fro": 0.747315,
+          "commutator_norm": 0.747315,
+          "skew_norm": 1.269976,
+          "trace_angle_deg": 63.799
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "holonomy_fro": 0.285815,
+          "commutator_norm": 0.285815,
+          "skew_norm": 0.562587,
+          "trace_angle_deg": 23.32
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "holonomy_fro": 0.486765,
+          "commutator_norm": 0.486765,
+          "skew_norm": 0.915266,
+          "trace_angle_deg": 40.265
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "holonomy_fro": 0.910388,
+          "commutator_norm": 0.910388,
+          "skew_norm": 1.407561,
+          "trace_angle_deg": 80.143
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "holonomy_fro": 0.260822,
+          "commutator_norm": 0.260822,
+          "skew_norm": 0.514081,
+          "trace_angle_deg": 21.256
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "holonomy_fro": 0.261749,
+          "commutator_norm": 0.261749,
+          "skew_norm": 0.515805,
+          "trace_angle_deg": 21.332
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "holonomy_fro": 0.997189,
+          "commutator_norm": 0.997189,
+          "skew_norm": 1.420935,
+          "trace_angle_deg": 89.678
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "holonomy_fro": 1.181614,
+          "commutator_norm": 1.181614,
+          "skew_norm": 1.127333,
+          "trace_angle_deg": 113.342
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "holonomy_fro": 1.041144,
+          "commutator_norm": 1.041144,
+          "skew_norm": 0.567292,
+          "trace_angle_deg": 94.817
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "holonomy_fro": 1.095338,
+          "commutator_norm": 1.095338,
+          "skew_norm": 0.848085,
+          "trace_angle_deg": 101.523
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "holonomy_fro": 1.215938,
+          "commutator_norm": 1.215938,
+          "skew_norm": 1.206685,
+          "trace_angle_deg": 118.588
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "holonomy_fro": 0.519659,
+          "commutator_norm": 0.519659,
+          "skew_norm": 0.967366,
+          "trace_angle_deg": 43.117
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "holonomy_fro": 0.24253,
+          "commutator_norm": 0.24253,
+          "skew_norm": 0.47871,
+          "trace_angle_deg": 19.749
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "holonomy_fro": 1.232621,
+          "commutator_norm": 1.232621,
+          "skew_norm": 1.223183,
+          "trace_angle_deg": 121.289
+        }
+      ]
+    },
+    "capital__plural": {
+      "n_squares": 23,
+      "mean_holonomy_fro": 1.055302,
+      "mean_commutator_norm": 1.055302,
+      "max_holonomy_fro": 1.50829,
+      "verdict": "CURVED_TASK_BUNDLE",
+      "per_layer_square": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "holonomy_fro": 1.032512,
+          "commutator_norm": 1.032512,
+          "skew_norm": 0.505563,
+          "trace_angle_deg": 93.789
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "holonomy_fro": 1.144581,
+          "commutator_norm": 1.144581,
+          "skew_norm": 1.02371,
+          "trace_angle_deg": 108.063
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "holonomy_fro": 1.50829,
+          "commutator_norm": 1.50829,
+          "skew_norm": 1.359712,
+          "trace_angle_deg": 180.0
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "holonomy_fro": 1.063975,
+          "commutator_norm": 1.063975,
+          "skew_norm": 1.502572,
+          "trace_angle_deg": 97.588
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "holonomy_fro": 1.08695,
+          "commutator_norm": 1.08695,
+          "skew_norm": 1.39208,
+          "trace_angle_deg": 100.455
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "holonomy_fro": 1.138976,
+          "commutator_norm": 1.138976,
+          "skew_norm": 1.006148,
+          "trace_angle_deg": 107.294
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "holonomy_fro": 1.380628,
+          "commutator_norm": 1.380628,
+          "skew_norm": 1.407969,
+          "trace_angle_deg": 154.976
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "holonomy_fro": 1.01676,
+          "commutator_norm": 1.01676,
+          "skew_norm": 0.364576,
+          "trace_angle_deg": 91.937
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "holonomy_fro": 1.144416,
+          "commutator_norm": 1.144416,
+          "skew_norm": 1.3461,
+          "trace_angle_deg": 108.04
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "holonomy_fro": 0.896562,
+          "commutator_norm": 0.896562,
+          "skew_norm": 1.386937,
+          "trace_angle_deg": 78.687
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "holonomy_fro": 0.617701,
+          "commutator_norm": 0.617701,
+          "skew_norm": 1.112691,
+          "trace_angle_deg": 51.797
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "holonomy_fro": 1.02556,
+          "commutator_norm": 1.02556,
+          "skew_norm": 0.449148,
+          "trace_angle_deg": 92.968
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "holonomy_fro": 1.18627,
+          "commutator_norm": 1.18627,
+          "skew_norm": 1.138974,
+          "trace_angle_deg": 114.031
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "holonomy_fro": 1.019987,
+          "commutator_norm": 1.019987,
+          "skew_norm": 0.397791,
+          "trace_angle_deg": 92.314
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "holonomy_fro": 1.13013,
+          "commutator_norm": 1.13013,
+          "skew_norm": 0.977292,
+          "trace_angle_deg": 106.093
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "holonomy_fro": 0.777692,
+          "commutator_norm": 0.777692,
+          "skew_norm": 1.307957,
+          "trace_angle_deg": 66.722
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "holonomy_fro": 1.146427,
+          "commutator_norm": 1.146427,
+          "skew_norm": 1.029376,
+          "trace_angle_deg": 108.318
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "holonomy_fro": 0.467021,
+          "commutator_norm": 0.467021,
+          "skew_norm": 0.896212,
+          "trace_angle_deg": 38.566
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "holonomy_fro": 1.411263,
+          "commutator_norm": 1.411263,
+          "skew_norm": 0.348398,
+          "trace_angle_deg": 172.597
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "holonomy_fro": 1.031906,
+          "commutator_norm": 1.031906,
+          "skew_norm": 0.500916,
+          "trace_angle_deg": 93.717
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "holonomy_fro": 1.120606,
+          "commutator_norm": 1.120606,
+          "skew_norm": 0.944566,
+          "trace_angle_deg": 104.818
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "holonomy_fro": 0.573811,
+          "commutator_norm": 0.573811,
+          "skew_norm": 1.052261,
+          "trace_angle_deg": 47.876
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "holonomy_fro": 1.349929,
+          "commutator_norm": 1.349929,
+          "skew_norm": 0.967976,
+          "trace_angle_deg": 145.317
+        }
+      ]
+    },
+    "past_tense__plural": {
+      "n_squares": 23,
+      "mean_holonomy_fro": 0.979184,
+      "mean_commutator_norm": 0.979184,
+      "max_holonomy_fro": 1.316079,
+      "verdict": "CURVED_TASK_BUNDLE",
+      "per_layer_square": [
+        {
+          "from": 0,
+          "to": 1,
+          "rel_depth": 0.0,
+          "holonomy_fro": 0.64325,
+          "commutator_norm": 0.64325,
+          "skew_norm": 1.150925,
+          "trace_angle_deg": 54.11
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "rel_depth": 0.0435,
+          "holonomy_fro": 0.825442,
+          "commutator_norm": 0.825442,
+          "skew_norm": 1.375927,
+          "trace_angle_deg": 71.419
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "rel_depth": 0.087,
+          "holonomy_fro": 1.035259,
+          "commutator_norm": 1.035259,
+          "skew_norm": 0.526068,
+          "trace_angle_deg": 94.115
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "rel_depth": 0.1304,
+          "holonomy_fro": 1.047171,
+          "commutator_norm": 1.047171,
+          "skew_norm": 1.513279,
+          "trace_angle_deg": 95.541
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "rel_depth": 0.1739,
+          "holonomy_fro": 1.316079,
+          "commutator_norm": 1.316079,
+          "skew_norm": 1.10919,
+          "trace_angle_deg": 137.06
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "rel_depth": 0.2174,
+          "holonomy_fro": 1.087046,
+          "commutator_norm": 1.087046,
+          "skew_norm": 0.812816,
+          "trace_angle_deg": 100.467
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "rel_depth": 0.2609,
+          "holonomy_fro": 1.176352,
+          "commutator_norm": 1.176352,
+          "skew_norm": 1.321293,
+          "trace_angle_deg": 112.569
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "rel_depth": 0.3043,
+          "holonomy_fro": 1.020073,
+          "commutator_norm": 1.020073,
+          "skew_norm": 0.398631,
+          "trace_angle_deg": 92.324
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "rel_depth": 0.3478,
+          "holonomy_fro": 1.191399,
+          "commutator_norm": 1.191399,
+          "skew_norm": 1.285456,
+          "trace_angle_deg": 114.799
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "rel_depth": 0.3913,
+          "holonomy_fro": 0.908519,
+          "commutator_norm": 0.908519,
+          "skew_norm": 1.426429,
+          "trace_angle_deg": 79.945
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "rel_depth": 0.4348,
+          "holonomy_fro": 1.026726,
+          "commutator_norm": 1.026726,
+          "skew_norm": 0.459123,
+          "trace_angle_deg": 93.105
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "rel_depth": 0.4783,
+          "holonomy_fro": 1.007355,
+          "commutator_norm": 1.007355,
+          "skew_norm": 0.242116,
+          "trace_angle_deg": 90.846
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "rel_depth": 0.5217,
+          "holonomy_fro": 1.067333,
+          "commutator_norm": 1.067333,
+          "skew_norm": 0.719753,
+          "trace_angle_deg": 98.002
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "rel_depth": 0.5652,
+          "holonomy_fro": 0.388038,
+          "commutator_norm": 0.388038,
+          "skew_norm": 0.74704,
+          "trace_angle_deg": 31.851
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "rel_depth": 0.6087,
+          "holonomy_fro": 1.076693,
+          "commutator_norm": 1.076693,
+          "skew_norm": 0.765729,
+          "trace_angle_deg": 99.164
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "rel_depth": 0.6522,
+          "holonomy_fro": 1.313554,
+          "commutator_norm": 1.313554,
+          "skew_norm": 1.049695,
+          "trace_angle_deg": 136.504
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "rel_depth": 0.6957,
+          "holonomy_fro": 1.311278,
+          "commutator_norm": 1.311278,
+          "skew_norm": 0.983501,
+          "trace_angle_deg": 136.009
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "rel_depth": 0.7391,
+          "holonomy_fro": 0.219155,
+          "commutator_norm": 0.219155,
+          "skew_norm": 0.433376,
+          "trace_angle_deg": 17.83
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "rel_depth": 0.7826,
+          "holonomy_fro": 1.062171,
+          "commutator_norm": 1.062171,
+          "skew_norm": 1.617653,
+          "trace_angle_deg": 97.366
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "rel_depth": 0.8261,
+          "holonomy_fro": 0.979595,
+          "commutator_norm": 0.979595,
+          "skew_norm": 1.425828,
+          "trace_angle_deg": 87.685
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "rel_depth": 0.8696,
+          "holonomy_fro": 0.585519,
+          "commutator_norm": 0.585519,
+          "skew_norm": 1.067017,
+          "trace_angle_deg": 48.916
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "rel_depth": 0.913,
+          "holonomy_fro": 1.128855,
+          "commutator_norm": 1.128855,
+          "skew_norm": 1.365693,
+          "trace_angle_deg": 105.921
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "rel_depth": 0.9565,
+          "holonomy_fro": 1.104369,
+          "commutator_norm": 1.104369,
+          "skew_norm": 0.884337,
+          "trace_angle_deg": 102.687
+        }
+      ]
+    }
+  },
+  "null_baseline": {
+    "real_mean_holonomy_fro": 0.934841,
+    "controls": {
+      "random_subspace": {
+        "baseline_mean": 1.401716,
+        "baseline_std": 0.015826,
+        "real_minus_baseline": -0.466876,
+        "ratio_real_over_baseline": 0.6669,
+        "z_score": -29.5,
+        "n_rep": 50
+      },
+      "layer_shuffle": {
+        "baseline_mean": 1.239039,
+        "baseline_std": 0.026127,
+        "real_minus_baseline": -0.304198,
+        "ratio_real_over_baseline": 0.7545,
+        "z_score": -11.643,
+        "n_rep": 50
+      },
+      "task_shuffle": {
+        "baseline_mean": 1.090523,
+        "baseline_std": 0.022404,
+        "real_minus_baseline": -0.155683,
+        "ratio_real_over_baseline": 0.8572,
+        "z_score": -6.949,
+        "n_rep": 50
+      }
+    },
+    "null_verdict": "SEPARATES_FROM_NULL_BELOW_NULL"
+  },
+  "summary": {
+    "mean_holonomy_fro": 0.934841,
+    "mean_commutator_norm": 0.934841,
+    "verdict": "CURVED_TASK_BUNDLE",
+    "null_verdict": "SEPARATES_FROM_NULL_BELOW_NULL"
+  }
+}

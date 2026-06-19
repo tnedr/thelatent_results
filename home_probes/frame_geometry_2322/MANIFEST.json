@@ -1,0 +1,21 @@
+{
+  "models": [
+    "gpt2-large",
+    "pythia-1b",
+    "pythia-1.4b"
+  ],
+  "n_files": 7,
+  "ts": "2026-06-19T13:04:35Z",
+  "dispatch": "dispatch_20260618_2322_home_frame_geometry_scaleup",
+  "machine": "home",
+  "note": "ICL n=32 null=50; factual n=24 null=50",
+  "files": [
+    "frame_geometry_gpt2-large_factual.json",
+    "frame_geometry_gpt2-large.json",
+    "frame_geometry_pythia-1_4b_factual.json",
+    "frame_geometry_pythia-1_4b.json",
+    "frame_geometry_pythia-1b_factual.json",
+    "frame_geometry_pythia-1b.json",
+    "frame_geometry.png"
+  ]
+}
