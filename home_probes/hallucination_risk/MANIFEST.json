@@ -1,6 +1,9 @@
 {
   "note": "synthetic gate + factual hallucination risk n=64/domain",
   "ts": "2026-06-19T16:23:49Z",
+  "probe_script_corp": "topics/ml_in_context_gradient_descent/experiments/hallucination_risk_probe.py",
+  "probe_handoff_home": "thelatent_home/tools/lab_home/staged_experiments/hallucination_risk_probe.py",
+  "depends_on": "factual_recall_tasks.py (frame_geometry 2322 / mirror)",
   "files": [
     "hallucination_risk_gpt2-large.json",
     "hallucination_risk_gpt2.json",
