@@ -1,0 +1,21 @@
+{
+  "note": "synthetic gate + factual hallucination risk n=64/domain",
+  "ts": "2026-06-19T16:23:49Z",
+  "files": [
+    "hallucination_risk_gpt2-large.json",
+    "hallucination_risk_gpt2.json",
+    "hallucination_risk_pythia-1_4b.json",
+    "hallucination_risk_pythia-410m.json",
+    "hallucination_risk_summary.json",
+    "hallucination_risk_synthetic.json"
+  ],
+  "models": [
+    "gpt2",
+    "gpt2-large",
+    "pythia-410m",
+    "pythia-1.4b"
+  ],
+  "machine": "home",
+  "n_files": 6,
+  "dispatch": "dispatch_20260619_1120_geometry_hallucination_risk"
+}

@@ -1,0 +1,63 @@
+{
+  "model": "gpt2",
+  "hf_name": "gpt2",
+  "device": "cuda",
+  "n_params": 124439808,
+  "capacity_layer": 6,
+  "readout_k": 4,
+  "n_samples_per_domain": 64,
+  "seed": 42,
+  "tau": 0.5,
+  "n_queries": 256,
+  "label_counts": {
+    "correct": 0,
+    "wrong": 256,
+    "hallucination": 0,
+    "abstention_wrong": 256
+  },
+  "univariate": {
+    "transport_gain": {
+      "auc": null,
+      "point_biserial": null
+    },
+    "calibration_gap": {
+      "auc": null,
+      "point_biserial": null
+    },
+    "residual_noise_energy": {
+      "auc": null,
+      "point_biserial": null
+    },
+    "shadow_error": {
+      "auc": null,
+      "point_biserial": null
+    }
+  },
+  "baseline_confidence_auc": null,
+  "geometry_auc_kfold": null,
+  "auc_lift_over_confidence": null,
+  "verdict": "GEOMETRY_NULL",
+  "by_domain": {
+    "antonym": {
+      "n": 64,
+      "n_hallucination": 0,
+      "hallucination_rate": 0.0
+    },
+    "capital": {
+      "n": 64,
+      "n_hallucination": 0,
+      "hallucination_rate": 0.0
+    },
+    "past_tense": {
+      "n": 64,
+      "n_hallucination": 0,
+      "hallucination_rate": 0.0
+    },
+    "plural": {
+      "n": 64,
+      "n_hallucination": 0,
+      "hallucination_rate": 0.0
+    }
+  },
+  "timestamp": "2026-06-19T16:45:16"
+}

@@ -1,0 +1,63 @@
+{
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "device": "cuda",
+  "n_params": 774030080,
+  "capacity_layer": 21,
+  "readout_k": 4,
+  "n_samples_per_domain": 64,
+  "seed": 42,
+  "tau": 0.5,
+  "n_queries": 256,
+  "label_counts": {
+    "correct": 143,
+    "wrong": 113,
+    "hallucination": 80,
+    "abstention_wrong": 33
+  },
+  "univariate": {
+    "transport_gain": {
+      "auc": 0.8045454545454547,
+      "point_biserial": 0.2801
+    },
+    "calibration_gap": {
+      "auc": 1.0,
+      "point_biserial": 0.8516
+    },
+    "residual_noise_energy": {
+      "auc": 0.5757102272727272,
+      "point_biserial": 0.0624
+    },
+    "shadow_error": {
+      "auc": 0.33181818181818185,
+      "point_biserial": -0.2265
+    }
+  },
+  "baseline_confidence_auc": 0.4074573863636364,
+  "geometry_auc_kfold": 0.9829545454545456,
+  "auc_lift_over_confidence": 0.5755,
+  "verdict": "GEOMETRY_PREDICTS_HALLUCINATION",
+  "by_domain": {
+    "antonym": {
+      "n": 64,
+      "n_hallucination": 42,
+      "hallucination_rate": 0.6562
+    },
+    "capital": {
+      "n": 64,
+      "n_hallucination": 0,
+      "hallucination_rate": 0.0
+    },
+    "past_tense": {
+      "n": 64,
+      "n_hallucination": 26,
+      "hallucination_rate": 0.4062
+    },
+    "plural": {
+      "n": 64,
+      "n_hallucination": 12,
+      "hallucination_rate": 0.1875
+    }
+  },
+  "timestamp": "2026-06-19T16:45:52"
+}

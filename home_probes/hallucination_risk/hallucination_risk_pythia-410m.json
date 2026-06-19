@@ -1,0 +1,63 @@
+{
+  "model": "pythia-410m",
+  "hf_name": "EleutherAI/pythia-410m",
+  "device": "cuda",
+  "n_params": 405334016,
+  "capacity_layer": 13,
+  "readout_k": 4,
+  "n_samples_per_domain": 64,
+  "seed": 42,
+  "tau": 0.5,
+  "n_queries": 256,
+  "label_counts": {
+    "correct": 101,
+    "wrong": 155,
+    "hallucination": 28,
+    "abstention_wrong": 127
+  },
+  "univariate": {
+    "transport_gain": {
+      "auc": 0.5637531328320802,
+      "point_biserial": 0.085
+    },
+    "calibration_gap": {
+      "auc": 1.0,
+      "point_biserial": 0.4724
+    },
+    "residual_noise_energy": {
+      "auc": 0.5067355889724311,
+      "point_biserial": 0.0007
+    },
+    "shadow_error": {
+      "auc": 0.5355576441102756,
+      "point_biserial": 0.0661
+    }
+  },
+  "baseline_confidence_auc": 0.8175125313283207,
+  "geometry_auc_kfold": 0.9976503759398496,
+  "auc_lift_over_confidence": 0.1801,
+  "verdict": "GEOMETRY_PREDICTS_HALLUCINATION",
+  "by_domain": {
+    "antonym": {
+      "n": 64,
+      "n_hallucination": 17,
+      "hallucination_rate": 0.2656
+    },
+    "capital": {
+      "n": 64,
+      "n_hallucination": 0,
+      "hallucination_rate": 0.0
+    },
+    "past_tense": {
+      "n": 64,
+      "n_hallucination": 10,
+      "hallucination_rate": 0.1562
+    },
+    "plural": {
+      "n": 64,
+      "n_hallucination": 1,
+      "hallucination_rate": 0.0156
+    }
+  },
+  "timestamp": "2026-06-19T16:46:18"
+}
