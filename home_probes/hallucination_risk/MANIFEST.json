@@ -1,12 +1,9 @@
 {
-  "note": "synthetic gate + factual hallucination risk n=64/domain; probe script co-located for corp",
-  "ts": "2026-06-19T18:23:49Z",
+  "n_files": 7,
   "dispatch": "dispatch_20260619_1120_geometry_hallucination_risk",
   "machine": "home",
-  "probe_script": "home_probes/hallucination_risk/hallucination_risk_probe.py",
-  "run_from": "topics/ml_in_context_gradient_descent/experiments (sibling imports: factual_recall_tasks, icl_convergence_probe, ...)",
-  "synthetic_only": "python3 hallucination_risk_probe.py --synthetic  # after cp probe into experiments/",
-  "depends_on": "factual_recall_tasks.py in thelatent experiments mirror",
+  "note": "v1.1 geometry-only classifier; n=128/domain; records in JSON",
+  "ts": "2026-06-19T20:18:27Z",
   "models": [
     "gpt2",
     "gpt2-large",
@@ -14,13 +11,12 @@
     "pythia-1.4b"
   ],
   "files": [
-    "hallucination_risk_probe.py",
-    "hallucination_risk_synthetic.json",
-    "hallucination_risk_gpt2.json",
     "hallucination_risk_gpt2-large.json",
-    "hallucination_risk_pythia-410m.json",
+    "hallucination_risk_gpt2.json",
     "hallucination_risk_pythia-1_4b.json",
-    "hallucination_risk_summary.json"
-  ],
-  "n_files": 7
+    "hallucination_risk_pythia-410m.json",
+    "hallucination_risk_summary.json",
+    "hallucination_risk_synthetic.json",
+    "hallucination_risk_probe.py"
+  ]
 }

@@ -6,46 +6,53 @@
   "validation_checks": {
     "geometry_auc_ge_0.75": true,
     "verdict_predicts": true,
-    "lift_ge_0.03": true,
-    "planted_prob_auc_ge_0.80": true
+    "geometry_lift_ge_0.05": true,
+    "planted_prob_auc_ge_0.80": true,
+    "calibration_leak_flagged": true
   },
   "all_pass": true,
   "n_queries": 1000,
   "tau": 0.5,
   "label_counts": {
-    "correct": 500,
-    "wrong": 500,
-    "hallucination": 500,
+    "correct": 534,
+    "wrong": 466,
+    "hallucination": 466,
     "abstention_wrong": 0
   },
   "univariate": {
     "transport_gain": {
-      "auc": 0.673316,
-      "point_biserial": 0.3065
+      "auc": 0.7892736011316327,
+      "point_biserial": 0.4942
+    },
+    "residual_noise_energy": {
+      "auc": 0.49584880487373617,
+      "point_biserial": -0.0163
+    },
+    "shadow_error": {
+      "auc": 0.4729348507498674,
+      "point_biserial": -0.0464
     },
     "calibration_gap": {
       "auc": 1.0,
-      "point_biserial": 0.9962
-    },
-    "residual_noise_energy": {
-      "auc": 0.48689600000000005,
-      "point_biserial": -0.0214
-    },
-    "shadow_error": {
-      "auc": 0.46784000000000003,
-      "point_biserial": -0.0524
+      "point_biserial": 0.9964
     }
   },
-  "baseline_confidence_auc": 0.483344,
-  "geometry_auc_kfold": 1.0,
-  "auc_lift_over_confidence": 0.5167,
+  "geometry_features": [
+    "transport_gain",
+    "residual_noise_energy",
+    "shadow_error"
+  ],
+  "baseline_confidence_auc": 0.4859992605809262,
+  "leaky_calibration_baseline_auc": 1.0,
+  "geometry_auc_kfold": 0.7870111395090902,
+  "geometry_lift_over_confidence": 0.301,
   "verdict": "GEOMETRY_PREDICTS_HALLUCINATION",
   "by_domain": {
     "synthetic": {
       "n": 1000,
-      "n_hallucination": 500,
-      "hallucination_rate": 0.5
+      "n_hallucination": 466,
+      "hallucination_rate": 0.466
     }
   },
-  "timestamp": "2026-06-19T16:44:58"
+  "timestamp": "2026-06-19T22:13:34"
 }
