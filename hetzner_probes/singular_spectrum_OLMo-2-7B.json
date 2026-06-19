@@ -1,0 +1,74 @@
+{
+  "mode": "real_model",
+  "model": "OLMo-2-7B",
+  "hf_name": "allenai/OLMo-2-1124-7B",
+  "date": "2026-06-19",
+  "n_layers": 32,
+  "capacity_layer": 18,
+  "d_model": 4096,
+  "n_samples": 64,
+  "formal_anchors": [
+    "SVD1",
+    "SVD2",
+    "SVD3",
+    "SVD4",
+    "SVD5",
+    "SVD6"
+  ],
+  "per_domain": {
+    "relation_composition": {
+      "raw_effective_rank": 46.486,
+      "readout_effective_rank": 18.124,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.884,
+      "rank_at_90pct_energy": 40,
+      "sigma_min_margin": 15.85255,
+      "sigma_top": 32.32248,
+      "decay_ratio_at_margin": 0.49045,
+      "spectral_decay_exponent": 0.015896,
+      "readout_rank_frac_of_d": 0.0044,
+      "n_instances": 64
+    },
+    "arithmetic_carry": {
+      "raw_effective_rank": 49.038,
+      "readout_effective_rank": 13.073,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.902,
+      "rank_at_90pct_energy": 37,
+      "sigma_min_margin": 13.62503,
+      "sigma_top": 27.53295,
+      "decay_ratio_at_margin": 0.494863,
+      "spectral_decay_exponent": 0.015314,
+      "readout_rank_frac_of_d": 0.0032,
+      "n_instances": 64
+    },
+    "induction": {
+      "raw_effective_rank": 43.435,
+      "readout_effective_rank": 21.81,
+      "dark_fraction": 0.016,
+      "icl_order_rho_spearman": 0.87,
+      "rank_at_90pct_energy": 38,
+      "sigma_min_margin": 14.65734,
+      "sigma_top": 30.59055,
+      "decay_ratio_at_margin": 0.479146,
+      "spectral_decay_exponent": 0.018327,
+      "readout_rank_frac_of_d": 0.0053,
+      "n_instances": 64
+    }
+  },
+  "composition_SVD6": {
+    "available": true,
+    "stage1_layer": 18,
+    "stage1_eff_rank": 4.42,
+    "stage2_layer": 26,
+    "stage2_eff_rank": 4.39,
+    "bottleneck_holds": true
+  },
+  "verdict": {
+    "P_capacity_low_rank": true,
+    "P_order_SVD3": true,
+    "P_concentration_SVD4": true,
+    "P_bottleneck_SVD6": true,
+    "n_domains_measured": 3
+  }
+}

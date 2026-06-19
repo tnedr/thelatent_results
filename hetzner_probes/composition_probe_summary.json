@@ -1,0 +1,37 @@
+{
+  "n_models": 3,
+  "n_pass": 0,
+  "n_weak": 0,
+  "n_dark": 3,
+  "n_fail": 0,
+  "per_model": [
+    {
+      "model": "OLMo-2-7B",
+      "acc_1hop": 0.4844,
+      "acc_2hop": 0.0,
+      "rho2_1hop": 0.933548,
+      "rho2_2hop": 0.997472,
+      "mean_comp_ratio": null,
+      "verdict": "DARK"
+    },
+    {
+      "model": "pythia-12b",
+      "acc_1hop": 0.3906,
+      "acc_2hop": 0.0,
+      "rho2_1hop": 0.962411,
+      "rho2_2hop": 0.984393,
+      "mean_comp_ratio": null,
+      "verdict": "DARK"
+    },
+    {
+      "model": "pythia-6.9b",
+      "acc_1hop": 0.3281,
+      "acc_2hop": 0.0,
+      "rho2_1hop": 0.957424,
+      "rho2_2hop": 0.987487,
+      "mean_comp_ratio": null,
+      "verdict": "DARK"
+    }
+  ],
+  "timestamp": "2026-06-19T07:57:54"
+}
