@@ -1,0 +1,79 @@
+{
+  "mode": "synthetic",
+  "n": 1200,
+  "seed": 42,
+  "validation_checks": {
+    "geometry_auc_ge_0.75": true,
+    "verdict_separates": true,
+    "lift_ge_0.05": true,
+    "confidence_cannot_separate": true
+  },
+  "all_pass": true,
+  "n_total": 1200,
+  "n_confident": 1200,
+  "n_confident_wrong": 613,
+  "n_confident_correct": 587,
+  "tau": 0.5,
+  "confident_rate": 1.0,
+  "consistency_features": [
+    "layer_pred_consistency",
+    "margin_monotonicity",
+    "margin_traj_stability",
+    "support_participation",
+    "residual_noise_energy",
+    "shadow_error"
+  ],
+  "univariate": {
+    "layer_pred_consistency": {
+      "auc": 0.06629501071336266,
+      "point_biserial": -0.7321
+    },
+    "margin_monotonicity": {
+      "auc": 0.10424893908529281,
+      "point_biserial": -0.6673
+    },
+    "margin_traj_stability": {
+      "auc": 0.08319461080340493,
+      "point_biserial": -0.699
+    },
+    "support_participation": {
+      "auc": 0.12927179703805397,
+      "point_biserial": -0.6202
+    },
+    "residual_noise_energy": {
+      "auc": 0.08844151837946147,
+      "point_biserial": -0.6867
+    },
+    "shadow_error": {
+      "auc": 0.1444733777801246,
+      "point_biserial": -0.5986
+    }
+  },
+  "geometry_auc_kfold": 0.9989022624509839,
+  "within_confident_confidence_auc": 0.48919075899519493,
+  "geometry_lift_over_confidence": 0.4881,
+  "global_confidence_auc_all": 0.5108064619224024,
+  "leak_guard": {
+    "checked": [
+      "layer_pred_consistency",
+      "margin_monotonicity",
+      "margin_traj_stability",
+      "support_participation",
+      "residual_noise_energy",
+      "shadow_error"
+    ],
+    "label_aucs": {
+      "layer_pred_consistency": 0.0663,
+      "margin_monotonicity": 0.1042,
+      "margin_traj_stability": 0.0832,
+      "support_participation": 0.1293,
+      "residual_noise_energy": 0.0884,
+      "shadow_error": 0.1445
+    },
+    "flagged": {},
+    "leak_detected": false,
+    "threshold": 0.95
+  },
+  "verdict": "GEOMETRY_SEPARATES_COHERENT_FALSE",
+  "timestamp": "2026-06-20T18:16:02"
+}

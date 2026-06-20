@@ -1,0 +1,20 @@
+{
+  "files": [
+    "confident_error_geometry_gpt2-large.json",
+    "confident_error_geometry_pythia-1_4b.json",
+    "confident_error_geometry_pythia-410m.json",
+    "confident_error_geometry_summary.json",
+    "confident_error_geometry_synthetic.json",
+    "confident_error_geometry_probe.py"
+  ],
+  "models": [
+    "gpt2-large",
+    "pythia-410m",
+    "pythia-1.4b"
+  ],
+  "note": "confident-error geometry; n=128/domain; records in JSON",
+  "dispatch": "dispatch_20260620_0621_confident_error_geometry",
+  "machine": "home",
+  "n_files": 6,
+  "ts": "2026-06-20T17:27:44Z"
+}

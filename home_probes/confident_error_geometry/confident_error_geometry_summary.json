@@ -1,0 +1,43 @@
+{
+  "n_models": 3,
+  "models": [
+    "gpt2-large",
+    "pythia-1.4b",
+    "pythia-410m"
+  ],
+  "timestamp": "2026-06-20T19:27:44",
+  "per_model": [
+    {
+      "model": "gpt2-large",
+      "n_params_M": 774.0,
+      "verdict": "GEOMETRY_SEPARATES_COHERENT_FALSE",
+      "geometry_auc": 0.9356452726017943,
+      "within_confident_confidence_auc": 0.23407768904663315,
+      "geometry_lift": 0.1697,
+      "n_confident_wrong": 147,
+      "n_confident_correct": 276
+    },
+    {
+      "model": "pythia-1.4b",
+      "n_params_M": 1414.6,
+      "verdict": "GEOMETRY_NULL",
+      "geometry_auc": 0.6882936507936508,
+      "within_confident_confidence_auc": 0.1328373015873016,
+      "geometry_lift": -0.1789,
+      "n_confident_wrong": 32,
+      "n_confident_correct": 315
+    },
+    {
+      "model": "pythia-410m",
+      "n_params_M": 405.3,
+      "verdict": "GEOMETRY_SEPARATES_COHERENT_FALSE",
+      "geometry_auc": 0.8585530135872722,
+      "within_confident_confidence_auc": 0.33619788642434095,
+      "geometry_lift": 0.1948,
+      "n_confident_wrong": 79,
+      "n_confident_correct": 109
+    }
+  ],
+  "n_separates": 2,
+  "mean_geometry_lift": 0.0619
+}
