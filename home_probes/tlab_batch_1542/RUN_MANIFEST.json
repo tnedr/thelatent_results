@@ -1,0 +1,38 @@
+{
+  "models": [
+    "pythia-70m",
+    "pythia-160m",
+    "pythia-410m",
+    "pythia-1b",
+    "gpt2-medium",
+    "gpt2-large"
+  ],
+  "machine": "home",
+  "n_files": 16,
+  "files": [
+    "jacobian_product_spectrum_gpt2-large.json",
+    "jacobian_product_spectrum_gpt2-medium.json",
+    "jacobian_product_spectrum_pythia-160m.json",
+    "jacobian_product_spectrum_pythia-1b.json",
+    "jacobian_product_spectrum_pythia-410m.json",
+    "jacobian_product_spectrum_pythia-70m.json",
+    "jacobian_product_spectrum_synthetic.json",
+    "moving_frame_stationarity_gpt2-large.json",
+    "moving_frame_stationarity_gpt2-medium.json",
+    "moving_frame_stationarity_pythia-160m.json",
+    "moving_frame_stationarity_pythia-1b.json",
+    "moving_frame_stationarity_pythia-410m.json",
+    "moving_frame_stationarity_pythia-70m.json",
+    "moving_frame_stationarity_synthetic.json",
+    "jacobian_product_spectrum_probe.py",
+    "moving_frame_stationarity_probe.py"
+  ],
+  "probes": [
+    "jacobian_product_spectrum_probe.py",
+    "moving_frame_stationarity_probe.py"
+  ],
+  "ts": "2026-06-20T19:24:44Z",
+  "dispatch": "dispatch_20260620_1542_home_tlab_batch_custom",
+  "panel": "batch_custom",
+  "note": "operator_lift F0 + moving_frame B2; corp: tlab ingest --panel batch_custom"
+}

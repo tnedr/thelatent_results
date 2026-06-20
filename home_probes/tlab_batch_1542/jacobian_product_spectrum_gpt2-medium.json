@@ -1,0 +1,27 @@
+{
+  "mode": "real_model",
+  "probe": "jacobian_product_spectrum",
+  "model": "gpt2-medium",
+  "hf_name": "gpt2-medium",
+  "date": "2026-06-20",
+  "spec_anchor": "OPERATOR_LIFT_SPEC.md#part-f-empirical-contract (F0)",
+  "n_layers": 24,
+  "capacity_layer": 13,
+  "d_model": 1024,
+  "k": 8,
+  "iters": 12,
+  "n_samples": 16,
+  "per_domain": {},
+  "verdict": {
+    "shape_grounded": false,
+    "task_relevance_grounded_F0prime": false,
+    "operator_matches_proxy": false,
+    "median_log_spectrum_pearson": null,
+    "median_global_subspace_overlap": null,
+    "random_overlap_baseline": null,
+    "median_task_gain_ratio_F0prime": null,
+    "median_task_gain_vs_sigma_pearson": null,
+    "n_domains_measured": 0,
+    "interpretation": "PROXY ARTIFACT RISK: operator spectrum diverges from the measured proxy \u2014 the lift needs the operator measured directly."
+  }
+}

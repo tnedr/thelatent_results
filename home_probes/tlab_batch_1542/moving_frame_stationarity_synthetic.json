@@ -1,0 +1,55 @@
+{
+  "mode": "synthetic",
+  "probe": "moving_frame_stationarity",
+  "date": "2026-06-20",
+  "spec_anchor": "OPERATOR_LIFT_SPEC.md#part-d (Def 2.3) / B2 branch (F1)",
+  "dims": {
+    "d": 64,
+    "k": 6,
+    "T": 6
+  },
+  "stationary_control": {
+    "consecutive_overlap": 1.0,
+    "consecutive_procrustes_dev": 0.0,
+    "consecutive_mean_angle": 0.0,
+    "effective_rotation_dim": 0.0,
+    "total_drift_overlap": 1.0,
+    "delta_proxy": 0.0,
+    "random_overlap_baseline": 0.0938,
+    "overlap_over_baseline": 10.67,
+    "n_steps": 5
+  },
+  "slowly_rotating_control": {
+    "consecutive_overlap": 0.9976,
+    "consecutive_procrustes_dev": 0.0,
+    "consecutive_mean_angle": 0.02,
+    "effective_rotation_dim": 0.014,
+    "total_drift_overlap": 0.9469,
+    "delta_proxy": 0.0531,
+    "random_overlap_baseline": 0.0938,
+    "overlap_over_baseline": 10.64,
+    "n_steps": 5
+  },
+  "random_control": {
+    "consecutive_overlap": 0.0922,
+    "consecutive_procrustes_dev": 0.9675,
+    "consecutive_mean_angle": 1.3019,
+    "effective_rotation_dim": 5.447,
+    "total_drift_overlap": 0.0718,
+    "delta_proxy": 0.9282,
+    "random_overlap_baseline": 0.0938,
+    "overlap_over_baseline": 0.98,
+    "n_steps": 5
+  },
+  "verdict": {
+    "estimator_recovers_rotation": true,
+    "estimator_recover_err": 0.0,
+    "estimator_angle_planted": 0.4,
+    "estimator_angle_recovered": 0.4,
+    "stationary_classified": true,
+    "slowly_rotating_classified": true,
+    "random_classified": true,
+    "rotating_low_eff_dim": true,
+    "all_pass": true
+  }
+}

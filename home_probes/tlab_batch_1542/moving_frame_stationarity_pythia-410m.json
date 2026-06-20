@@ -1,0 +1,26 @@
+{
+  "mode": "real_model",
+  "probe": "moving_frame_stationarity",
+  "model": "pythia-410m",
+  "hf_name": "EleutherAI/pythia-410m",
+  "date": "2026-06-20",
+  "spec_anchor": "OPERATOR_LIFT_SPEC.md#part-d (Def 2.3) / B2 branch (F1)",
+  "n_layers": 24,
+  "capacity_layer": 13,
+  "d_model": 1024,
+  "k": 6,
+  "iters": 8,
+  "cut_idxs": [
+    15,
+    17,
+    20,
+    22,
+    24
+  ],
+  "n_samples": 6,
+  "per_domain": {},
+  "verdict": {
+    "regime": "NO_DATA",
+    "interpretation": "no domains measured"
+  }
+}

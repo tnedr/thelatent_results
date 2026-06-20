@@ -1,0 +1,26 @@
+{
+  "mode": "real_model",
+  "probe": "moving_frame_stationarity",
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "date": "2026-06-20",
+  "spec_anchor": "OPERATOR_LIFT_SPEC.md#part-d (Def 2.3) / B2 branch (F1)",
+  "n_layers": 36,
+  "capacity_layer": 21,
+  "d_model": 1280,
+  "k": 6,
+  "iters": 8,
+  "cut_idxs": [
+    23,
+    26,
+    30,
+    33,
+    36
+  ],
+  "n_samples": 6,
+  "per_domain": {},
+  "verdict": {
+    "regime": "NO_DATA",
+    "interpretation": "no domains measured"
+  }
+}
