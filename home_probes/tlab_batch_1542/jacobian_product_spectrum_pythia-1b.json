@@ -11,17 +11,60 @@
   "k": 8,
   "iters": 12,
   "n_samples": 16,
-  "per_domain": {},
+  "per_domain": {
+    "relation_composition": {
+      "k": 8,
+      "log_spectrum_pearson": 0.9951,
+      "shape_l2_dist": 0.3004,
+      "top1_ratio_op_over_proxy": 0.2928,
+      "leading_subspace_overlap_mean": 0.01,
+      "leading_subspace_overlap_random_baseline": 0.0039,
+      "sigma_op_mean_top": 13.83881,
+      "sigma_proxy_top": 47.26008,
+      "n_instances": 16,
+      "task_gain_ratio": 1.4245,
+      "task_gain_vs_sigma_pearson": 0.2977,
+      "task_gain_dim": 4
+    },
+    "arithmetic_carry": {
+      "k": 8,
+      "log_spectrum_pearson": 0.994,
+      "shape_l2_dist": 0.2165,
+      "top1_ratio_op_over_proxy": 0.2883,
+      "leading_subspace_overlap_mean": 0.0062,
+      "leading_subspace_overlap_random_baseline": 0.0039,
+      "sigma_op_mean_top": 14.98444,
+      "sigma_proxy_top": 51.98039,
+      "n_instances": 16,
+      "task_gain_ratio": 1.2335,
+      "task_gain_vs_sigma_pearson": 0.5103,
+      "task_gain_dim": 4
+    },
+    "induction": {
+      "k": 8,
+      "log_spectrum_pearson": 0.9923,
+      "shape_l2_dist": 0.2139,
+      "top1_ratio_op_over_proxy": 0.2258,
+      "leading_subspace_overlap_mean": 0.0116,
+      "leading_subspace_overlap_random_baseline": 0.0039,
+      "sigma_op_mean_top": 12.82443,
+      "sigma_proxy_top": 56.79676,
+      "n_instances": 16,
+      "task_gain_ratio": 1.4418,
+      "task_gain_vs_sigma_pearson": 0.8263,
+      "task_gain_dim": 4
+    }
+  },
   "verdict": {
-    "shape_grounded": false,
+    "shape_grounded": true,
     "task_relevance_grounded_F0prime": false,
     "operator_matches_proxy": false,
-    "median_log_spectrum_pearson": null,
-    "median_global_subspace_overlap": null,
-    "random_overlap_baseline": null,
-    "median_task_gain_ratio_F0prime": null,
-    "median_task_gain_vs_sigma_pearson": null,
-    "n_domains_measured": 0,
-    "interpretation": "PROXY ARTIFACT RISK: operator spectrum diverges from the measured proxy \u2014 the lift needs the operator measured directly."
+    "median_log_spectrum_pearson": 0.994,
+    "median_global_subspace_overlap": 0.01,
+    "random_overlap_baseline": 0.0039,
+    "median_task_gain_ratio_F0prime": 1.4245,
+    "median_task_gain_vs_sigma_pearson": 0.5103,
+    "n_domains_measured": 3,
+    "interpretation": "SHAPE GROUNDED, TASK-RELEVANCE WEAK: \u03c3 magnitudes track the proxy but the operator does not preferentially amplify the proxy task subspace (F0') \u2014 the operator and the proxy share a spectral envelope but not the task-relevant directions."
   }
 }

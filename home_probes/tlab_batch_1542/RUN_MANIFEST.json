@@ -1,14 +1,4 @@
 {
-  "models": [
-    "pythia-70m",
-    "pythia-160m",
-    "pythia-410m",
-    "pythia-1b",
-    "gpt2-medium",
-    "gpt2-large"
-  ],
-  "machine": "home",
-  "n_files": 16,
   "files": [
     "jacobian_product_spectrum_gpt2-large.json",
     "jacobian_product_spectrum_gpt2-medium.json",
@@ -27,12 +17,22 @@
     "jacobian_product_spectrum_probe.py",
     "moving_frame_stationarity_probe.py"
   ],
+  "ts": "2026-06-20T20:45:23Z",
+  "note": "operator_lift F0 + moving_frame B2; ICL_ATTN_IMPLEMENTATION=eager; corp: tlab ingest --panel batch_custom",
   "probes": [
     "jacobian_product_spectrum_probe.py",
     "moving_frame_stationarity_probe.py"
   ],
-  "ts": "2026-06-20T19:24:44Z",
+  "machine": "home",
+  "n_files": 16,
+  "models": [
+    "pythia-70m",
+    "pythia-160m",
+    "pythia-410m",
+    "pythia-1b",
+    "gpt2-medium",
+    "gpt2-large"
+  ],
   "dispatch": "dispatch_20260620_1542_home_tlab_batch_custom",
-  "panel": "batch_custom",
-  "note": "operator_lift F0 + moving_frame B2; corp: tlab ingest --panel batch_custom"
+  "panel": "batch_custom"
 }

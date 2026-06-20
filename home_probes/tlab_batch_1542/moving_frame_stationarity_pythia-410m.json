@@ -18,9 +18,60 @@
     24
   ],
   "n_samples": 6,
-  "per_domain": {},
+  "per_domain": {
+    "relation_composition": {
+      "consecutive_overlap": 0.4842,
+      "consecutive_procrustes_dev": 0.9504,
+      "consecutive_mean_angle": 0.8188,
+      "effective_rotation_dim": 3.0945,
+      "total_drift_overlap": 0.094,
+      "delta_proxy": 0.906,
+      "overlap_over_baseline": 82.645,
+      "random_overlap_baseline": 0.0059,
+      "n_instances": 6,
+      "regime": "SLOWLY_ROTATING",
+      "b2_branch": "imperfect_preconditioning_near_newton + depth_refines_preconditioner",
+      "note": "the frame is coherent but rotates with depth \u2014 exact whitening fails, the near-Newton bound contraction <= delta^2 governs with delta ~ delta_proxy, and depth refines (shrinks) it."
+    },
+    "arithmetic_carry": {
+      "consecutive_overlap": 0.4982,
+      "consecutive_procrustes_dev": 0.9562,
+      "consecutive_mean_angle": 0.804,
+      "effective_rotation_dim": 3.0105,
+      "total_drift_overlap": 0.1284,
+      "delta_proxy": 0.8716,
+      "overlap_over_baseline": 85.04,
+      "random_overlap_baseline": 0.0059,
+      "n_instances": 6,
+      "regime": "SLOWLY_ROTATING",
+      "b2_branch": "imperfect_preconditioning_near_newton + depth_refines_preconditioner",
+      "note": "the frame is coherent but rotates with depth \u2014 exact whitening fails, the near-Newton bound contraction <= delta^2 governs with delta ~ delta_proxy, and depth refines (shrinks) it."
+    },
+    "induction": {
+      "consecutive_overlap": 0.4952,
+      "consecutive_procrustes_dev": 0.9882,
+      "consecutive_mean_angle": 0.8053,
+      "effective_rotation_dim": 3.028,
+      "total_drift_overlap": 0.1257,
+      "delta_proxy": 0.8743,
+      "overlap_over_baseline": 84.525,
+      "random_overlap_baseline": 0.0059,
+      "n_instances": 6,
+      "regime": "SLOWLY_ROTATING",
+      "b2_branch": "imperfect_preconditioning_near_newton + depth_refines_preconditioner",
+      "note": "the frame is coherent but rotates with depth \u2014 exact whitening fails, the near-Newton bound contraction <= delta^2 governs with delta ~ delta_proxy, and depth refines (shrinks) it."
+    }
+  },
   "verdict": {
-    "regime": "NO_DATA",
-    "interpretation": "no domains measured"
+    "regime": "SLOWLY_ROTATING",
+    "b2_branch": "imperfect_preconditioning_near_newton + depth_refines_preconditioner",
+    "median_consecutive_overlap": 0.4952,
+    "median_mean_principal_angle": 0.8053,
+    "median_overlap_over_baseline": 84.53,
+    "median_delta_proxy": 0.8743,
+    "median_effective_rotation_dim": 3.028,
+    "domains_agree": true,
+    "n_domains_measured": 3,
+    "interpretation": "Frame coherent but slowly rotating -> the IMPERFECT branch governs (imperfect_preconditioning_near_newton, contraction <= delta^2 with delta ~ delta_proxy), and depth_refines_preconditioner predicts the residual shrinks with depth. Exact whitening does NOT hold; the B2 operator identity is approximate, bounded by the cross-layer coupling. Consistent with F0' (directional relevance weak)."
   }
 }
