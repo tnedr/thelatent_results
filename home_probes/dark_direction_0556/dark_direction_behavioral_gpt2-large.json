@@ -1,0 +1,157 @@
+{
+  "mode": "phase2_real_model",
+  "probe": "dark_direction_behavioral",
+  "model": "gpt2-large",
+  "hf_name": "gpt2-large",
+  "date": "2026-06-21",
+  "capacity_layer": 21,
+  "n_samples": 48,
+  "n_seeds": 5,
+  "truth_claim": "b_opb3_darkdirection_preregis_b4dd",
+  "per_domain": {
+    "arithmetic_carry": {
+      "n_seeds": 5,
+      "n_samples": 48,
+      "icl_gain_logprob_mean": 15.9855,
+      "icl_active": true,
+      "bright_over_dark_mean": 0.7419,
+      "bright_over_dark_std": 0.804,
+      "bright_over_random_mean": 0.74,
+      "spearman_mean": 0.5417,
+      "per_seed": [
+        {
+          "n_instances": 48,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 15.7182,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.022786,
+            "dark_task": 0.054641,
+            "dark_kernel": 0.006339,
+            "random": 0.008594,
+            "heuristic": 0.002996
+          },
+          "L_norm": {
+            "bright": 0.417,
+            "dark_task": 1.0,
+            "dark_kernel": 0.116,
+            "random": 0.1573,
+            "heuristic": 0.0548
+          },
+          "spectral_vs_behavioural_spearman": 0.3287,
+          "bright_over_random": 0.2597,
+          "bright_over_dark": -0.583
+        },
+        {
+          "n_instances": 48,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 14.9992,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.172224,
+            "dark_task": 0.014009,
+            "dark_kernel": -0.000458,
+            "random": 0.033878,
+            "heuristic": -0.004316
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.0813,
+            "dark_kernel": -0.0027,
+            "random": 0.1967,
+            "heuristic": -0.0251
+          },
+          "spectral_vs_behavioural_spearman": 0.64,
+          "bright_over_random": 0.8033,
+          "bright_over_dark": 0.9187
+        },
+        {
+          "n_instances": 48,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 14.7884,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.062293,
+            "dark_task": -0.038229,
+            "dark_kernel": -0.002815,
+            "random": 0.004065,
+            "heuristic": -0.001227
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": -0.6137,
+            "dark_kernel": -0.0452,
+            "random": 0.0653,
+            "heuristic": -0.0197
+          },
+          "spectral_vs_behavioural_spearman": 0.4513,
+          "bright_over_random": 0.9347,
+          "bright_over_dark": 1.6137
+        },
+        {
+          "n_instances": 48,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 15.1152,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.138488,
+            "dark_task": 0.019681,
+            "dark_kernel": 0.017733,
+            "random": 0.013235,
+            "heuristic": 0.001025
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.1421,
+            "dark_kernel": 0.128,
+            "random": 0.0956,
+            "heuristic": 0.0074
+          },
+          "spectral_vs_behavioural_spearman": 0.7678,
+          "bright_over_random": 0.9044,
+          "bright_over_dark": 0.8579
+        },
+        {
+          "n_instances": 48,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 19.3063,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.15836,
+            "dark_task": 0.015512,
+            "dark_kernel": -0.003392,
+            "random": 0.031982,
+            "heuristic": 0.006277
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.098,
+            "dark_kernel": -0.0214,
+            "random": 0.202,
+            "heuristic": 0.0396
+          },
+          "spectral_vs_behavioural_spearman": 0.5209,
+          "bright_over_random": 0.798,
+          "bright_over_dark": 0.902
+        }
+      ]
+    }
+  },
+  "verdict": {
+    "icl_gate": true,
+    "gap_robust": false,
+    "beats_random": true,
+    "spectral_predicts_behaviour": true,
+    "classification": "UNSTABLE"
+  }
+}

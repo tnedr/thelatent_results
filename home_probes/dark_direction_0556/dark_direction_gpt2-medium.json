@@ -1,0 +1,85 @@
+{
+  "mode": "real_model",
+  "probe": "dark_direction",
+  "model": "gpt2-medium",
+  "hf_name": "gpt2-medium",
+  "date": "2026-06-21",
+  "n_layers": 24,
+  "capacity_layer": 13,
+  "d_model": 1024,
+  "n_samples": 24,
+  "formal_anchors": [
+    "dark_direction_blocks_in_context_learning",
+    "dark_bright_contraction_gap"
+  ],
+  "truth_claim": "b_opb3_darkdirection_preregis_b4dd",
+  "per_domain": {
+    "relation_composition": {
+      "n_instances": 24,
+      "d_model": 1024,
+      "task_rank": 23,
+      "sigma_top": 186.955778,
+      "sigma_dark_task": 89.199718,
+      "sigma_kernel_measured": 0.0,
+      "rho_bright": 0.562737,
+      "rho_dark_task": 0.575911,
+      "rho_kernel": 0.087636,
+      "L_bright_norm": 1.0,
+      "L_dark_task_norm": 0.232969,
+      "L_dark_kernel_norm": 0.0,
+      "dark_bright_gap_kernel": 1.0,
+      "dark_bright_gap_task": 0.767031,
+      "dark_kernel_is_dark": true,
+      "operator_gain": {
+        "available": false
+      }
+    },
+    "arithmetic_carry": {
+      "n_instances": 24,
+      "d_model": 1024,
+      "task_rank": 23,
+      "sigma_top": 173.649649,
+      "sigma_dark_task": 83.251873,
+      "sigma_kernel_measured": 0.0,
+      "rho_bright": 1.561697,
+      "rho_dark_task": 0.147432,
+      "rho_kernel": 0.422667,
+      "L_bright_norm": 1.0,
+      "L_dark_task_norm": 0.021699,
+      "L_dark_kernel_norm": 0.0,
+      "dark_bright_gap_kernel": 1.0,
+      "dark_bright_gap_task": 0.978301,
+      "dark_kernel_is_dark": true,
+      "operator_gain": {
+        "available": false
+      }
+    },
+    "induction": {
+      "n_instances": 24,
+      "d_model": 1024,
+      "task_rank": 23,
+      "sigma_top": 206.307084,
+      "sigma_dark_task": 74.217851,
+      "sigma_kernel_measured": 0.0,
+      "rho_bright": 10.128451,
+      "rho_dark_task": 3.690759,
+      "rho_kernel": 0.874788,
+      "L_bright_norm": 1.0,
+      "L_dark_task_norm": 0.047159,
+      "L_dark_kernel_norm": 0.0,
+      "dark_bright_gap_kernel": 1.0,
+      "dark_bright_gap_task": 0.952841,
+      "dark_kernel_is_dark": true,
+      "operator_gain": {
+        "available": false
+      }
+    }
+  },
+  "verdict": {
+    "median_dark_bright_gap_kernel": 1.0,
+    "median_L_dark_kernel_norm": 0.0,
+    "domains_with_dark_kernel": "3/3",
+    "classification": "DARK_CONFIRMED",
+    "supports_preregistered_claim": true
+  }
+}

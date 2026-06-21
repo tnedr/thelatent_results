@@ -1,0 +1,25 @@
+{
+  "note": "OPB3 dark-direction behavioral+static; n=48 seeds=5",
+  "machine": "home",
+  "dispatch": "dispatch_20260621_0556_home_dark_direction_behavioral",
+  "ts": "2026-06-21T05:15:28Z",
+  "models": [
+    "pythia-410m",
+    "pythia-1b",
+    "gpt2-medium",
+    "gpt2-large"
+  ],
+  "n_files": 10,
+  "files": [
+    "dark_direction_behavioral_gpt2-large.json",
+    "dark_direction_behavioral_gpt2-medium.json",
+    "dark_direction_behavioral_pythia-1b.json",
+    "dark_direction_behavioral_pythia-410m.json",
+    "dark_direction_gpt2-large.json",
+    "dark_direction_gpt2-medium.json",
+    "dark_direction_pythia-1b.json",
+    "dark_direction_pythia-410m.json",
+    "dark_direction_behavioral_probe.py",
+    "dark_direction_probe.py"
+  ]
+}
