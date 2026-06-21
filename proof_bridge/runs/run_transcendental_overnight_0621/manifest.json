@@ -1,0 +1,208 @@
+{
+  "run_id": "run_transcendental_overnight_0621",
+  "source_sha": "25e1a13d560dcf732e2324589893eb7fa45ece5e",
+  "model": "goedel-prover-v2-8b",
+  "quant": "Q5_K_M",
+  "ts": "2026-06-21T10:45:46Z",
+  "phases": {
+    "m2_smoke": {
+      "ok": true,
+      "leaf_id": "T1",
+      "pass_at_n": {
+        "n_samples": 4,
+        "n_attempts": 1,
+        "n_parsed": 1,
+        "n_verified": 1,
+        "pass_at_n": 1.0,
+        "first_success_index": 0
+      }
+    },
+    "m4": {
+      "results": [
+        {
+          "arm": "A",
+          "leaf_id": "T1",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "T1",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 1,
+            "n_parsed": 1,
+            "n_verified": 1,
+            "pass_at_n": 1.0,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 8.67200000025332,
+          "error": ""
+        },
+        {
+          "arm": "A",
+          "leaf_id": "T2",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "T2",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 1,
+            "n_parsed": 1,
+            "n_verified": 1,
+            "pass_at_n": 1.0,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 9.843999998643994,
+          "error": ""
+        },
+        {
+          "arm": "A",
+          "leaf_id": "T3",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "T3",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 1,
+            "n_parsed": 1,
+            "n_verified": 1,
+            "pass_at_n": 1.0,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 8.64100000075996,
+          "error": ""
+        },
+        {
+          "arm": "A",
+          "leaf_id": "T4",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "T4",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 1,
+            "n_parsed": 1,
+            "n_verified": 1,
+            "pass_at_n": 1.0,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 10.562999999150634,
+          "error": ""
+        },
+        {
+          "arm": "A",
+          "leaf_id": "T5",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "T5",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 1,
+            "n_parsed": 1,
+            "n_verified": 1,
+            "pass_at_n": 1.0,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 9.29700000025332,
+          "error": ""
+        }
+      ],
+      "arm_a_close_rate": 0.0,
+      "arm_b_close_rate": 1.0,
+      "goedel_only_closed": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "platonic_only_closed": [],
+      "both_closed": [],
+      "neither_closed": [],
+      "headline_goedel_additive": 5
+    }
+  },
+  "code_authority": "home tools/proof_bridge/ pending corp promotion via proof_bridge/patches/ (spec \u00a712.4 option a)",
+  "dispatch": "dispatch_20260621_1150_home_transcendental_overnight",
+  "n_samples": 64,
+  "self_correction": true,
+  "leaf_list": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "pass_at_n": {
+    "T1": {
+      "n_samples": 64,
+      "n_attempts": 1,
+      "n_parsed": 1,
+      "n_verified": 1,
+      "pass_at_n": 1.0,
+      "first_success_index": 0
+    },
+    "T2": {
+      "n_samples": 64,
+      "n_attempts": 1,
+      "n_parsed": 1,
+      "n_verified": 1,
+      "pass_at_n": 1.0,
+      "first_success_index": 0
+    },
+    "T3": {
+      "n_samples": 64,
+      "n_attempts": 1,
+      "n_parsed": 1,
+      "n_verified": 1,
+      "pass_at_n": 1.0,
+      "first_success_index": 0
+    },
+    "T4": {
+      "n_samples": 64,
+      "n_attempts": 1,
+      "n_parsed": 1,
+      "n_verified": 1,
+      "pass_at_n": 1.0,
+      "first_success_index": 0
+    },
+    "T5": {
+      "n_samples": 64,
+      "n_attempts": 1,
+      "n_parsed": 1,
+      "n_verified": 1,
+      "pass_at_n": 1.0,
+      "first_success_index": 0
+    }
+  },
+  "arm_a_pass": {
+    "T1": false,
+    "T2": false,
+    "T3": false,
+    "T4": false,
+    "T5": false
+  }
+}

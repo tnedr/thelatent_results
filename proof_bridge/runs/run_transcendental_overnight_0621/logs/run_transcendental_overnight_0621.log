@@ -1,0 +1,21 @@
+=== M2 smoke (model only) T1 ===
+=== M4 Arm A (Platonic) T1 ===
+=== M4 Arm B (lean_prover) T1 ===
+=== M3 seal T1 (lean_external) ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T1.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T1.json
+=== M4 Arm A (Platonic) T2 ===
+=== M4 Arm B (lean_prover) T2 ===
+=== M3 seal T2 (lean_external) ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T2.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T2.json
+=== M4 Arm A (Platonic) T3 ===
+=== M4 Arm B (lean_prover) T3 ===
+=== M3 seal T3 (lean_external) ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T3.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T3.json
+=== M4 Arm A (Platonic) T4 ===
+=== M4 Arm B (lean_prover) T4 ===
+=== M3 seal T4 (lean_external) ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T4.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T4.json
+=== M4 Arm A (Platonic) T5 ===
+=== M4 Arm B (lean_prover) T5 ===
+=== M3 seal T5 (lean_external) ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T5.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_transcendental_overnight_0621\proofs\T5.json
