@@ -1,18 +1,18 @@
 {
   "n_files": 4,
-  "machine": "home",
   "files": [
     "developmental_lyapunov_EleutherAI_pythia-410m.json",
     "developmental_lyapunov_EleutherAI_pythia-160m.json",
     "developmental_lyapunov_EleutherAI_pythia-1b.json",
     "developmental_lyapunov_probe.py"
   ],
+  "dispatch": "dispatch_20260621_1015_home_developmental_lyapunov",
+  "note": "developmental Lyapunov sweep, induction emergence; ICL_ATTN_IMPLEMENTATION=eager",
   "models": [
     "EleutherAI/pythia-410m",
     "EleutherAI/pythia-160m",
     "EleutherAI/pythia-1b"
   ],
-  "ts": "2026-06-21T09:14:39Z",
-  "dispatch": "dispatch_20260621_1015_home_developmental_lyapunov",
-  "note": "developmental Lyapunov sweep, induction emergence; ICL_ATTN_IMPLEMENTATION=eager"
+  "machine": "home",
+  "ts": "2026-06-21T11:37:17Z"
 }

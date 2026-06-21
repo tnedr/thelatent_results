@@ -3,7 +3,16 @@
   "probe": "developmental_lyapunov",
   "base": "EleutherAI/pythia-1b",
   "revisions": [
-    "step0 step512 step1000 step2000 step4000 step8000 step16000 step32000 step64000 step143000"
+    "step0",
+    "step512",
+    "step1000",
+    "step2000",
+    "step4000",
+    "step8000",
+    "step16000",
+    "step32000",
+    "step64000",
+    "step143000"
   ],
   "date": "2026-06-21",
   "spec_anchor": "OPERATOR_LIFT_SPEC.md G5/G7; lyapunov_zero_crossing_emergence",
@@ -15,9 +24,240 @@
     "block_len": 8,
     "seed": 42
   },
-  "trajectory": [],
+  "trajectory": [
+    {
+      "lambda_max": 0.244871,
+      "sigma_top": 5.55167,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.245194,
+        0.244135,
+        0.243147,
+        0.242331,
+        0.24158,
+        0.24079,
+        0.240093,
+        0.239128
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.0,
+      "induction_logprob_mean": -10.999,
+      "n_acc": 96,
+      "revision": "step0",
+      "step": 0.0
+    },
+    {
+      "lambda_max": 0.208771,
+      "sigma_top": 4.31197,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.2131,
+        0.204639,
+        0.197744,
+        0.193475,
+        0.19097,
+        0.187975,
+        0.186006,
+        0.183767
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.0,
+      "induction_logprob_mean": -12.1497,
+      "n_acc": 96,
+      "revision": "step512",
+      "step": 512.0
+    },
+    {
+      "lambda_max": 0.168213,
+      "sigma_top": 3.24621,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.176529,
+        0.156928,
+        0.150429,
+        0.148219,
+        0.144501,
+        0.142341,
+        0.139716,
+        0.137801
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.5416666666666666,
+      "induction_logprob_mean": -3.5245,
+      "n_acc": 96,
+      "revision": "step1000",
+      "step": 1000.0
+    },
+    {
+      "lambda_max": 0.175777,
+      "sigma_top": 3.42273,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.181393,
+        0.160839,
+        0.14779,
+        0.136573,
+        0.129295,
+        0.125636,
+        0.120324,
+        0.112944
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.6458333333333334,
+      "induction_logprob_mean": -2.488,
+      "n_acc": 96,
+      "revision": "step2000",
+      "step": 2000.0
+    },
+    {
+      "lambda_max": 0.146254,
+      "sigma_top": 2.7837,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.14554,
+        0.115503,
+        0.104541,
+        0.095521,
+        0.08472,
+        0.081098,
+        0.073576,
+        0.066848
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.8854166666666666,
+      "induction_logprob_mean": -1.357,
+      "n_acc": 96,
+      "revision": "step4000",
+      "step": 4000.0
+    },
+    {
+      "lambda_max": 0.124598,
+      "sigma_top": 2.39214,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.132011,
+        0.103608,
+        0.085666,
+        0.076354,
+        0.067689,
+        0.058114,
+        0.051941,
+        0.047216
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.8541666666666666,
+      "induction_logprob_mean": -1.4136,
+      "n_acc": 96,
+      "revision": "step8000",
+      "step": 8000.0
+    },
+    {
+      "lambda_max": 0.134081,
+      "sigma_top": 2.55631,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.146352,
+        0.107445,
+        0.088351,
+        0.076262,
+        0.066756,
+        0.061919,
+        0.053651,
+        0.046334
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.8645833333333334,
+      "induction_logprob_mean": -1.5426,
+      "n_acc": 96,
+      "revision": "step16000",
+      "step": 16000.0
+    },
+    {
+      "lambda_max": 0.16646,
+      "sigma_top": 3.20663,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.174131,
+        0.136233,
+        0.12223,
+        0.107201,
+        0.095225,
+        0.085008,
+        0.079207,
+        0.070693
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.875,
+      "induction_logprob_mean": -1.3444,
+      "n_acc": 96,
+      "revision": "step32000",
+      "step": 32000.0
+    },
+    {
+      "lambda_max": 0.230346,
+      "sigma_top": 5.01495,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.232813,
+        0.194601,
+        0.178998,
+        0.167149,
+        0.157657,
+        0.143661,
+        0.13421,
+        0.124899
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.8645833333333334,
+      "induction_logprob_mean": -1.2438,
+      "n_acc": 96,
+      "revision": "step64000",
+      "step": 64000.0
+    },
+    {
+      "lambda_max": 0.350466,
+      "sigma_top": 11.62623,
+      "depth": 7,
+      "lambda_spectrum": [
+        0.351016,
+        0.322177,
+        0.298251,
+        0.279749,
+        0.264074,
+        0.253038,
+        0.243083,
+        0.231983
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 8,
+      "induction_acc": 0.8854166666666666,
+      "induction_logprob_mean": -1.1205,
+      "n_acc": 96,
+      "revision": "step143000",
+      "step": 143000.0
+    }
+  ],
   "verdict": {
-    "n_checkpoints": 0,
-    "interpretation": "INSUFFICIENT_CHECKPOINTS"
+    "n_checkpoints": 10,
+    "lambda_zero_crossing_step": null,
+    "induction_onset_step": 884.9,
+    "onset_level": 0.4427,
+    "accuracy_rise": 0.8854,
+    "log_step_gap": null,
+    "align_factor": 3.0,
+    "aligned": false,
+    "spearman_lambda_acc": -0.103,
+    "co_rises": false,
+    "emergence_tracked": false,
+    "interpretation": "NO_LAMBDA_CROSSING: lambda_max never crosses 0 across the swept checkpoints (always dark, or always bright) \u2014 the dynamical order-parameter picture does not apply in this range."
   }
 }

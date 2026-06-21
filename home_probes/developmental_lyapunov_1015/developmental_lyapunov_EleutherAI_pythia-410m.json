@@ -3,7 +3,18 @@
   "probe": "developmental_lyapunov",
   "base": "EleutherAI/pythia-410m",
   "revisions": [
-    "step0 step256 step512 step1000 step2000 step3000 step4000 step8000 step16000 step32000 step64000 step143000"
+    "step0",
+    "step256",
+    "step512",
+    "step1000",
+    "step2000",
+    "step3000",
+    "step4000",
+    "step8000",
+    "step16000",
+    "step32000",
+    "step64000",
+    "step143000"
   ],
   "date": "2026-06-21",
   "spec_anchor": "OPERATOR_LIFT_SPEC.md G5/G7; lyapunov_zero_crossing_emergence",
@@ -15,9 +26,284 @@
     "block_len": 8,
     "seed": 42
   },
-  "trajectory": [],
+  "trajectory": [
+    {
+      "lambda_max": 0.17594,
+      "sigma_top": 6.9264,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.177597,
+        0.176645,
+        0.175735,
+        0.174817,
+        0.174127,
+        0.173347,
+        0.172802,
+        0.171769
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.0,
+      "induction_logprob_mean": -11.0716,
+      "n_acc": 96,
+      "revision": "step0",
+      "step": 0.0
+    },
+    {
+      "lambda_max": 0.15958,
+      "sigma_top": 5.78564,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.157816,
+        0.146033,
+        0.137294,
+        0.132131,
+        0.127588,
+        0.124778,
+        0.121281,
+        0.117265
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.0,
+      "induction_logprob_mean": -11.7926,
+      "n_acc": 96,
+      "revision": "step256",
+      "step": 256.0
+    },
+    {
+      "lambda_max": 0.142471,
+      "sigma_top": 4.79311,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.143433,
+        0.135176,
+        0.131002,
+        0.127381,
+        0.125467,
+        0.122308,
+        0.120882,
+        0.118342
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.0,
+      "induction_logprob_mean": -12.4087,
+      "n_acc": 96,
+      "revision": "step512",
+      "step": 512.0
+    },
+    {
+      "lambda_max": 0.164008,
+      "sigma_top": 6.07441,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.160692,
+        0.149659,
+        0.147063,
+        0.144664,
+        0.143227,
+        0.141644,
+        0.139901,
+        0.138087
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.2916666666666667,
+      "induction_logprob_mean": -5.7175,
+      "n_acc": 96,
+      "revision": "step1000",
+      "step": 1000.0
+    },
+    {
+      "lambda_max": 0.150768,
+      "sigma_top": 5.25115,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.148136,
+        0.132881,
+        0.124137,
+        0.118453,
+        0.115014,
+        0.112398,
+        0.110304,
+        0.106972
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.75,
+      "induction_logprob_mean": -1.826,
+      "n_acc": 96,
+      "revision": "step2000",
+      "step": 2000.0
+    },
+    {
+      "lambda_max": 0.148935,
+      "sigma_top": 5.14634,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.143024,
+        0.127772,
+        0.12105,
+        0.11439,
+        0.110269,
+        0.104438,
+        0.101627,
+        0.098879
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.8229166666666666,
+      "induction_logprob_mean": -1.5046,
+      "n_acc": 96,
+      "revision": "step3000",
+      "step": 3000.0
+    },
+    {
+      "lambda_max": 0.125349,
+      "sigma_top": 3.97031,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.129098,
+        0.118868,
+        0.10788,
+        0.101416,
+        0.09692,
+        0.093303,
+        0.090363,
+        0.086907
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.84375,
+      "induction_logprob_mean": -1.5055,
+      "n_acc": 96,
+      "revision": "step4000",
+      "step": 4000.0
+    },
+    {
+      "lambda_max": 0.113382,
+      "sigma_top": 3.48059,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.112423,
+        0.1027,
+        0.093233,
+        0.086372,
+        0.080513,
+        0.076911,
+        0.073367,
+        0.070619
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.8333333333333334,
+      "induction_logprob_mean": -1.7958,
+      "n_acc": 96,
+      "revision": "step8000",
+      "step": 8000.0
+    },
+    {
+      "lambda_max": 0.113577,
+      "sigma_top": 3.48806,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.116587,
+        0.101887,
+        0.091732,
+        0.087653,
+        0.080841,
+        0.076208,
+        0.073306,
+        0.069005
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.8333333333333334,
+      "induction_logprob_mean": -1.5129,
+      "n_acc": 96,
+      "revision": "step16000",
+      "step": 16000.0
+    },
+    {
+      "lambda_max": 0.137494,
+      "sigma_top": 4.53777,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.14502,
+        0.128273,
+        0.117808,
+        0.111259,
+        0.104458,
+        0.09773,
+        0.092683,
+        0.088993
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.8854166666666666,
+      "induction_logprob_mean": -1.221,
+      "n_acc": 96,
+      "revision": "step32000",
+      "step": 32000.0
+    },
+    {
+      "lambda_max": 0.178717,
+      "sigma_top": 7.14126,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.179383,
+        0.162742,
+        0.154352,
+        0.144087,
+        0.138597,
+        0.132528,
+        0.127493,
+        0.12155
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.8645833333333334,
+      "induction_logprob_mean": -1.5429,
+      "n_acc": 96,
+      "revision": "step64000",
+      "step": 64000.0
+    },
+    {
+      "lambda_max": 0.262035,
+      "sigma_top": 17.85682,
+      "depth": 11,
+      "lambda_spectrum": [
+        0.265942,
+        0.24791,
+        0.22871,
+        0.217872,
+        0.210994,
+        0.205698,
+        0.199029,
+        0.193446
+      ],
+      "n_positive_lambda": 8,
+      "n_op": 10,
+      "induction_acc": 0.8229166666666666,
+      "induction_logprob_mean": -1.2891,
+      "n_acc": 96,
+      "revision": "step143000",
+      "step": 143000.0
+    }
+  ],
   "verdict": {
-    "n_checkpoints": 0,
-    "interpretation": "INSUFFICIENT_CHECKPOINTS"
+    "n_checkpoints": 12,
+    "lambda_zero_crossing_step": null,
+    "induction_onset_step": 1256.6,
+    "onset_level": 0.4427,
+    "accuracy_rise": 0.8854,
+    "log_step_gap": null,
+    "align_factor": 3.0,
+    "aligned": false,
+    "spearman_lambda_acc": -0.3497,
+    "co_rises": false,
+    "emergence_tracked": false,
+    "interpretation": "NO_LAMBDA_CROSSING: lambda_max never crosses 0 across the swept checkpoints (always dark, or always bright) \u2014 the dynamical order-parameter picture does not apply in this range."
   }
 }
