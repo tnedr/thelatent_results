@@ -1,0 +1,15 @@
+{
+  "leaf_id": "leaf_nonneg_square",
+  "status": "proved",
+  "seal": "lean_external",
+  "trust_level": "PROVED@L4",
+  "lake_hash": "8f9d9cff6bd7",
+  "mathlib_rev": "8f9d9cff6bd7",
+  "lean_toolchain": "leanprover/lean4:v4.28.0",
+  "toolchain_note": "lean_verify uses v4.28.0; Goedel-Prover-V2 trained on v4.9 \u2014 documented mismatch, trust gate unchanged (kernel compile required)",
+  "source_sha": "25e1a13d560dcf732e2324589893eb7fa45ece5e",
+  "ts": "2026-06-21T07:04:17.170880+00:00",
+  "model": "goedel-prover-v2-8b",
+  "quant": "Q5_K_M",
+  "prompt_hash": "2d37b006808f4b21"
+}

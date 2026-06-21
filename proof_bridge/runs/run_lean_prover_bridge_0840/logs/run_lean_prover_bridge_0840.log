@@ -1,0 +1,16 @@
+=== M2 hand-proved round-trip ===
+M2 hand compile ok=True sorries=0
+=== M3 seal leaf_nonneg_square (lean_hand) ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0840\proofs\leaf_nonneg_square_hand.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0840\proofs\leaf_nonneg_square_hand.json
+=== M2 model round-trip ===
+M2 prover stub lines=142 (minimal=False)
+{
+  "n_samples": 16,
+  "n_attempts": 1,
+  "n_parsed": 1,
+  "n_verified": 1,
+  "pass_at_n": 1.0,
+  "first_success_index": 0
+}
+=== M3 seal leaf_nonneg_square (lean_external) ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0840\proofs\leaf_nonneg_square.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0840\proofs\leaf_nonneg_square.json

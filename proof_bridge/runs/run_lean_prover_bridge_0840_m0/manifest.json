@@ -1,0 +1,14 @@
+{
+  "run_id": "run_lean_prover_bridge_0840_m0",
+  "source_sha": "25e1a13d560dcf732e2324589893eb7fa45ece5e",
+  "model": "goedel-prover-v2-8b",
+  "quant": "Q5_K_M",
+  "ts": "2026-06-21T06:49:34Z",
+  "phases": {
+    "m0": {
+      "ok": true
+    }
+  },
+  "code_authority": "home tools/proof_bridge/ pending corp promotion via proof_bridge/patches/ (spec \u00a712.4 option a)",
+  "dispatch": "dispatch_20260621_0840_home_lean_prover_bridge_r2"
+}
