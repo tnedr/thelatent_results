@@ -1,0 +1,16 @@
+{
+  "models": [
+    "EleutherAI/pythia-410m"
+  ],
+  "files": [
+    "plastic_instrument_real_EleutherAI_pythia-410m_track.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m.json",
+    "plastic_instrument_probe.py",
+    "jacobian_product_spectrum_probe.py"
+  ],
+  "dispatch": "dispatch_20260621_2118_home_plastic_instrument_real",
+  "note": "plastic instrument real Pythia; ICL_ATTN_IMPLEMENTATION=eager",
+  "n_files": 4,
+  "ts": "2026-06-21T19:56:41Z",
+  "machine": "home"
+}

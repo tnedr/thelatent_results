@@ -1,0 +1,57 @@
+{
+  "mode": "real_track",
+  "probe": "plastic_instrument",
+  "base": "EleutherAI/pythia-410m",
+  "revisions": [
+    "step1000",
+    "step2000",
+    "step8000",
+    "step143000"
+  ],
+  "date": "2026-06-21",
+  "dispatch": "dispatch_20260621_2118_home_plastic_instrument_real",
+  "params": {
+    "n_prompts": 24,
+    "iters": 30,
+    "alpha": 0.4,
+    "k": 8
+  },
+  "trajectory": [
+    {
+      "revision": "step1000",
+      "step": 1000.0,
+      "induction_acc": 0.2916666666666667,
+      "align_plastic_global_mean": 0.2974,
+      "causal_max_abs_plastic_mean": 5.139627,
+      "task_gain_ratio_mean": 4.8364,
+      "align_to_final_plastic_mean": 0.12
+    },
+    {
+      "revision": "step2000",
+      "step": 2000.0,
+      "induction_acc": 0.75,
+      "align_plastic_global_mean": 0.18,
+      "causal_max_abs_plastic_mean": 6.093107,
+      "task_gain_ratio_mean": 21.8164,
+      "align_to_final_plastic_mean": 0.239
+    },
+    {
+      "revision": "step8000",
+      "step": 8000.0,
+      "induction_acc": 0.8333333333333334,
+      "align_plastic_global_mean": 0.3098,
+      "causal_max_abs_plastic_mean": 5.858313,
+      "task_gain_ratio_mean": 7.27,
+      "align_to_final_plastic_mean": 0.3582
+    },
+    {
+      "revision": "step143000",
+      "step": 143000.0,
+      "induction_acc": 0.6666666666666666,
+      "align_plastic_global_mean": 0.302,
+      "causal_max_abs_plastic_mean": 6.83097,
+      "task_gain_ratio_mean": 6.3176,
+      "align_to_final_plastic_mean": 1.0
+    }
+  ]
+}
