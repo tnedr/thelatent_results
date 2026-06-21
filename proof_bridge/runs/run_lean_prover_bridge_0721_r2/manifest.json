@@ -1,0 +1,149 @@
+{
+  "run_id": "run_lean_prover_bridge_0721_r2",
+  "source_sha": "25e1a13d560dcf732e2324589893eb7fa45ece5e",
+  "model": "goedel-prover-v2-8b",
+  "quant": "Q5_K_M",
+  "ts": "2026-06-21T06:18:01Z",
+  "phases": {
+    "m2_hand": {
+      "ok": true
+    },
+    "m2_model": {
+      "ok": true
+    },
+    "m4": {
+      "results": [
+        {
+          "arm": "A",
+          "leaf_id": "leaf_nonneg_square",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_nonneg_square",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 16,
+            "n_attempts": 1,
+            "n_parsed": 1,
+            "n_verified": 1,
+            "pass_at_n": 1.0,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 6.758192799985409,
+          "error": ""
+        },
+        {
+          "arm": "A",
+          "leaf_id": "leaf_mul_comm_nonneg",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_mul_comm_nonneg",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 16,
+            "n_attempts": 1,
+            "n_parsed": 1,
+            "n_verified": 1,
+            "pass_at_n": 1.0,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 6.167738100513816,
+          "error": ""
+        },
+        {
+          "arm": "A",
+          "leaf_id": "leaf_one_le_two",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_one_le_two",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 16,
+            "n_attempts": 16,
+            "n_parsed": 16,
+            "n_verified": 1,
+            "pass_at_n": 0.0625,
+            "first_success_index": 7
+          },
+          "wall_clock_s": 98.3976761996746,
+          "error": ""
+        },
+        {
+          "arm": "A",
+          "leaf_id": "leaf_sq_nonneg_alt",
+          "verified": false,
+          "skipped": true,
+          "error": "Arm A needs LiteLLM gateway (NOUS_AGENT_LITELLM_URL) \u2014 home shadow-path conflict with mirror tools.nous"
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_sq_nonneg_alt",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 16,
+            "n_attempts": 32,
+            "n_parsed": 32,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 237.41524930112064,
+          "error": ""
+        }
+      ],
+      "arm_a_close_rate": 0.0,
+      "arm_b_close_rate": 0.75
+    }
+  },
+  "leaf_list": [
+    "leaf_nonneg_square",
+    "leaf_mul_comm_nonneg",
+    "leaf_one_le_two",
+    "leaf_sq_nonneg_alt"
+  ],
+  "pass_at_n": {
+    "leaf_nonneg_square": {
+      "n_samples": 16,
+      "n_attempts": 1,
+      "n_parsed": 1,
+      "n_verified": 1,
+      "pass_at_n": 1.0,
+      "first_success_index": 0
+    },
+    "leaf_mul_comm_nonneg": {
+      "n_samples": 16,
+      "n_attempts": 1,
+      "n_parsed": 1,
+      "n_verified": 1,
+      "pass_at_n": 1.0,
+      "first_success_index": 0
+    },
+    "leaf_one_le_two": {
+      "n_samples": 16,
+      "n_attempts": 16,
+      "n_parsed": 16,
+      "n_verified": 1,
+      "pass_at_n": 0.0625,
+      "first_success_index": 7
+    },
+    "leaf_sq_nonneg_alt": {
+      "n_samples": 16,
+      "n_attempts": 32,
+      "n_parsed": 32,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    }
+  }
+}

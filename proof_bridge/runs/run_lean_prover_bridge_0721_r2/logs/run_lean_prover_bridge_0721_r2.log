@@ -1,0 +1,26 @@
+=== M2 hand-proved round-trip ===
+M2 hand compile ok=True sorries=0
+=== M2 model round-trip ===
+M2 prover stub lines=3 (minimal=True)
+{
+  "n_samples": 16,
+  "n_attempts": 5,
+  "n_parsed": 5,
+  "n_verified": 1,
+  "pass_at_n": 0.2,
+  "first_success_index": 2
+}
+=== M4 Arm A (Platonic) leaf_nonneg_square ===
+=== M4 Arm B (lean_prover) leaf_nonneg_square ===
+=== M3 seal leaf_nonneg_square ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721_r2\proofs\leaf_nonneg_square.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721_r2\proofs\leaf_nonneg_square.json
+=== M4 Arm A (Platonic) leaf_mul_comm_nonneg ===
+=== M4 Arm B (lean_prover) leaf_mul_comm_nonneg ===
+=== M3 seal leaf_mul_comm_nonneg ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721_r2\proofs\leaf_mul_comm_nonneg.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721_r2\proofs\leaf_mul_comm_nonneg.json
+=== M4 Arm A (Platonic) leaf_one_le_two ===
+=== M4 Arm B (lean_prover) leaf_one_le_two ===
+=== M3 seal leaf_one_le_two ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721_r2\proofs\leaf_one_le_two.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721_r2\proofs\leaf_one_le_two.json
+=== M4 Arm A (Platonic) leaf_sq_nonneg_alt ===
+=== M4 Arm B (lean_prover) leaf_sq_nonneg_alt ===
