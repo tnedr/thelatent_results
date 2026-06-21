@@ -1,0 +1,23 @@
+{
+  "mode": "real_model",
+  "probe": "developmental_lyapunov",
+  "base": "EleutherAI/pythia-160m",
+  "revisions": [
+    "step0 step256 step512 step1000 step2000 step3000 step4000 step8000 step16000 step32000 step64000 step143000"
+  ],
+  "date": "2026-06-21",
+  "spec_anchor": "OPERATOR_LIFT_SPEC.md G5/G7; lyapunov_zero_crossing_emergence",
+  "params": {
+    "n_op_samples": 10,
+    "n_acc_samples": 96,
+    "k": 8,
+    "iters": 12,
+    "block_len": 8,
+    "seed": 42
+  },
+  "trajectory": [],
+  "verdict": {
+    "n_checkpoints": 0,
+    "interpretation": "INSUFFICIENT_CHECKPOINTS"
+  }
+}
