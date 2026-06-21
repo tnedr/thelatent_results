@@ -1,0 +1,17 @@
+{
+  "domain": "smale6",
+  "archive_dir": "E:\\Repos\\thelatent\\elysium\\platonic\\intelligence\\_conjecture_archive",
+  "out_dir": "E:\\Repos\\thelatent_results\\proof_bridge\\runs\\run_residual_ab_0621",
+  "manifest": "E:\\Repos\\thelatent_results\\proof_bridge\\runs\\run_residual_ab_0621\\residuals\\MANIFEST.jsonl",
+  "audit": "E:\\Repos\\thelatent_results\\proof_bridge\\runs\\run_residual_ab_0621\\residuals\\AUDIT.jsonl",
+  "budget_ms": 5000,
+  "counts": {
+    "residual": 19,
+    "closed_by_kernel": 0,
+    "inexpressible": 0,
+    "error": 0,
+    "transcendental_residual": 19,
+    "obligations_skipped": 20
+  },
+  "n_candidates": 19
+}

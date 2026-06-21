@@ -1,0 +1,542 @@
+{
+  "run_id": "run_residual_ab_0621",
+  "source_sha": "25e1a13d560dcf732e2324589893eb7fa45ece5e",
+  "model": "goedel-prover-v2-8b",
+  "quant": "Q5_K_M",
+  "ts": "2026-06-21T15:13:37Z",
+  "phases": {
+    "m4": {
+      "results": [
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n13",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 416.5470000002533,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n14",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 432.8590000011027,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n16",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 413.03099999949336,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n17",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 401.7659999988973,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n18",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 422.406000001356,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n88",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 3,
+            "n_parsed": 2,
+            "n_verified": 1,
+            "pass_at_n": 0.3333333333333333,
+            "first_success_index": 1
+          },
+          "wall_clock_s": 35.04700000025332,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n96",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 65,
+            "n_parsed": 2,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 518.4530000016093,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n97",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 392.9529999997467,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n98",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 403.5,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n102",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 437.2029999997467,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n104",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 357.9529999997467,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n141",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 407.2039999999106,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n142",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 435.89000000059605,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n144",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 429.343999998644,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n145",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 435.51600000075996,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n147",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 439.75,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n148",
+          "verified": false,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 64,
+            "n_parsed": 0,
+            "n_verified": 0,
+            "pass_at_n": 0.0,
+            "first_success_index": null
+          },
+          "wall_clock_s": 451.2029999997467,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n150",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 3,
+            "n_parsed": 2,
+            "n_verified": 1,
+            "pass_at_n": 0.3333333333333333,
+            "first_success_index": 1
+          },
+          "wall_clock_s": 64.81200000084937,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        },
+        {
+          "arm": "B",
+          "leaf_id": "leaf_smale6_n151",
+          "verified": true,
+          "pass_at_n": {
+            "n_samples": 64,
+            "n_attempts": 2,
+            "n_parsed": 2,
+            "n_verified": 1,
+            "pass_at_n": 0.5,
+            "first_success_index": 0
+          },
+          "wall_clock_s": 44.96800000034273,
+          "error": "",
+          "kernel_proved": false,
+          "transcendental": true
+        }
+      ],
+      "arm_b_close_rate": 0.15789473684210525,
+      "goedel_closed": [
+        "leaf_smale6_n88",
+        "leaf_smale6_n150",
+        "leaf_smale6_n151"
+      ],
+      "goedel_failed": [
+        "leaf_smale6_n13",
+        "leaf_smale6_n14",
+        "leaf_smale6_n16",
+        "leaf_smale6_n17",
+        "leaf_smale6_n18",
+        "leaf_smale6_n96",
+        "leaf_smale6_n97",
+        "leaf_smale6_n98",
+        "leaf_smale6_n102",
+        "leaf_smale6_n104",
+        "leaf_smale6_n141",
+        "leaf_smale6_n142",
+        "leaf_smale6_n144",
+        "leaf_smale6_n145",
+        "leaf_smale6_n147",
+        "leaf_smale6_n148"
+      ],
+      "headline_goedel_additive": 3,
+      "n_residuals": 19
+    }
+  },
+  "dispatch": "dispatch_20260621_1430_home_real_residual_ab",
+  "n_samples": 64,
+  "self_correction": true,
+  "manifest": "E:\\Repos\\thelatent_results\\proof_bridge\\runs\\run_residual_ab_0621\\residuals\\MANIFEST.jsonl",
+  "residual_mode": true,
+  "leaf_list": [
+    "leaf_smale6_n13",
+    "leaf_smale6_n14",
+    "leaf_smale6_n16",
+    "leaf_smale6_n17",
+    "leaf_smale6_n18",
+    "leaf_smale6_n88",
+    "leaf_smale6_n96",
+    "leaf_smale6_n97",
+    "leaf_smale6_n98",
+    "leaf_smale6_n102",
+    "leaf_smale6_n104",
+    "leaf_smale6_n141",
+    "leaf_smale6_n142",
+    "leaf_smale6_n144",
+    "leaf_smale6_n145",
+    "leaf_smale6_n147",
+    "leaf_smale6_n148",
+    "leaf_smale6_n150",
+    "leaf_smale6_n151"
+  ],
+  "pass_at_n": {
+    "leaf_smale6_n13": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n14": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n16": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n17": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n18": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n88": {
+      "n_samples": 64,
+      "n_attempts": 3,
+      "n_parsed": 2,
+      "n_verified": 1,
+      "pass_at_n": 0.3333333333333333,
+      "first_success_index": 1
+    },
+    "leaf_smale6_n96": {
+      "n_samples": 64,
+      "n_attempts": 65,
+      "n_parsed": 2,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n97": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n98": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n102": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n104": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n141": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n142": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n144": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n145": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n147": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n148": {
+      "n_samples": 64,
+      "n_attempts": 64,
+      "n_parsed": 0,
+      "n_verified": 0,
+      "pass_at_n": 0.0,
+      "first_success_index": null
+    },
+    "leaf_smale6_n150": {
+      "n_samples": 64,
+      "n_attempts": 3,
+      "n_parsed": 2,
+      "n_verified": 1,
+      "pass_at_n": 0.3333333333333333,
+      "first_success_index": 1
+    },
+    "leaf_smale6_n151": {
+      "n_samples": 64,
+      "n_attempts": 2,
+      "n_parsed": 2,
+      "n_verified": 1,
+      "pass_at_n": 0.5,
+      "first_success_index": 0
+    }
+  }
+}
