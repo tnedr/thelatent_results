@@ -1,0 +1,42 @@
+=== M0 runtime gate ===
+M0 compile exit=1 errors=0 sorries=1
+Stubs/m0_gate.lean:77:128: error: unknown tactic
+Stubs/m0_gate.lean:77:92: error: unsolved goals
+a b : ℝ
+h : 0 ≤ a * b
+ha : 0 < a
+hnb : b < 0
+⊢ False
+Stubs/m0_gate.lean:95:3: error: unknown tactic
+Stubs/m0_gate.lean:94:81: error: unsolved goals
+a : ℝ
+h0 : 0 < a
+h1 : a < 1
+⊢ a * a < 1
+Stubs/m0_gate.lean:104:80: error: unknown tactic
+Stubs/m0_gate.lean:104:76: error: unsolved goals
+a b c : ℝ
+h : a ≤ b
+⊢ a + c ≤ b + c
+Stubs/m0_gate.lean:105:79: error: unknown tactic
+Stubs/m0_gate.lean:105:75: error: unsolved goals
+a b c : ℝ
+h : a ≤ b
+⊢ c + a ≤ c + b
+Stubs/m0_gate.lean:106:90: error: unknown tactic
+Stubs/m0_gate.lean:106:86: error: unsolved goals
+a b c d : ℝ
+h1 : a ≤ b
+h2 : c ≤ d
+⊢ a + c ≤ b + d
+Stubs/m0_gate.lean:107:52: error: unknown tactic
+Stubs/m0_gate.lean:107:48: error: unsolved goals
+a : ℝ
+⊢ a - a = 0
+Stubs/m0_gate.lean:108:66: error: unknown tactic
+Stubs/m0_gate.lean:108:62: error: unsolved goals
+a b : ℝ
+h : a < b
+⊢ -b < -a
+Stubs/m0_gate.lean:134:108: error: failed to prove positivity/nonnegativity/nonzeroness
+Stubs/m0_gate.lean:137:8: warning: declaration uses `sorry`

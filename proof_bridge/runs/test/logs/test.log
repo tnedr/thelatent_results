@@ -1,0 +1,24 @@
+=== M4 Arm A (Platonic) leaf_nonneg_square ===
+Traceback (most recent call last):
+  File "E:\Repos\thelatent\elysium\platonic\intelligence\euler_harness.py", line 807, in _call_llm
+    from tools.nous.agent_engines import get_engine
+ModuleNotFoundError: No module named 'tools.nous'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Repos\thelatent_home\tools\proof_bridge\run_pipeline.py", line 289, in run_pipeline
+    m4_arm_platonic(leaf, n_samples=n_samples, sample_model=None, log=log)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Repos\thelatent_home\tools\proof_bridge\run_pipeline.py", line 174, in m4_arm_platonic
+    thm = sess.agent_prove_sampled(
+        leaf.leaf_id,
+    ...<7 lines>...
+        verbose=True,
+    )
+  File "E:\Repos\thelatent\elysium\platonic\intelligence\euler_harness.py", line 749, in agent_prove_sampled
+    code_text = self._call_llm(prompt, model=model,
+                               timeout=per_sample_timeout, engine=engine)
+  File "E:\Repos\thelatent\elysium\platonic\intelligence\euler_harness.py", line 812, in _call_llm
+    from tools.nous.agent_engines import get_engine
+ModuleNotFoundError: No module named 'tools.nous'

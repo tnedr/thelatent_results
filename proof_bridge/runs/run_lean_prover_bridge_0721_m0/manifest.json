@@ -1,0 +1,12 @@
+{
+  "run_id": "run_lean_prover_bridge_0721_m0",
+  "source_sha": "25e1a13d560dcf732e2324589893eb7fa45ece5e",
+  "model": "goedel-prover-v2-8b",
+  "quant": "Q5_K_M",
+  "ts": "2026-06-21T06:02:56Z",
+  "phases": {
+    "m0": {
+      "ok": false
+    }
+  }
+}

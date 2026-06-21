@@ -1,0 +1,16 @@
+=== M0 runtime gate ===
+M0 compile exit=1 errors=0 sorries=0
+Stubs/m0_gate.lean:1:0: error: object file 'E:\Repos\thelatent\elysium\platonic\lean_verify\.lake\packages\mathlib\.lake\build\lib\lean\Mathlib\Tactic\Nlinarith.olean' of module Mathlib.Tactic.Nlinarith does not exist
+
+=== M2 hand-proved round-trip ===
+M2 hand compile ok=True sorries=0
+=== M3 seal leaf_nonneg_square ===
+sealed E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721\proofs\leaf_nonneg_square.lean + E:\Repos\thelatent_results\proof_bridge\runs\run_lean_prover_bridge_0721\proofs\leaf_nonneg_square.json
+=== M4 Arm A (Platonic) leaf_nonneg_square ===
+=== M4 Arm B (lean_prover) leaf_nonneg_square ===
+=== M4 Arm A (Platonic) leaf_mul_comm_nonneg ===
+=== M4 Arm B (lean_prover) leaf_mul_comm_nonneg ===
+=== M4 Arm A (Platonic) leaf_one_le_two ===
+=== M4 Arm B (lean_prover) leaf_one_le_two ===
+=== M4 Arm A (Platonic) leaf_sq_nonneg_alt ===
+=== M4 Arm B (lean_prover) leaf_sq_nonneg_alt ===
