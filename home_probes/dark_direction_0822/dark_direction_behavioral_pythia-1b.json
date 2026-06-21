@@ -1,0 +1,282 @@
+{
+  "mode": "phase2_real_model",
+  "probe": "dark_direction_behavioral",
+  "model": "pythia-1b",
+  "hf_name": "EleutherAI/pythia-1b",
+  "date": "2026-06-21",
+  "capacity_layer": 9,
+  "n_samples": 128,
+  "n_seeds": 10,
+  "truth_claim": "b_opb3_darkdirection_preregis_b4dd",
+  "per_domain": {
+    "arithmetic_carry": {
+      "n_seeds": 10,
+      "n_samples": 128,
+      "icl_gain_logprob_mean": 10.3239,
+      "icl_active": true,
+      "bright_over_dark_mean": 0.4004,
+      "bright_over_dark_std": 1.0094,
+      "bright_over_random_mean": 0.6182,
+      "spearman_mean": 0.5766,
+      "per_seed": [
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.6833,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.095565,
+            "dark_task": 0.052184,
+            "dark_kernel": -0.00042,
+            "random": -0.004736,
+            "heuristic": -0.000851
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.5461,
+            "dark_kernel": -0.0044,
+            "random": -0.0496,
+            "heuristic": -0.0089
+          },
+          "spectral_vs_behavioural_spearman": 0.6383,
+          "bright_over_random": 1.0496,
+          "bright_over_dark": 0.4539
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.2117,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.128087,
+            "dark_task": 0.012954,
+            "dark_kernel": 0.00657,
+            "random": 0.008362,
+            "heuristic": 0.008144
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.1011,
+            "dark_kernel": 0.0513,
+            "random": 0.0653,
+            "heuristic": 0.0636
+          },
+          "spectral_vs_behavioural_spearman": 0.7852,
+          "bright_over_random": 0.9347,
+          "bright_over_dark": 0.8989
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.5779,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.169784,
+            "dark_task": 0.016426,
+            "dark_kernel": 0.006988,
+            "random": 0.002096,
+            "heuristic": 0.008009
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.0967,
+            "dark_kernel": 0.0412,
+            "random": 0.0123,
+            "heuristic": 0.0472
+          },
+          "spectral_vs_behavioural_spearman": 0.6461,
+          "bright_over_random": 0.9877,
+          "bright_over_dark": 0.9033
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.3106,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.227631,
+            "dark_task": 0.013977,
+            "dark_kernel": 0.002091,
+            "random": 0.003098,
+            "heuristic": 0.003274
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.0614,
+            "dark_kernel": 0.0092,
+            "random": 0.0136,
+            "heuristic": 0.0144
+          },
+          "spectral_vs_behavioural_spearman": 0.4896,
+          "bright_over_random": 0.9864,
+          "bright_over_dark": 0.9386
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.6024,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": -0.010388,
+            "dark_task": 0.000694,
+            "dark_kernel": 0.000316,
+            "random": -0.002733,
+            "heuristic": 0.011716
+          },
+          "L_norm": {
+            "bright": -0.8867,
+            "dark_task": 0.0593,
+            "dark_kernel": 0.0269,
+            "random": -0.2333,
+            "heuristic": 1.0
+          },
+          "spectral_vs_behavioural_spearman": 0.5,
+          "bright_over_random": -0.6534,
+          "bright_over_dark": -0.946
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 9.5968,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": -0.070539,
+            "dark_task": 0.06618,
+            "dark_kernel": 0.010036,
+            "random": 0.005423,
+            "heuristic": 0.005312
+          },
+          "L_norm": {
+            "bright": -1.0,
+            "dark_task": 0.9382,
+            "dark_kernel": 0.1423,
+            "random": 0.0769,
+            "heuristic": 0.0753
+          },
+          "spectral_vs_behavioural_spearman": 0.4383,
+          "bright_over_random": -1.0769,
+          "bright_over_dark": -1.9382
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.5196,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.041106,
+            "dark_task": 0.003292,
+            "dark_kernel": -0.002667,
+            "random": 0.001039,
+            "heuristic": 0.001069
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.0801,
+            "dark_kernel": -0.0649,
+            "random": 0.0253,
+            "heuristic": 0.026
+          },
+          "spectral_vs_behavioural_spearman": 0.6313,
+          "bright_over_random": 0.9747,
+          "bright_over_dark": 0.9199
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.2053,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.712016,
+            "dark_task": 0.069677,
+            "dark_kernel": 0.00686,
+            "random": -3e-05,
+            "heuristic": 0.026321
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.0979,
+            "dark_kernel": 0.0096,
+            "random": -0.0,
+            "heuristic": 0.037
+          },
+          "spectral_vs_behavioural_spearman": 0.5226,
+          "bright_over_random": 1.0,
+          "bright_over_dark": 0.9021
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.5062,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.193587,
+            "dark_task": 0.009446,
+            "dark_kernel": 0.002951,
+            "random": 0.009563,
+            "heuristic": 0.000141
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.0488,
+            "dark_kernel": 0.0152,
+            "random": 0.0494,
+            "heuristic": 0.0007
+          },
+          "spectral_vs_behavioural_spearman": 0.6583,
+          "bright_over_random": 0.9506,
+          "bright_over_dark": 0.9512
+        },
+        {
+          "n_instances": 128,
+          "k_lo": 1,
+          "k_hi": 16,
+          "icl_gain_logprob": 10.0251,
+          "icl_active": true,
+          "task_rank": 24,
+          "reds_raw": {
+            "bright": 0.244426,
+            "dark_task": 0.01957,
+            "dark_kernel": 0.004441,
+            "random": -0.007097,
+            "heuristic": 0.003575
+          },
+          "L_norm": {
+            "bright": 1.0,
+            "dark_task": 0.0801,
+            "dark_kernel": 0.0182,
+            "random": -0.029,
+            "heuristic": 0.0146
+          },
+          "spectral_vs_behavioural_spearman": 0.4565,
+          "bright_over_random": 1.029,
+          "bright_over_dark": 0.9199
+        }
+      ]
+    }
+  },
+  "verdict": {
+    "icl_gate": true,
+    "gap_robust": false,
+    "beats_random": false,
+    "spectral_predicts_behaviour": true,
+    "classification": "UNSTABLE"
+  }
+}
