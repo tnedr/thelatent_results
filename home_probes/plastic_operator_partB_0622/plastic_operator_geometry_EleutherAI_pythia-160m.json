@@ -3,18 +3,29 @@
   "probe": "plastic_operator_partb",
   "base": "EleutherAI/pythia-160m",
   "revision": "step143000",
-  "dispatch": "dispatch_20260622_0758_home_plastic_operator_partB",
+  "dispatch": "dispatch_20260624_0835_home_plastic_geometry_fix",
   "date": "2026-06-24",
+  "params": {
+    "n_pairs": 80,
+    "gauge_n": 24,
+    "block_len": 8
+  },
   "H2": {
-    "order_gap_vs_commutator_corr": NaN,
-    "n_pairs": 40
+    "spearman_order_gap_vs_commutator": null,
+    "reason": "zero_variance_x",
+    "n_paired": 80,
+    "verdict": "invalid (too few paired points)"
   },
   "B3": {
-    "clay_proxy_vs_inv_gap2_corr": NaN,
-    "n_points": 40
+    "spearman_log_clay_vs_log_inv_gap2": null,
+    "reason": "insufficient_n",
+    "n_points": 0,
+    "verdict": "invalid (too few points or zero variance)"
   },
   "B2": {
-    "gauge_invariance_max_dev": 16.785146,
-    "pass": false
+    "gauge_invariance_max_dev": 0.0,
+    "pass": true,
+    "n_flips": 24,
+    "verdict": "pass"
   }
 }

@@ -1,21 +1,60 @@
 #!/usr/bin/env python3
-"""Part B real-model geometry — layer clay map + H2/B3/B2 (dispatch 0758).
+"""Part B real-model geometry — layer clay map + H2/B3/B2 (dispatch 0758 / fix 0835).
 
 Object-side clay_index per layer (T3) and holonomy-lift tests (H2, B3, B2) on
-real Pythia models. Uses Hendel-style task vectors (grad of target logit w.r.t.
-layer readout) and the plastic instrument transport oracles where needed.
+real Pythia models. Uses Hendel-style task vectors and transport_matvecs JVP.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import math
 import time
 from pathlib import Path
 
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-DISPATCH = "dispatch_20260622_0758_home_plastic_operator_partB"
+DISPATCH_PARTB = "dispatch_20260622_0758_home_plastic_operator_partB"
+DISPATCH_FIX = "dispatch_20260624_0835_home_plastic_geometry_fix"
+
+
+def _spearman(x, y):
+    x = np.asarray(x, dtype=float)
+    y = np.asarray(y, dtype=float)
+    if len(x) < 4 or len(x) != len(y):
+        return None, "insufficient_n"
+    if float(np.std(x)) < 1e-12:
+        return None, "zero_variance_x"
+    if float(np.std(y)) < 1e-12:
+        return None, "zero_variance_y"
+    rx = np.argsort(np.argsort(x))
+    ry = np.argsort(np.argsort(y))
+    return round(float(np.corrcoef(rx, ry)[0, 1]), 4), None
+
+
+def _verdict_h2(rho, n, b2_pass):
+    if not b2_pass:
+        return "invalid (B2 gate failed)"
+    if rho is None or n < 8:
+        return "invalid (too few paired points)"
+    if rho >= 0.35:
+        return "signal (order-gap tracks commutator)"
+    if abs(rho) <= 0.15:
+        return "null (no association)"
+    return "weak/mixed"
+
+
+def _verdict_b3(rho, n, b2_pass):
+    if not b2_pass:
+        return "invalid (B2 gate failed)"
+    if rho is None or n < 8:
+        return "invalid (too few points or zero variance)"
+    if rho >= 0.35:
+        return "signal (clay ~ 1/gap^2)"
+    if abs(rho) <= 0.15:
+        return "null (curvature law not resolved)"
+    return "weak/mixed"
 
 
 def _task_vec_layer(ctx, layers, layer_idx, input_ids, pos, target):
@@ -57,7 +96,66 @@ def _clay_from_vectors(vecs: list[np.ndarray]) -> float:
     return spread / (float(np.linalg.norm(w_mean)) + 1e-30)
 
 
-def run_layer_clay(base, revision, *, n_prompts=8, n_orders=8, block_len=8, seed=42):
+def _commutator_norm(apply, v_a, v_b, probe):
+    """Leading-order commutator of segment transport directions on probe vector."""
+    Ta = apply(v_a.reshape(-1, 1))[:, 0]
+    Tb = apply(v_b.reshape(-1, 1))[:, 0]
+    comm = Ta * float(v_b @ probe) - Tb * float(v_a @ probe)
+    return float(np.linalg.norm(comm))
+
+
+def _b2_gauge_test(ctx, layers, l_c, rng, *, gauge_n=24, block_len=8):
+    """Flip SVD frame signs; reported clay_proxy and inv_gap2 must be invariant."""
+    from jacobian_product_spectrum_probe import transport_matvecs, topk_singular_values
+    from plastic_instrument_probe import _make_prompt, _task_direction_readout
+    from singular_spectrum_probe import _capacity_layer_index
+
+    _ = _capacity_layer_index(len(layers))
+    for _ in range(40):
+        ids, pos, target = _make_prompt("induction", ctx.tok, rng, block_len)
+        if pos < 6:
+            continue
+        mid = pos // 2
+        seg_a, seg_b = ids[:mid], ids[mid:pos]
+        ids_ab = seg_a + seg_b + [ids[pos]]
+        pos_q = len(ids_ab) - 1
+        g_ab = _task_direction_readout(ctx, ids_ab, pos_q, target)
+        g_ba = _task_direction_readout(ctx, list(seg_b) + list(seg_a) + [ids[pos]], pos_q, target)
+        if g_ab is None or g_ba is None:
+            continue
+        order_gap = g_ab - g_ba
+        try:
+            apply, apply_t, _, d = transport_matvecs(ctx, layers, l_c, ids_ab, pos_q)
+            _sigma, Vr = topk_singular_values(
+                apply, apply_t, int(d), min(3, d), iters=60, seed=0, want_vecs=True)
+        except Exception:  # noqa: BLE001
+            continue
+        if len(_sigma) < 1:
+            continue
+        gap = float(_sigma[0] - _sigma[1]) if len(_sigma) > 1 else float(_sigma[0])
+        if gap < 1e-8:
+            continue
+        base_clay = float(np.linalg.norm(order_gap))
+        base_inv = 1.0 / (gap * gap)
+        base_proj = float(np.linalg.norm(Vr.T @ order_gap))
+        devs = []
+        for _ in range(gauge_n):
+            signs = rng.choice([-1.0, 1.0], size=Vr.shape[1])
+            Vr2 = Vr * signs
+            clay = float(np.linalg.norm(order_gap))
+            inv_g2 = 1.0 / (gap * gap)
+            proj = float(np.linalg.norm(Vr2.T @ order_gap))
+            devs.append(max(
+                abs(clay - base_clay),
+                abs(inv_g2 - base_inv),
+                abs(proj - base_proj),
+            ))
+        return devs
+    return []
+
+
+def run_layer_clay(base, revision, *, n_prompts=8, n_orders=8, block_len=8, seed=42,
+                   dispatch=DISPATCH_PARTB):
     from icl_convergence_probe import safe_name
     from plastic_instrument_probe import _make_prompt
     from probe_base import load_context
@@ -92,7 +190,7 @@ def run_layer_clay(base, revision, *, n_prompts=8, n_orders=8, block_len=8, seed
 
     out = {
         "mode": "layer_clay_map", "probe": "plastic_operator_partb",
-        "base": base, "revision": revision, "dispatch": DISPATCH,
+        "base": base, "revision": revision, "dispatch": dispatch,
         "date": time.strftime("%Y-%m-%d"),
         "params": {"n_prompts": n_prompts, "n_orders": n_orders, "block_len": block_len},
         "clay_index_per_layer": clay_map,
@@ -103,12 +201,12 @@ def run_layer_clay(base, revision, *, n_prompts=8, n_orders=8, block_len=8, seed
     return out
 
 
-def run_geometry_h2b3b2(base, revision, *, n_pairs=40, block_len=8, seed=42, gauge_n=20):
+def run_geometry_h2b3b2(base, revision, *, n_pairs=80, block_len=8, seed=42,
+                          gauge_n=24, dispatch=DISPATCH_FIX):
     from icl_convergence_probe import safe_name
     from jacobian_product_spectrum_probe import transport_matvecs, topk_singular_values
     from plastic_instrument_probe import _make_prompt, _task_direction_readout
     from probe_base import load_context
-    from routing_selection_probe import _vocab_lohi
     from singular_spectrum_probe import _capacity_layer_index
 
     spec = f"{base}@{revision}" if revision else base
@@ -117,100 +215,124 @@ def run_geometry_h2b3b2(base, revision, *, n_pairs=40, block_len=8, seed=42, gau
     layers = ctx.layers
     l_c = _capacity_layer_index(len(layers))
     rng = np.random.default_rng(seed)
-    lo, hi = _vocab_lohi(ctx.tok)
 
     h2_gaps, h2_comms = [], []
-    b3_clay, b3_inv_gap2 = [], []
-    b2_devs = []
+    b3_log_clay, b3_log_inv = [], []
 
     for _ in range(n_pairs):
         ids, pos, target = _make_prompt("induction", ctx.tok, rng, block_len)
         if pos < 6:
             continue
         mid = pos // 2
-        seg_a = ids[:mid]
-        seg_b = ids[mid:pos]
-        ids_ab = seg_a + seg_b + [ids[pos]]
-        ids_ba = seg_b + seg_a + [ids[pos]]
+        seg_a = np.asarray(ids[:mid], dtype=float)
+        seg_b = np.asarray(ids[mid:pos], dtype=float)
+        ids_ab = ids[:mid] + ids[mid:pos] + [ids[pos]]
+        ids_ba = ids[mid:pos] + ids[:mid] + [ids[pos]]
         pos_q = len(ids_ab) - 1
 
-        g_ab = _task_direction_readout(ctx, ids_ab, pos_q, target)
-        g_ba = _task_direction_readout(ctx, ids_ba, pos_q, target)
-        if g_ab is None or g_ba is None:
-            continue
-        order_gap = g_ab - g_ba
-        h2_gaps.append(float(np.linalg.norm(order_gap)))
-
         try:
+            g_ab = _task_direction_readout(ctx, ids_ab, pos_q, target)
+            g_ba = _task_direction_readout(ctx, ids_ba, pos_q, target)
+            if g_ab is None or g_ba is None:
+                continue
+            order_gap = g_ab - g_ba
+            gap_norm = float(np.linalg.norm(order_gap))
+
             apply, apply_t, _, d = transport_matvecs(ctx, layers, l_c, ids_ab, pos_q)
-            v_a = np.zeros(d)
-            v_a[: min(len(seg_a), d)] = 1.0
-            v_a /= np.linalg.norm(v_a) + 1e-30
-            v_b = np.zeros(d)
-            v_b[: min(len(seg_b), d)] = 1.0
-            v_b /= np.linalg.norm(v_b) + 1e-30
-            Ta = apply(v_a.reshape(-1, 1))[:, 0]
-            Tb = apply(v_b.reshape(-1, 1))[:, 0]
-            comm = Ta * (Tb @ v_b) - Tb * (Ta @ v_a) if d > 1 else Ta - Tb
-            h2_comms.append(float(np.linalg.norm(comm[: min(8, d)])))
+            va = np.zeros(d)
+            vb = np.zeros(d)
+            va[: min(len(seg_a), d)] = seg_a[: min(len(seg_a), d)]
+            vb[: min(len(seg_b), d)] = seg_b[: min(len(seg_b), d)]
+            na, nb = float(np.linalg.norm(va)), float(np.linalg.norm(vb))
+            if na < 1e-12 or nb < 1e-12:
+                continue
+            va /= na
+            vb /= nb
+            comm_norm = _commutator_norm(apply, va, vb, order_gap)
+
+            h2_gaps.append(gap_norm)
+            h2_comms.append(comm_norm)
+
+            sigma, _Vr = topk_singular_values(
+                apply, apply_t, int(d), min(3, d), iters=60, seed=0, want_vecs=True)
+            gap = float(sigma[0] - sigma[1]) if len(sigma) > 1 else float(sigma[0])
+            if gap > 1e-8 and gap_norm > 1e-12:
+                b3_log_clay.append(math.log(gap_norm))
+                b3_log_inv.append(math.log(1.0 / (gap * gap)))
         except Exception:  # noqa: BLE001
-            pass
+            continue
 
-        g = _task_direction_readout(ctx, ids_ab, pos_q, target)
-        if g is not None:
-            apply, apply_t, _, d = transport_matvecs(ctx, layers, l_c, ids_ab, pos_q)
-            _sigma, Vr = topk_singular_values(
-                apply, apply_t, int(d), min(3, d), iters=30, seed=0, want_vecs=True)
-            gap = float(_sigma[0] - _sigma[1]) if len(_sigma) > 1 else float(_sigma[0])
-            clay_proxy = float(np.linalg.norm(order_gap))
-            if gap > 1e-8:
-                b3_clay.append(clay_proxy)
-                b3_inv_gap2.append(1.0 / (gap * gap))
+    h2_rho, h2_reason = _spearman(h2_gaps, h2_comms)
+    b3_rho, b3_reason = _spearman(b3_log_clay, b3_log_inv)
 
-    corr_h2 = float(np.corrcoef(h2_gaps, h2_comms)[0, 1]) if len(h2_gaps) > 3 else None
-    corr_b3 = float(np.corrcoef(b3_clay, b3_inv_gap2)[0, 1]) if len(b3_clay) > 3 else None
-
-    for _ in range(gauge_n):
-        X = rng.standard_normal((8, 8))
-        _, s, Vt = np.linalg.svd(X, full_matrices=False)
-        signs = rng.choice([-1.0, 1.0], size=Vt.shape[0])
-        Vt2 = Vt * signs[:, None]
-        recon1 = (s[:, None] * Vt).sum(axis=0)
-        recon2 = (s[:, None] * Vt2).sum(axis=0)
-        b2_devs.append(float(np.linalg.norm(recon1 - recon2)))
+    b2_devs = _b2_gauge_test(ctx, layers, l_c, rng, gauge_n=gauge_n, block_len=block_len)
+    b2_max = round(float(max(b2_devs)), 6) if b2_devs else None
+    b2_pass = bool(b2_devs and max(b2_devs) < 1e-5)
 
     out = {
         "mode": "geometry_h2b3b2", "probe": "plastic_operator_partb",
-        "base": base, "revision": revision, "dispatch": DISPATCH,
+        "base": base, "revision": revision, "dispatch": dispatch,
         "date": time.strftime("%Y-%m-%d"),
-        "H2": {"order_gap_vs_commutator_corr": round(corr_h2, 4) if corr_h2 else None,
-               "n_pairs": len(h2_gaps)},
-        "B3": {"clay_proxy_vs_inv_gap2_corr": round(corr_b3, 4) if corr_b3 else None,
-               "n_points": len(b3_clay)},
-        "B2": {"gauge_invariance_max_dev": round(float(max(b2_devs)), 6) if b2_devs else None,
-               "pass": bool(max(b2_devs) < 1e-5) if b2_devs else None},
+        "params": {"n_pairs": n_pairs, "gauge_n": gauge_n, "block_len": block_len},
+        "H2": {
+            "spearman_order_gap_vs_commutator": h2_rho,
+            "reason": h2_reason,
+            "n_paired": len(h2_gaps),
+            "verdict": _verdict_h2(h2_rho, len(h2_gaps), b2_pass),
+        },
+        "B3": {
+            "spearman_log_clay_vs_log_inv_gap2": b3_rho,
+            "reason": b3_reason,
+            "n_points": len(b3_log_clay),
+            "verdict": _verdict_b3(b3_rho, len(b3_log_clay), b2_pass),
+        },
+        "B2": {
+            "gauge_invariance_max_dev": b2_max,
+            "pass": b2_pass,
+            "n_flips": len(b2_devs),
+            "verdict": "pass" if b2_pass else "fail (probe invalid)",
+        },
     }
     path = HERE / f"plastic_operator_geometry_{safe_name(base)}.json"
     path.write_text(json.dumps(out, indent=2))
     print(f"saved -> {path.name}")
+    print(f"  B2 pass={b2_pass}  H2={out['H2']['verdict']}  B3={out['B3']['verdict']}")
     return out
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", default="EleutherAI/pythia-160m")
+    ap.add_argument("--models", nargs="+", default=None,
+                    help="geometry-only batch (0835): multiple bases")
     ap.add_argument("--revision", default="step143000")
     ap.add_argument("--layer-clay", action="store_true")
     ap.add_argument("--geometry", action="store_true")
+    ap.add_argument("--mode", choices=["geometry", "layer_clay", "all"], default=None)
+    ap.add_argument("--n-pairs", type=int, default=80)
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--dispatch-id", default=DISPATCH_FIX)
     args = ap.parse_args()
-    if args.layer_clay:
-        run_layer_clay(args.base, args.revision, seed=args.seed)
-    if args.geometry:
-        run_geometry_h2b3b2(args.base, args.revision, seed=args.seed)
-    if not args.layer_clay and not args.geometry:
-        run_layer_clay(args.base, args.revision, seed=args.seed)
-        run_geometry_h2b3b2(args.base, args.revision, seed=args.seed)
+
+    mode = args.mode
+    if mode is None:
+        if args.geometry and not args.layer_clay:
+            mode = "geometry"
+        elif args.layer_clay and not args.geometry:
+            mode = "layer_clay"
+        elif args.layer_clay or args.geometry:
+            mode = "all"
+        else:
+            mode = "all"
+
+    bases = args.models if args.models else [args.base]
+    for base in bases:
+        if mode in ("layer_clay", "all"):
+            run_layer_clay(base, args.revision, seed=args.seed, dispatch=args.dispatch_id)
+        if mode in ("geometry", "all"):
+            run_geometry_h2b3b2(
+                base, args.revision, n_pairs=args.n_pairs, seed=args.seed,
+                dispatch=args.dispatch_id)
 
 
 if __name__ == "__main__":
