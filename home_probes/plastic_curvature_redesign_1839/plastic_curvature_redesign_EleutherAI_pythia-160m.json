@@ -1,0 +1,32 @@
+{
+  "mode": "plastic_curvature_redesign",
+  "probe": "plastic_curvature_redesign_probe",
+  "base": "EleutherAI/pythia-160m",
+  "revision": "step143000",
+  "dispatch": "dispatch_20260624_1839_home_plastic_curvature_redesign",
+  "date": "2026-06-24",
+  "params": {
+    "n_pairs": 120,
+    "n_loops": 100,
+    "seed": 42,
+    "capacity_layer": 6
+  },
+  "H2_task_vector": {
+    "spearman_order_gap_vs_commutator": null,
+    "reason": "insufficient_n",
+    "n_paired": 0,
+    "order_gap_min": null,
+    "order_gap_max": null,
+    "order_gap_std": null,
+    "verdict": "still-degenerate (too few points)"
+  },
+  "B3_plaquette": {
+    "spearman_log_inv_gap2_vs_log_holonomy": null,
+    "reason": "insufficient_n",
+    "n_points": 0,
+    "gap_min": null,
+    "gap_max": null,
+    "gap_std": null,
+    "verdict": "still-degenerate (too few points)"
+  }
+}

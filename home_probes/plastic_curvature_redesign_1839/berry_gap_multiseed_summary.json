@@ -1,0 +1,96 @@
+{
+  "mode": "multiseed_ci",
+  "date": "2026-06-24",
+  "configs": [
+    {
+      "model": "gpt2",
+      "task_family": "factual",
+      "n_seeds": 5,
+      "connection_slope_mean": -1.2856,
+      "connection_slope_ci95": 0.2887,
+      "connection_slopes": [
+        -1.192,
+        -0.826,
+        -1.743,
+        -1.344,
+        -1.323
+      ],
+      "near_minus_one": true
+    },
+    {
+      "model": "gpt2",
+      "task_family": "icl",
+      "n_seeds": 5,
+      "connection_slope_mean": -1.2782,
+      "connection_slope_ci95": 0.4559,
+      "connection_slopes": [
+        -0.544,
+        -1.87,
+        -0.996,
+        -1.383,
+        -1.598
+      ],
+      "near_minus_one": true
+    },
+    {
+      "model": "pythia-1b",
+      "task_family": "factual",
+      "n_seeds": 5,
+      "connection_slope_mean": -0.971,
+      "connection_slope_ci95": 0.274,
+      "connection_slopes": [
+        -1.267,
+        -1.093,
+        -1.218,
+        -0.583,
+        -0.694
+      ],
+      "near_minus_one": true
+    },
+    {
+      "model": "pythia-1b",
+      "task_family": "icl",
+      "n_seeds": 5,
+      "connection_slope_mean": -0.9758,
+      "connection_slope_ci95": 0.223,
+      "connection_slopes": [
+        -0.952,
+        -0.771,
+        -1.402,
+        -0.964,
+        -0.79
+      ],
+      "near_minus_one": true
+    },
+    {
+      "model": "pythia-410m",
+      "task_family": "factual",
+      "n_seeds": 5,
+      "connection_slope_mean": -0.949,
+      "connection_slope_ci95": 0.2951,
+      "connection_slopes": [
+        -1.034,
+        -0.963,
+        -0.501,
+        -1.427,
+        -0.82
+      ],
+      "near_minus_one": true
+    },
+    {
+      "model": "pythia-410m",
+      "task_family": "icl",
+      "n_seeds": 5,
+      "connection_slope_mean": -0.9242,
+      "connection_slope_ci95": 0.3189,
+      "connection_slopes": [
+        -0.501,
+        -1.27,
+        -1.339,
+        -0.725,
+        -0.786
+      ],
+      "near_minus_one": true
+    }
+  ]
+}

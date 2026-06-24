@@ -1,0 +1,95 @@
+{
+  "mode": "real_model",
+  "model": "gpt2",
+  "hf_name": "gpt2",
+  "date": "2026-06-24",
+  "n_layers": 12,
+  "d_model": 768,
+  "k_subspace": 4,
+  "n_samples": 48,
+  "task_family": "factual",
+  "n_domains": 4,
+  "concept_anchor": "plastic_operator_proof.py  T5/Berry connection (~1/gap) + B3 Berry curvature (~1/gap^2)",
+  "connection_law": {
+    "prediction": "Berry coupling tan(angle) ~ 1/gap  (slope -1)",
+    "predicted_slope": -1.0,
+    "measure": "tan(line_angle) \u2014 saturation-correct off-diagonal coupling",
+    "fit": {
+      "slope": -0.826,
+      "spearman": 0.006,
+      "n": 44
+    },
+    "permutation_null": {
+      "null_slope_mean": -0.025,
+      "null_slope_std": 0.411,
+      "z_score": -1.952,
+      "n_rep": 200
+    },
+    "raw_angle_fit": {
+      "slope": -0.058,
+      "spearman": 0.006,
+      "n": 44
+    },
+    "raw_angle_note": "bounded line angle saturates at 90 deg, flattening the slope",
+    "verdict": "NULL_INDISTINGUISHABLE"
+  },
+  "curvature_law": {
+    "prediction": "curvature ~ 1/gap^2  (slope -2)",
+    "predicted_slope": -2.0,
+    "measure": "commutator_norm (un-bounded H-family curvature [transport,task])",
+    "fit": {
+      "slope": -0.111,
+      "spearman": -0.167,
+      "n": 66
+    },
+    "permutation_null": {
+      "null_slope_mean": -0.003,
+      "null_slope_std": 0.073,
+      "z_score": -1.494,
+      "n_rep": 200
+    },
+    "measures": {
+      "holonomy_fro": {
+        "fit": {
+          "slope": -0.111,
+          "spearman": -0.167,
+          "n": 66
+        },
+        "permutation_null": {
+          "null_slope_mean": -0.003,
+          "null_slope_std": 0.073,
+          "z_score": -1.494,
+          "n_rep": 200
+        }
+      },
+      "commutator_norm": {
+        "fit": {
+          "slope": -0.111,
+          "spearman": -0.167,
+          "n": 66
+        },
+        "permutation_null": {
+          "null_slope_mean": -0.003,
+          "null_slope_std": 0.073,
+          "z_score": -1.494,
+          "n_rep": 200
+        }
+      },
+      "tan_trace_angle": {
+        "fit": {
+          "slope": -0.584,
+          "spearman": -0.137,
+          "n": 66
+        },
+        "permutation_null": {
+          "null_slope_mean": -0.006,
+          "null_slope_std": 0.323,
+          "z_score": -1.789,
+          "n_rep": 200
+        }
+      }
+    },
+    "measures_note": "holonomy_fro and trace angle saturate (orthogonal H); commutator_norm and tan_trace_angle are un-bounded. Spearman is measure-invariant: all flat => genuine null.",
+    "verdict": "NULL_INDISTINGUISHABLE"
+  }
+}
