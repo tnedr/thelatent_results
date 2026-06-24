@@ -1,0 +1,54 @@
+{
+  "mode": "summary",
+  "date": "2026-06-24",
+  "models": [
+    {
+      "model": "gpt2-large",
+      "task_family": "icl",
+      "connection_slope": -0.984,
+      "connection_verdict": "LAW_HOLDS",
+      "curvature_slope": -0.072,
+      "curvature_verdict": "NULL_INDISTINGUISHABLE"
+    },
+    {
+      "model": "gpt2-large",
+      "task_family": "factual",
+      "connection_slope": -0.902,
+      "connection_verdict": "LAW_HOLDS",
+      "curvature_slope": -0.231,
+      "curvature_verdict": "NEGATIVE_BUT_OFF_PREDICTION(slope=-0.231)"
+    },
+    {
+      "model": "pythia-1.4b",
+      "task_family": "icl",
+      "connection_slope": -1.092,
+      "connection_verdict": "LAW_HOLDS",
+      "curvature_slope": -0.018,
+      "curvature_verdict": "NULL_INDISTINGUISHABLE"
+    },
+    {
+      "model": "pythia-1.4b",
+      "task_family": "factual",
+      "connection_slope": -0.946,
+      "connection_verdict": "LAW_HOLDS",
+      "curvature_slope": -0.042,
+      "curvature_verdict": "NULL_INDISTINGUISHABLE"
+    },
+    {
+      "model": "pythia-1b",
+      "task_family": "icl",
+      "connection_slope": -1.261,
+      "connection_verdict": "LAW_HOLDS",
+      "curvature_slope": -0.001,
+      "curvature_verdict": "NULL_INDISTINGUISHABLE"
+    },
+    {
+      "model": "pythia-1b",
+      "task_family": "factual",
+      "connection_slope": -0.898,
+      "connection_verdict": "LAW_HOLDS",
+      "curvature_slope": -0.064,
+      "curvature_verdict": "NULL_INDISTINGUISHABLE"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "note": "berry connection scaleup 1b+ (ICL + factual); corp small-model baseline separate",
+  "n_files": 8,
+  "files": [
+    "berry_gap_gpt2-large_factual.json",
+    "berry_gap_gpt2-large.json",
+    "berry_gap_pythia-1_4b_factual.json",
+    "berry_gap_pythia-1_4b.json",
+    "berry_gap_pythia-1b_factual.json",
+    "berry_gap_pythia-1b.json",
+    "berry_gap_summary.json",
+    "berry_gap_probe.py"
+  ],
+  "machine": "home",
+  "models": [
+    "gpt2-large",
+    "pythia-1b",
+    "pythia-1.4b"
+  ],
+  "dispatch": "dispatch_20260623_1455_berry_gap_scaleup",
+  "ts": "2026-06-24T13:39:37Z",
+  "n_samples": 64
+}
