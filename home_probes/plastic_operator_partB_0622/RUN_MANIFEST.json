@@ -1,0 +1,34 @@
+{
+  "dispatch": "dispatch_20260622_0758_home_plastic_operator_partB",
+  "models": [
+    "EleutherAI/pythia-160m",
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-1b",
+    "EleutherAI/pythia-2.8b"
+  ],
+  "n_files": 18,
+  "files": [
+    "plastic_instrument_real_EleutherAI_pythia-160m.json",
+    "plastic_instrument_real_EleutherAI_pythia-1b.json",
+    "plastic_instrument_real_EleutherAI_pythia-2_8b.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m_factual.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m_multi_induction_k3.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m_recall_frozen_track.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m_recall_frozen_vs_track.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m_recall_track.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m_track.json",
+    "plastic_instrument_real_EleutherAI_pythia-410m.json",
+    "plastic_operator_layer_clay_EleutherAI_pythia-160m.json",
+    "plastic_operator_layer_clay_EleutherAI_pythia-410m.json",
+    "plastic_operator_geometry_EleutherAI_pythia-160m.json",
+    "plastic_operator_geometry_EleutherAI_pythia-410m.json",
+    "PANEL.jsonl",
+    "plastic_instrument_probe.py",
+    "plastic_operator_partb_real.py",
+    "jacobian_product_spectrum_probe.py",
+    "SUMMARY.md"
+  ],
+  "ts": "2026-06-24T04:53:32Z",
+  "machine": "home",
+  "note": "plastic operator Part B empirical anchor; ICL_ATTN_IMPLEMENTATION=eager"
+}

@@ -1,0 +1,27 @@
+{
+  "mode": "layer_clay_map",
+  "probe": "plastic_operator_partb",
+  "base": "EleutherAI/pythia-160m",
+  "revision": "step143000",
+  "dispatch": "dispatch_20260622_0758_home_plastic_operator_partB",
+  "date": "2026-06-24",
+  "params": {
+    "n_prompts": 8,
+    "n_orders": 8,
+    "block_len": 8
+  },
+  "clay_index_per_layer": {
+    "0": 3.235963,
+    "1": 3.143043,
+    "2": 2.885188,
+    "3": 2.789958,
+    "4": 2.445931,
+    "5": 2.143134,
+    "6": 1.985601,
+    "7": 1.735183,
+    "8": 1.597858,
+    "9": 1.384879,
+    "10": 0.835632,
+    "11": 2.500569
+  }
+}

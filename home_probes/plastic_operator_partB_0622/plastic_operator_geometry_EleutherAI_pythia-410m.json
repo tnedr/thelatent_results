@@ -1,0 +1,20 @@
+{
+  "mode": "geometry_h2b3b2",
+  "probe": "plastic_operator_partb",
+  "base": "EleutherAI/pythia-410m",
+  "revision": "step143000",
+  "dispatch": "dispatch_20260622_0758_home_plastic_operator_partB",
+  "date": "2026-06-24",
+  "H2": {
+    "order_gap_vs_commutator_corr": NaN,
+    "n_pairs": 40
+  },
+  "B3": {
+    "clay_proxy_vs_inv_gap2_corr": NaN,
+    "n_points": 40
+  },
+  "B2": {
+    "gauge_invariance_max_dev": 16.785146,
+    "pass": false
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "mode": "frozen_vs_track",
+  "probe": "plastic_instrument",
+  "base": "EleutherAI/pythia-410m",
+  "task_family": "recall",
+  "frozen": {
+    "mode": "real_track",
+    "probe": "plastic_instrument",
+    "base": "EleutherAI/pythia-410m",
+    "revisions": [
+      "step1000",
+      "step2000",
+      "step8000",
+      "step143000"
+    ],
+    "date": "2026-06-23",
+    "dispatch": "dispatch_20260622_0758_home_plastic_operator_partB",
+    "task_family": "recall",
+    "alpha": 0.0,
+    "params": {
+      "n_prompts": 24,
+      "iters": 30,
+      "alpha": 0.0,
+      "k": 8
+    },
+    "trajectory": [
+      {
+        "revision": "step1000",
+        "step": 1000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.0185,
+        "causal_max_abs_plastic_mean": 0.218637,
+        "task_gain_ratio_mean": 0.5098,
+        "align_to_final_plastic_mean": 0.0219
+      },
+      {
+        "revision": "step2000",
+        "step": 2000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.0261,
+        "causal_max_abs_plastic_mean": 0.282031,
+        "task_gain_ratio_mean": 0.2747,
+        "align_to_final_plastic_mean": 0.0219
+      },
+      {
+        "revision": "step8000",
+        "step": 8000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.0237,
+        "causal_max_abs_plastic_mean": 0.274819,
+        "task_gain_ratio_mean": 6.3755,
+        "align_to_final_plastic_mean": 0.0219
+      },
+      {
+        "revision": "step143000",
+        "step": 143000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.0242,
+        "causal_max_abs_plastic_mean": 0.259995,
+        "task_gain_ratio_mean": 0.1519,
+        "align_to_final_plastic_mean": 0.0219
+      }
+    ]
+  },
+  "tracked": {
+    "mode": "real_track",
+    "probe": "plastic_instrument",
+    "base": "EleutherAI/pythia-410m",
+    "revisions": [
+      "step1000",
+      "step2000",
+      "step8000",
+      "step143000"
+    ],
+    "date": "2026-06-23",
+    "dispatch": "dispatch_20260622_0758_home_plastic_operator_partB",
+    "task_family": "recall",
+    "alpha": 0.4,
+    "params": {
+      "n_prompts": 24,
+      "iters": 30,
+      "alpha": 0.4,
+      "k": 8
+    },
+    "trajectory": [
+      {
+        "revision": "step1000",
+        "step": 1000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.3065,
+        "causal_max_abs_plastic_mean": 5.859256,
+        "task_gain_ratio_mean": 13.2249,
+        "align_to_final_plastic_mean": 0.1574
+      },
+      {
+        "revision": "step2000",
+        "step": 2000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.2395,
+        "causal_max_abs_plastic_mean": 7.745298,
+        "task_gain_ratio_mean": 9.6494,
+        "align_to_final_plastic_mean": 0.2236
+      },
+      {
+        "revision": "step8000",
+        "step": 8000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.3607,
+        "causal_max_abs_plastic_mean": 8.240064,
+        "task_gain_ratio_mean": 247.4493,
+        "align_to_final_plastic_mean": 0.3965
+      },
+      {
+        "revision": "step143000",
+        "step": 143000.0,
+        "induction_acc": null,
+        "align_plastic_global_mean": 0.2904,
+        "causal_max_abs_plastic_mean": 8.817947,
+        "task_gain_ratio_mean": 5.7822,
+        "align_to_final_plastic_mean": 1.0
+      }
+    ]
+  },
+  "date": "2026-06-24",
+  "dispatch": "dispatch_20260622_0758_home_plastic_operator_partB"
+}
