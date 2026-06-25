@@ -1,0 +1,145 @@
+{
+  "mode": "commutator_causal_order_control",
+  "probe": "commutator_causal_order_control_probe",
+  "model": "pythia-2.8b",
+  "hf_spec": "pythia-2.8b@step143000",
+  "dispatch": "dispatch_20260625_1752_home_commutator_causal_order_control",
+  "date": "2026-06-25",
+  "params": {
+    "n_pairs": 50,
+    "seed": 2,
+    "capacity_layer": 18,
+    "alphas": [
+      -2.0,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "scale_frac": 0.1
+  },
+  "dose_response": {
+    "commutator": {
+      "alphas": [
+        -2.0,
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "mean_order_gap": [
+        2.509736,
+        2.677189,
+        2.737465,
+        2.771831,
+        2.779534,
+        2.757254,
+        2.558925
+      ],
+      "mean_logit_correct": [
+        2.202764,
+        3.521028,
+        4.112254,
+        4.645454,
+        5.112479,
+        5.505088,
+        6.032523
+      ],
+      "mean_acc": [
+        0.02,
+        0.02,
+        0.0,
+        0.02,
+        0.06,
+        0.12,
+        0.18
+      ]
+    },
+    "random": {
+      "alphas": [
+        -2.0,
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "mean_order_gap": [
+        2.686521,
+        2.760644,
+        2.77108,
+        2.771831,
+        2.762884,
+        2.742787,
+        2.64996
+      ],
+      "mean_logit_correct": [
+        4.385243,
+        4.569396,
+        4.61961,
+        4.645454,
+        4.643709,
+        4.613811,
+        4.455793
+      ],
+      "mean_acc": [
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.0
+      ]
+    },
+    "magnitude": {
+      "alphas": [
+        -2.0,
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "mean_order_gap": [
+        2.329281,
+        2.60572,
+        2.705091,
+        2.771831,
+        2.82294,
+        2.956908,
+        2.795851
+      ],
+      "mean_logit_correct": [
+        -8.860842,
+        -2.49453,
+        1.00101,
+        4.645454,
+        8.276959,
+        11.501564,
+        16.578694
+      ],
+      "mean_acc": [
+        0.0,
+        0.0,
+        0.0,
+        0.02,
+        0.16,
+        0.52,
+        0.88
+      ]
+    }
+  },
+  "causal": {
+    "spearman_alpha_vs_order_gap_comm": 0.3571,
+    "spearman_alpha_vs_order_gap_random": -0.2143,
+    "permutation_z_comm": null,
+    "verdict": "weak/mixed"
+  }
+}

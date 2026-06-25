@@ -1,0 +1,36 @@
+{
+  "ts": "2026-06-25T17:28:17Z",
+  "n_files": 16,
+  "models": [
+    "pythia-410m",
+    "pythia-1b",
+    "pythia-2.8b",
+    "gpt2"
+  ],
+  "files": [
+    "commutator_causal_order_control_gpt2_seed0.json",
+    "commutator_causal_order_control_gpt2_seed1.json",
+    "commutator_causal_order_control_gpt2_seed2.json",
+    "commutator_causal_order_control_pythia-1b_seed0.json",
+    "commutator_causal_order_control_pythia-1b_seed1.json",
+    "commutator_causal_order_control_pythia-1b_seed2.json",
+    "commutator_causal_order_control_pythia-2_8b_seed0.json",
+    "commutator_causal_order_control_pythia-2_8b_seed1.json",
+    "commutator_causal_order_control_pythia-2_8b_seed2.json",
+    "commutator_causal_order_control_pythia-410m_seed0.json",
+    "commutator_causal_order_control_pythia-410m_seed1.json",
+    "commutator_causal_order_control_pythia-410m_seed2.json",
+    "commutator_causal_order_control_summary.json",
+    "commutator_causal_order_control_probe.py",
+    "commutator_order_sensitivity_probe.py",
+    "SUMMARY.md"
+  ],
+  "dispatch": "dispatch_20260625_1752_home_commutator_causal_order_control",
+  "machine": "home",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_pairs": 50
+}

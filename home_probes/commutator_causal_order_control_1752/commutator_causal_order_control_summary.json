@@ -1,0 +1,114 @@
+{
+  "mode": "summary",
+  "date": "2026-06-25",
+  "runs": [
+    {
+      "model": "gpt2",
+      "seed": 0,
+      "n_pairs": 50,
+      "spearman_comm": -0.9643,
+      "spearman_random": 0.0,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "gpt2",
+      "seed": 1,
+      "n_pairs": 50,
+      "spearman_comm": -1.0,
+      "spearman_random": -1.0,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "gpt2",
+      "seed": 2,
+      "n_pairs": 50,
+      "spearman_comm": -1.0,
+      "spearman_random": -1.0,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 0,
+      "n_pairs": 50,
+      "spearman_comm": 0.9643,
+      "spearman_random": -0.9643,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 1,
+      "n_pairs": 50,
+      "spearman_comm": 0.0,
+      "spearman_random": -0.6071,
+      "z_comm": null,
+      "verdict": "NULL (no causal effect)"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 2,
+      "n_pairs": 50,
+      "spearman_comm": 0.7857,
+      "spearman_random": -0.3571,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-2.8b",
+      "seed": 0,
+      "n_pairs": 50,
+      "spearman_comm": 0.3571,
+      "spearman_random": 0.6071,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-2.8b",
+      "seed": 1,
+      "n_pairs": 50,
+      "spearman_comm": 0.7857,
+      "spearman_random": -0.2143,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-2.8b",
+      "seed": 2,
+      "n_pairs": 50,
+      "spearman_comm": 0.3571,
+      "spearman_random": -0.2143,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 0,
+      "n_pairs": 50,
+      "spearman_comm": 0.8929,
+      "spearman_random": -0.2143,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 1,
+      "n_pairs": 50,
+      "spearman_comm": 0.2143,
+      "spearman_random": 0.0,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 2,
+      "n_pairs": 50,
+      "spearman_comm": -0.2143,
+      "spearman_random": -0.3571,
+      "z_comm": null,
+      "verdict": "weak/mixed"
+    }
+  ]
+}
