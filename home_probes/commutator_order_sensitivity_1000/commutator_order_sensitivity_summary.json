@@ -1,0 +1,114 @@
+{
+  "mode": "summary",
+  "date": "2026-06-25",
+  "runs": [
+    {
+      "model": "gpt2",
+      "seed": 0,
+      "n_pairs": 80,
+      "spearman": 0.1974,
+      "partial_spearman": 0.2217,
+      "permutation_z": 1.544,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "gpt2",
+      "seed": 1,
+      "n_pairs": 80,
+      "spearman": 0.2187,
+      "partial_spearman": 0.2239,
+      "permutation_z": 1.924,
+      "verdict": "weak/mixed"
+    },
+    {
+      "model": "gpt2",
+      "seed": 2,
+      "n_pairs": 80,
+      "spearman": 0.371,
+      "partial_spearman": 0.3416,
+      "permutation_z": 3.086,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 0,
+      "n_pairs": 80,
+      "spearman": 0.5416,
+      "partial_spearman": 0.5428,
+      "permutation_z": 4.761,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 1,
+      "n_pairs": 80,
+      "spearman": 0.6992,
+      "partial_spearman": 0.6996,
+      "permutation_z": 6.251,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 2,
+      "n_pairs": 80,
+      "spearman": 0.6511,
+      "partial_spearman": 0.6471,
+      "permutation_z": 6.041,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-2.8b",
+      "seed": 0,
+      "n_pairs": 80,
+      "spearman": 0.5521,
+      "partial_spearman": 0.554,
+      "permutation_z": 4.727,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-2.8b",
+      "seed": 1,
+      "n_pairs": 80,
+      "spearman": 0.6164,
+      "partial_spearman": 0.6141,
+      "permutation_z": 5.413,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-2.8b",
+      "seed": 2,
+      "n_pairs": 80,
+      "spearman": 0.6398,
+      "partial_spearman": 0.6316,
+      "permutation_z": 5.683,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 0,
+      "n_pairs": 80,
+      "spearman": 0.5049,
+      "partial_spearman": 0.5046,
+      "permutation_z": 4.224,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 1,
+      "n_pairs": 80,
+      "spearman": 0.5539,
+      "partial_spearman": 0.5666,
+      "permutation_z": 4.81,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 2,
+      "n_pairs": 80,
+      "spearman": 0.5086,
+      "partial_spearman": 0.5187,
+      "permutation_z": 4.572,
+      "verdict": "PASS (commutator predicts behavioral order-gap)"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "mode": "commutator_order_sensitivity",
+  "probe": "commutator_order_sensitivity_probe",
+  "model": "pythia-2.8b",
+  "hf_spec": "pythia-2.8b@step143000",
+  "revision": "step143000",
+  "dispatch": "dispatch_20260625_1000_home_commutator_order_sensitivity",
+  "date": "2026-06-25",
+  "params": {
+    "n_pairs": 80,
+    "seed": 1,
+    "capacity_layer": 18
+  },
+  "bridge": {
+    "spearman_comm_vs_behavioral_kl": 0.6164,
+    "spearman_comm_vs_symmetric_kl": 0.6164,
+    "spearman_comm_vs_logit_diff": 0.3969,
+    "partial_spearman_after_magnitude": 0.6141,
+    "permutation_z": 5.413,
+    "reason": null,
+    "n_pairs": 80,
+    "behavioral_kl_min": 0.04743125486442718,
+    "behavioral_kl_max": 11.760094461019921,
+    "behavioral_kl_std": 2.7726551480800623,
+    "commutator_min": 0.017399143209140138,
+    "commutator_max": 0.8999669087170263,
+    "commutator_std": 0.19746444090647722,
+    "mean_acc_flip_rate": 0.6,
+    "verdict": "PASS (commutator predicts behavioral order-gap)"
+  },
+  "h2_internal": {
+    "spearman_internal_gap_vs_comm": 0.6827,
+    "n": 80
+  }
+}

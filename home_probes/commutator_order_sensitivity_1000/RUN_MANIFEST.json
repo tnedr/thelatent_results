@@ -1,0 +1,36 @@
+{
+  "files": [
+    "commutator_order_sensitivity_gpt2_seed0.json",
+    "commutator_order_sensitivity_gpt2_seed1.json",
+    "commutator_order_sensitivity_gpt2_seed2.json",
+    "commutator_order_sensitivity_pythia-1b_seed0.json",
+    "commutator_order_sensitivity_pythia-1b_seed1.json",
+    "commutator_order_sensitivity_pythia-1b_seed2.json",
+    "commutator_order_sensitivity_pythia-2_8b_seed0.json",
+    "commutator_order_sensitivity_pythia-2_8b_seed1.json",
+    "commutator_order_sensitivity_pythia-2_8b_seed2.json",
+    "commutator_order_sensitivity_pythia-410m_seed0.json",
+    "commutator_order_sensitivity_pythia-410m_seed1.json",
+    "commutator_order_sensitivity_pythia-410m_seed2.json",
+    "commutator_order_sensitivity_summary.json",
+    "commutator_order_sensitivity_probe.py",
+    "plastic_curvature_redesign_probe.py",
+    "SUMMARY.md"
+  ],
+  "ts": "2026-06-25T09:14:48Z",
+  "models": [
+    "gpt2",
+    "pythia-410m",
+    "pythia-1b",
+    "pythia-2.8b"
+  ],
+  "n_files": 16,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "dispatch": "dispatch_20260625_1000_home_commutator_order_sensitivity",
+  "n_pairs": 80,
+  "machine": "home"
+}

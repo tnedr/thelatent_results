@@ -1,0 +1,35 @@
+{
+  "mode": "commutator_order_sensitivity",
+  "probe": "commutator_order_sensitivity_probe",
+  "model": "gpt2",
+  "hf_spec": "gpt2",
+  "revision": null,
+  "dispatch": "dispatch_20260625_1000_home_commutator_order_sensitivity",
+  "date": "2026-06-25",
+  "params": {
+    "n_pairs": 80,
+    "seed": 0,
+    "capacity_layer": 6
+  },
+  "bridge": {
+    "spearman_comm_vs_behavioral_kl": 0.1974,
+    "spearman_comm_vs_symmetric_kl": 0.1974,
+    "spearman_comm_vs_logit_diff": 0.1542,
+    "partial_spearman_after_magnitude": 0.2217,
+    "permutation_z": 1.544,
+    "reason": null,
+    "n_pairs": 80,
+    "behavioral_kl_min": 0.029523927223796525,
+    "behavioral_kl_max": 9.953884751412124,
+    "behavioral_kl_std": 1.9445268861353904,
+    "commutator_min": 0.002130900129774082,
+    "commutator_max": 1.95556348595289,
+    "commutator_std": 0.3300784180649026,
+    "mean_acc_flip_rate": 0.575,
+    "verdict": "weak/mixed"
+  },
+  "h2_internal": {
+    "spearman_internal_gap_vs_comm": 0.4581,
+    "n": 80
+  }
+}
