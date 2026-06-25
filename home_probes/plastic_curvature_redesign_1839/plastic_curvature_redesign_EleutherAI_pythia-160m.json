@@ -4,7 +4,7 @@
   "base": "EleutherAI/pythia-160m",
   "revision": "step143000",
   "dispatch": "dispatch_20260624_1839_home_plastic_curvature_redesign",
-  "date": "2026-06-24",
+  "date": "2026-06-25",
   "params": {
     "n_pairs": 120,
     "n_loops": 100,
@@ -12,21 +12,21 @@
     "capacity_layer": 6
   },
   "H2_task_vector": {
-    "spearman_order_gap_vs_commutator": null,
-    "reason": "insufficient_n",
-    "n_paired": 0,
-    "order_gap_min": null,
-    "order_gap_max": null,
-    "order_gap_std": null,
-    "verdict": "still-degenerate (too few points)"
+    "spearman_order_gap_vs_commutator": 0.6133,
+    "reason": null,
+    "n_paired": 120,
+    "order_gap_min": 0.49631662762587636,
+    "order_gap_max": 1.4732752208007438,
+    "order_gap_std": 0.2134661369355116,
+    "verdict": "signal (order-gap tracks commutator)"
   },
   "B3_plaquette": {
-    "spearman_log_inv_gap2_vs_log_holonomy": null,
-    "reason": "insufficient_n",
-    "n_points": 0,
-    "gap_min": null,
-    "gap_max": null,
-    "gap_std": null,
-    "verdict": "still-degenerate (too few points)"
+    "spearman_log_inv_gap2_vs_log_holonomy": 0.0996,
+    "reason": null,
+    "n_points": 100,
+    "gap_min": 0.03936441057048854,
+    "gap_max": 0.989586940864068,
+    "gap_std": 0.19946633647936884,
+    "verdict": "null (curvature law not resolved)"
   }
 }

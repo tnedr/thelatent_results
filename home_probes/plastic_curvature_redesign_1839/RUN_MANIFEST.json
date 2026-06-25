@@ -1,59 +1,27 @@
 {
-  "part1": {
-    "revision": "step143000",
-    "models": [
-      "EleutherAI/pythia-160m",
-      "EleutherAI/pythia-410m"
-    ]
-  },
   "files": [
-    "berry_gap_gpt2_factual_seed0.json",
-    "berry_gap_gpt2_factual_seed1.json",
-    "berry_gap_gpt2_factual_seed2.json",
-    "berry_gap_gpt2_factual_seed3.json",
-    "berry_gap_gpt2_factual_seed4.json",
-    "berry_gap_gpt2_seed0.json",
-    "berry_gap_gpt2_seed1.json",
-    "berry_gap_gpt2_seed2.json",
-    "berry_gap_gpt2_seed3.json",
-    "berry_gap_gpt2_seed4.json",
-    "berry_gap_pythia-1b_factual_seed0.json",
-    "berry_gap_pythia-1b_factual_seed1.json",
-    "berry_gap_pythia-1b_factual_seed2.json",
-    "berry_gap_pythia-1b_factual_seed3.json",
-    "berry_gap_pythia-1b_factual_seed4.json",
-    "berry_gap_pythia-1b_seed0.json",
-    "berry_gap_pythia-1b_seed1.json",
-    "berry_gap_pythia-1b_seed2.json",
-    "berry_gap_pythia-1b_seed3.json",
-    "berry_gap_pythia-1b_seed4.json",
-    "berry_gap_pythia-410m_factual_seed0.json",
-    "berry_gap_pythia-410m_factual_seed1.json",
-    "berry_gap_pythia-410m_factual_seed2.json",
-    "berry_gap_pythia-410m_factual_seed3.json",
-    "berry_gap_pythia-410m_factual_seed4.json",
-    "berry_gap_pythia-410m_seed0.json",
-    "berry_gap_pythia-410m_seed1.json",
-    "berry_gap_pythia-410m_seed2.json",
-    "berry_gap_pythia-410m_seed3.json",
-    "berry_gap_pythia-410m_seed4.json",
-    "berry_gap_multiseed_summary.json",
     "plastic_curvature_redesign_EleutherAI_pythia-160m.json",
     "plastic_curvature_redesign_EleutherAI_pythia-410m.json",
-    "berry_gap_probe.py",
-    "berry_gap_multiseed_ci.py",
     "plastic_curvature_redesign_probe.py",
     "SUMMARY.md"
   ],
-  "n_files": 37,
-  "dispatch": "dispatch_20260624_1839_home_plastic_curvature_redesign",
+  "ts": "2026-06-25T06:01:53Z",
+  "part1": {
+    "models": [
+      "EleutherAI/pythia-160m",
+      "EleutherAI/pythia-410m"
+    ],
+    "revision": "step143000"
+  },
+  "machine": "home",
+  "n_files": 4,
   "part2": {
-    "n_samples": 48,
     "models": [
       "gpt2",
       "pythia-410m",
       "pythia-1b"
     ],
+    "n_samples": 48,
     "seeds": [
       0,
       1,
@@ -62,6 +30,5 @@
       4
     ]
   },
-  "ts": "2026-06-24T20:25:08Z",
-  "machine": "home"
+  "dispatch": "dispatch_20260624_1839_home_plastic_curvature_redesign"
 }
