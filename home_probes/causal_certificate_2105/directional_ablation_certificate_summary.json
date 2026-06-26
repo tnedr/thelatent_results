@@ -1,0 +1,223 @@
+{
+  "n_runs": 27,
+  "n_certificate_pass": 0,
+  "per_run": [
+    {
+      "model": "gpt2",
+      "seed": 0,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 1,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 2,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 0,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 1,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 2,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 0,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 1,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "gpt2",
+      "seed": 2,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 0,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 1,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 2,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 0,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 1,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 2,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 0,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 1,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 2,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 0,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 1,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 2,
+      "k": 1,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 0,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 1,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 2,
+      "k": 2,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 0,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 1,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 2,
+      "k": 4,
+      "z_top_vs_random": null,
+      "cohens_d": 0.0,
+      "verdict": "HONEST NULL"
+    }
+  ],
+  "timestamp": "2026-06-26T07:43:09"
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "certificate_synthetic",
+  "n_items": 64,
+  "k": 4,
+  "z_top_vs_random": 6.967,
+  "cohens_d": 1.566,
+  "pass": true,
+  "timestamp": "2026-06-26T07:37:37"
+}

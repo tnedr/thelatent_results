@@ -1,0 +1,54 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "files": [
+    "directional_ablation_certificate_gpt2_k1_seed0.json",
+    "directional_ablation_certificate_gpt2_k1_seed1.json",
+    "directional_ablation_certificate_gpt2_k1_seed2.json",
+    "directional_ablation_certificate_gpt2_k2_seed0.json",
+    "directional_ablation_certificate_gpt2_k2_seed1.json",
+    "directional_ablation_certificate_gpt2_k2_seed2.json",
+    "directional_ablation_certificate_gpt2_k4_seed0.json",
+    "directional_ablation_certificate_gpt2_k4_seed1.json",
+    "directional_ablation_certificate_gpt2_k4_seed2.json",
+    "directional_ablation_certificate_pythia-1b_k1_seed0.json",
+    "directional_ablation_certificate_pythia-1b_k1_seed1.json",
+    "directional_ablation_certificate_pythia-1b_k1_seed2.json",
+    "directional_ablation_certificate_pythia-1b_k2_seed0.json",
+    "directional_ablation_certificate_pythia-1b_k2_seed1.json",
+    "directional_ablation_certificate_pythia-1b_k2_seed2.json",
+    "directional_ablation_certificate_pythia-1b_k4_seed0.json",
+    "directional_ablation_certificate_pythia-1b_k4_seed1.json",
+    "directional_ablation_certificate_pythia-1b_k4_seed2.json",
+    "directional_ablation_certificate_pythia-410m_k1_seed0.json",
+    "directional_ablation_certificate_pythia-410m_k1_seed1.json",
+    "directional_ablation_certificate_pythia-410m_k1_seed2.json",
+    "directional_ablation_certificate_pythia-410m_k2_seed0.json",
+    "directional_ablation_certificate_pythia-410m_k2_seed1.json",
+    "directional_ablation_certificate_pythia-410m_k2_seed2.json",
+    "directional_ablation_certificate_pythia-410m_k4_seed0.json",
+    "directional_ablation_certificate_pythia-410m_k4_seed1.json",
+    "directional_ablation_certificate_pythia-410m_k4_seed2.json",
+    "directional_ablation_certificate_summary.json",
+    "directional_ablation_certificate_synthetic.json",
+    "directional_ablation_probe.py",
+    "SUMMARY.md"
+  ],
+  "n_files": 31,
+  "ts": "2026-06-26T05:43:09Z",
+  "dispatch": "dispatch_20260625_2105_home_causal_certificate",
+  "k_sweep": [
+    1,
+    2,
+    4
+  ],
+  "machine": "home",
+  "models": [
+    "gpt2",
+    "pythia-410m",
+    "pythia-1b"
+  ]
+}
