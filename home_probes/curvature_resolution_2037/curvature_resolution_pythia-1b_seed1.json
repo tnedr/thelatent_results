@@ -1,0 +1,441 @@
+{
+  "mode": "curvature_resolution",
+  "probe": "curvature_resolution_probe",
+  "model": "pythia-1b",
+  "hf_spec": "EleutherAI/pythia-1b@step143000",
+  "dispatch": "dispatch_20260625_2037_home_curvature_resolution",
+  "date": "2026-06-26",
+  "params": {
+    "n_samples": 60,
+    "seed": 1,
+    "capacity_layer": 9
+  },
+  "part_A_census": {
+    "n": 60,
+    "gap_min": 0.014475212863936486,
+    "gap_max": 0.4513661891342942,
+    "gap_median": 0.16298819699166617,
+    "gap_min_over_median": 0.0888,
+    "coupling_median": 0.0015,
+    "coupling_at_small_gap_median": 0.0006,
+    "weighted_curvature_median": 0.0001
+  },
+  "part_A_rows": null,
+  "part_B_forced_degeneracy": {
+    "curves": [
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.0399520184722728,
+            "coupling": 0.003012329739838025,
+            "weighted_curvature": 0.005684962016530935
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.281477651179229,
+            "coupling": 0.007838519797480719,
+            "weighted_curvature": 0.0007754972862889518
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.36235672964077964,
+            "coupling": 0.007374018429602129,
+            "weighted_curvature": 0.0004141291248337156
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.1272279447319806,
+            "coupling": 0.009848411344603094,
+            "weighted_curvature": 0.005991938350802614
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.02938964651780677,
+            "coupling": 0.0038529914209908074,
+            "weighted_curvature": 0.01718728817486928
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.10875656732261343,
+            "coupling": 0.039683152198695705,
+            "weighted_curvature": 0.13313778958510708
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.15480072615665902,
+            "coupling": 0.003655290984518615,
+            "weighted_curvature": 0.0005575681061253459
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.07313981126945154,
+            "coupling": 0.00019838775538771232,
+            "weighted_curvature": 7.357360845549018e-06
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.14845931557272996,
+            "coupling": 0.00031145672914092195,
+            "weighted_curvature": 4.401295509782225e-06
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.20128891916142747,
+            "coupling": 0.0013414057318511348,
+            "weighted_curvature": 4.4409980219938185e-05
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.2097491792602232,
+            "coupling": 0.0018586437123861387,
+            "weighted_curvature": 7.852207244200613e-05
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.08232525257369165,
+            "coupling": 0.003706290089752395,
+            "weighted_curvature": 0.00202680829537839
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.09384057930867973,
+            "coupling": 0.019291691244621243,
+            "weighted_curvature": 0.04226289520173694
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.21986717810009065,
+            "coupling": 0.0029318735837717126,
+            "weighted_curvature": 0.00017781552488494324
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.17585475437877315,
+            "coupling": 0.0019133568175095305,
+            "weighted_curvature": 0.00011838146431893901
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.2012283761248223,
+            "coupling": 0.0016840199230303732,
+            "weighted_curvature": 7.003514066770003e-05
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.23650470905472018,
+            "coupling": 0.01777633643828163,
+            "weighted_curvature": 0.005649433977520371
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.28996960848378395,
+            "coupling": 0.020114453241677276,
+            "weighted_curvature": 0.004811843561423698
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.027418149821844175,
+            "coupling": 0.004157707496807647,
+            "weighted_curvature": 0.02299490261678571
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.3363375337874137,
+            "coupling": 0.008387235781422468,
+            "weighted_curvature": 0.0006218519970061159
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.2211702089408258,
+            "coupling": 0.01649666830357433,
+            "weighted_curvature": 0.005563386443652709
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.2771632744066913,
+            "coupling": 0.0014163790363422404,
+            "weighted_curvature": 2.6114854680556032e-05
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.05947157226000662,
+            "coupling": 0.017879272358042358,
+            "weighted_curvature": 0.09038176953496303
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.17042906777986896,
+            "coupling": 0.0011378194725837638,
+            "weighted_curvature": 4.457171932290933e-05
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.02973911592368002,
+            "coupling": 0.0003803122222707877,
+            "weighted_curvature": 0.00016354017492313622
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.09723883623713026,
+            "coupling": 0.0036259929144956864,
+            "weighted_curvature": 0.0013905108986724164
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.16200773106856212,
+            "coupling": 0.007213027730417231,
+            "weighted_curvature": 0.0019822741803714006
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.3850215413544919,
+            "coupling": 0.005353771070734559,
+            "weighted_curvature": 0.000193352386456017
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.2976690378868802,
+            "coupling": 0.004243520788600721,
+            "weighted_curvature": 0.00020322884111371854
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.34413031954119844,
+            "coupling": 0.006849776453855928,
+            "weighted_curvature": 0.00039619311220936965
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.3549421095066132,
+            "coupling": 0.00018954352654589987,
+            "weighted_curvature": 2.851693600649247e-07
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.31763029149598115,
+            "coupling": 0.0022597868083640165,
+            "weighted_curvature": 5.061638349260502e-05
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.23105864540514603,
+            "coupling": 0.009030663011826624,
+            "weighted_curvature": 0.0015275478631781878
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.08401980886280179,
+            "coupling": 0.04522562398088489,
+            "weighted_curvature": 0.28973819929389016
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.22701152743787517,
+            "coupling": 9.756516786944358e-05,
+            "weighted_curvature": 1.8471143002113947e-07
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.1567650532647966,
+            "coupling": 0.02284383154768965,
+            "weighted_curvature": 0.021234370428358344
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.2600371280889637,
+            "coupling": 0.00014735928180077454,
+            "weighted_curvature": 3.211325075633042e-07
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.23300272182109696,
+            "coupling": 0.0033765963061028158,
+            "weighted_curvature": 0.00021000821980498967
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.3227609654688119,
+            "coupling": 1.1498853858254911e-05,
+            "weighted_curvature": 1.269249780940641e-09
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.19837025994785512,
+            "coupling": 0.002857803270830442,
+            "weighted_curvature": 0.0002075446453428977
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.10911163758597721,
+            "coupling": 2.111055376659424e-05,
+            "weighted_curvature": 3.7433212855562334e-08
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.26876888606344834,
+            "coupling": 0.001477878384773443,
+            "weighted_curvature": 3.0235657129692652e-05
+          }
+        ]
+      },
+      {
+        "alphas": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "points": [
+          {
+            "alpha": 0.0,
+            "gap": 0.11351169166400418,
+            "coupling": 0.006577447662519073,
+            "weighted_curvature": 0.003357635979923059
+          },
+          {
+            "alpha": 0.5,
+            "gap": 0.20559413317632835,
+            "coupling": 0.004192761197047556,
+            "weighted_curvature": 0.0004158903274164442
+          },
+          {
+            "alpha": 1.0,
+            "gap": 0.0635906102862893,
+            "coupling": 0.01741063002163996,
+            "weighted_curvature": 0.0749623145839907
+          }
+        ]
+      }
+    ],
+    "n_curves": 15,
+    "log_gap_vs_wc_slope": -2.4827129654060336
+  },
+  "part_C_reconcile": {
+    "spearman_commutator_vs_weighted": 0.3372,
+    "spearman_log_inv_gap2_vs_weighted": 0.0807,
+    "n": 60
+  },
+  "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)"
+}

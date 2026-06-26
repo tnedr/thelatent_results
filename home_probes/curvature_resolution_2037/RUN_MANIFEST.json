@@ -1,0 +1,31 @@
+{
+  "n_samples": 60,
+  "ts": "2026-06-26T05:04:35Z",
+  "n_files": 12,
+  "machine": "home",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "dispatch": "dispatch_20260625_2037_home_curvature_resolution",
+  "files": [
+    "curvature_resolution_gpt2_seed0.json",
+    "curvature_resolution_gpt2_seed1.json",
+    "curvature_resolution_gpt2_seed2.json",
+    "curvature_resolution_pythia-1b_seed0.json",
+    "curvature_resolution_pythia-1b_seed1.json",
+    "curvature_resolution_pythia-1b_seed2.json",
+    "curvature_resolution_pythia-410m_seed0.json",
+    "curvature_resolution_pythia-410m_seed1.json",
+    "curvature_resolution_pythia-410m_seed2.json",
+    "curvature_resolution_summary.json",
+    "curvature_resolution_probe.py",
+    "SUMMARY.md"
+  ],
+  "models": [
+    "pythia-410m",
+    "pythia-1b",
+    "gpt2"
+  ]
+}

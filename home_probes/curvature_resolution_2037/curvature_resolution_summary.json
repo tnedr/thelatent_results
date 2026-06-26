@@ -1,0 +1,78 @@
+{
+  "runs": [
+    {
+      "model": "gpt2",
+      "seed": 0,
+      "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)",
+      "gap_min_over_median": 0.0429,
+      "forced_slope": -3.7557019531731277,
+      "rho_comm_wc": -0.0879
+    },
+    {
+      "model": "gpt2",
+      "seed": 1,
+      "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)",
+      "gap_min_over_median": 0.0506,
+      "forced_slope": -2.2295195159929744,
+      "rho_comm_wc": -0.1153
+    },
+    {
+      "model": "gpt2",
+      "seed": 2,
+      "verdict": "H-genuine (bounded curvature; commutator link weak)",
+      "gap_min_over_median": 0.1766,
+      "forced_slope": 0.23281465242413169,
+      "rho_comm_wc": -0.0584
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 0,
+      "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)",
+      "gap_min_over_median": 0.1196,
+      "forced_slope": -1.7456469488224002,
+      "rho_comm_wc": 0.2401
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 1,
+      "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)",
+      "gap_min_over_median": 0.0888,
+      "forced_slope": -2.4827129654060336,
+      "rho_comm_wc": 0.3372
+    },
+    {
+      "model": "pythia-1b",
+      "seed": 2,
+      "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)",
+      "gap_min_over_median": 0.1265,
+      "forced_slope": -3.2644794363317553,
+      "rho_comm_wc": 0.1884
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 0,
+      "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)",
+      "gap_min_over_median": 0.1366,
+      "forced_slope": -3.1873265985016785,
+      "rho_comm_wc": 0.343
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 1,
+      "verdict": "H-probe (forced degeneracy recovers 1/gap^2 pole)",
+      "gap_min_over_median": 0.168,
+      "forced_slope": -1.8357401523914205,
+      "rho_comm_wc": 0.2223
+    },
+    {
+      "model": "pythia-410m",
+      "seed": 2,
+      "verdict": "H-genuine (bounded coupling-weighted curvature; commutator real)",
+      "gap_min_over_median": 0.1702,
+      "forced_slope": -0.45908831576469766,
+      "rho_comm_wc": 0.296
+    }
+  ],
+  "n": 9,
+  "date": "2026-06-26"
+}
