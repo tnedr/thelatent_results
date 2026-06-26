@@ -724,7 +724,8 @@ def _logit_margin(model, device, ids, pos, val_id):
     return v - other
 
 
-def _capture_vh_query(model, device, ids, pos, layer_idx):
+def _capture_vh_sequence(model, device, ids, layer_idx):
+    """SVD of the full layer residual stream [seq, d] — same basis as SVD3 ablation."""
     import torch
 
     block_list = _find_block_list(model)
@@ -736,7 +737,7 @@ def _capture_vh_query(model, device, ids, pos, layer_idx):
 
     def hook(_module, _inputs, output):
         h = output[0] if isinstance(output, tuple) else output
-        captured.append(h[0, pos, :].detach().float().cpu().numpy())
+        captured.append(h[0].detach().float().cpu().numpy())
 
     handle = target.register_forward_hook(hook)
     try:
@@ -746,8 +747,10 @@ def _capture_vh_query(model, device, ids, pos, layer_idx):
         handle.remove()
     if not captured:
         return None
-    h = captured[0].reshape(1, -1)
-    _u, _s, vh = np.linalg.svd(h, full_matrices=False)
+    h0 = captured[0]
+    if h0.ndim != 2 or h0.shape[0] < 2:
+        return None
+    _u, _s, vh = np.linalg.svd(h0, full_matrices=False)
     return vh
 
 
@@ -834,7 +837,7 @@ def run_certificate(model_name: str, *, k: int = 4, n_samples: int = 48,
     items = []
     for _ in range(n_samples):
         ids, pos, val_id = build_induction_ids(tok, rng, block_len)
-        vh = _capture_vh_query(model, device, ids, pos, layer_idx)
+        vh = _capture_vh_sequence(model, device, ids, layer_idx)
         if vh is None:
             continue
         base_m = _logit_margin(model, device, ids, pos, val_id)

@@ -6,218 +6,218 @@
       "model": "gpt2",
       "seed": 0,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.436,
+      "cohens_d": 1.23,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 1,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.78,
+      "cohens_d": 1.447,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 2,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.564,
+      "cohens_d": 1.453,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 0,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.762,
+      "cohens_d": 1.493,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 1,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 6.093,
+      "cohens_d": 1.774,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 2,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.842,
+      "cohens_d": 1.694,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 0,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.204,
+      "cohens_d": 1.197,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 1,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.756,
+      "cohens_d": 1.459,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "gpt2",
       "seed": 2,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.615,
+      "cohens_d": 1.505,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 0,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 1.21,
+      "cohens_d": 0.179,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 1,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 1.374,
+      "cohens_d": 0.181,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 2,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 1.283,
+      "cohens_d": 0.185,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 0,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.554,
+      "cohens_d": 1.384,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 1,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.966,
+      "cohens_d": 1.831,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 2,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.748,
+      "cohens_d": 1.532,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 0,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.773,
+      "cohens_d": 1.476,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 1,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.784,
+      "cohens_d": 1.57,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-1b",
       "seed": 2,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.465,
+      "cohens_d": 1.501,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 0,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 3.518,
+      "cohens_d": 0.603,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 1,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 3.387,
+      "cohens_d": 0.57,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 2,
       "k": 1,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 4.659,
+      "cohens_d": 0.891,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 0,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 6.366,
+      "cohens_d": 2.527,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 1,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 6.065,
+      "cohens_d": 1.763,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 2,
       "k": 2,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 6.154,
+      "cohens_d": 2.034,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 0,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.716,
+      "cohens_d": 1.68,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 1,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.569,
+      "cohens_d": 1.35,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     },
     {
       "model": "pythia-410m",
       "seed": 2,
       "k": 4,
-      "z_top_vs_random": null,
-      "cohens_d": 0.0,
-      "verdict": "HONEST NULL"
+      "z_top_vs_random": 5.12,
+      "cohens_d": 1.219,
+      "verdict": "WEAKER/BOUNDED (random also collapses)"
     }
   ],
-  "timestamp": "2026-06-26T07:43:09"
+  "timestamp": "2026-06-26T09:21:01"
 }
