@@ -1,0 +1,32 @@
+{
+  "dispatch": "dispatch_20260625_2107_home_devlaw_breadth",
+  "machine": "home",
+  "models": [
+    "pythia-1b",
+    "pythia-1.4b",
+    "pythia-2.8b"
+  ],
+  "steps": [
+    1,
+    256,
+    512,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    64000,
+    143000
+  ],
+  "files": [
+    "singular_spectrum_developmental_pythia-1_4b.json",
+    "singular_spectrum_developmental_pythia-1b.json",
+    "singular_spectrum_developmental_pythia-2_8b.json",
+    "devlaw_breadth_summary.json",
+    "singular_spectrum_probe.py",
+    "devlaw_breadth_probe.py",
+    "SUMMARY.md"
+  ],
+  "ts": "2026-06-26T16:23:05Z",
+  "n_files": 7
+}

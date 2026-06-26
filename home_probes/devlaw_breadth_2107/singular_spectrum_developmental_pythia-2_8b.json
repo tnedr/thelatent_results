@@ -1,0 +1,824 @@
+{
+  "mode": "developmental",
+  "model": "pythia-2.8b",
+  "hf_name": "EleutherAI/pythia-2.8b",
+  "date": "2026-06-26",
+  "n_samples": 4,
+  "seeds": [
+    0
+  ],
+  "formal_anchors": [
+    "DEV1",
+    "DEV2",
+    "DEV3",
+    "SVD1",
+    "SVD2",
+    "SVD3"
+  ],
+  "checkpoint_steps": [
+    1,
+    256,
+    512,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    64000,
+    143000
+  ],
+  "trajectory": [
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 1,
+      "revision": "step1"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 256,
+      "revision": "step256"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 512,
+      "revision": "step512"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 1000,
+      "revision": "step1000"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 2000,
+      "revision": "step2000"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 4000,
+      "revision": "step4000"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 8000,
+      "revision": "step8000"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 16000,
+      "revision": "step16000"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 64000,
+      "revision": "step64000"
+    },
+    {
+      "d_model": 2560,
+      "capacity_layer": 18,
+      "relation_composition": {
+        "readout_effective_rank": 2.085,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 0.8,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.969,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.085
+        ],
+        "per_seed_icl_order_rho": [
+          0.8
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 1.98,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.0008,
+        "icl_order_rho_spearman": 1.0,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.927,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          1.98
+        ],
+        "per_seed_icl_order_rho": [
+          1.0
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 2.534,
+        "readout_effective_rank_std": 0.0,
+        "readout_rank_frac_of_d": 0.001,
+        "icl_order_rho_spearman": 0.4,
+        "icl_order_rho_spearman_std": 0.0,
+        "raw_effective_rank": 2.887,
+        "n_seeds": 1,
+        "n_instances": 4,
+        "per_seed_readout_rank": [
+          2.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.4
+        ]
+      },
+      "step": 143000,
+      "revision": "step143000"
+    }
+  ],
+  "developmental_trajectory": {
+    "relation_composition": {
+      "steps": [
+        1,
+        256,
+        512,
+        1000,
+        2000,
+        4000,
+        8000,
+        16000,
+        64000,
+        143000
+      ],
+      "readout_rank": [
+        2.085,
+        2.085,
+        2.085,
+        2.085,
+        2.085,
+        2.085,
+        2.085,
+        2.085,
+        2.085,
+        2.085
+      ],
+      "readout_rank_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "icl_order_rho": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "icl_order_rho_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "arithmetic_carry": {
+      "steps": [
+        1,
+        256,
+        512,
+        1000,
+        2000,
+        4000,
+        8000,
+        16000,
+        64000,
+        143000
+      ],
+      "readout_rank": [
+        1.98,
+        1.98,
+        1.98,
+        1.98,
+        1.98,
+        1.98,
+        1.98,
+        1.98,
+        1.98,
+        1.98
+      ],
+      "readout_rank_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "icl_order_rho": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "icl_order_rho_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "induction": {
+      "steps": [
+        1,
+        256,
+        512,
+        1000,
+        2000,
+        4000,
+        8000,
+        16000,
+        64000,
+        143000
+      ],
+      "readout_rank": [
+        2.534,
+        2.534,
+        2.534,
+        2.534,
+        2.534,
+        2.534,
+        2.534,
+        2.534,
+        2.534,
+        2.534
+      ],
+      "readout_rank_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "icl_order_rho": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "icl_order_rho_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "knees": {
+    "relation_composition": {
+      "knee_step": 256,
+      "max_jump": 0.0,
+      "sharpness": 0.0,
+      "total_growth": 0.0,
+      "start_rank": 2.085,
+      "end_rank": 2.085
+    },
+    "arithmetic_carry": {
+      "knee_step": 256,
+      "max_jump": 0.0,
+      "sharpness": 0.0,
+      "total_growth": 0.0,
+      "start_rank": 1.98,
+      "end_rank": 1.98
+    },
+    "induction": {
+      "knee_step": 256,
+      "max_jump": 0.0,
+      "sharpness": 0.0,
+      "total_growth": 0.0,
+      "start_rank": 2.534,
+      "end_rank": 2.534
+    }
+  },
+  "alignment_onset": {
+    "relation_composition": {
+      "onset_step": 1,
+      "onset_threshold": 0.6,
+      "peak_rho": 0.8,
+      "peak_step": 1,
+      "start_rho": 0.8,
+      "rise": 0.0
+    },
+    "arithmetic_carry": {
+      "onset_step": 1,
+      "onset_threshold": 0.6,
+      "peak_rho": 1.0,
+      "peak_step": 1,
+      "start_rho": 1.0,
+      "rise": 0.0
+    },
+    "induction": {
+      "onset_step": null,
+      "onset_threshold": 0.6,
+      "peak_rho": 0.4,
+      "peak_step": 1,
+      "start_rho": 0.4,
+      "rise": 0.0
+    }
+  },
+  "verdict": {
+    "P_growth": false,
+    "P_alignment_emerges": false,
+    "alignment_peak_rho_median": 0.8,
+    "alignment_rise_median": 0.0,
+    "alignment_start_rho_median": 0.8,
+    "alignment_onset_step_median": 1,
+    "P_knee_sharp": false,
+    "P_ordering_at_convergence": false,
+    "n_checkpoints": 10,
+    "n_domains": 3
+  }
+}

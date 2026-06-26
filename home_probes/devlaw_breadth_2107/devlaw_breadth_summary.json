@@ -1,0 +1,145 @@
+{
+  "mode": "devlaw_breadth",
+  "dispatch": "dispatch_20260625_2107_home_devlaw_breadth",
+  "date": "2026-06-26",
+  "n_models": 3,
+  "n_cases": 8,
+  "co_occurrence_rate": 0.125,
+  "verdict": "HONEST NULL (co-occurrence fails on breadth panel)",
+  "cases": [
+    {
+      "model": "pythia-1.4b",
+      "domain": "induction",
+      "knee_step": 1000,
+      "onset_step": 256,
+      "co_occur": false
+    },
+    {
+      "model": "pythia-1.4b",
+      "domain": "relation_composition",
+      "knee_step": 512,
+      "onset_step": 256,
+      "co_occur": true
+    },
+    {
+      "model": "pythia-1.4b",
+      "domain": "arithmetic_carry",
+      "knee_step": 1000,
+      "onset_step": 256,
+      "co_occur": false
+    },
+    {
+      "model": "pythia-1b",
+      "domain": "induction",
+      "knee_step": 512,
+      "onset_step": 1,
+      "co_occur": false
+    },
+    {
+      "model": "pythia-1b",
+      "domain": "relation_composition",
+      "knee_step": 143000,
+      "onset_step": 256,
+      "co_occur": false
+    },
+    {
+      "model": "pythia-1b",
+      "domain": "arithmetic_carry",
+      "knee_step": 1000,
+      "onset_step": 256,
+      "co_occur": false
+    },
+    {
+      "model": "pythia-2.8b",
+      "domain": "induction",
+      "knee_step": 256,
+      "onset_step": null,
+      "co_occur": null
+    },
+    {
+      "model": "pythia-2.8b",
+      "domain": "relation_composition",
+      "knee_step": 256,
+      "onset_step": 1,
+      "co_occur": false
+    },
+    {
+      "model": "pythia-2.8b",
+      "domain": "arithmetic_carry",
+      "knee_step": 256,
+      "onset_step": 1,
+      "co_occur": false
+    }
+  ],
+  "per_model": {
+    "pythia-1.4b": [
+      {
+        "model": "pythia-1.4b",
+        "domain": "induction",
+        "knee_step": 1000,
+        "onset_step": 256,
+        "co_occur": false
+      },
+      {
+        "model": "pythia-1.4b",
+        "domain": "relation_composition",
+        "knee_step": 512,
+        "onset_step": 256,
+        "co_occur": true
+      },
+      {
+        "model": "pythia-1.4b",
+        "domain": "arithmetic_carry",
+        "knee_step": 1000,
+        "onset_step": 256,
+        "co_occur": false
+      }
+    ],
+    "pythia-1b": [
+      {
+        "model": "pythia-1b",
+        "domain": "induction",
+        "knee_step": 512,
+        "onset_step": 1,
+        "co_occur": false
+      },
+      {
+        "model": "pythia-1b",
+        "domain": "relation_composition",
+        "knee_step": 143000,
+        "onset_step": 256,
+        "co_occur": false
+      },
+      {
+        "model": "pythia-1b",
+        "domain": "arithmetic_carry",
+        "knee_step": 1000,
+        "onset_step": 256,
+        "co_occur": false
+      }
+    ],
+    "pythia-2.8b": [
+      {
+        "model": "pythia-2.8b",
+        "domain": "induction",
+        "knee_step": 256,
+        "onset_step": null,
+        "co_occur": null
+      },
+      {
+        "model": "pythia-2.8b",
+        "domain": "relation_composition",
+        "knee_step": 256,
+        "onset_step": 1,
+        "co_occur": false
+      },
+      {
+        "model": "pythia-2.8b",
+        "domain": "arithmetic_carry",
+        "knee_step": 256,
+        "onset_step": 1,
+        "co_occur": false
+      }
+    ]
+  }
+}

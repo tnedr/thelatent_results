@@ -1,0 +1,946 @@
+{
+  "mode": "developmental",
+  "model": "pythia-1.4b",
+  "hf_name": "EleutherAI/pythia-1.4b",
+  "date": "2026-06-26",
+  "n_samples": 12,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "formal_anchors": [
+    "DEV1",
+    "DEV2",
+    "DEV3",
+    "SVD1",
+    "SVD2",
+    "SVD3"
+  ],
+  "checkpoint_steps": [
+    1,
+    256,
+    512,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    64000,
+    143000
+  ],
+  "trajectory": [
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 8.943,
+        "readout_effective_rank_std": 0.946,
+        "readout_rank_frac_of_d": 0.0044,
+        "icl_order_rho_spearman": 0.592,
+        "icl_order_rho_spearman_std": 0.09,
+        "raw_effective_rank": 10.802,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.607,
+          9.537,
+          9.684
+        ],
+        "per_seed_icl_order_rho": [
+          0.566,
+          0.713,
+          0.497
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 9.837,
+        "readout_effective_rank_std": 0.309,
+        "readout_rank_frac_of_d": 0.0048,
+        "icl_order_rho_spearman": 0.434,
+        "icl_order_rho_spearman_std": 0.07,
+        "raw_effective_rank": 10.788,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          9.848,
+          10.209,
+          9.453
+        ],
+        "per_seed_icl_order_rho": [
+          0.336,
+          0.469,
+          0.497
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 10.193,
+        "readout_effective_rank_std": 0.236,
+        "readout_rank_frac_of_d": 0.005,
+        "icl_order_rho_spearman": 0.14,
+        "icl_order_rho_spearman_std": 0.149,
+        "raw_effective_rank": 10.843,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          10.217,
+          9.892,
+          10.469
+        ],
+        "per_seed_icl_order_rho": [
+          0.329,
+          -0.035,
+          0.126
+        ]
+      },
+      "step": 1,
+      "revision": "step1"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 4.649,
+        "readout_effective_rank_std": 0.419,
+        "readout_rank_frac_of_d": 0.0023,
+        "icl_order_rho_spearman": 0.953,
+        "icl_order_rho_spearman_std": 0.012,
+        "raw_effective_rank": 7.927,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          5.066,
+          4.805,
+          4.075
+        ],
+        "per_seed_icl_order_rho": [
+          0.965,
+          0.937,
+          0.958
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 2.541,
+        "readout_effective_rank_std": 0.666,
+        "readout_rank_frac_of_d": 0.0012,
+        "icl_order_rho_spearman": 0.869,
+        "icl_order_rho_spearman_std": 0.028,
+        "raw_effective_rank": 7.418,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          1.719,
+          2.553,
+          3.351
+        ],
+        "per_seed_icl_order_rho": [
+          0.846,
+          0.909,
+          0.853
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 5.181,
+        "readout_effective_rank_std": 1.605,
+        "readout_rank_frac_of_d": 0.0025,
+        "icl_order_rho_spearman": 0.886,
+        "icl_order_rho_spearman_std": 0.035,
+        "raw_effective_rank": 8.726,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.074,
+          5.32,
+          3.15
+        ],
+        "per_seed_icl_order_rho": [
+          0.839,
+          0.895,
+          0.923
+        ]
+      },
+      "step": 256,
+      "revision": "step256"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 6.8,
+        "readout_effective_rank_std": 1.482,
+        "readout_rank_frac_of_d": 0.0033,
+        "icl_order_rho_spearman": 0.846,
+        "icl_order_rho_spearman_std": 0.077,
+        "raw_effective_rank": 9.1,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          5.047,
+          8.672,
+          6.681
+        ],
+        "per_seed_icl_order_rho": [
+          0.874,
+          0.741,
+          0.923
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 3.667,
+        "readout_effective_rank_std": 0.454,
+        "readout_rank_frac_of_d": 0.0018,
+        "icl_order_rho_spearman": 0.904,
+        "icl_order_rho_spearman_std": 0.031,
+        "raw_effective_rank": 8.281,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          3.689,
+          3.101,
+          4.212
+        ],
+        "per_seed_icl_order_rho": [
+          0.902,
+          0.867,
+          0.944
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 4.832,
+        "readout_effective_rank_std": 1.477,
+        "readout_rank_frac_of_d": 0.0024,
+        "icl_order_rho_spearman": 0.907,
+        "icl_order_rho_spearman_std": 0.009,
+        "raw_effective_rank": 8.662,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          3.499,
+          6.892,
+          4.106
+        ],
+        "per_seed_icl_order_rho": [
+          0.916,
+          0.895,
+          0.909
+        ]
+      },
+      "step": 512,
+      "revision": "step512"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 8.282,
+        "readout_effective_rank_std": 0.959,
+        "readout_rank_frac_of_d": 0.004,
+        "icl_order_rho_spearman": 0.762,
+        "icl_order_rho_spearman_std": 0.176,
+        "raw_effective_rank": 10.246,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.777,
+          7.445,
+          9.625
+        ],
+        "per_seed_icl_order_rho": [
+          0.517,
+          0.923,
+          0.846
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 7.536,
+        "readout_effective_rank_std": 0.368,
+        "readout_rank_frac_of_d": 0.0037,
+        "icl_order_rho_spearman": 0.874,
+        "icl_order_rho_spearman_std": 0.083,
+        "raw_effective_rank": 9.767,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          8.054,
+          7.314,
+          7.24
+        ],
+        "per_seed_icl_order_rho": [
+          0.867,
+          0.776,
+          0.979
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 6.817,
+        "readout_effective_rank_std": 1.889,
+        "readout_rank_frac_of_d": 0.0033,
+        "icl_order_rho_spearman": 0.788,
+        "icl_order_rho_spearman_std": 0.087,
+        "raw_effective_rank": 9.715,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          8.395,
+          4.161,
+          7.896
+        ],
+        "per_seed_icl_order_rho": [
+          0.909,
+          0.706,
+          0.748
+        ]
+      },
+      "step": 1000,
+      "revision": "step1000"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 9.021,
+        "readout_effective_rank_std": 0.321,
+        "readout_rank_frac_of_d": 0.0044,
+        "icl_order_rho_spearman": 0.727,
+        "icl_order_rho_spearman_std": 0.094,
+        "raw_effective_rank": 10.551,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          9.442,
+          8.665,
+          8.956
+        ],
+        "per_seed_icl_order_rho": [
+          0.664,
+          0.86,
+          0.657
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 6.947,
+        "readout_effective_rank_std": 1.442,
+        "readout_rank_frac_of_d": 0.0034,
+        "icl_order_rho_spearman": 0.739,
+        "icl_order_rho_spearman_std": 0.124,
+        "raw_effective_rank": 10.389,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          4.939,
+          8.261,
+          7.641
+        ],
+        "per_seed_icl_order_rho": [
+          0.692,
+          0.615,
+          0.909
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 8.785,
+        "readout_effective_rank_std": 0.916,
+        "readout_rank_frac_of_d": 0.0043,
+        "icl_order_rho_spearman": 0.638,
+        "icl_order_rho_spearman_std": 0.101,
+        "raw_effective_rank": 10.353,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.575,
+          8.987,
+          9.792
+        ],
+        "per_seed_icl_order_rho": [
+          0.622,
+          0.769,
+          0.524
+        ]
+      },
+      "step": 2000,
+      "revision": "step2000"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 8.132,
+        "readout_effective_rank_std": 0.708,
+        "readout_rank_frac_of_d": 0.004,
+        "icl_order_rho_spearman": 0.711,
+        "icl_order_rho_spearman_std": 0.129,
+        "raw_effective_rank": 10.553,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.741,
+          7.528,
+          9.126
+        ],
+        "per_seed_icl_order_rho": [
+          0.699,
+          0.874,
+          0.559
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 7.029,
+        "readout_effective_rank_std": 0.967,
+        "readout_rank_frac_of_d": 0.0034,
+        "icl_order_rho_spearman": 0.666,
+        "icl_order_rho_spearman_std": 0.118,
+        "raw_effective_rank": 8.707,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          6.42,
+          6.273,
+          8.393
+        ],
+        "per_seed_icl_order_rho": [
+          0.531,
+          0.65,
+          0.818
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 8.877,
+        "readout_effective_rank_std": 0.622,
+        "readout_rank_frac_of_d": 0.0043,
+        "icl_order_rho_spearman": 0.648,
+        "icl_order_rho_spearman_std": 0.138,
+        "raw_effective_rank": 10.471,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          8.868,
+          9.643,
+          8.119
+        ],
+        "per_seed_icl_order_rho": [
+          0.671,
+          0.469,
+          0.804
+        ]
+      },
+      "step": 4000,
+      "revision": "step4000"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 8.212,
+        "readout_effective_rank_std": 0.739,
+        "readout_rank_frac_of_d": 0.004,
+        "icl_order_rho_spearman": 0.671,
+        "icl_order_rho_spearman_std": 0.224,
+        "raw_effective_rank": 10.575,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.667,
+          7.711,
+          9.257
+        ],
+        "per_seed_icl_order_rho": [
+          0.923,
+          0.713,
+          0.378
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 6.581,
+        "readout_effective_rank_std": 1.888,
+        "readout_rank_frac_of_d": 0.0032,
+        "icl_order_rho_spearman": 0.594,
+        "icl_order_rho_spearman_std": 0.172,
+        "raw_effective_rank": 10.522,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          4.069,
+          7.052,
+          8.621
+        ],
+        "per_seed_icl_order_rho": [
+          0.371,
+          0.79,
+          0.622
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 8.134,
+        "readout_effective_rank_std": 1.158,
+        "readout_rank_frac_of_d": 0.004,
+        "icl_order_rho_spearman": 0.471,
+        "icl_order_rho_spearman_std": 0.382,
+        "raw_effective_rank": 10.437,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          9.694,
+          6.922,
+          7.785
+        ],
+        "per_seed_icl_order_rho": [
+          -0.035,
+          0.559,
+          0.888
+        ]
+      },
+      "step": 8000,
+      "revision": "step8000"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 8.146,
+        "readout_effective_rank_std": 0.687,
+        "readout_rank_frac_of_d": 0.004,
+        "icl_order_rho_spearman": 0.636,
+        "icl_order_rho_spearman_std": 0.203,
+        "raw_effective_rank": 10.575,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.409,
+          7.967,
+          9.062
+        ],
+        "per_seed_icl_order_rho": [
+          0.755,
+          0.804,
+          0.35
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 6.988,
+        "readout_effective_rank_std": 1.234,
+        "readout_rank_frac_of_d": 0.0034,
+        "icl_order_rho_spearman": 0.69,
+        "icl_order_rho_spearman_std": 0.054,
+        "raw_effective_rank": 10.532,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          5.355,
+          7.273,
+          8.336
+        ],
+        "per_seed_icl_order_rho": [
+          0.615,
+          0.741,
+          0.713
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 6.504,
+        "readout_effective_rank_std": 1.239,
+        "readout_rank_frac_of_d": 0.0032,
+        "icl_order_rho_spearman": 0.851,
+        "icl_order_rho_spearman_std": 0.052,
+        "raw_effective_rank": 10.394,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          8.238,
+          5.856,
+          5.418
+        ],
+        "per_seed_icl_order_rho": [
+          0.783,
+          0.909,
+          0.86
+        ]
+      },
+      "step": 16000,
+      "revision": "step16000"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 7.609,
+        "readout_effective_rank_std": 1.643,
+        "readout_rank_frac_of_d": 0.0037,
+        "icl_order_rho_spearman": 0.818,
+        "icl_order_rho_spearman_std": 0.077,
+        "raw_effective_rank": 10.359,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          5.3,
+          8.992,
+          8.534
+        ],
+        "per_seed_icl_order_rho": [
+          0.909,
+          0.825,
+          0.72
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 7.097,
+        "readout_effective_rank_std": 0.597,
+        "readout_rank_frac_of_d": 0.0035,
+        "icl_order_rho_spearman": 0.66,
+        "icl_order_rho_spearman_std": 0.124,
+        "raw_effective_rank": 8.659,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.908,
+          6.892,
+          6.49
+        ],
+        "per_seed_icl_order_rho": [
+          0.49,
+          0.706,
+          0.783
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 6.847,
+        "readout_effective_rank_std": 0.928,
+        "readout_rank_frac_of_d": 0.0033,
+        "icl_order_rho_spearman": 0.802,
+        "icl_order_rho_spearman_std": 0.046,
+        "raw_effective_rank": 10.324,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          6.405,
+          8.138,
+          5.999
+        ],
+        "per_seed_icl_order_rho": [
+          0.769,
+          0.769,
+          0.867
+        ]
+      },
+      "step": 64000,
+      "revision": "step64000"
+    },
+    {
+      "d_model": 2048,
+      "capacity_layer": 13,
+      "relation_composition": {
+        "readout_effective_rank": 8.17,
+        "readout_effective_rank_std": 1.634,
+        "readout_rank_frac_of_d": 0.004,
+        "icl_order_rho_spearman": 0.862,
+        "icl_order_rho_spearman_std": 0.041,
+        "raw_effective_rank": 10.264,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          5.861,
+          9.261,
+          9.389
+        ],
+        "per_seed_icl_order_rho": [
+          0.804,
+          0.888,
+          0.895
+        ]
+      },
+      "arithmetic_carry": {
+        "readout_effective_rank": 7.007,
+        "readout_effective_rank_std": 1.366,
+        "readout_rank_frac_of_d": 0.0034,
+        "icl_order_rho_spearman": 0.517,
+        "icl_order_rho_spearman_std": 0.128,
+        "raw_effective_rank": 10.246,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          5.389,
+          8.73,
+          6.903
+        ],
+        "per_seed_icl_order_rho": [
+          0.336,
+          0.608,
+          0.608
+        ]
+      },
+      "induction": {
+        "readout_effective_rank": 6.743,
+        "readout_effective_rank_std": 0.56,
+        "readout_rank_frac_of_d": 0.0033,
+        "icl_order_rho_spearman": 0.837,
+        "icl_order_rho_spearman_std": 0.041,
+        "raw_effective_rank": 10.25,
+        "n_seeds": 3,
+        "n_instances": 12,
+        "per_seed_readout_rank": [
+          7.418,
+          6.046,
+          6.766
+        ],
+        "per_seed_icl_order_rho": [
+          0.846,
+          0.783,
+          0.881
+        ]
+      },
+      "step": 143000,
+      "revision": "step143000"
+    }
+  ],
+  "developmental_trajectory": {
+    "relation_composition": {
+      "steps": [
+        1,
+        256,
+        512,
+        1000,
+        2000,
+        4000,
+        8000,
+        16000,
+        64000,
+        143000
+      ],
+      "readout_rank": [
+        8.943,
+        4.649,
+        6.8,
+        8.282,
+        9.021,
+        8.132,
+        8.212,
+        8.146,
+        7.609,
+        8.17
+      ],
+      "readout_rank_std": [
+        0.946,
+        0.419,
+        1.482,
+        0.959,
+        0.321,
+        0.708,
+        0.739,
+        0.687,
+        1.643,
+        1.634
+      ],
+      "icl_order_rho": [
+        0.592,
+        0.953,
+        0.846,
+        0.762,
+        0.727,
+        0.711,
+        0.671,
+        0.636,
+        0.818,
+        0.862
+      ],
+      "icl_order_rho_std": [
+        0.09,
+        0.012,
+        0.077,
+        0.176,
+        0.094,
+        0.129,
+        0.224,
+        0.203,
+        0.077,
+        0.041
+      ]
+    },
+    "arithmetic_carry": {
+      "steps": [
+        1,
+        256,
+        512,
+        1000,
+        2000,
+        4000,
+        8000,
+        16000,
+        64000,
+        143000
+      ],
+      "readout_rank": [
+        9.837,
+        2.541,
+        3.667,
+        7.536,
+        6.947,
+        7.029,
+        6.581,
+        6.988,
+        7.097,
+        7.007
+      ],
+      "readout_rank_std": [
+        0.309,
+        0.666,
+        0.454,
+        0.368,
+        1.442,
+        0.967,
+        1.888,
+        1.234,
+        0.597,
+        1.366
+      ],
+      "icl_order_rho": [
+        0.434,
+        0.869,
+        0.904,
+        0.874,
+        0.739,
+        0.666,
+        0.594,
+        0.69,
+        0.66,
+        0.517
+      ],
+      "icl_order_rho_std": [
+        0.07,
+        0.028,
+        0.031,
+        0.083,
+        0.124,
+        0.118,
+        0.172,
+        0.054,
+        0.124,
+        0.128
+      ]
+    },
+    "induction": {
+      "steps": [
+        1,
+        256,
+        512,
+        1000,
+        2000,
+        4000,
+        8000,
+        16000,
+        64000,
+        143000
+      ],
+      "readout_rank": [
+        10.193,
+        5.181,
+        4.832,
+        6.817,
+        8.785,
+        8.877,
+        8.134,
+        6.504,
+        6.847,
+        6.743
+      ],
+      "readout_rank_std": [
+        0.236,
+        1.605,
+        1.477,
+        1.889,
+        0.916,
+        0.622,
+        1.158,
+        1.239,
+        0.928,
+        0.56
+      ],
+      "icl_order_rho": [
+        0.14,
+        0.886,
+        0.907,
+        0.788,
+        0.638,
+        0.648,
+        0.471,
+        0.851,
+        0.802,
+        0.837
+      ],
+      "icl_order_rho_std": [
+        0.149,
+        0.035,
+        0.009,
+        0.087,
+        0.101,
+        0.138,
+        0.382,
+        0.052,
+        0.046,
+        0.041
+      ]
+    }
+  },
+  "knees": {
+    "relation_composition": {
+      "knee_step": 512,
+      "max_jump": 2.151,
+      "sharpness": 0.429,
+      "total_growth": -0.773,
+      "start_rank": 8.943,
+      "end_rank": 8.17
+    },
+    "arithmetic_carry": {
+      "knee_step": 1000,
+      "max_jump": 3.869,
+      "sharpness": 0.692,
+      "total_growth": -2.83,
+      "start_rank": 9.837,
+      "end_rank": 7.007
+    },
+    "induction": {
+      "knee_step": 1000,
+      "max_jump": 1.985,
+      "sharpness": 0.452,
+      "total_growth": -3.45,
+      "start_rank": 10.193,
+      "end_rank": 6.743
+    }
+  },
+  "alignment_onset": {
+    "relation_composition": {
+      "onset_step": 256,
+      "onset_threshold": 0.6,
+      "peak_rho": 0.953,
+      "peak_step": 256,
+      "start_rho": 0.592,
+      "rise": 0.361
+    },
+    "arithmetic_carry": {
+      "onset_step": 256,
+      "onset_threshold": 0.6,
+      "peak_rho": 0.904,
+      "peak_step": 512,
+      "start_rho": 0.434,
+      "rise": 0.47
+    },
+    "induction": {
+      "onset_step": 256,
+      "onset_threshold": 0.6,
+      "peak_rho": 0.907,
+      "peak_step": 512,
+      "start_rho": 0.14,
+      "rise": 0.767
+    }
+  },
+  "verdict": {
+    "P_growth": false,
+    "P_alignment_emerges": true,
+    "alignment_peak_rho_median": 0.907,
+    "alignment_rise_median": 0.47,
+    "alignment_start_rho_median": 0.434,
+    "alignment_onset_step_median": 256,
+    "P_knee_sharp": false,
+    "P_ordering_at_convergence": true,
+    "n_checkpoints": 10,
+    "n_domains": 3
+  }
+}
