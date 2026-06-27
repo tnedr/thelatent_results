@@ -1,0 +1,82 @@
+{
+  "mode": "synthetic",
+  "date": "2026-06-27",
+  "regimes": {
+    "coherent": {
+      "freeness_kappa": 0.0,
+      "w1_true_to_free": 2.7847,
+      "w1_true_to_frozen": 0.0,
+      "true_eff_rank": 1.013,
+      "free_eff_rank": 2.009,
+      "mean_per_factor_eff_rank": 11.883,
+      "bulk_freeness_kappa": 0.0,
+      "bulk_w1_true_to_free": 1.8912,
+      "bulk_w1_true_to_frozen": 0.0,
+      "tail_k_removed": 4,
+      "n_factors": 11,
+      "factor_dim": 32,
+      "verdict": "COHERENT"
+    },
+    "free": {
+      "freeness_kappa": 0.9447,
+      "w1_true_to_free": 0.1552,
+      "w1_true_to_frozen": 2.6532,
+      "true_eff_rank": 1.197,
+      "free_eff_rank": 1.732,
+      "mean_per_factor_eff_rank": 12.042,
+      "bulk_freeness_kappa": 0.8662,
+      "bulk_w1_true_to_free": 0.3451,
+      "bulk_w1_true_to_frozen": 2.2332,
+      "tail_k_removed": 4,
+      "n_factors": 11,
+      "factor_dim": 32,
+      "verdict": "FREE_LAW"
+    },
+    "slow": {
+      "freeness_kappa": 0.2239,
+      "w1_true_to_free": 2.0268,
+      "w1_true_to_frozen": 0.5846,
+      "true_eff_rank": 1.003,
+      "free_eff_rank": 2.185,
+      "mean_per_factor_eff_rank": 13.64,
+      "bulk_freeness_kappa": 0.2793,
+      "bulk_w1_true_to_free": 1.4057,
+      "bulk_w1_true_to_frozen": 0.5447,
+      "tail_k_removed": 4,
+      "n_factors": 11,
+      "factor_dim": 32,
+      "verdict": "COHERENT"
+    }
+  },
+  "synthetic_checks": [
+    {
+      "test": "coherent kappa < 0.3",
+      "pass": true
+    },
+    {
+      "test": "free kappa > 0.7",
+      "pass": true
+    },
+    {
+      "test": "slow is intermediate",
+      "pass": true
+    },
+    {
+      "test": "free verdict == FREE_LAW",
+      "pass": true
+    },
+    {
+      "test": "coherent verdict == COHERENT",
+      "pass": true
+    },
+    {
+      "test": "\u22a0 recovers free product (d_free<d_frozen)",
+      "pass": true
+    },
+    {
+      "test": "\u22a0 fails on coherent product (d_frozen<d_free)",
+      "pass": true
+    }
+  ],
+  "pass_rate": "7/7"
+}

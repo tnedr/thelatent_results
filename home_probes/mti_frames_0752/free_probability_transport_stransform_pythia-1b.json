@@ -1,0 +1,72 @@
+{
+  "mode": "stransform_analytic",
+  "claim": "S_TRUE(t) == prod_i S_factor_i(t)  (analytic free mult conv, no Haar sampling)",
+  "date": "2026-06-27",
+  "synthetic": {
+    "free": {
+      "s_mult_log_relerr": 0.1318,
+      "pr_eff_rank_true_measured": 4.626,
+      "verdict": "FREE_LAW"
+    },
+    "slow": {
+      "s_mult_log_relerr": 0.4217,
+      "pr_eff_rank_true_measured": 2.745,
+      "verdict": "PARTIALLY_FREE"
+    },
+    "frozen": {
+      "s_mult_log_relerr": 0.7055,
+      "pr_eff_rank_true_measured": 1.214,
+      "verdict": "OFF_LAW"
+    },
+    "checks": [
+      {
+        "test": "planted FREE product satisfies S-multiplicativity (log relerr <= FREE_RELERR)",
+        "pass": true
+      },
+      {
+        "test": "planted FREE product -> FREE_LAW verdict",
+        "pass": true
+      },
+      {
+        "test": "COHERENT/frozen product VIOLATES S-multiplicativity (log relerr >= COHERENT_RELERR)",
+        "pass": true
+      },
+      {
+        "test": "COHERENT/frozen product -> OFF_LAW verdict",
+        "pass": true
+      },
+      {
+        "test": "free clearly more multiplicative than frozen (>= 2x lower relerr)",
+        "pass": true
+      },
+      {
+        "test": "slow-rotation intermediate sits between free and frozen",
+        "pass": true
+      }
+    ],
+    "pass_rate": "6/6"
+  },
+  "model": "pythia-1b",
+  "real": {
+    "model": "EleutherAI/pythia-1b",
+    "n_layers": 16,
+    "per_domain": {
+      "relation_composition": {
+        "s_mult_log_relerr": 0.1616,
+        "pr_eff_rank_true_measured": 3.909,
+        "verdict": "FREE_LAW"
+      },
+      "arithmetic_carry": {
+        "s_mult_log_relerr": 1.0818,
+        "pr_eff_rank_true_measured": 12.255,
+        "verdict": "OFF_LAW"
+      },
+      "induction": {
+        "s_mult_log_relerr": 0.167,
+        "pr_eff_rank_true_measured": 3.946,
+        "verdict": "FREE_LAW"
+      }
+    },
+    "mean_s_mult_log_relerr": 0.4701
+  }
+}

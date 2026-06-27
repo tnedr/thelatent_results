@@ -1,0 +1,824 @@
+{
+  "mode": "deviation_diagnostics",
+  "date": "2026-06-27",
+  "n_samples": 128,
+  "r": 32,
+  "results": {
+    "gpt2|relation_composition": {
+      "n_layers": 12,
+      "rank_preservation": {
+        "true_eff_rank": 9.485,
+        "free_eff_rank": 3.088,
+        "rank_preservation_ratio": 3.072,
+        "handoff_topk_cos": 0.494,
+        "random_free_baseline_cos": 0.2906,
+        "handoff_minus_baseline": 0.2033
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          3.374,
+          19.783,
+          138.632
+        ],
+        "free_moments": [
+          10.449,
+          181.047,
+          3286.375
+        ],
+        "rel_diff": [
+          0.677,
+          0.891,
+          0.958
+        ],
+        "first_break_order": 2
+      }
+    },
+    "gpt2|arithmetic_carry": {
+      "n_layers": 12,
+      "rank_preservation": {
+        "true_eff_rank": 11.596,
+        "free_eff_rank": 3.93,
+        "rank_preservation_ratio": 2.951,
+        "handoff_topk_cos": 0.4147,
+        "random_free_baseline_cos": 0.2974,
+        "handoff_minus_baseline": 0.1173
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          2.76,
+          12.604,
+          70.417
+        ],
+        "free_moments": [
+          9.035,
+          137.891,
+          2266.976
+        ],
+        "rel_diff": [
+          0.695,
+          0.909,
+          0.969
+        ],
+        "first_break_order": 2
+      }
+    },
+    "gpt2|induction": {
+      "n_layers": 12,
+      "rank_preservation": {
+        "true_eff_rank": 4.12,
+        "free_eff_rank": 2.291,
+        "rank_preservation_ratio": 1.798,
+        "handoff_topk_cos": 0.4413,
+        "random_free_baseline_cos": 0.2997,
+        "handoff_minus_baseline": 0.1416
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          7.766,
+          110.286,
+          1663.531
+        ],
+        "free_moments": [
+          12.916,
+          242.147,
+          4830.1
+        ],
+        "rel_diff": [
+          0.399,
+          0.545,
+          0.656
+        ],
+        "first_break_order": 3
+      }
+    },
+    "gpt2-medium|relation_composition": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 4.741,
+        "free_eff_rank": 9.145,
+        "rank_preservation_ratio": 0.518,
+        "handoff_topk_cos": 0.5182,
+        "random_free_baseline_cos": 0.3063,
+        "handoff_minus_baseline": 0.212
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          6.75,
+          75.513,
+          934.655
+        ],
+        "free_moments": [
+          3.547,
+          22.815,
+          178.782
+        ],
+        "rel_diff": [
+          0.903,
+          2.31,
+          4.228
+        ],
+        "first_break_order": 2
+      }
+    },
+    "gpt2-medium|arithmetic_carry": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 8.6,
+        "free_eff_rank": 8.492,
+        "rank_preservation_ratio": 1.013,
+        "handoff_topk_cos": 0.4912,
+        "random_free_baseline_cos": 0.2843,
+        "handoff_minus_baseline": 0.2069
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          3.721,
+          23.995,
+          182.146
+        ],
+        "free_moments": [
+          4.416,
+          37.701,
+          408.856
+        ],
+        "rel_diff": [
+          0.157,
+          0.364,
+          0.554
+        ],
+        "first_break_order": 4
+      }
+    },
+    "gpt2-medium|induction": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 2.9,
+        "free_eff_rank": 6.003,
+        "rank_preservation_ratio": 0.483,
+        "handoff_topk_cos": 0.4349,
+        "random_free_baseline_cos": 0.2963,
+        "handoff_minus_baseline": 0.1386
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          11.034,
+          174.57,
+          2934.673
+        ],
+        "free_moments": [
+          5.414,
+          47.89,
+          486.559
+        ],
+        "rel_diff": [
+          1.038,
+          2.645,
+          5.031
+        ],
+        "first_break_order": 2
+      }
+    },
+    "gpt2-large|relation_composition": {
+      "n_layers": 36,
+      "rank_preservation": {
+        "true_eff_rank": 9.795,
+        "free_eff_rank": 18.764,
+        "rank_preservation_ratio": 0.522,
+        "handoff_topk_cos": 0.5171,
+        "random_free_baseline_cos": 0.3,
+        "handoff_minus_baseline": 0.2171
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          3.267,
+          19.09,
+          137.219
+        ],
+        "free_moments": [
+          1.693,
+          3.987,
+          11.377
+        ],
+        "rel_diff": [
+          0.929,
+          3.788,
+          11.061
+        ],
+        "first_break_order": 2
+      }
+    },
+    "gpt2-large|arithmetic_carry": {
+      "n_layers": 36,
+      "rank_preservation": {
+        "true_eff_rank": 15.778,
+        "free_eff_rank": 17.956,
+        "rank_preservation_ratio": 0.879,
+        "handoff_topk_cos": 0.4861,
+        "random_free_baseline_cos": 0.3002,
+        "handoff_minus_baseline": 0.1859
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          2.028,
+          5.772,
+          19.724
+        ],
+        "free_moments": [
+          1.784,
+          4.341,
+          12.417
+        ],
+        "rel_diff": [
+          0.137,
+          0.33,
+          0.588
+        ],
+        "first_break_order": 4
+      }
+    },
+    "gpt2-large|induction": {
+      "n_layers": 36,
+      "rank_preservation": {
+        "true_eff_rank": 11.198,
+        "free_eff_rank": 14.434,
+        "rank_preservation_ratio": 0.776,
+        "handoff_topk_cos": 0.5021,
+        "random_free_baseline_cos": 0.2974,
+        "handoff_minus_baseline": 0.2047
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          2.858,
+          15.103,
+          101.009
+        ],
+        "free_moments": [
+          2.174,
+          6.774,
+          25.265
+        ],
+        "rel_diff": [
+          0.314,
+          1.23,
+          2.998
+        ],
+        "first_break_order": 3
+      }
+    },
+    "gpt2-xl|relation_composition": {
+      "n_layers": 48,
+      "rank_preservation": {
+        "true_eff_rank": 4.588,
+        "free_eff_rank": 18.454,
+        "rank_preservation_ratio": 0.249,
+        "handoff_topk_cos": 0.5463,
+        "random_free_baseline_cos": 0.2877,
+        "handoff_minus_baseline": 0.2586
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          6.975,
+          81.628,
+          1058.212
+        ],
+        "free_moments": [
+          1.676,
+          3.848,
+          10.568
+        ],
+        "rel_diff": [
+          3.163,
+          20.213,
+          99.129
+        ],
+        "first_break_order": 2
+      }
+    },
+    "gpt2-xl|arithmetic_carry": {
+      "n_layers": 48,
+      "rank_preservation": {
+        "true_eff_rank": 5.378,
+        "free_eff_rank": 17.959,
+        "rank_preservation_ratio": 0.299,
+        "handoff_topk_cos": 0.5031,
+        "random_free_baseline_cos": 0.2897,
+        "handoff_minus_baseline": 0.2133
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          5.95,
+          69.891,
+          898.431
+        ],
+        "free_moments": [
+          1.777,
+          4.337,
+          12.516
+        ],
+        "rel_diff": [
+          2.347,
+          15.115,
+          70.784
+        ],
+        "first_break_order": 2
+      }
+    },
+    "gpt2-xl|induction": {
+      "n_layers": 48,
+      "rank_preservation": {
+        "true_eff_rank": 3.33,
+        "free_eff_rank": 15.251,
+        "rank_preservation_ratio": 0.218,
+        "handoff_topk_cos": 0.4814,
+        "random_free_baseline_cos": 0.2975,
+        "handoff_minus_baseline": 0.1838
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          9.61,
+          154.351,
+          2602.489
+        ],
+        "free_moments": [
+          2.146,
+          6.723,
+          25.483
+        ],
+        "rel_diff": [
+          3.479,
+          21.958,
+          101.125
+        ],
+        "first_break_order": 2
+      }
+    },
+    "pythia-410m|relation_composition": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 5.086,
+        "free_eff_rank": 8.169,
+        "rank_preservation_ratio": 0.623,
+        "handoff_topk_cos": 0.4092,
+        "random_free_baseline_cos": 0.3016,
+        "handoff_minus_baseline": 0.1076
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          6.292,
+          72.925,
+          938.446
+        ],
+        "free_moments": [
+          3.788,
+          23.425,
+          180.097
+        ],
+        "rel_diff": [
+          0.661,
+          2.113,
+          4.211
+        ],
+        "first_break_order": 2
+      }
+    },
+    "pythia-410m|arithmetic_carry": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 12.331,
+        "free_eff_rank": 7.331,
+        "rank_preservation_ratio": 1.682,
+        "handoff_topk_cos": 0.3666,
+        "random_free_baseline_cos": 0.2903,
+        "handoff_minus_baseline": 0.0763
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          2.595,
+          11.056,
+          58.283
+        ],
+        "free_moments": [
+          4.138,
+          26.731,
+          206.294
+        ],
+        "rel_diff": [
+          0.373,
+          0.586,
+          0.717
+        ],
+        "first_break_order": 3
+      }
+    },
+    "pythia-410m|induction": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 3.923,
+        "free_eff_rank": 4.288,
+        "rank_preservation_ratio": 0.915,
+        "handoff_topk_cos": 0.3983,
+        "random_free_baseline_cos": 0.2873,
+        "handoff_minus_baseline": 0.1109
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          8.157,
+          116.943,
+          1789.813
+        ],
+        "free_moments": [
+          7.872,
+          96.901,
+          1402.374
+        ],
+        "rel_diff": [
+          0.036,
+          0.207,
+          0.276
+        ],
+        "first_break_order": null
+      }
+    },
+    "pythia-1b|relation_composition": {
+      "n_layers": 16,
+      "rank_preservation": {
+        "true_eff_rank": 3.909,
+        "free_eff_rank": 7.992,
+        "rank_preservation_ratio": 0.489,
+        "handoff_topk_cos": 0.3979,
+        "random_free_baseline_cos": 0.2894,
+        "handoff_minus_baseline": 0.1085
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          8.186,
+          117.237,
+          1796.144
+        ],
+        "free_moments": [
+          4.642,
+          38.51,
+          401.43
+        ],
+        "rel_diff": [
+          0.763,
+          2.044,
+          3.474
+        ],
+        "first_break_order": 2
+      }
+    },
+    "pythia-1b|arithmetic_carry": {
+      "n_layers": 16,
+      "rank_preservation": {
+        "true_eff_rank": 12.255,
+        "free_eff_rank": 7.704,
+        "rank_preservation_ratio": 1.591,
+        "handoff_topk_cos": 0.3381,
+        "random_free_baseline_cos": 0.2863,
+        "handoff_minus_baseline": 0.0518
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          2.611,
+          12.166,
+          72.017
+        ],
+        "free_moments": [
+          3.886,
+          24.06,
+          178.946
+        ],
+        "rel_diff": [
+          0.328,
+          0.494,
+          0.598
+        ],
+        "first_break_order": 4
+      }
+    },
+    "pythia-1b|induction": {
+      "n_layers": 16,
+      "rank_preservation": {
+        "true_eff_rank": 3.946,
+        "free_eff_rank": 6.363,
+        "rank_preservation_ratio": 0.62,
+        "handoff_topk_cos": 0.399,
+        "random_free_baseline_cos": 0.3012,
+        "handoff_minus_baseline": 0.0978
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          8.11,
+          115.93,
+          1770.156
+        ],
+        "free_moments": [
+          5.803,
+          57.582,
+          678.453
+        ],
+        "rel_diff": [
+          0.398,
+          1.013,
+          1.609
+        ],
+        "first_break_order": 3
+      }
+    },
+    "pythia-1.4b|relation_composition": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 3.999,
+        "free_eff_rank": 6.545,
+        "rank_preservation_ratio": 0.611,
+        "handoff_topk_cos": 0.4425,
+        "random_free_baseline_cos": 0.3006,
+        "handoff_minus_baseline": 0.1419
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          8.002,
+          110.785,
+          1656.86
+        ],
+        "free_moments": [
+          6.091,
+          72.602,
+          1084.317
+        ],
+        "rel_diff": [
+          0.314,
+          0.526,
+          0.528
+        ],
+        "first_break_order": 3
+      }
+    },
+    "pythia-1.4b|arithmetic_carry": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 9.328,
+        "free_eff_rank": 8.903,
+        "rank_preservation_ratio": 1.048,
+        "handoff_topk_cos": 0.4093,
+        "random_free_baseline_cos": 0.297,
+        "handoff_minus_baseline": 0.1123
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          3.43,
+          22.647,
+          181.983
+        ],
+        "free_moments": [
+          3.922,
+          26.354,
+          213.538
+        ],
+        "rel_diff": [
+          0.125,
+          0.141,
+          0.148
+        ],
+        "first_break_order": null
+      }
+    },
+    "pythia-1.4b|induction": {
+      "n_layers": 24,
+      "rank_preservation": {
+        "true_eff_rank": 2.452,
+        "free_eff_rank": 7.077,
+        "rank_preservation_ratio": 0.346,
+        "handoff_topk_cos": 0.4427,
+        "random_free_baseline_cos": 0.2896,
+        "handoff_minus_baseline": 0.1531
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          13.051,
+          252.954,
+          5050.84
+        ],
+        "free_moments": [
+          4.826,
+          38.671,
+          364.612
+        ],
+        "rel_diff": [
+          1.704,
+          5.541,
+          12.853
+        ],
+        "first_break_order": 2
+      }
+    },
+    "pythia-2.8b|relation_composition": {
+      "n_layers": 32,
+      "rank_preservation": {
+        "true_eff_rank": 3.01,
+        "free_eff_rank": 10.607,
+        "rank_preservation_ratio": 0.284,
+        "handoff_topk_cos": 0.4992,
+        "random_free_baseline_cos": 0.2992,
+        "handoff_minus_baseline": 0.1999
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          10.632,
+          181.775,
+          3245.448
+        ],
+        "free_moments": [
+          3.382,
+          21.475,
+          180.051
+        ],
+        "rel_diff": [
+          2.143,
+          7.465,
+          17.025
+        ],
+        "first_break_order": 2
+      }
+    },
+    "pythia-2.8b|arithmetic_carry": {
+      "n_layers": 32,
+      "rank_preservation": {
+        "true_eff_rank": 8.364,
+        "free_eff_rank": 11.534,
+        "rank_preservation_ratio": 0.725,
+        "handoff_topk_cos": 0.4433,
+        "random_free_baseline_cos": 0.2948,
+        "handoff_minus_baseline": 0.1485
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          3.826,
+          29.098,
+          263.002
+        ],
+        "free_moments": [
+          2.932,
+          14.303,
+          89.462
+        ],
+        "rel_diff": [
+          0.305,
+          1.034,
+          1.94
+        ],
+        "first_break_order": 3
+      }
+    },
+    "pythia-2.8b|induction": {
+      "n_layers": 32,
+      "rank_preservation": {
+        "true_eff_rank": 2.561,
+        "free_eff_rank": 8.538,
+        "rank_preservation_ratio": 0.3,
+        "handoff_topk_cos": 0.4898,
+        "random_free_baseline_cos": 0.3083,
+        "handoff_minus_baseline": 0.1815
+      },
+      "cumulant_break": {
+        "orders": [
+          2,
+          3,
+          4
+        ],
+        "true_moments": [
+          12.494,
+          230.288,
+          4421.887
+        ],
+        "free_moments": [
+          3.718,
+          22.554,
+          168.676
+        ],
+        "rel_diff": [
+          2.36,
+          9.211,
+          25.215
+        ],
+        "first_break_order": 2
+      }
+    }
+  }
+}

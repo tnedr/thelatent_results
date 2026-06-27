@@ -1,0 +1,172 @@
+{
+  "analysis": "structure-vs-randomness transport split (aggregate)",
+  "claim": "does trained transport split into low-rank task spikes + MP bulk?",
+  "date": "2026-06-27",
+  "models": {
+    "gpt2-medium": {
+      "model_verdict": "MIXED",
+      "n_domains_structured": 1,
+      "per_domain": {
+        "relation_composition": {
+          "structured_complexity": 115,
+          "bulk_mp_ks": 0.0499,
+          "n_spikes": 98,
+          "energy_in_spikes": 0.8745,
+          "aspect_ratio_c": 4.0,
+          "n_bulk_modes": 157,
+          "verdict": "MIXED"
+        },
+        "arithmetic_carry": {
+          "structured_complexity": 109,
+          "bulk_mp_ks": 0.0467,
+          "n_spikes": 93,
+          "energy_in_spikes": 0.8569,
+          "aspect_ratio_c": 4.0,
+          "n_bulk_modes": 162,
+          "verdict": "MIXED"
+        },
+        "induction": {
+          "structured_complexity": 31,
+          "bulk_mp_ks": 0.0478,
+          "n_spikes": 102,
+          "energy_in_spikes": 0.9768,
+          "aspect_ratio_c": 4.0,
+          "n_bulk_modes": 153,
+          "verdict": "STRUCTURED"
+        }
+      }
+    },
+    "gpt2": {
+      "model_verdict": "MIXED",
+      "n_domains_structured": 1,
+      "per_domain": {
+        "relation_composition": {
+          "structured_complexity": 101,
+          "bulk_mp_ks": 0.0583,
+          "n_spikes": 96,
+          "energy_in_spikes": 0.8929,
+          "aspect_ratio_c": 3.0,
+          "n_bulk_modes": 159,
+          "verdict": "MIXED"
+        },
+        "arithmetic_carry": {
+          "structured_complexity": 106,
+          "bulk_mp_ks": 0.0577,
+          "n_spikes": 92,
+          "energy_in_spikes": 0.8776,
+          "aspect_ratio_c": 3.0,
+          "n_bulk_modes": 163,
+          "verdict": "MIXED"
+        },
+        "induction": {
+          "structured_complexity": 52,
+          "bulk_mp_ks": 0.0565,
+          "n_spikes": 96,
+          "energy_in_spikes": 0.9536,
+          "aspect_ratio_c": 3.0,
+          "n_bulk_modes": 159,
+          "verdict": "STRUCTURED"
+        }
+      }
+    },
+    "pythia-1.4b": {
+      "model_verdict": "MIXED",
+      "n_domains_structured": 0,
+      "per_domain": {
+        "relation_composition": {
+          "structured_complexity": 119,
+          "bulk_mp_ks": 0.041,
+          "n_spikes": 101,
+          "energy_in_spikes": 0.8721,
+          "aspect_ratio_c": 8.0,
+          "n_bulk_modes": 154,
+          "verdict": "MIXED"
+        },
+        "arithmetic_carry": {
+          "structured_complexity": 122,
+          "bulk_mp_ks": 0.0502,
+          "n_spikes": 93,
+          "energy_in_spikes": 0.8521,
+          "aspect_ratio_c": 8.0,
+          "n_bulk_modes": 162,
+          "verdict": "MIXED"
+        },
+        "induction": {
+          "structured_complexity": 85,
+          "bulk_mp_ks": 0.0559,
+          "n_spikes": 99,
+          "energy_in_spikes": 0.9175,
+          "aspect_ratio_c": 8.0,
+          "n_bulk_modes": 156,
+          "verdict": "MIXED"
+        }
+      }
+    },
+    "pythia-1b": {
+      "model_verdict": "MIXED",
+      "n_domains_structured": 0,
+      "per_domain": {
+        "relation_composition": {
+          "structured_complexity": 120,
+          "bulk_mp_ks": 0.0579,
+          "n_spikes": 88,
+          "energy_in_spikes": 0.8529,
+          "aspect_ratio_c": 8.0,
+          "n_bulk_modes": 167,
+          "verdict": "MIXED"
+        },
+        "arithmetic_carry": {
+          "structured_complexity": 122,
+          "bulk_mp_ks": 0.052,
+          "n_spikes": 89,
+          "energy_in_spikes": 0.8474,
+          "aspect_ratio_c": 8.0,
+          "n_bulk_modes": 166,
+          "verdict": "MIXED"
+        },
+        "induction": {
+          "structured_complexity": 107,
+          "bulk_mp_ks": 0.0537,
+          "n_spikes": 87,
+          "energy_in_spikes": 0.873,
+          "aspect_ratio_c": 8.0,
+          "n_bulk_modes": 168,
+          "verdict": "MIXED"
+        }
+      }
+    },
+    "pythia-410m": {
+      "model_verdict": "MIXED",
+      "n_domains_structured": 0,
+      "per_domain": {
+        "relation_composition": {
+          "structured_complexity": 102,
+          "bulk_mp_ks": 0.0463,
+          "n_spikes": 89,
+          "energy_in_spikes": 0.8783,
+          "aspect_ratio_c": 4.0,
+          "n_bulk_modes": 166,
+          "verdict": "MIXED"
+        },
+        "arithmetic_carry": {
+          "structured_complexity": 100,
+          "bulk_mp_ks": 0.0414,
+          "n_spikes": 92,
+          "energy_in_spikes": 0.8853,
+          "aspect_ratio_c": 4.0,
+          "n_bulk_modes": 163,
+          "verdict": "MIXED"
+        },
+        "induction": {
+          "structured_complexity": 86,
+          "bulk_mp_ks": 0.051,
+          "n_spikes": 95,
+          "energy_in_spikes": 0.9137,
+          "aspect_ratio_c": 4.0,
+          "n_bulk_modes": 160,
+          "verdict": "MIXED"
+        }
+      }
+    }
+  }
+}

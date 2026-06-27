@@ -1,0 +1,103 @@
+{
+  "analysis": "depth-conservation (integral of motion) aggregate",
+  "claim": "is there a conservation law along depth in trained transport?",
+  "date": "2026-06-27",
+  "models": {
+    "gpt2-large": {
+      "model_verdict": "CONSERVED",
+      "model_best_candidate": "spectral_entropy",
+      "per_domain": {
+        "relation_composition": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "energy_ratio",
+          "best_conservation_score": 0.691,
+          "best_p_value": 0.08638
+        },
+        "arithmetic_carry": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "energy_ratio",
+          "best_conservation_score": 0.72,
+          "best_p_value": 0.07309
+        },
+        "induction": {
+          "verdict": "CONSERVED",
+          "best_candidate": "spectral_entropy",
+          "best_conservation_score": 0.6609,
+          "best_p_value": 0.00332
+        }
+      }
+    },
+    "gpt2-xl": {
+      "model_verdict": "CONSERVED",
+      "model_best_candidate": "spectral_entropy",
+      "per_domain": {
+        "relation_composition": {
+          "verdict": "CONSERVED",
+          "best_candidate": "spectral_entropy",
+          "best_conservation_score": 0.7145,
+          "best_p_value": 0.00332
+        },
+        "arithmetic_carry": {
+          "verdict": "CONSERVED",
+          "best_candidate": "spectral_entropy",
+          "best_conservation_score": 0.9048,
+          "best_p_value": 0.00332
+        },
+        "induction": {
+          "verdict": "CONSERVED",
+          "best_candidate": "spectral_entropy",
+          "best_conservation_score": 0.8471,
+          "best_p_value": 0.00332
+        }
+      }
+    },
+    "pythia-1.4b": {
+      "model_verdict": "NO_INVARIANT",
+      "model_best_candidate": null,
+      "per_domain": {
+        "relation_composition": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "log_volume_rate",
+          "best_conservation_score": -0.1787,
+          "best_p_value": 0.91362
+        },
+        "arithmetic_carry": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "energy_ratio",
+          "best_conservation_score": -0.0377,
+          "best_p_value": 0.52824
+        },
+        "induction": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "log_volume_rate",
+          "best_conservation_score": 0.196,
+          "best_p_value": 0.34219
+        }
+      }
+    },
+    "pythia-1b": {
+      "model_verdict": "NO_INVARIANT",
+      "model_best_candidate": null,
+      "per_domain": {
+        "relation_composition": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "log_volume_rate",
+          "best_conservation_score": -0.1344,
+          "best_p_value": 0.73754
+        },
+        "arithmetic_carry": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "spectral_entropy",
+          "best_conservation_score": 0.0054,
+          "best_p_value": 0.36213
+        },
+        "induction": {
+          "verdict": "NO_INVARIANT",
+          "best_candidate": "spectral_entropy",
+          "best_conservation_score": 0.331,
+          "best_p_value": 0.18937
+        }
+      }
+    }
+  }
+}

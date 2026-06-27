@@ -1,0 +1,157 @@
+{
+  "mode": "real_model",
+  "model": "pythia-1b",
+  "hf_name": "EleutherAI/pythia-1b",
+  "date": "2026-06-27",
+  "n_layers": 16,
+  "d_model": 2048,
+  "reduced_dim": 32,
+  "n_samples": 64,
+  "method": "depth-invariant search over effective per-layer transport (data-linearized) in a shared top-r PCA basis; CV vs layer-shuffled null",
+  "claim": "is there a depth-invariant integral of motion of the per-layer transport (a conservation law along depth)?",
+  "candidates": [
+    "log_volume_rate",
+    "energy_ratio",
+    "spectral_entropy",
+    "holonomy_rotation_rate"
+  ],
+  "per_domain": {
+    "relation_composition": {
+      "verdict": "NO_INVARIANT",
+      "n_factors": 15,
+      "k_rot": 4,
+      "n_shuffle": 300,
+      "candidates": {
+        "log_volume_rate": {
+          "cv_real": 0.57419,
+          "cv_shuffled": 0.50618,
+          "conservation_score": -0.1344,
+          "p_value": 0.73754,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "energy_ratio": {
+          "cv_real": 0.24665,
+          "cv_shuffled": 0.19538,
+          "conservation_score": -0.2624,
+          "p_value": 0.99336,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "spectral_entropy": {
+          "cv_real": 0.1759,
+          "cv_shuffled": 0.14874,
+          "conservation_score": -0.1826,
+          "p_value": 0.6113,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "holonomy_rotation_rate": {
+          "cv_real": 0.19446,
+          "cv_shuffled": 0.07422,
+          "conservation_score": -1.6202,
+          "p_value": 0.99003,
+          "n_shuffle_valid": 300,
+          "significant": false
+        }
+      },
+      "best_candidate": "log_volume_rate",
+      "best_conservation_score": -0.1344,
+      "best_p_value": 0.73754,
+      "n_instances": 64,
+      "layers_used": 16
+    },
+    "arithmetic_carry": {
+      "verdict": "NO_INVARIANT",
+      "n_factors": 15,
+      "k_rot": 4,
+      "n_shuffle": 300,
+      "candidates": {
+        "log_volume_rate": {
+          "cv_real": 0.58855,
+          "cv_shuffled": 0.55435,
+          "conservation_score": -0.0617,
+          "p_value": 0.59468,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "energy_ratio": {
+          "cv_real": 0.2775,
+          "cv_shuffled": 0.22077,
+          "conservation_score": -0.257,
+          "p_value": 0.97342,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "spectral_entropy": {
+          "cv_real": 0.15461,
+          "cv_shuffled": 0.15545,
+          "conservation_score": 0.0054,
+          "p_value": 0.36213,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "holonomy_rotation_rate": {
+          "cv_real": 0.12126,
+          "cv_shuffled": 0.07359,
+          "conservation_score": -0.6478,
+          "p_value": 0.91694,
+          "n_shuffle_valid": 300,
+          "significant": false
+        }
+      },
+      "best_candidate": "spectral_entropy",
+      "best_conservation_score": 0.0054,
+      "best_p_value": 0.36213,
+      "n_instances": 64,
+      "layers_used": 16
+    },
+    "induction": {
+      "verdict": "NO_INVARIANT",
+      "n_factors": 15,
+      "k_rot": 4,
+      "n_shuffle": 300,
+      "candidates": {
+        "log_volume_rate": {
+          "cv_real": 0.6146,
+          "cv_shuffled": 0.59116,
+          "conservation_score": -0.0397,
+          "p_value": 0.57807,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "energy_ratio": {
+          "cv_real": 0.24624,
+          "cv_shuffled": 0.22001,
+          "conservation_score": -0.1192,
+          "p_value": 0.8206,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "spectral_entropy": {
+          "cv_real": 0.11686,
+          "cv_shuffled": 0.17467,
+          "conservation_score": 0.331,
+          "p_value": 0.18937,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "holonomy_rotation_rate": {
+          "cv_real": 0.18694,
+          "cv_shuffled": 0.07353,
+          "conservation_score": -1.5423,
+          "p_value": 0.99336,
+          "n_shuffle_valid": 300,
+          "significant": false
+        }
+      },
+      "best_candidate": "spectral_entropy",
+      "best_conservation_score": 0.331,
+      "best_p_value": 0.18937,
+      "n_instances": 64,
+      "layers_used": 16
+    }
+  },
+  "model_verdict": "NO_INVARIANT",
+  "model_best_candidate": null
+}

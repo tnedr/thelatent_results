@@ -1,0 +1,108 @@
+{
+  "mode": "synthetic",
+  "date": "2026-06-27",
+  "planted": {
+    "N": 200,
+    "d": 400,
+    "r0": 3,
+    "a_struct": [
+      100.0,
+      80.0,
+      60.0
+    ],
+    "bulk_noise_sigma": 1.0
+  },
+  "cases": {
+    "clean_gaussian_bulk": {
+      "structured_complexity": 3,
+      "bulk_mp_ks": 0.0128,
+      "n_spikes": 4,
+      "energy_in_spikes": 0.9976,
+      "energy_in_structured_cut": 0.9976,
+      "mp_sigma2": 0.98282,
+      "mp_edge_lo": 0.168625,
+      "mp_edge_hi": 5.728297,
+      "aspect_ratio_c": 2.0,
+      "n_bulk_modes": 195,
+      "n_eigs": 199,
+      "raw_effective_rank": 44.308,
+      "readout_effective_rank": 2.707,
+      "structured_rank_frac_of_min": 0.0151,
+      "verdict": "STRUCTURED"
+    },
+    "nonmp_flat_bulk": {
+      "structured_complexity": 3,
+      "bulk_mp_ks": 0.5637,
+      "n_spikes": 3,
+      "energy_in_spikes": 0.9996,
+      "energy_in_structured_cut": 0.9996,
+      "mp_sigma2": 0.992811,
+      "mp_edge_lo": 0.170339,
+      "mp_edge_hi": 5.786528,
+      "aspect_ratio_c": 2.0,
+      "n_bulk_modes": 196,
+      "n_eigs": 199,
+      "raw_effective_rank": 46.935,
+      "readout_effective_rank": 2.392,
+      "structured_rank_frac_of_min": 0.0151,
+      "verdict": "MIXED"
+    },
+    "no_structure_spread": {
+      "structured_complexity": 132,
+      "bulk_mp_ks": 0.0119,
+      "n_spikes": 0,
+      "energy_in_spikes": 0.0,
+      "energy_in_structured_cut": 0.901,
+      "mp_sigma2": 0.999763,
+      "mp_edge_lo": 0.171532,
+      "mp_edge_hi": 5.827048,
+      "aspect_ratio_c": 2.0,
+      "n_bulk_modes": 199,
+      "n_eigs": 199,
+      "raw_effective_rank": 132.258,
+      "readout_effective_rank": 130.945,
+      "structured_rank_frac_of_min": 0.6633,
+      "verdict": "MIXED"
+    }
+  },
+  "synthetic_checks": [
+    {
+      "test": "recovers structured rank (struct_complexity in [r0, r0+2])",
+      "pass": true
+    },
+    {
+      "test": "RMT recovers planted rank (|n_spikes - r0| <= 1)",
+      "pass": true
+    },
+    {
+      "test": "readout energy concentrates in S (energy_in_spikes >= 0.9)",
+      "pass": true
+    },
+    {
+      "test": "Gaussian bulk passes MP (bulk_mp_ks < 0.15)",
+      "pass": true
+    },
+    {
+      "test": "MP fit recovers noise variance (0.7 < sigma2 < 1.3)",
+      "pass": true
+    },
+    {
+      "test": "clean case verdict == STRUCTURED",
+      "pass": true
+    },
+    {
+      "test": "NON-MP bulk is rejected (ks_bad > 0.3 and > 2x ks_good)",
+      "pass": true
+    },
+    {
+      "test": "NON-MP bulk verdict == MIXED",
+      "pass": true
+    },
+    {
+      "test": "no-structure spread reads MIXED (not low-rank)",
+      "pass": true
+    }
+  ],
+  "pass_rate": "9/9",
+  "all_pass": true
+}

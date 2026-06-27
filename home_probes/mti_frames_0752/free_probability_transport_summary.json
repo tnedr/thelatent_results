@@ -1,0 +1,247 @@
+{
+  "analysis": "free-probability transport (freeness kappa) aggregate",
+  "claim": "is trained depth transport a free multiplicative convolution?",
+  "date": "2026-06-27",
+  "models": {
+    "gpt2-large": {
+      "model_freeness_kappa": 0.9338,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.8909,
+          "bulk_kappa": 0.9409,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 9.795,
+          "free_eff_rank": 18.931,
+          "mean_per_factor_eff_rank": 31.391
+        },
+        "arithmetic_carry": {
+          "kappa": 0.9508,
+          "bulk_kappa": 0.9662,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 15.778,
+          "free_eff_rank": 17.914,
+          "mean_per_factor_eff_rank": 31.3
+        },
+        "induction": {
+          "kappa": 0.9598,
+          "bulk_kappa": 0.9157,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 11.198,
+          "free_eff_rank": 14.449,
+          "mean_per_factor_eff_rank": 30.926
+        }
+      }
+    },
+    "gpt2-medium": {
+      "model_freeness_kappa": 0.9083,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.9134,
+          "bulk_kappa": 0.8082,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 4.741,
+          "free_eff_rank": 9.554,
+          "mean_per_factor_eff_rank": 29.935
+        },
+        "arithmetic_carry": {
+          "kappa": 0.9306,
+          "bulk_kappa": 0.8315,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 8.6,
+          "free_eff_rank": 8.581,
+          "mean_per_factor_eff_rank": 29.588
+        },
+        "induction": {
+          "kappa": 0.881,
+          "bulk_kappa": 0.7595,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 2.9,
+          "free_eff_rank": 5.931,
+          "mean_per_factor_eff_rank": 28.21
+        }
+      }
+    },
+    "gpt2-xl": {
+      "model_freeness_kappa": 0.9377,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.8771,
+          "bulk_kappa": 0.9436,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 4.588,
+          "free_eff_rank": 18.607,
+          "mean_per_factor_eff_rank": 31.533
+        },
+        "arithmetic_carry": {
+          "kappa": 0.9703,
+          "bulk_kappa": 0.9668,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 5.378,
+          "free_eff_rank": 18.254,
+          "mean_per_factor_eff_rank": 31.502
+        },
+        "induction": {
+          "kappa": 0.9656,
+          "bulk_kappa": 0.9366,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 3.33,
+          "free_eff_rank": 15.145,
+          "mean_per_factor_eff_rank": 31.268
+        }
+      }
+    },
+    "gpt2": {
+      "model_freeness_kappa": 0.8268,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.8436,
+          "bulk_kappa": 0.714,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 9.485,
+          "free_eff_rank": 3.088,
+          "mean_per_factor_eff_rank": 26.769
+        },
+        "arithmetic_carry": {
+          "kappa": 0.8335,
+          "bulk_kappa": 0.7258,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 11.596,
+          "free_eff_rank": 4.144,
+          "mean_per_factor_eff_rank": 25.916
+        },
+        "induction": {
+          "kappa": 0.8033,
+          "bulk_kappa": 0.7042,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 4.12,
+          "free_eff_rank": 2.39,
+          "mean_per_factor_eff_rank": 24.771
+        }
+      }
+    },
+    "pythia-1.4b": {
+      "model_freeness_kappa": 0.8916,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.9016,
+          "bulk_kappa": 0.8095,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 3.999,
+          "free_eff_rank": 5.928,
+          "mean_per_factor_eff_rank": 28.456
+        },
+        "arithmetic_carry": {
+          "kappa": 0.8967,
+          "bulk_kappa": 0.8316,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 9.328,
+          "free_eff_rank": 9.34,
+          "mean_per_factor_eff_rank": 29.421
+        },
+        "induction": {
+          "kappa": 0.8764,
+          "bulk_kappa": 0.8045,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 2.452,
+          "free_eff_rank": 6.949,
+          "mean_per_factor_eff_rank": 28.821
+        }
+      }
+    },
+    "pythia-1b": {
+      "model_freeness_kappa": 0.8767,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.9219,
+          "bulk_kappa": 0.8299,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 3.909,
+          "free_eff_rank": 7.63,
+          "mean_per_factor_eff_rank": 27.116
+        },
+        "arithmetic_carry": {
+          "kappa": 0.8464,
+          "bulk_kappa": 0.7853,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 12.255,
+          "free_eff_rank": 8.161,
+          "mean_per_factor_eff_rank": 27.015
+        },
+        "induction": {
+          "kappa": 0.8618,
+          "bulk_kappa": 0.782,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 3.946,
+          "free_eff_rank": 6.383,
+          "mean_per_factor_eff_rank": 26.053
+        }
+      }
+    },
+    "pythia-2.8b": {
+      "model_freeness_kappa": 0.9239,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.9449,
+          "bulk_kappa": 0.8898,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 3.01,
+          "free_eff_rank": 10.607,
+          "mean_per_factor_eff_rank": 30.37
+        },
+        "arithmetic_carry": {
+          "kappa": 0.9321,
+          "bulk_kappa": 0.8743,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 8.364,
+          "free_eff_rank": 11.301,
+          "mean_per_factor_eff_rank": 30.416
+        },
+        "induction": {
+          "kappa": 0.8946,
+          "bulk_kappa": 0.8277,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 2.561,
+          "free_eff_rank": 8.419,
+          "mean_per_factor_eff_rank": 29.802
+        }
+      }
+    },
+    "pythia-410m": {
+      "model_freeness_kappa": 0.8948,
+      "model_verdict": "FREE_LAW",
+      "per_domain": {
+        "relation_composition": {
+          "kappa": 0.9262,
+          "bulk_kappa": 0.8716,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 5.086,
+          "free_eff_rank": 8.4,
+          "mean_per_factor_eff_rank": 28.737
+        },
+        "arithmetic_carry": {
+          "kappa": 0.889,
+          "bulk_kappa": 0.843,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 12.331,
+          "free_eff_rank": 7.892,
+          "mean_per_factor_eff_rank": 28.091
+        },
+        "induction": {
+          "kappa": 0.8692,
+          "bulk_kappa": 0.8185,
+          "verdict": "FREE_LAW",
+          "true_eff_rank": 3.923,
+          "free_eff_rank": 3.746,
+          "mean_per_factor_eff_rank": 25.369
+        }
+      }
+    }
+  }
+}

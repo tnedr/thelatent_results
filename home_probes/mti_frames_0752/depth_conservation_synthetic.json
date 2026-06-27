@@ -1,0 +1,171 @@
+{
+  "mode": "synthetic",
+  "date": "2026-06-27",
+  "k_rot": 4,
+  "n_layers": 12,
+  "processes": {
+    "A_logdet_conserved": {
+      "verdict": "CONSERVED",
+      "n_factors": 12,
+      "k_rot": 4,
+      "n_shuffle": 300,
+      "candidates": {
+        "log_volume_rate": {
+          "cv_real": 0.0,
+          "cv_shuffled": 4.99388,
+          "conservation_score": 1.0,
+          "p_value": 0.00332,
+          "n_shuffle_valid": 300,
+          "significant": true
+        },
+        "energy_ratio": {
+          "cv_real": 0.24822,
+          "cv_shuffled": 0.54312,
+          "conservation_score": 0.543,
+          "p_value": 0.00332,
+          "n_shuffle_valid": 300,
+          "significant": true
+        },
+        "spectral_entropy": {
+          "cv_real": 0.5107,
+          "cv_shuffled": 0.34956,
+          "conservation_score": -0.461,
+          "p_value": 0.99003,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "holonomy_rotation_rate": {
+          "cv_real": null,
+          "cv_shuffled": null,
+          "conservation_score": null,
+          "p_value": null,
+          "significant": false
+        }
+      },
+      "best_candidate": "log_volume_rate",
+      "best_conservation_score": 1.0,
+      "best_p_value": 0.00332
+    },
+    "C_rotation_conserved": {
+      "verdict": "CONSERVED",
+      "n_factors": 12,
+      "k_rot": 4,
+      "n_shuffle": 300,
+      "candidates": {
+        "log_volume_rate": {
+          "cv_real": 0.31065,
+          "cv_shuffled": 0.24119,
+          "conservation_score": -0.288,
+          "p_value": 0.89369,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "energy_ratio": {
+          "cv_real": 0.0515,
+          "cv_shuffled": 0.04661,
+          "conservation_score": -0.1048,
+          "p_value": 0.59136,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "spectral_entropy": {
+          "cv_real": 0.07992,
+          "cv_shuffled": 0.07087,
+          "conservation_score": -0.1278,
+          "p_value": 0.70432,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "holonomy_rotation_rate": {
+          "cv_real": 0.0,
+          "cv_shuffled": 0.462,
+          "conservation_score": 1.0,
+          "p_value": 0.00332,
+          "n_shuffle_valid": 300,
+          "significant": true
+        }
+      },
+      "best_candidate": "holonomy_rotation_rate",
+      "best_conservation_score": 1.0,
+      "best_p_value": 0.00332
+    },
+    "B_null": {
+      "verdict": "NO_INVARIANT",
+      "n_factors": 12,
+      "k_rot": 4,
+      "n_shuffle": 300,
+      "candidates": {
+        "log_volume_rate": {
+          "cv_real": 18.98355,
+          "cv_shuffled": 32.46617,
+          "conservation_score": 0.4153,
+          "p_value": 0.86711,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "energy_ratio": {
+          "cv_real": 0.22334,
+          "cv_shuffled": 0.18677,
+          "conservation_score": -0.1958,
+          "p_value": 0.78073,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "spectral_entropy": {
+          "cv_real": 0.35815,
+          "cv_shuffled": 0.26129,
+          "conservation_score": -0.3707,
+          "p_value": 0.95681,
+          "n_shuffle_valid": 300,
+          "significant": false
+        },
+        "holonomy_rotation_rate": {
+          "cv_real": 0.17956,
+          "cv_shuffled": 0.25212,
+          "conservation_score": 0.2878,
+          "p_value": 0.17276,
+          "n_shuffle_valid": 300,
+          "significant": false
+        }
+      },
+      "best_candidate": "log_volume_rate",
+      "best_conservation_score": 0.4153,
+      "best_p_value": 0.86711
+    }
+  },
+  "synthetic_checks": [
+    {
+      "test": "A verdict == CONSERVED",
+      "pass": true
+    },
+    {
+      "test": "A best candidate == log_volume_rate",
+      "pass": true
+    },
+    {
+      "test": "A log_volume_rate beats null (significant)",
+      "pass": true
+    },
+    {
+      "test": "C verdict == CONSERVED",
+      "pass": true
+    },
+    {
+      "test": "C best candidate == holonomy_rotation_rate",
+      "pass": true
+    },
+    {
+      "test": "C rotation beats null (significant)",
+      "pass": true
+    },
+    {
+      "test": "B verdict == NO_INVARIANT",
+      "pass": true
+    },
+    {
+      "test": "B: no candidate significant",
+      "pass": true
+    }
+  ],
+  "pass_rate": "8/8"
+}
