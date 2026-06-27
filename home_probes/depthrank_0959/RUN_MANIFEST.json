@@ -1,0 +1,24 @@
+{
+  "files": [
+    "free_probability_transport_depth_link.json",
+    "free_probability_transport_probe.py",
+    "SUMMARY.md"
+  ],
+  "n_samples": 128,
+  "machine": "home",
+  "n_files": 3,
+  "ts": "2026-06-27T10:27:45Z",
+  "r": 32,
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl",
+    "pythia-410m",
+    "pythia-1b",
+    "pythia-1.4b",
+    "pythia-2.8b"
+  ],
+  "dispatch": "dispatch_20260627_0959_home_depthrank_ladder",
+  "seed": 0
+}
