@@ -1,0 +1,94 @@
+{
+  "mode": "real_clay_developmental",
+  "probe": "plastic_operator",
+  "base_model": "EleutherAI/pythia-410m",
+  "date": "2026-06-27",
+  "steps": [
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    32000,
+    64000,
+    143000
+  ],
+  "n_pairs": 6,
+  "R": 16,
+  "n_instances": 10,
+  "curve": [
+    {
+      "step": 1000,
+      "induction_acc": 0.375,
+      "clay_free": 0.33377,
+      "clay_fixed": 0.23479,
+      "flip_rate_fixed": 0.35,
+      "recency_fraction": 0.2966,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    },
+    {
+      "step": 2000,
+      "induction_acc": 0.9062,
+      "clay_free": 0.34399,
+      "clay_fixed": 0.25886,
+      "flip_rate_fixed": 0.3625,
+      "recency_fraction": 0.2475,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    },
+    {
+      "step": 4000,
+      "induction_acc": 0.9062,
+      "clay_free": 0.28939,
+      "clay_fixed": 0.23993,
+      "flip_rate_fixed": 0.3438,
+      "recency_fraction": 0.1709,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    },
+    {
+      "step": 8000,
+      "induction_acc": 0.9062,
+      "clay_free": 0.28468,
+      "clay_fixed": 0.20597,
+      "flip_rate_fixed": 0.2188,
+      "recency_fraction": 0.2765,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    },
+    {
+      "step": 16000,
+      "induction_acc": 0.7188,
+      "clay_free": 0.26965,
+      "clay_fixed": 0.19261,
+      "flip_rate_fixed": 0.1313,
+      "recency_fraction": 0.2857,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    },
+    {
+      "step": 32000,
+      "induction_acc": 0.9375,
+      "clay_free": 0.27416,
+      "clay_fixed": 0.19266,
+      "flip_rate_fixed": 0.2313,
+      "recency_fraction": 0.2973,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    },
+    {
+      "step": 64000,
+      "induction_acc": 0.9375,
+      "clay_free": 0.26871,
+      "clay_fixed": 0.18118,
+      "flip_rate_fixed": 0.1,
+      "recency_fraction": 0.3257,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    },
+    {
+      "step": 143000,
+      "induction_acc": 0.9062,
+      "clay_free": 0.26226,
+      "clay_fixed": 0.176,
+      "flip_rate_fixed": 0.2,
+      "recency_fraction": 0.3289,
+      "verdict": "CLAY_GENUINE_PATH_DEPENDENCE"
+    }
+  ],
+  "corr_clayfixed_vs_induction": -0.2693
+}

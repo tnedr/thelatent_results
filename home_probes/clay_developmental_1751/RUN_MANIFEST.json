@@ -1,0 +1,26 @@
+{
+  "ts": "2026-06-27T04:14:34Z",
+  "files": [
+    "plastic_operator_clay_develop_EleutherAI_pythia-410m.json",
+    "plastic_operator_clay_develop_EleutherAI_pythia-160m.json",
+    "plastic_operator_probe.py",
+    "SUMMARY.md"
+  ],
+  "steps": [
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    32000,
+    64000,
+    143000
+  ],
+  "dispatch": "dispatch_20260626_1751_home_clay_developmental",
+  "models": [
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-160m"
+  ],
+  "machine": "home",
+  "n_files": 4
+}
