@@ -1,0 +1,51 @@
+{
+  "device": "cuda",
+  "ts": "2026-06-28T15:40:07Z",
+  "ops": [
+    "+",
+    "*",
+    "-"
+  ],
+  "machine": "home",
+  "task": "task1_p401_gpu_tail",
+  "files": [
+    "multiseed/p401/irrep_capacity_add_seed0.json",
+    "multiseed/p401/irrep_capacity_add_seed1.json",
+    "multiseed/p401/irrep_capacity_add_seed2.json",
+    "multiseed/p401/irrep_capacity_budget_multiseed.json",
+    "multiseed/p401/irrep_capacity_mul_seed0.json",
+    "multiseed/p401/irrep_capacity_mul_seed1.json",
+    "multiseed/p401/irrep_capacity_mul_seed2.json",
+    "multiseed/p401/irrep_capacity_sub_seed0.json",
+    "multiseed/p401/irrep_capacity_sub_seed1.json",
+    "multiseed/p401/irrep_capacity_sub_seed2.json",
+    "multiseed/p401/irrep_readout_attr_add_seed0.json",
+    "multiseed/p401/irrep_readout_attr_add_seed1.json",
+    "multiseed/p401/irrep_readout_attr_add_seed2.json",
+    "multiseed/p401/irrep_readout_attr_mul_seed0.json",
+    "multiseed/p401/irrep_readout_attr_mul_seed1.json",
+    "multiseed/p401/irrep_readout_attr_mul_seed2.json",
+    "multiseed/p401/irrep_readout_attr_sub_seed0.json",
+    "multiseed/p401/irrep_readout_attr_sub_seed1.json",
+    "multiseed/p401/irrep_readout_attr_sub_seed2.json",
+    "readout/p401/irrep_readout_attr_add_seed0.json",
+    "readout/p401/irrep_readout_attr_add_seed1.json",
+    "readout/p401/irrep_readout_attr_add_seed2.json",
+    "readout/p401/irrep_readout_attr_mul_seed0.json",
+    "readout/p401/irrep_readout_attr_mul_seed1.json",
+    "readout/p401/irrep_readout_attr_mul_seed2.json",
+    "readout/p401/irrep_readout_attr_sub_seed0.json",
+    "readout/p401/irrep_readout_attr_sub_seed1.json",
+    "readout/p401/irrep_readout_attr_sub_seed2.json",
+    "irrep_capacity_probe.py",
+    "SUMMARY.md"
+  ],
+  "p": 401,
+  "dispatch": "dispatch_20260627_0749_home_irrepcap_scale",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_files": 30
+}

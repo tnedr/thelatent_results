@@ -1,0 +1,51 @@
+{
+  "op": "*",
+  "seed": 0,
+  "p": 401,
+  "correct_basis": "multiplicative",
+  "base_test_acc": 1.0,
+  "readout_eff_rank": 9.4894,
+  "k_eff_embedding": 5.285,
+  "k_active_embedding": 9,
+  "k_readout_participation": 6.318,
+  "n_active": 9,
+  "n_used_freqs": 9,
+  "n_unused_freqs": 0,
+  "unused_fraction": 0.0,
+  "k_readout_over_k_eff": 1.196,
+  "two_k_readout_over_readout_rank": 1.332,
+  "active_freqs": [
+    50,
+    76,
+    86,
+    106,
+    110,
+    147,
+    157,
+    162,
+    180
+  ],
+  "importance_per_freq": {
+    "50": 0.5588,
+    "76": 0.222,
+    "86": 0.1583,
+    "106": 0.3444,
+    "110": 0.6487,
+    "147": 0.6572,
+    "157": 0.5669,
+    "162": 0.6659,
+    "180": 0.3356
+  },
+  "acc_after_ablate_per_freq": {
+    "50": 0.54,
+    "76": 0.994,
+    "86": 1.0,
+    "106": 0.992,
+    "110": 0.5325,
+    "147": 0.569,
+    "157": 0.494,
+    "162": 0.4065,
+    "180": 0.9645
+  },
+  "rescue_hypothesis": "2*k_readout ~= readout_eff_rank (the law counts the irreps the readout USES, not those the embedding allocates)"
+}

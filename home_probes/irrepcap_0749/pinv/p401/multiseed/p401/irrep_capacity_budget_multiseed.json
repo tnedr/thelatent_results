@@ -1,0 +1,183 @@
+{
+  "mode": "multiseed_budget",
+  "date": "2026-06-28",
+  "p": 401,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "max_steps": 6000,
+  "claim_reframed": "2*k_eff is an UPPER BUDGET on the readout eff-rank (2k_eff >= rank), with an op-dependent fill factor < 1; the strict equality is a special (near-saturating) case.",
+  "per_op": {
+    "+": {
+      "correct_basis": "additive",
+      "ratio_2k_over_rank": {
+        "n": 3,
+        "mean": 1.397,
+        "std": 0.139,
+        "min": 1.236,
+        "max": 1.479
+      },
+      "fill_factor_rank_over_2k": {
+        "n": 3,
+        "mean": 0.721,
+        "std": 0.076,
+        "min": 0.676,
+        "max": 0.809
+      },
+      "k_eff": {
+        "n": 3,
+        "mean": 9.132,
+        "std": 1.325,
+        "min": 8.151,
+        "max": 10.639
+      },
+      "readout_eff_rank": {
+        "n": 3,
+        "mean": 13.081,
+        "std": 1.395,
+        "min": 11.637,
+        "max": 14.42
+      },
+      "embedding_sparsity": {
+        "n": 3,
+        "mean": 0.954,
+        "std": 0.007,
+        "min": 0.947,
+        "max": 0.959
+      },
+      "budget_holds_frac": 1.0,
+      "grok_steps": [
+        1000,
+        600,
+        800
+      ],
+      "verdicts": [
+        "STRUCTURED_OFF_LAW",
+        "STRUCTURED_OFF_LAW",
+        "IRREP"
+      ],
+      "per_seed_ratio": [
+        1.476,
+        1.479,
+        1.236
+      ]
+    },
+    "*": {
+      "correct_basis": "multiplicative",
+      "ratio_2k_over_rank": {
+        "n": 3,
+        "mean": 1.457,
+        "std": 0.303,
+        "min": 1.114,
+        "max": 1.689
+      },
+      "fill_factor_rank_over_2k": {
+        "n": 3,
+        "mean": 0.709,
+        "std": 0.165,
+        "min": 0.592,
+        "max": 0.898
+      },
+      "k_eff": {
+        "n": 3,
+        "mean": 7.207,
+        "std": 2.103,
+        "min": 5.285,
+        "max": 9.453
+      },
+      "readout_eff_rank": {
+        "n": 3,
+        "mean": 9.823,
+        "std": 1.239,
+        "min": 8.786,
+        "max": 11.194
+      },
+      "embedding_sparsity": {
+        "n": 3,
+        "mean": 0.964,
+        "std": 0.011,
+        "min": 0.953,
+        "max": 0.974
+      },
+      "budget_holds_frac": 1.0,
+      "grok_steps": [
+        1000,
+        1000,
+        1200
+      ],
+      "verdicts": [
+        "IRREP",
+        "STRUCTURED_OFF_LAW",
+        "STRUCTURED_OFF_LAW"
+      ],
+      "per_seed_ratio": [
+        1.114,
+        1.567,
+        1.689
+      ]
+    },
+    "-": {
+      "correct_basis": "additive",
+      "ratio_2k_over_rank": {
+        "n": 3,
+        "mean": 1.641,
+        "std": 0.369,
+        "min": 1.406,
+        "max": 2.066
+      },
+      "fill_factor_rank_over_2k": {
+        "n": 3,
+        "mean": 0.628,
+        "std": 0.125,
+        "min": 0.484,
+        "max": 0.711
+      },
+      "k_eff": {
+        "n": 3,
+        "mean": 8.935,
+        "std": 1.807,
+        "min": 7.561,
+        "max": 10.982
+      },
+      "readout_eff_rank": {
+        "n": 3,
+        "mean": 10.936,
+        "std": 0.71,
+        "min": 10.429,
+        "max": 11.747
+      },
+      "embedding_sparsity": {
+        "n": 3,
+        "mean": 0.955,
+        "std": 0.009,
+        "min": 0.945,
+        "max": 0.962
+      },
+      "budget_holds_frac": 1.0,
+      "grok_steps": [
+        1200,
+        1200,
+        1200
+      ],
+      "verdicts": [
+        "STRUCTURED_OFF_LAW",
+        "STRUCTURED_OFF_LAW",
+        "STRUCTURED_OFF_LAW"
+      ],
+      "per_seed_ratio": [
+        2.066,
+        1.406,
+        1.45
+      ]
+    }
+  },
+  "budget_inequality_holds_frac": 1.0,
+  "tightest_op_by_fill": "+",
+  "fill_by_op": {
+    "+": 0.721,
+    "*": 0.709,
+    "-": 0.628
+  }
+}
