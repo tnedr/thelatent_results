@@ -1,0 +1,13 @@
+{
+  "n_files": 3,
+  "files": [
+    "carry_exception_deepstack.json",
+    "carry_exception_deepstack.py",
+    "SUMMARY.md"
+  ],
+  "source": "home_probes/depthrank_0959/free_probability_transport_depth_link.json",
+  "task": "carry_lambda_deepstack",
+  "dispatch": "dispatch_20260628_1015_home_carry_lambda_deepstack",
+  "machine": "home",
+  "ts": "2026-06-28T18:52:43Z"
+}

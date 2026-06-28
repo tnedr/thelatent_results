@@ -1,0 +1,332 @@
+{
+  "mode": "carry_exception_deepstack",
+  "date": "2026-06-28",
+  "machine": "home",
+  "source_depth_link": "E:\\Repos\\thelatent_results\\home_probes\\depthrank_0959\\free_probability_transport_depth_link.json",
+  "deep_models": [
+    "gpt2-large",
+    "gpt2-xl",
+    "pythia-1b",
+    "pythia-1.4b"
+  ],
+  "reference_24L": [
+    "gpt2-medium",
+    "pythia-410m"
+  ],
+  "per_model": {
+    "gpt2-large": {
+      "tasks": {
+        "arithmetic_carry": {
+          "lambda_true": -0.0143,
+          "over_collapse_logratio": 0.1306,
+          "rank_preservation_ratio": 0.877,
+          "gap_slope": 0.0018,
+          "handoff_minus_baseline": 0.184,
+          "second_half_slope_r_true": -0.0416,
+          "end_r_true_minus_r_free": -1.879,
+          "n_layers": 36,
+          "L_factors": 35
+        },
+        "relation_composition": {
+          "lambda_true": -0.0256,
+          "over_collapse_logratio": 0.6712,
+          "rank_preservation_ratio": 0.511,
+          "gap_slope": 0.0152,
+          "handoff_minus_baseline": 0.2193,
+          "second_half_slope_r_true": -0.4539,
+          "end_r_true_minus_r_free": -9.415,
+          "n_layers": 36,
+          "L_factors": 35
+        },
+        "induction": {
+          "lambda_true": -0.0211,
+          "over_collapse_logratio": 0.2419,
+          "rank_preservation_ratio": 0.785,
+          "gap_slope": 0.0031,
+          "handoff_minus_baseline": 0.2094,
+          "second_half_slope_r_true": -0.2905,
+          "end_r_true_minus_r_free": -2.669,
+          "n_layers": 36,
+          "L_factors": 35
+        }
+      },
+      "P1_carry_slowest_lambda": true,
+      "P2_depth_gated_exception": false
+    },
+    "gpt2-xl": {
+      "tasks": {
+        "arithmetic_carry": {
+          "lambda_true": -0.0382,
+          "over_collapse_logratio": 1.2069,
+          "rank_preservation_ratio": 0.299,
+          "gap_slope": 0.03,
+          "handoff_minus_baseline": 0.1941,
+          "second_half_slope_r_true": -0.5212,
+          "end_r_true_minus_r_free": -12.869,
+          "n_layers": 48,
+          "L_factors": 47
+        },
+        "relation_composition": {
+          "lambda_true": -0.0374,
+          "over_collapse_logratio": 1.4081,
+          "rank_preservation_ratio": 0.245,
+          "gap_slope": 0.0299,
+          "handoff_minus_baseline": 0.2545,
+          "second_half_slope_r_true": -0.5519,
+          "end_r_true_minus_r_free": -14.32,
+          "n_layers": 48,
+          "L_factors": 47
+        },
+        "induction": {
+          "lambda_true": -0.045,
+          "over_collapse_logratio": 1.5126,
+          "rank_preservation_ratio": 0.22,
+          "gap_slope": 0.0342,
+          "handoff_minus_baseline": 0.1912,
+          "second_half_slope_r_true": -0.5762,
+          "end_r_true_minus_r_free": -11.972,
+          "n_layers": 48,
+          "L_factors": 47
+        }
+      },
+      "P1_carry_slowest_lambda": false,
+      "P2_depth_gated_exception": false
+    },
+    "pythia-1b": {
+      "tasks": {
+        "arithmetic_carry": {
+          "lambda_true": 0.0117,
+          "over_collapse_logratio": -0.4006,
+          "rank_preservation_ratio": 1.493,
+          "gap_slope": -0.0637,
+          "handoff_minus_baseline": 0.0446,
+          "second_half_slope_r_true": 0.9909,
+          "end_r_true_minus_r_free": 4.681,
+          "n_layers": 16,
+          "L_factors": 15
+        },
+        "relation_composition": {
+          "lambda_true": -0.0519,
+          "over_collapse_logratio": 0.6205,
+          "rank_preservation_ratio": 0.538,
+          "gap_slope": 0.0104,
+          "handoff_minus_baseline": 0.1138,
+          "second_half_slope_r_true": -0.6237,
+          "end_r_true_minus_r_free": -3.892,
+          "n_layers": 16,
+          "L_factors": 15
+        },
+        "induction": {
+          "lambda_true": -0.0355,
+          "over_collapse_logratio": 0.3796,
+          "rank_preservation_ratio": 0.684,
+          "gap_slope": -0.0054,
+          "handoff_minus_baseline": 0.0935,
+          "second_half_slope_r_true": -0.1216,
+          "end_r_true_minus_r_free": -2.502,
+          "n_layers": 16,
+          "L_factors": 15
+        }
+      },
+      "P1_carry_slowest_lambda": true,
+      "P2_depth_gated_exception": true
+    },
+    "pythia-1.4b": {
+      "tasks": {
+        "arithmetic_carry": {
+          "lambda_true": -0.0006,
+          "over_collapse_logratio": -0.0758,
+          "rank_preservation_ratio": 1.079,
+          "gap_slope": -0.0302,
+          "handoff_minus_baseline": 0.1175,
+          "second_half_slope_r_true": 0.2483,
+          "end_r_true_minus_r_free": 0.516,
+          "n_layers": 24,
+          "L_factors": 23
+        },
+        "relation_composition": {
+          "lambda_true": -0.0126,
+          "over_collapse_logratio": 0.4366,
+          "rank_preservation_ratio": 0.646,
+          "gap_slope": -0.022,
+          "handoff_minus_baseline": 0.1554,
+          "second_half_slope_r_true": -0.7023,
+          "end_r_true_minus_r_free": -2.46,
+          "n_layers": 24,
+          "L_factors": 23
+        },
+        "induction": {
+          "lambda_true": -0.0427,
+          "over_collapse_logratio": 1.1203,
+          "rank_preservation_ratio": 0.326,
+          "gap_slope": 0.0054,
+          "handoff_minus_baseline": 0.1456,
+          "second_half_slope_r_true": -0.3977,
+          "end_r_true_minus_r_free": -4.197,
+          "n_layers": 24,
+          "L_factors": 23
+        }
+      },
+      "P1_carry_slowest_lambda": true,
+      "P2_depth_gated_exception": true
+    }
+  },
+  "reference_24L_tables": {
+    "gpt2-medium": {
+      "tasks": {
+        "arithmetic_carry": {
+          "lambda_true": -0.0211,
+          "over_collapse_logratio": -0.0584,
+          "rank_preservation_ratio": 1.06,
+          "gap_slope": -0.0091,
+          "handoff_minus_baseline": 0.1924,
+          "second_half_slope_r_true": -0.2285,
+          "end_r_true_minus_r_free": 0.539,
+          "n_layers": 24,
+          "L_factors": 23
+        },
+        "relation_composition": {
+          "lambda_true": -0.0485,
+          "over_collapse_logratio": 0.687,
+          "rank_preservation_ratio": 0.503,
+          "gap_slope": 0.0192,
+          "handoff_minus_baseline": 0.2256,
+          "second_half_slope_r_true": -0.5527,
+          "end_r_true_minus_r_free": -3.789,
+          "n_layers": 24,
+          "L_factors": 23
+        },
+        "induction": {
+          "lambda_true": -0.0722,
+          "over_collapse_logratio": 0.7465,
+          "rank_preservation_ratio": 0.474,
+          "gap_slope": 0.0309,
+          "handoff_minus_baseline": 0.1376,
+          "second_half_slope_r_true": -0.4724,
+          "end_r_true_minus_r_free": -3.427,
+          "n_layers": 24,
+          "L_factors": 23
+        }
+      },
+      "P1_carry_slowest_lambda": true,
+      "P2_depth_gated_exception": true
+    },
+    "pythia-410m": {
+      "tasks": {
+        "arithmetic_carry": {
+          "lambda_true": -0.0196,
+          "over_collapse_logratio": -0.4819,
+          "rank_preservation_ratio": 1.619,
+          "gap_slope": -0.0268,
+          "handoff_minus_baseline": 0.0594,
+          "second_half_slope_r_true": -0.2671,
+          "end_r_true_minus_r_free": 4.166,
+          "n_layers": 24,
+          "L_factors": 23
+        },
+        "relation_composition": {
+          "lambda_true": -0.0432,
+          "over_collapse_logratio": 0.5149,
+          "rank_preservation_ratio": 0.598,
+          "gap_slope": 0.0038,
+          "handoff_minus_baseline": 0.1004,
+          "second_half_slope_r_true": -1.1344,
+          "end_r_true_minus_r_free": -3.926,
+          "n_layers": 24,
+          "L_factors": 23
+        },
+        "induction": {
+          "lambda_true": -0.0347,
+          "over_collapse_logratio": 0.1461,
+          "rank_preservation_ratio": 0.864,
+          "gap_slope": -0.0148,
+          "handoff_minus_baseline": 0.0935,
+          "second_half_slope_r_true": -1.2339,
+          "end_r_true_minus_r_free": -0.868,
+          "n_layers": 24,
+          "L_factors": 23
+        }
+      },
+      "P1_carry_slowest_lambda": true,
+      "P2_depth_gated_exception": true
+    }
+  },
+  "verdicts": {
+    "P1_carry_slowest_lambda": "CONFIRMED \u2014 carry slowest lambda_true in 3/4 deep models (need >=3).",
+    "P2_depth_gated_exception": "PARTIAL \u2014 deep exception 2/4; carry end gap deep -2.388 vs 24L 2.353.",
+    "P3_carry_plateau_slope": "CONFIRMED \u2014 carry least-negative 2nd-half product slope in 4/4 deep models.",
+    "P4_depth_strengthens_plateau": "CONFIRMED \u2014 deeper carry plateau stronger (mean 2nd-half slope +0.169 vs 24L -0.248).",
+    "P5_late_gain_anticorr": "PARTIAL \u2014 carry most anti-correlated in 1/4 deep models.",
+    "P6_participation_gap_joint_corr": "PARTIAL \u2014 participation-gap 8/8; coupling separation=False."
+  },
+  "capture_p5_p6": {
+    "gpt2-large": {
+      "relation_composition": {
+        "late_gain_spectrum_spearman": 0.5631,
+        "late_operator_coupling": 0.9967,
+        "freeness_kappa": 0.8734
+      },
+      "arithmetic_carry": {
+        "late_gain_spectrum_spearman": 0.3814,
+        "late_operator_coupling": 0.996,
+        "freeness_kappa": 0.9395
+      },
+      "induction": {
+        "late_gain_spectrum_spearman": 0.2618,
+        "late_operator_coupling": 0.9954,
+        "freeness_kappa": 0.9633
+      }
+    },
+    "gpt2-xl": {
+      "relation_composition": {
+        "late_gain_spectrum_spearman": 0.456,
+        "late_operator_coupling": 0.9986,
+        "freeness_kappa": 0.8862
+      },
+      "arithmetic_carry": {
+        "late_gain_spectrum_spearman": 0.3474,
+        "late_operator_coupling": 0.9983,
+        "freeness_kappa": 0.9611
+      },
+      "induction": {
+        "late_gain_spectrum_spearman": 0.1697,
+        "late_operator_coupling": 0.9978,
+        "freeness_kappa": 0.9746
+      }
+    },
+    "pythia-1b": {
+      "relation_composition": {
+        "late_gain_spectrum_spearman": 0.2211,
+        "late_operator_coupling": 0.9756,
+        "freeness_kappa": 0.9641
+      },
+      "arithmetic_carry": {
+        "late_gain_spectrum_spearman": -0.1137,
+        "late_operator_coupling": 0.9752,
+        "freeness_kappa": 0.912
+      },
+      "induction": {
+        "late_gain_spectrum_spearman": -0.0199,
+        "late_operator_coupling": 0.9629,
+        "freeness_kappa": 0.88
+      }
+    },
+    "pythia-1.4b": {
+      "relation_composition": {
+        "late_gain_spectrum_spearman": 0.3533,
+        "late_operator_coupling": 0.9948,
+        "freeness_kappa": 0.964
+      },
+      "arithmetic_carry": {
+        "late_gain_spectrum_spearman": 0.3909,
+        "late_operator_coupling": 0.9959,
+        "freeness_kappa": 0.9588
+      },
+      "induction": {
+        "late_gain_spectrum_spearman": 0.0624,
+        "late_operator_coupling": 0.9923,
+        "freeness_kappa": 0.8788
+      }
+    }
+  }
+}
