@@ -1,0 +1,18 @@
+{
+  "n_files": 5,
+  "models": [
+    "pythia-410m",
+    "pythia-1.4b",
+    "gpt2-medium"
+  ],
+  "files": [
+    "thermo_specific_heat_summary.json",
+    "thermo_specific_heat.png",
+    "thermo_specific_heat_probe.py",
+    "thermo_specific_heat_gpt2-medium.json",
+    "SUMMARY.md"
+  ],
+  "machine": "home",
+  "ts": "2026-06-29T09:49:58Z",
+  "dispatch": "dispatch_20260629_0740_home_thermo_specific_heat"
+}
