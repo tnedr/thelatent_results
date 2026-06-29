@@ -1,0 +1,113 @@
+{
+  "mode": "digest_home_byte_parity",
+  "date": "2026-06-29",
+  "model": "gpt2",
+  "n_samples": 64,
+  "seed": 0,
+  "digest_key": "gpt2::arithmetic_carry+induction+relation_composition::n64::s0::ct::v1",
+  "timing": {
+    "digest_build_s": 13.3,
+    "adapters_total_s": 2.4,
+    "live_probes_total_s": 72.5,
+    "scan_once_plus_adapters_s": 15.6,
+    "speedup_vs_separate_live": 4.64
+  },
+  "adapters": [
+    {
+      "adapter": "singular_spectrum_digest",
+      "status": "PASS",
+      "digest_s": 0.02,
+      "live_s": 7.14,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "cross_layer_transport_digest",
+      "status": "PASS",
+      "digest_s": 0.19,
+      "live_s": 7.06,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "free_probability_transport_digest",
+      "status": "PASS",
+      "digest_s": 0.58,
+      "live_s": 7.72,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "depth_conservation_digest",
+      "status": "DRIFT",
+      "digest_s": 0.75,
+      "live_s": 7.83,
+      "n_drifts": 2,
+      "drifts": [
+        {
+          "context": "arithmetic_carry",
+          "field": "verdict",
+          "digest": "NO_INVARIANT",
+          "live": "CONSERVED"
+        },
+        {
+          "context": "induction",
+          "field": "best_conservation_score",
+          "digest": 0.4889,
+          "live": 0.4763
+        }
+      ]
+    },
+    {
+      "adapter": "structure_randomness_transport_digest",
+      "status": "PASS",
+      "digest_s": 0.02,
+      "live_s": 6.99,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "dark_direction_digest",
+      "status": "PASS",
+      "digest_s": 0.02,
+      "live_s": 7.46,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "rotation_operator_digest",
+      "status": "PASS",
+      "digest_s": 0.19,
+      "live_s": 6.97,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "frame_geometry_digest",
+      "status": "PASS",
+      "digest_s": 0.2,
+      "live_s": 7.01,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "berry_gap_digest",
+      "status": "PASS",
+      "digest_s": 0.22,
+      "live_s": 7.25,
+      "n_drifts": 0,
+      "drifts": []
+    },
+    {
+      "adapter": "channel_dynamics_digest",
+      "status": "PASS",
+      "digest_s": 0.21,
+      "live_s": 7.12,
+      "n_drifts": 0,
+      "drifts": []
+    }
+  ],
+  "n_pass": 9,
+  "n_total": 10,
+  "verdict": "DRIFT (9/10 pass)"
+}

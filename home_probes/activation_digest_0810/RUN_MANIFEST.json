@@ -1,0 +1,11 @@
+{
+  "n_files": 2,
+  "model": "gpt2",
+  "ts": "2026-06-29T04:03:07Z",
+  "files": [
+    "digest_home_validate.json",
+    "SUMMARY.md"
+  ],
+  "machine": "home",
+  "dispatch": "dispatch_20260628_0810_home_activation_digest_validate"
+}
