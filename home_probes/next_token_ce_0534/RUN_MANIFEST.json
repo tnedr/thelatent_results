@@ -1,0 +1,16 @@
+{
+  "dispatch": "dispatch_20260629_0534_home_next_token_ce_contraction",
+  "n_files": 3,
+  "models": [
+    "pythia-410m",
+    "pythia-1.4b",
+    "gpt2-medium"
+  ],
+  "ts": "2026-06-29T03:39:38Z",
+  "files": [
+    "next_token_ce_contraction.json",
+    "next_token_ce_contraction_probe.py",
+    "SUMMARY.md"
+  ],
+  "machine": "home"
+}
